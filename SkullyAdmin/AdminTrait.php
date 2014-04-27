@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace SkullyAdmin;
 
 use RedBean_Facade as R;
 
