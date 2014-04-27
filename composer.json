@@ -22,15 +22,18 @@
     "require": {
         "php": ">=5.4",
         "gabordemooij/redbean": "3.x",
+        "symfony/console": "2.5.x-dev",
+        "ruckusing/ruckusing-migrations": "dev-master",
         "triodigital/skully": "dev-master"
-    },
-    "autoload": {
-        "psr-0": {
-            "Skully\\": ""
-        }
     },
     "license": "LGPL-2.1",
     "suggest": {
         "ext-runkit": "For using the runkit API."
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/triodigital/skully"
+        }
+    ]
 }

@@ -3,7 +3,7 @@
 
 namespace App\Controllers\Admin\ImageUploader;
 
-use App\Helpers\FileHelper;
+use Skully\App\Helpers\FileHelper;
 use Skully\App\Helpers\UtilitiesHelper;
 use Skully\Library\ImageProcessor\ImageProcessor;
 use RedBean_Facade as R;
