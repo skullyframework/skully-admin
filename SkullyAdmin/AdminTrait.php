@@ -8,7 +8,7 @@ use RedBean_Facade as R;
  * @package App
  * Trait to be used at App\Application
  */
-class AdminTrait {
+trait AdminTrait {
     public function getAdmin()
     {
         /** @var \Skully\Application $this */
