@@ -1,0 +1,27 @@
+.TAL{text-align: left !important;} .TAR{text-align: right !important;} .TAC{text-align: center !important;}
+.FL{float: left;} .FR{float: right;}
+.NM{margin: 0px;} .NMT{margin-top: 0px;} .NMB{margin-bottom: 0px;} .NMR{margin-right: 0px;} .NML{margin-left: 0px;}
+.NP{padding: 0px;} .NPT{padding-top: 0px;} .NPB{padding-bottom: 0px;} .NPR{padding-right: 0px;} .NPL{padding-left: 0px;}
+
+
+.clear {
+  clear: both;
+}
+.auto_width {
+  width: auto;
+}
+
+.pre {
+  white-space: pre-wrap;
+}
+
+.loading {
+  background: url('../images/ajax-loader.gif') no-repeat center center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

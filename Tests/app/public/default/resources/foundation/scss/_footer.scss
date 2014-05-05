@@ -1,0 +1,81 @@
+.logo_info {
+  text-shadow: black 1px 1px;
+}
+
+.socmed_button {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+
+.btn-twitter {
+  background: url('../images/twitter.png') no-repeat;
+}
+
+.btn-instagram {
+  background: url('../images/instagram.png') no-repeat;
+}
+
+.btn-facebook {
+  background: url('../images/facebook.png') no-repeat;
+}
+
+.footer-left{
+  //background: url('../image/footer-left.png') no-repeat;
+  height:auto;
+  width:75%;
+  position:fixed;
+  left:30px;
+  bottom: 10px;
+  @include respondTo(smartphone) {
+    position: absolute;
+  }
+}
+
+.footer-right{
+  //background: url('../image/footer-right.png') no-repeat;
+  height:auto;
+  position:fixed;
+  right:30px;
+  bottom: 25px;
+  float:right;
+
+  a, span {
+    vertical-align: bottom;
+    text-shadow: #000000 1px 1px;
+  }
+  a:link, a:visited, span {
+    color: #ffffff;
+  }
+  a:hover {
+    color: $blue;
+  }
+  @include respondTo(smartphone) {
+    position: absolute;
+  }
+}
+
+.zoom-footer{
+  position: fixed;
+  bottom:0px;
+  margin-bottom:0px;
+  @include respondTo(smartphone) {
+    font-size: rem-calc(10);
+    position: relative;
+    height: 135px;
+    background: rgba(0,0,0,0.95);
+  }
+
+  transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -khtml-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+}
+
+.footer-right-mobile {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+}

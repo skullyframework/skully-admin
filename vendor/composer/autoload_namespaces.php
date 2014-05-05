@@ -7,10 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'org\\bovigo\\vfs\\' => array($vendorDir . '/mikey179/vfsStream/src/main/php'),
+    'TestApp\\' => array($baseDir . '/Tests/app'),
     'Task' => array($vendorDir . '/ruckusing/ruckusing-migrations/lib'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Skully\\' => array($vendorDir . '/triodigital/skully'),
+    'SkullyAdmin' => array($baseDir . '/'),
     'Ruckusing' => array($vendorDir . '/ruckusing/ruckusing-migrations/lib'),
-    'RedBean_' => array($vendorDir . '/gabordemooij/redbean'),
+    'RedBeanPHP\\' => array($vendorDir . '/triodigital/skully/Skully/Library/redbean'),
 );

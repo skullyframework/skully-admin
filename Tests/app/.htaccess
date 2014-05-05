@@ -1,0 +1,18 @@
+RewriteBase /skully-admin/Tests/app
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule "^(.*)$" "index.php?_url=$1" [QSA,L]
+RewriteRule /*\.(css|js|gif|png|jpe?g|ico|swf|csv|html|xlsx|xls|xml)$ - [NC,L]
+AddType application/x-httpd-php .php
+
+# redirect www.sitename.com to sitename.com
+#RewriteCond %{HTTP_HOST} \.
+#RewriteCond %{HTTP_HOST} !^sitename\.com$
+#RewriteRule ^(.*)$ http://sitename.com/$1 [R=301,L]
+
+<FilesMatch "(?:console|bootstrap\.php|globals\.php|\.gitignore|\.htaccess\.original|\.json|\.lock|\.phar|\.md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

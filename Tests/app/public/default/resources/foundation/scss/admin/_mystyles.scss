@@ -1,0 +1,129 @@
+.modal {
+  padding-top: 8px;
+}
+
+.largerText {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+
+.loadingframe{
+  display:    none;
+  position:   fixed;
+  z-index:    99999;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8 )
+  url('../../images/admin/loaders/2d_4.gif')
+  50% 50%
+  no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+  overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loadingframe {
+  display: block;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { width: 40%; height: 30px;}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { top: 11px; }
+.birthdatepicker { width: 78px!important; }
+
+.btn-success {color: #ffffff !important;}
+
+.inlineLoadingFrame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 410px;
+  background: rgba( 255, 255, 255, .8 ) url('../../images/admin/loaders/2d_4.gif') 50% 50% no-repeat;
+  border-radius: 5px;
+}
+.inlineLoadingFrame .uploadingText {
+  text-align: center;
+  font-weight: bold;
+}
+
+.colorBox {
+  width: 19px;
+  height: 19px;
+  margin-right:5px;
+  float: left;
+}
+
+.datepicker {
+  width: 85px!important;
+}
+
+.sizes label {
+  background-color: #3a87ad;
+  display: inline-block;
+  padding: 4px 4px 2px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 5px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+label {
+  font-size:inherit;
+  line-height: 30px;
+}
+
+.ibutton-label-on label, .ibutton-label-off label {
+  line-height: 20px;
+}
+
+.fileupload-preview .emptyInfo {
+  line-height: 16px;
+  margin-top: 28px;
+}
+
+.navigation ul.main {
+  z-index: 1000;
+}
+.navigation ul.main li{
+  position: relative;
+}
+.navigation ul.main li:hover > ul.main{
+  display: block;
+}
+.navigation ul.main ul.main{
+  display: none;
+  position: absolute;
+  top: 0px;
+  margin: 0px;
+  left: 100%;
+}
+
+.thumbnail .emptyInfo {
+  margin-top: 15px;
+  font-size: 7.5pt;
+}
+
+.aTable img {
+  max-height: 80px;
+}

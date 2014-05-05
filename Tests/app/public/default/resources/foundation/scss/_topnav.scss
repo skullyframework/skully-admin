@@ -1,0 +1,115 @@
+.top_nav-wrapper {
+  z-index: 110 !important;
+}
+.top-bar{
+  background-color:rgba(0,0,0,0.7);
+  height: 25px;
+  padding-top: 1px;
+  @include respondTo(smartphone) {
+    display: none;
+  }
+}
+
+.top-bar-section > div > ul {
+  padding-left: 0;
+}
+
+.top-bar-section ul li {
+  float: left !important;
+  a {
+    line-height: 24px !important;
+  }
+}
+
+.top-bar-section ul li > a { display: block; width: 100%; color: white; padding: 12px 0 12px 0; padding-left: 15px; font-size: em-calc(16); font-weight: normal; }
+
+.top-bar-section ul li:hover > a { background: #282828; color: #91d5f6; }
+
+.top-bar-section ul li.active > a { background: #282828; color: #91d5f6; }
+
+.top-bar-section ul li.active > a:hover { background: #282828; color: #91d5f6; }
+
+.top-bar-section li a:not(.button) { padding: 0 15px; line-height: 35px; background: #282828; }
+
+.top-bar{
+  z-index: 50;
+}
+
+a.reserveLink {
+  width: 145px !important;
+  height: 23px !important;
+  color: #ffffff;
+  text-shadow: #000000 1px 1px 1px;
+  padding-left: 13px !important;
+  margin-right: 10px;
+}
+a.reserveLink:link, a.reserveLink:visited, a.reserveLink:active {
+  background: url('../images/btnReserve.png') no-repeat !important;
+}
+a.reserveLink:hover {
+  text-decoration: none;
+  background: url('../images/btnReserve_active.png') no-repeat !important;
+}
+
+.menu-icon {
+  background: url('../images/btnMenu-smartphone.png') no-repeat;
+  width: 50px;
+  height: 32px;
+  &:hover {
+    background: url('../images/btnMenu-smartphone_active.png') no-repeat;
+  }
+}
+
+.tab-bar {
+  background:transparent;
+  height: 30px;
+  line-height: 30px;
+}
+.btnReserve, .btnHome, .mobile_top_logo, .menu-icon {
+  display: inline-block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.left-small {
+  line-height: 30px;
+  height: 30px;
+}
+.btnReserve {
+  width: 142px;
+  line-height: 32px;
+  color: #ffffff;
+  text-shadow: #000000 1px 1px 1px;
+  padding-left: 13px;
+  background: url('../images/btnReserve-smartphone.png') no-repeat;
+  letter-spacing: normal !important;
+  &:hover {
+    color: #ffffff;
+    background: url('../images/btnReserve-smartphone_active.png') no-repeat;
+  }
+}
+
+.btnHome {
+  width: 51px;
+  line-height: 32px;
+  background: url('../images/btnHome-smartphone.png') no-repeat;
+  &:hover {
+    background: url('../images/btnHome-smartphone_active.png') no-repeat;
+  }
+}
+
+.mobile_top_logo {
+  float: right;
+  margin-right: 8px;
+}
+
+.tab-bar-section {
+  padding: 0;
+  position: absolute;
+  text-align: left;
+  height: 32px;
+  letter-spacing: -6px;
+}
+.tab-bar-section.right {
+  min-width: 280px;
+}

@@ -21,7 +21,6 @@
     },
     "require": {
         "php": ">=5.4",
-        "gabordemooij/redbean": "3.x",
         "symfony/console": "2.5.x-dev",
         "ruckusing/ruckusing-migrations": "dev-master",
         "triodigital/skully": "dev-master"
@@ -35,5 +34,11 @@
             "type": "vcs",
             "url": "https://github.com/triodigital/skully"
         }
-    ]
+    ],
+    "autoload-dev": {
+        "psr-0": {
+            "TestApp\\": "Tests/app",
+            "SkullyAdmin": ""
+        }
+    }
 }

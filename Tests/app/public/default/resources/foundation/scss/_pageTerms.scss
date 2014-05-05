@@ -1,0 +1,31 @@
+#termsContent{
+  padding-top: 65px;
+  padding-bottom: 100px;
+  background: none;
+
+  .logo{
+    background:url('../../resources/images/logo-large.png');
+    width: 376px;
+    height: 97px;
+
+  }
+
+  h1{
+    text-align: left;
+    color: #b4d333;
+    margin-top: 0;
+  }
+
+  .text{
+    margin-top: 42px;
+
+    p, span, div, a{
+      margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+      color: #b4d333;
+      font-size: 1.5rem;
+    }
+  }
+}

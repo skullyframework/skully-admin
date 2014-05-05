@@ -1,0 +1,9 @@
+#aboutContent {
+  .info {
+    padding: 20px 120px 50px;
+
+    @include respondTo(smartphone) {
+      padding: 20px 30px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<krpano version="1.16">
+	<plugin name="gyro" 
+		devices="html5" 
+		url="gyro.js" 
+		enabled="true" 
+		camroll="true" 
+		friction="0" 
+		velastic="0"
+		keep="true"
+	/>
+	<view hlookat="0" vlookat="0" fovmin="60" fov="100" fovmax="150"/>
+	<!--<preview url="preview.jpg"/>-->
+	<image>
+		<cube url="pano_%s.jpg"/>
+	</image>
+</krpano>

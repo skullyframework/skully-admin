@@ -1,0 +1,71 @@
+div.reveal-modal {
+  top: 0 !important;
+}
+@include respondTo(largeDesktop) {
+  div.reveal-modal {
+    width:1280px;
+    margin-left:-640px;
+    left:50%;
+  }
+}
+
+
+@include respondTo(desktop) {
+  div.reveal-modal {
+    width: 950px;
+    margin-left: -475px;
+    left: 50%;
+  }
+}
+
+@include respondTo(tablet) {
+  div.reveal-modal {
+    width: 768px;
+    margin-left: -384px;
+    left: 50%;
+  }
+}
+
+@include respondTo(smartPhone) {
+  div.reveal-modal {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
+}
+
+.topImage {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 401px;
+  padding-top: 125px;
+  margin-bottom: 20px;
+  @include respondTo(smartphone) {
+    padding-top: 60px;
+    height: 185px;
+  }
+  .topImage-logo {
+    @include respondTo(smartphone) {
+      width: 175px;
+    }
+  }
+}
+
+.close-reveal-main_modal {
+  float: right;
+  font-size: 0.75rem;
+  display: block;
+  position: static;
+  color: #fff;
+}
+.reveal-main_modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 99;
+  display: none;
+  top: 0;
+  left: 0;
+}

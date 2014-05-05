@@ -1,7 +1,7 @@
 <?php
 namespace SkullyAdmin;
 
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 
 /**
  * Class AdminTraits
@@ -9,6 +9,11 @@ use RedBean_Facade as R;
  * Trait to be used at App\Application
  */
 trait AdminTrait {
+    public function getAdminsession()
+    {
+
+    }
+
     public function getAdmin()
     {
         /** @var \Skully\Application $this */
@@ -20,5 +25,10 @@ trait AdminTrait {
         else {
             return null;
         }
+    }
+
+    protected function addAdminTemplateDir()
+    {
+        $this->templateEngine->addTemplateDir(realpath(__DIR__.'/../public'));
     }
 } 
