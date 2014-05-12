@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruckus/ruckusing-migrations.git",
-                "reference": "75191af0eeac443d71ce6ea5c153671abf1bd421"
+                "reference": "3062f2f3fa59e7f7d43561eb6c97f57dd4acc968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/75191af0eeac443d71ce6ea5c153671abf1bd421",
-                "reference": "75191af0eeac443d71ce6ea5c153671abf1bd421",
+                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/3062f2f3fa59e7f7d43561eb6c97f57dd4acc968",
+                "reference": "3062f2f3fa59e7f7d43561eb6c97f57dd4acc968",
                 "shasum": ""
             },
             "require": {
@@ -58,7 +58,7 @@
                 "ruckusing",
                 "task"
             ],
-            "time": "2014-04-28 19:22:42"
+            "time": "2014-05-09 18:24:13"
         },
         {
             "name": "symfony/console",
@@ -67,12 +67,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d12686cea4e1155ed93449c0bca9db223f31bb2d"
+                "reference": "55ba7eb2543f95cc93f26b1a4c2fc618d2a01cc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d12686cea4e1155ed93449c0bca9db223f31bb2d",
-                "reference": "d12686cea4e1155ed93449c0bca9db223f31bb2d",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/55ba7eb2543f95cc93f26b1a4c2fc618d2a01cc3",
+                "reference": "55ba7eb2543f95cc93f26b1a4c2fc618d2a01cc3",
                 "shasum": ""
             },
             "require": {
@@ -115,7 +115,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-28 13:26:08"
+            "time": "2014-05-12 09:28:39"
         },
         {
             "name": "triodigital/skully",
@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/triodigital/skully.git",
-                "reference": "52cc7a5e1d2412c00ef45af3a4d218d958f06d89"
+                "reference": "8f2e817bb6a2772cb6b46fd90ce1210a8c49d60d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/triodigital/skully/zipball/52cc7a5e1d2412c00ef45af3a4d218d958f06d89",
-                "reference": "52cc7a5e1d2412c00ef45af3a4d218d958f06d89",
+                "url": "https://api.github.com/repos/triodigital/skully/zipball/8f2e817bb6a2772cb6b46fd90ce1210a8c49d60d",
+                "reference": "8f2e817bb6a2772cb6b46fd90ce1210a8c49d60d",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "source": "https://github.com/triodigital/skully/tree/master",
                 "issues": "https://github.com/triodigital/skully/issues"
             },
-            "time": "2014-05-05 08:27:16"
+            "time": "2014-05-12 15:46:01"
         }
     ],
     "packages-dev": [

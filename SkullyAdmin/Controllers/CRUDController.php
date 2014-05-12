@@ -14,12 +14,14 @@ class CRUDController extends BaseController
 {
 
     // These variables MUST be overridden in inherited class!
+    // --START-- //
     protected $instanceName = 'instance'; // Instance name used in parameter prefix i.e. 'instance' of $this->params['instance']['attributeName']
 
     // Form tpl files
     protected $addFormTpl = '_addForm';
     protected $editFormTpl = '_editForm';
     protected $deleteFormTpl = '/admin/widgets/crud/delete/_deleteForm';
+    protected $indexTpl = '/admin/widgets/crud/_index';
 
     // For redirect when success / error happens
     protected $indexPath = 'instances/index';
@@ -45,6 +47,15 @@ class CRUDController extends BaseController
     public $columns = array('column', 'names');
     public $thAttributes = array(); // Class sort_asc or sort_desc can be used to set default sorting.
     public $columnDefs = '[]'; // Use this to handle columns' behaviours, doc: http://www.datatables.net/usage/columns
+
+    // --END-- //
+    // Form wrapper tpl files. You do not always need to update this, but when you do, override these vars.
+    protected $addAjaxTpl = '/admin/widgets/crud/add/_addAjax';
+    protected $addNoAjaxTpl = '/admin/widgets/crud/add/_addNoAjax';
+    protected $editAjaxTpl = '/admin/widgets/crud/edit/_editAjax';
+    protected $editNoAjaxTpl = '/admin/widgets/crud/edit/_editNoAjax';
+    protected $deleteAjaxTpl = '/admin/widgets/crud/delete/_deleteAjax';
+    protected $deleteNoAjaxTpl = '/admin/widgets/crud/delete/_deleteNoAjax';
 
     // Minimum overriding requirements //
     /**
@@ -132,7 +143,7 @@ class CRUDController extends BaseController
      * Method to be overridden when you need to add additional attributes for saving purpose in create, update, destroy,
      * and to be displayed in add, edit, delete, create, update, destroy
      * e.g. use to setup protected attributes on create and update.
-     * @param $instance \App\Models\BaseModel
+     * @param $instance \Skully\App\Models\BaseModel
      * @return mixed
      */
     protected function setInstanceAttributes($instance) {
@@ -145,7 +156,7 @@ class CRUDController extends BaseController
     /**
      * Override this method when you need to display additional attributes in add, edit, delete, create, update, and destroy pages.
      * NOTE: Attributes set up here will NOT make it to save() method (i.e. use setInstanceAttributes() method for that).
-     * @param $instance \App\Models\BaseModel
+     * @param $instance \Skully\App\Models\BaseModel
      * @return mixed
      */
     protected function setupInstanceAssigns($instance) {
@@ -153,9 +164,22 @@ class CRUDController extends BaseController
             $this->app->redirect('admin/home/notFound');
         }
 
+        $currentAction = $this->getCurrentAction();
+        if ($currentAction == 'edit') {
+            $action = 'update';
+        }
+        elseif ($currentAction == 'add') {
+            $action = 'create';
+        }
+        else {
+            $action = $currentAction;
+        }
+
         $this->app->getTemplateEngine()->assign(array(
             $this->instanceName => $instance->export(true),
-            'instanceName' => $this->instanceName
+            'instanceName' => $this->instanceName,
+            'isAjax' => $this->app->isAjax(),
+            'action' => $action
         ));
         return $instance;
     }
@@ -165,14 +189,14 @@ class CRUDController extends BaseController
      * Method to be overridden when you need to set how to find an instance on new, edit and delete (post = false) or create, update and destroy (post = true).
      * For example if you wish to allow only certain group of users access to the model.
      * @param bool $post
-     * @return null|\App\Models\BaseModel
+     * @return null|\Skully\App\Models\BaseModel
      */
     protected function findInstance($post = false) {
         $id = $this->decideIdSource($post);
 
         $instance = null;
         if (!empty($id)) {
-            /** @var \App\Models\BaseModel $instanceBean */
+            /** @var \Skully\App\Models\BaseModel $instanceBean */
             $instanceBean = R::findOne($this->model(), "where id = ?", array($id));
             if (!empty($instanceBean)) {
                 $instance = $instanceBean->box();
@@ -190,7 +214,7 @@ class CRUDController extends BaseController
     }
     // Override this in inherited class to assign additional variables.
     /**
-     * @param $instance \App\Models\BaseModel
+     * @param $instance \Skully\App\Models\BaseModel
      */
     protected function setupAdditionalAssigns($instance) {
     }
@@ -206,10 +230,10 @@ class CRUDController extends BaseController
         $fromPosition = $this->params['fromPosition'];
         $direction = $this->params['direction'];
         $id = $this->params['id'];
-        /** @var \RedBean_SimpleModel $instanceBean */
+        /** @var \RedBeanPHP\SimpleModel $instanceBean */
         $instanceBean = R::findOne($this->model(), 'id = ?', array($id));
         if (!empty($instanceBean)) {
-            /** @var \App\Models\BaseModel $instance */
+            /** @var \Skully\App\Models\BaseModel $instance */
             $instance = $instanceBean->box();
             if ($direction == 'back') {
                 // Adds all rows after this one's final position by 1
@@ -281,10 +305,13 @@ class CRUDController extends BaseController
         }
         else {
             $this->setupSortableAssigns();
-            $this->render('index', array(
+            $this->render($this->indexTpl, array(
+                'indexPath' => $this->indexPath,
+                'addPath' => $this->addPath,
                 'columns' => $this->columns,
                 'thAttributes' => $this->thAttributes,
-                'columnDefs' => $this->columnDefs
+                'columnDefs' => $this->columnDefs,
+                'instanceName' => $this->instanceName
             ));
         }
     }
@@ -296,8 +323,14 @@ class CRUDController extends BaseController
         $instance = $this->setInstanceAttributes($instance);
         $this->setupAssigns($instance);
         $form = $this->fetch($this->addFormTpl);
-        $this->render('add', array('form' => $form));
+        if ($this->app->isAjax()) {
+            $this->render($this->addAjaxTpl, array('form' => $form));
+        }
+        else {
+            $this->render($this->addNoAjaxTpl, array('form' => $form));
+        }
     }
+
     public function edit() {
         $this->breadcrumbs[] = array('url' => $this->app->getRouter()->getUrl($this->indexPath), 'name' => ucfirst($this->instanceName) . ' List');
         $this->breadcrumbs[] = array('url' => '', 'name' => 'Edit '.$this->instanceName);
@@ -314,7 +347,12 @@ class CRUDController extends BaseController
             $this->setupAssigns($instance);
         }
         $form = $this->fetch($this->editFormTpl);
-        $this->render('edit', array('form' => $form));
+        if ($this->app->isAjax()) {
+            $this->render($this->editAjaxTpl, array('form' => $form));
+        }
+        else {
+            $this->render($this->editNoAjaxTpl, array('form' => $form));
+        }
     }
 
     public function delete() {
@@ -333,7 +371,13 @@ class CRUDController extends BaseController
                 $this->app->getTemplateEngine()->assign(array('destroyPath' => $this->destroyPath));
             }
         }
-        $this->render('delete');
+        $form = $this->fetch($this->deleteFormTpl);
+        if ($this->app->isAjax()) {
+            $this->render($this->deleteAjaxTpl, array('form' => $form));
+        }
+        else {
+            $this->render($this->deleteNoAjaxTpl, array('form' => $form));
+        }
     }
 
     // Most of the times you will need to override this method because some variables will be protected.
@@ -461,8 +505,8 @@ class CRUDController extends BaseController
 
     /**
      * Inheritable method to setup smarty assigns before rendering CRUD pages.
-     * @param $instance \App\Models\BaseModel
-     * @return \App\Models\BaseModel
+     * @param $instance \Skully\App\Models\BaseModel
+     * @return \Skully\App\Models\BaseModel
      */
     protected function setupAssigns($instance) {
         $this->setupInstanceAssigns($instance);
@@ -472,7 +516,7 @@ class CRUDController extends BaseController
 
     /**
      * Display errors with model's instance, instance name, and template name.
-     * @param $modelInstance \App\Models\BaseModel
+     * @param $modelInstance \Skully\App\Models\BaseModel
      * @param $instanceName
      * @param $template
      * @return bool

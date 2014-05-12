@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2014-05-12 23:59:36
-         compiled from "/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/admins/_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:38848381253674ae91a5955-89253650%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.18, created on 2014-05-13 00:49:09
+         compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/admins/_form.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:86066300953710995b31063-04870216%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '74d782a8326e45336f8013e7100691181fd40c93' => 
+    '4f0cf4f1503d191d7d474d05818d84dd158d1d65' => 
     array (
-      0 => '/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/admins/_form.tpl',
+      0 => '/media/jay/Data/apache/skully-admin/public/views/admin/admins/_form.tpl',
       1 => 1399913972,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '38848381253674ae91a5955-89253650',
+  'nocache_hash' => '86066300953710995b31063-04870216',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_53674ae9220337_76093558',
   'variables' => 
   array (
     'action' => 0,
@@ -25,8 +23,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isAjax' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_53710995bb9674_30642798',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53674ae9220337_76093558')) {function content_53674ae9220337_76093558($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.url.php';
+<?php if ($_valid && !is_callable('content_53710995bb9674_30642798')) {function content_53710995bb9674_30642798($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.url.php';
 if (!is_callable('smarty_block_form')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/block.form.php';
 if (!is_callable('smarty_function_lang')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.lang.php';
 ?><?php if (empty($_smarty_tpl->tpl_vars['action']->value)) {?>

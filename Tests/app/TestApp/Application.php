@@ -6,11 +6,8 @@ use SkullyAdmin\AdminTrait;
 
 class Application extends \Skully\Application {
     use AdminTrait;
-
-    public function getTemplateEngine()
-    {
-        parent::getTemplateEngine();
+    protected function setupTheme() {
+        parent::setupTheme();
         $this->addAdminTemplateDir();
-        return $this->templateEngine;
     }
-} 
+}

@@ -12,10 +12,10 @@ class BaseController extends \Skully\App\Controllers\BaseController {
     protected $breadcrumbs = array();
 
     /**
-     * @return null|\App\Models\Admin
+     * @return null|\SkullyAdmin\Models\Admin
      */
     protected function getUser() {
-        /** Put in admin because we need to call it from ckeditor as well. */
+        /** Put in app because we need to call it from ckeditor as well. */
         return $this->app->getAdmin();
     }
 
@@ -25,12 +25,11 @@ class BaseController extends \Skully\App\Controllers\BaseController {
 
     private function mustBeLoggedIn() {
         if (!in_array($this->getRoute(), array('admin/admins/login','admin/admins/loginProcess'))) {
-//            $user = $this->getUser();
-//            if (empty($user)) {
-//                echo "redirect";
-//                $this->app->redirect('admin/admins/login');
-//                return false;
-//            }
+            $user = $this->getUser();
+            if (empty($user)) {
+                $this->app->redirect('admin/admins/login');
+                return false;
+            }
         }
         return true;
     }
@@ -39,7 +38,8 @@ class BaseController extends \Skully\App\Controllers\BaseController {
         parent::setDefaultAssign();
         if (!empty($this->user)) {
             $this->app->getTemplateEngine()->assign(array(
-                'adminUsername' => $this->user->get('name')
+                'adminUsername' => $this->user->get('name'),
+                'user' => $this->user->export()
             ));
         }
 
@@ -57,7 +57,6 @@ class BaseController extends \Skully\App\Controllers\BaseController {
 
     // $instance is the completed object.
     protected function successAction($message, $url) {
-        $this->app->getLogger()->log("success action is ajax? " . $this->app->isAjax());
         if ($this->app->isAjax()) {
             echo json_encode(array('message' => $message));
         }

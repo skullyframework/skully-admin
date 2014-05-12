@@ -1,19 +1,19 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2014-05-12 01:27:16
-         compiled from "/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/admins/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:278536632536398b2673d36-25020313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.18, created on 2014-05-13 00:39:00
+         compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/widgets/crud/_index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:19138260435370fd60d77e39-70824753%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'a70b0c952d6403dcf59577f4617581de13315e34' => 
+    '31df2710377d99f0a3bee5cf0046b1f4f70e9e7f' => 
     array (
-      0 => '/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/admins/index.tpl',
-      1 => 1396952806,
+      0 => '/media/jay/Data/apache/skully-admin/public/views/admin/widgets/crud/_index.tpl',
+      1 => 1399916335,
       2 => 'file',
     ),
     'ca8cb88fa1a49418738f92c3884ca7d70eb26f8b' => 
     array (
       0 => '/media/jay/Data/apache/skully-admin/public/views/admin/wrappers/_main.tpl',
-      1 => 1396953647,
+      1 => 1399914077,
       2 => 'file',
     ),
     '773721103fb704bbcd3b94dcc397b20d2e9c2e7d' => 
@@ -41,19 +41,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '278536632536398b2673d36-25020313',
+  'nocache_hash' => '19138260435370fd60d77e39-70824753',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_536398b290e3f4_84255792',
+  'unifunc' => 'content_5370fd60efc943_10232845',
   'variables' => 
   array (
     'user' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_536398b290e3f4_84255792')) {function content_536398b290e3f4_84255792($_smarty_tpl) {?><?php if (!is_callable('smarty_function_theme_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.theme_url.php';
+<?php if ($_valid && !is_callable('content_5370fd60efc943_10232845')) {function content_5370fd60efc943_10232845($_smarty_tpl) {?><?php if (!is_callable('smarty_function_theme_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.theme_url.php';
 if (!is_callable('smarty_function_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.url.php';
 if (!is_callable('smarty_function_lang')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.lang.php';
 if (!is_callable('smarty_function_html_table')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Library/Smarty/libs/plugins/function.html_table.php';
@@ -63,7 +63,8 @@ if (!is_callable('smarty_function_html_table')) include '/media/jay/Data/apache/
 	<?php echo $_smarty_tpl->getSubTemplate ("admin/wrappers/_header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 	
-  <title>Admins</title>
+<title><?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
+</title>
   <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
     <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.rowReordering.js"),$_smarty_tpl);?>
 "></script>
@@ -209,32 +210,33 @@ if (!is_callable('smarty_function_html_table')) include '/media/jay/Data/apache/
 	<div class="row-fluid">
 
 		
-  <div class="span12">
-    <?php /*  Call merged included template "admin/widgets/_alerts.tpl" */
+<div class="span12">
+<?php /*  Call merged included template "admin/widgets/_alerts.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('admin/widgets/_alerts.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '278536632536398b2673d36-25020313');
-content_536fc104eaefa9_12860407($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('admin/widgets/_alerts.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '19138260435370fd60d77e39-70824753');
+content_53710734151414_91906547($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/_alerts.tpl" */?>
-    <div class="widget">
-      <div class="head dark">
-        <div class="icon"><i class="icos-stats-up"></i></div>
-        <h2>Admins</h2>
-        <ul class="buttons">
-          <li><a href="<?php echo smarty_function_url(array('path'=>'admin/admins/add'),$_smarty_tpl);?>
+	<div class="widget">
+		<div class="head dark">
+			<div class="icon"><i class="icos-stats-up"></i></div>
+			<h2><?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
+</h2>
+			<ul class="buttons">
+				<li><a href="<?php echo smarty_function_url(array('path'=>$_smarty_tpl->tpl_vars['addPath']->value),$_smarty_tpl);?>
 " title="Add Store" data-toggle="dialog"><span class="icos-plus1"></span></a></li>
-        </ul>
-      </div>
-      <div class="block-fluid">
-        <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
-          <?php $_smarty_tpl->tpl_vars['sortableTable'] = new Smarty_variable('sortableTable initialized', null, 0);?>
-        <?php }?>
-        <?php ob_start();?><?php echo smarty_function_url(array('path'=>'admin/admins/index'),$_smarty_tpl);?>
+			</ul>
+		</div>
+		<div class="block-fluid">
+      <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
+        <?php $_smarty_tpl->tpl_vars['sortableTable'] = new Smarty_variable('sortableTable initialized', null, 0);?>
+      <?php }?>
+      <?php ob_start();?><?php echo smarty_function_url(array('path'=>$_smarty_tpl->tpl_vars['indexPath']->value),$_smarty_tpl);?>
 <?php $_tmp1=ob_get_clean();?><?php echo smarty_function_html_table(array('loop'=>'','table_attr'=>(((('class="').($_smarty_tpl->tpl_vars['sortableTable']->value)).(' aTable in table-hover" rel="')).($_tmp1)).('"style="width: 100%;"'),'th_attr'=>$_smarty_tpl->tpl_vars['thAttributes']->value,'cols'=>$_smarty_tpl->tpl_vars['columns']->value),$_smarty_tpl);?>
 
-      </div>
-    </div>
-  </div>
+		</div>
+	</div>
+</div>
 
 
 	</div>
@@ -242,57 +244,57 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 </div>
 
-  <script type="text/javascript">
-    <?php if (!empty($_smarty_tpl->tpl_vars['columnDefs']->value)) {?>
-    var _columnDefs = <?php echo $_smarty_tpl->tpl_vars['columnDefs']->value;?>
+<script type="text/javascript">
+		<?php if (!empty($_smarty_tpl->tpl_vars['columnDefs']->value)) {?>
+		var _columnDefs = <?php echo $_smarty_tpl->tpl_vars['columnDefs']->value;?>
 ;
-    <?php }?>
-  </script>
-  <?php /*  Call merged included template "admin/widgets/crud/widgets/_sortable.tpl" */
+		<?php }?>
+</script>
+<?php /*  Call merged included template "admin/widgets/crud/widgets/_sortable.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/crud/widgets/_sortable.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '278536632536398b2673d36-25020313');
-content_536fc105087a14_79236028($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/crud/widgets/_sortable.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '19138260435370fd60d77e39-70824753');
+content_537107341d6326_22616203($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/crud/widgets/_sortable.tpl" */?>
 
 <div class="loadingframe"></div>
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2014-05-12 01:27:16
+<?php /* Smarty version Smarty-3.1.18, created on 2014-05-13 00:39:00
          compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/widgets/_alerts.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_536fc104eaefa9_12860407')) {function content_536fc104eaefa9_12860407($_smarty_tpl) {?><?php if (!empty($_smarty_tpl->tpl_vars['error']->value)) {?>
+<?php if ($_valid && !is_callable('content_53710734151414_91906547')) {function content_53710734151414_91906547($_smarty_tpl) {?><?php if (!empty($_smarty_tpl->tpl_vars['error']->value)) {?>
 	<?php /*  Call merged included template "admin/widgets/alerts/_error.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/alerts/_error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '278536632536398b2673d36-25020313');
-content_536fc104ebc033_62785666($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/alerts/_error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '19138260435370fd60d77e39-70824753');
+content_537107341647e3_50806096($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/alerts/_error.tpl" */?>
 <?php }?>
 <?php if (!empty($_smarty_tpl->tpl_vars['message']->value)) {?>
 	<?php /*  Call merged included template "admin/widgets/alerts/_message.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/alerts/_message.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '278536632536398b2673d36-25020313');
-content_536fc104efc6f1_07334367($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/alerts/_message.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '19138260435370fd60d77e39-70824753');
+content_537107341781b3_60589201($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/alerts/_message.tpl" */?>
 <?php }?><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2014-05-12 01:27:16
+<?php /* Smarty version Smarty-3.1.18, created on 2014-05-13 00:39:00
          compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/widgets/alerts/_error.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_536fc104ebc033_62785666')) {function content_536fc104ebc033_62785666($_smarty_tpl) {?><div class="alert alert-error">
+<?php if ($_valid && !is_callable('content_537107341647e3_50806096')) {function content_537107341647e3_50806096($_smarty_tpl) {?><div class="alert alert-error">
 	<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 
 </div>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2014-05-12 01:27:16
+<?php /* Smarty version Smarty-3.1.18, created on 2014-05-13 00:39:00
          compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/widgets/alerts/_message.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_536fc104efc6f1_07334367')) {function content_536fc104efc6f1_07334367($_smarty_tpl) {?><div class="alert alert-success">
+<?php if ($_valid && !is_callable('content_537107341781b3_60589201')) {function content_537107341781b3_60589201($_smarty_tpl) {?><div class="alert alert-success">
 	<?php echo $_smarty_tpl->tpl_vars['message']->value;?>
 
 </div>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2014-05-12 01:27:17
+<?php /* Smarty version Smarty-3.1.18, created on 2014-05-13 00:39:00
          compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/widgets/crud/widgets/_sortable.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_536fc105087a14_79236028')) {function content_536fc105087a14_79236028($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.url.php';
+<?php if ($_valid && !is_callable('content_537107341d6326_22616203')) {function content_537107341d6326_22616203($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/App/smarty/plugins/function.url.php';
 ?><script type="text/javascript">
   <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
     var dragField = '<?php echo $_smarty_tpl->tpl_vars['dragField']->value;?>

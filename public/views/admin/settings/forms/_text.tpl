@@ -1,0 +1,1 @@
+<input type="text" name="setting[value]" value="{$setting.value}" />

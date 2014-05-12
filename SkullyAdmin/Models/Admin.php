@@ -18,7 +18,6 @@ abstract class Admin extends BaseModel {
 
     public function beforeSave()
     {
-        echo "beforeSave\n";
         $this->tsBeforeSave();
         $this->aBeforeSave();
     }

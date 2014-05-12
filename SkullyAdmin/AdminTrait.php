@@ -29,6 +29,6 @@ trait AdminTrait {
 
     protected function addAdminTemplateDir()
     {
-        $this->templateEngine->addTemplateDir(realpath(__DIR__.'/../public'));
+        $this->getTheme()->setDir(realpath(__DIR__.'/../public'), 'skully-admin');
     }
 } 
