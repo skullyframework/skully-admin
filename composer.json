@@ -39,7 +39,7 @@
         "psr-0": {
             "SkullyAdmin": ""
         }
-    }
+    },
     "autoload-dev": {
         "psr-0": {
             "TestApp\\": "Tests/app"
