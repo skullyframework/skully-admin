@@ -18,7 +18,8 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 'user'	    => 'root',
                 'password'	=> 'oisadj',
                 'port'		=> '3306',
-                'dbname'	=> 'skully_admin'
+                'dbname'	=> 'skully_admin',
+                'charset'   => 'utf8'
             ),
         );
     }
@@ -34,7 +35,8 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 'user'	    => 'root',
                 'password'	=> 'oisadj',
                 'port'		=> '3306',
-                'dbname'	=> 'skully_admin_test'
+                'dbname'	=> 'skully_admin_test',
+                'charset'   => 'utf8'
             ),
         );
     }
@@ -50,7 +52,8 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 'user'	    => 'db',
                 'password'	=> '',
                 'port'		=> '3306',
-                'dbname'	=> 'skully_admin_online'
+                'dbname'	=> 'skully_admin_online',
+                'charset'   => 'utf8'
             )
         );
     }
