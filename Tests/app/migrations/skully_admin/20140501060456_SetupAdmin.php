@@ -15,7 +15,7 @@ create table `session` (
   primary key (`id`)
 ) engine=innodb default charset=utf8 collate=utf8_unicode_ci;");
 
-        $t = $this->create_table('admin', array('options' => 'Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci'));
+        $t = $this->create_table('admin', array('options' => 'Engine=InnoDB collate=utf8_unicode_ci'));
         $t->column('name', 'string', array('length' => 100));
         $t->column('email', 'string', array('length' => 100));
         $t->column('salt', 'string', array('length' => 10));
@@ -25,14 +25,14 @@ create table `session` (
         $t->column('updated_at', 'timestamp');
         $t->finish();
 
-        $t = $this->create_table('adminsession', array('options' => 'Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci'));
+        $t = $this->create_table('adminsession', array('options' => 'Engine=InnoDB collate=utf8_unicode_ci'));
         $t->column('admin_id', 'integer');
         $t->column('session_id', 'string', array('length' => 32));
         $t->column('created_at', 'timestamp');
         $t->column('updated_at', 'timestamp');
         $t->finish();
 
-        $t = $this->create_table('setting', array('options' => 'Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci'));
+        $t = $this->create_table('setting', array('options' => 'Engine=InnoDB collate=utf8_unicode_ci'));
         $t->column('name', 'string', array('length' => 100));
         $t->column('description', 'text');
         $t->column('value', 'text');
