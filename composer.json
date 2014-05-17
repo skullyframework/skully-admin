@@ -35,10 +35,14 @@
             "url": "https://github.com/triodigital/skully"
         }
     ],
+    "autoload": {
+        "psr-0": {
+            "SkullyAdmin": ""
+        }
+    },
     "autoload-dev": {
         "psr-0": {
-            "TestApp\\": "Tests/app",
-            "SkullyAdmin": ""
+            "TestApp\\": "Tests/app"
         }
     }
 }
