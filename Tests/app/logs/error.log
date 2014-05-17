@@ -253,3 +253,5 @@ Class 'SkullyAdmin\Controllers\SettingsController' not found
 [Tuesday, 13-May-14 00:49:13 WIB warn] Resource not found: public/adminFavicon.ico
 [Tuesday, 13-May-14 00:49:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
 [Tuesday, 13-May-14 00:49:18 WIB warn] Resource not found: public/adminFavicon.ico
+[Thursday, 15-May-14 03:14:09 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Thursday, 15-May-14 03:14:09 WIB warn] Resource not found: public/adminFavicon.ico

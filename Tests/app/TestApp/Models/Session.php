@@ -2,6 +2,6 @@
 namespace TestApp\Models;
 
 
-class Session extends \SkullyAdmin\Models\Session {
+class Session extends \Skully\App\Models\Session {
 
 } 
