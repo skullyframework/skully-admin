@@ -1,13 +1,13 @@
 <?php
 
 
-namespace App\Controllers\Admin\ImageUploader;
+namespace SkullyAdmin\Controllers\ImageUploader;
 
 use RedBeanPHP\Facade as R;
 
 /**
  * Class ImageUploaderCRUD
- * @package App\Controllers\Admin\ImageUploader
+ * @package SkullyAdmin\Controllers\ImageUploader
  *
  * Image uploader Trait for use with CRUDController.
  */
@@ -54,7 +54,7 @@ Trait ImageUploaderCRUD {
     }
 
     /**
-     * @param \App\Models\BaseModel $instance
+     * @param \Skully\App\Models\BaseModel $instance
      */
     protected function setupInstanceImageAssigns($instance) {
         $images = array();
@@ -90,9 +90,9 @@ Trait ImageUploaderCRUD {
             // Find instance
             $id = $this->getParam($this->instanceName.'_id');
             if (!empty($id)) {
-                /** @var \RedBean_SimpleModel $instanceBean */
+                /** @var \RedbeanPHP\SimpleModel $instanceBean */
                 $instanceBean = R::findOne($this->model(), 'id = ?', array($id));
-                /** @var \App\Models\Setting $instance */
+                /** @var \Skully\App\Models\Setting $instance */
                 $instance = $instanceBean->box();
             }
             else {

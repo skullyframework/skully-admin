@@ -1,9 +1,9 @@
 <?php
 
 
-namespace App\Controllers\Admin\ImageUploader;
+namespace SkullyAdmin\Controllers\ImageUploader;
 
-use App\Helpers\FileHelper;
+use Skully\App\Helpers\FileHelper;
 use Skully\App\Helpers\UtilitiesHelper;
 use Skully\Library\ImageProcessor\ImageProcessor;
 use RedBeanPHP\Facade as R;

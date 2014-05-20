@@ -1,13 +1,13 @@
 <?php
 
 
-namespace App\Controllers\Admin\ImageUploader;
+namespace SkullyAdmin\Controllers\ImageUploader;
 
 use RedBeanPHP\Facade as R;
 
 /**
  * Class ImageUploaderSetting
- * @package App\Controllers\Admin\ImageUploader
+ * @package SkullyAdmin\Controllers\ImageUploader
  *
  * Image uploader Trait for Setting Model powered Controllers.
  */
@@ -104,9 +104,9 @@ Trait ImageUploaderSetting {
         if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
         {
             // Find instance
-            /** @var \RedBean_SimpleModel $instanceBean */
+            /** @var \RedBeanPHP\SimpleModel $instanceBean */
             $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('settingName')));
-            /** @var \App\Models\Setting $instance */
+            /** @var \Skully\App\Models\Setting $instance */
             $instance = $instanceBean->box();
 
             try {
@@ -127,9 +127,9 @@ Trait ImageUploaderSetting {
     public function deleteImage()
     {
         // Find instance
-        /** @var \RedBean_SimpleModel $instanceBean */
+        /** @var \RedBeanPHP\SimpleModel $instanceBean */
         $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('setting')));
-        /** @var \App\Models\Setting $instance */
+        /** @var \Skully\App\Models\Setting $instance */
         $instance = $instanceBean->box();
 
         $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true), 'isSettingModel' => true));
@@ -139,9 +139,9 @@ Trait ImageUploaderSetting {
     public function destroyImage()
     {
         // Find instance
-        /** @var \RedBean_SimpleModel $instanceBean */
+        /** @var \RedBeanPHP\SimpleModel $instanceBean */
         $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('setting')));
-        /** @var \App\Models\Setting $instance */
+        /** @var \Skully\App\Models\Setting $instance */
         $instance = $instanceBean->box();
 
         $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true), 'isSettingModel' => true));
