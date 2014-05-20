@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67050672-abb2-4753-9e3b-b067d017adfe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php" afterPath="$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="skully-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="22" column="6" selection-start="333" selection-end="333" vertical-scroll-proportion="0.64285713" vertical-offset="270" max-vertical-offset="828">
               <folding />
             </state>
           </provider>
@@ -38,15 +38,6 @@
         <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="25" selection-start="647" selection-end="647" vertical-scroll-proportion="-2.8148148" vertical-offset="356" max-vertical-offset="774">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="18" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="972">
               <folding />
             </state>
           </provider>
@@ -65,6 +56,15 @@
         <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="27" selection-end="237" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
@@ -97,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140501060456_SetupAdmin.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140501060456_SetupAdmin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-2.1153846" vertical-offset="942" max-vertical-offset="1098">
+            <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-0.6296296" vertical-offset="595" max-vertical-offset="1098">
               <folding>
                 <marker date="1400354244647" expanded="true" signature="123:153" placeholder="drop table i..." />
               </folding>
@@ -178,11 +178,11 @@
         <option value="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/SettingsController.php" />
         <option value="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/AdminsController.php" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/AdminsController.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/SettingsController.php" />
         <option value="$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php" />
         <option value="$PROJECT_DIR$/Tests/app/config/config.unique.php" />
         <option value="$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -879,7 +879,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.50039464" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -931,11 +931,6 @@
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="191" selection-end="191" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="324" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/Core/Controller.php">
@@ -1043,7 +1038,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/AdminTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="-4.5555553" vertical-offset="255" max-vertical-offset="702" />
+        <state line="21" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="-4.5555553" vertical-offset="255" max-vertical-offset="702">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/Application.php">
@@ -1148,16 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/App/Models/Traits/Authorizable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="6" selection-start="273" selection-end="273" vertical-scroll-proportion="0.35774648" vertical-offset="89" max-vertical-offset="1386">
@@ -1181,13 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="66" selection-start="7144" selection-end="7144" vertical-scroll-proportion="-5.4074073" vertical-offset="1654" max-vertical-offset="2052">
@@ -1202,6 +1182,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-0.6296296" vertical-offset="595" max-vertical-offset="1098">
+          <folding>
+            <marker date="1400354244647" expanded="true" signature="123:153" placeholder="drop table i..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501220633_AdminInit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
@@ -1209,13 +1198,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
+    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-2.1153846" vertical-offset="942" max-vertical-offset="1098">
-          <folding>
-            <marker date="1400354244647" expanded="true" signature="123:153" placeholder="drop table i..." />
-          </folding>
+        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="27" selection-end="237" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="6" selection-start="333" selection-end="333" vertical-scroll-proportion="0.64285713" vertical-offset="270" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
