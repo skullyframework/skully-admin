@@ -1,12 +1,12 @@
 <?php
 
 
-namespace App\Controllers\ImageUploader;
+namespace App\Controllers\Admin\ImageUploader;
 
-use Skully\App\Helpers\FileHelper;
+use App\Helpers\FileHelper;
 use Skully\App\Helpers\UtilitiesHelper;
 use Skully\Library\ImageProcessor\ImageProcessor;
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 
 trait ImageUploader {
 // Add the following to your Controller:
@@ -93,7 +93,7 @@ trait ImageUploader {
                                 'outputFilename' => $name
                             );
                             $instanceImages = $instance->get($imageFieldName);
-                            if (is_string($instanceImages)) {
+                            if (is_string($instanceImages) && $imageSetting["types"]) {
                                 $instanceImages = json_decode($instanceImages, true);
                             }
 
@@ -187,6 +187,21 @@ trait ImageUploader {
                                 }
                                 else {
                                     // One type
+                                    $options = array_merge($options, $imageSetting['options']);
+                                    $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages;
+                                    try {
+                                        $path = $this->processTempImage($tmp, $options, $oldFile);
+                                        $instanceImages = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                        $instance->set($imageFieldName, $instanceImages);
+                                        $uploadedImages[] = array(
+                                            'data' => $this->getParam('data'),
+                                            'path' => $instanceImages,
+                                            'message' => $this->app->getTranslator()->translate("imageUploaded")
+                                        );
+                                    }
+                                    catch (\Exception $e) {
+                                        throw new \Exception($e->getMessage());
+                                    }
                                 }
                             }
 
@@ -227,8 +242,11 @@ trait ImageUploader {
             ));
         }
         else {
-            if ($this->destroyPath != null) {
+            if ($this->imageDestroyPath != null) {
                 $imagesField = $instance->get($this->getParam('field'));
+                if (!is_array($imagesField)) {
+                    $imagesField = UtilitiesHelper::decodeJson($imagesField, true);
+                }
                 $imageField = $imagesField[$this->getParam('position')];
                 if (is_array($imageField)) {
                     $values = array_values($imageField);
@@ -240,32 +258,41 @@ trait ImageUploader {
                 $this->setPaths();
                 $this->app->getTemplateEngine()->assign(array(
                     'position' => $this->getParam('position'),
-                    'imageSettingName' => $this->getParam('field'),
+                    'imageSettingName' => $this->getParam('setting'),
                     'image' => $image
+                ));
+            }
+            else {
+                $this->app->getTemplateEngine()->assign(array(
+                    'error' => "Please set destroyPath",
+                    'errorAttributes' => array(),
+                    'instance' => $this->model()
                 ));
             }
         }
         $this->render('/admin/widgets/imageUploader/multiple/_delete');
     }
 
-    public function processDestroyImage($instance, $imageField, $position) {
+    public function processDestroyImage($instance, $imageSetting, $imageField, $position) {
         if (!$instance->hasError()) {
             try {
-                $this->app->getLogger()->log("trying to delete image $imageField position $position");
                 $imageValue = $instance->get($imageField);
+                if (!is_array($imageValue)) {
+                    $imageValue = UtilitiesHelper::decodeJson($imageValue, true);
+                }
                 $imagesAtPosition = $imageValue[$position];
                 if (!empty($imagesAtPosition)) {
                     foreach($imagesAtPosition as $key => $image) {
-                        $this->app->getLogger()->log("about to delete image " . $this->app->getTheme()->getPublicBasePath() . $image);
                         unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
                     }
                 }
                 unset($imageValue[$position]);
                 $imageValue = array_values($imageValue);
-                $instance->set($imageField, $imageValue);
+                $instance->set($imageField, json_encode($imageValue));
                 R::store($instance);
                 echo json_encode(array(
                     'message' => $this->app->getTranslator()->translate('deleted'),
+                    'setting' => $imageSetting,
                     'field' => $imageField,
                     'position' => $position
                 ));
@@ -287,14 +314,25 @@ trait ImageUploader {
         $imageField = $this->getParam('field');
         $imagePosition = (int)$this->getParam('pos');
         $imageSettings = $this->getImageSettings();
-        $imageSetting = $imageSettings[$imageField];
-        $images = $instance->get($imageField);
+        $settingName = $this->getParam('setting');
+        $imageSetting = $imageSettings[$settingName];
+        $images = $instance->get($settingName);
+        if (empty($images)) {
+            $images = array();
+        }
+        else {
+            if (!is_array($images)) {
+                $images = UtilitiesHelper::decodeJson($images, true);
+            }
+        }
         $this->setPaths();
+        $this->setupInstanceImageAssigns($instance);
         $this->app->getTemplateEngine()->assign(array(
             'instanceName' => $this->instanceName,
             'imageSetting' => $imageSetting,
             'imagePos' => $imagePosition,
-            'imageSettingName' => $imageField
+            'imageSettingName' => $settingName
+
         ));
         if (count($imageSetting['types']) > 0) {
             $newImageRow = array();
@@ -303,7 +341,8 @@ trait ImageUploader {
             }
             if ($isNew) {
                 array_unshift($images, $newImageRow);
-                $instance->set($imageField, $images);
+                $json_encoded = json_encode($images);
+                $instance->set($imageField, $json_encoded);
                 R::store($instance);
             }
             else {
@@ -325,7 +364,7 @@ trait ImageUploader {
             $this->app->getTemplateEngine()->assign(array(
                 $this->instanceName => $instance->export()
             ));
-            $this->render('/admin/widgets/imageUploader/multiple/_oneTypes');
+            $this->render('/admin/widgets/imageUploader/multiple/_oneType');
         }
     }
 
@@ -334,7 +373,8 @@ trait ImageUploader {
         $id = $this->getParam('id');
         $from = (int)$this->getParam('position');
         $direction = $this->getParam('direction');
-        $settingName = $this->getParam('field');
+        $settingName = $this->getParam('setting');
+        $fieldName = $this->getParam('field');
         if ($direction == 'up') {
             $to = $from -1;
         }
@@ -343,11 +383,14 @@ trait ImageUploader {
         }
         $instanceBean = R::findOne($this->model(), 'id = ?', array($id));
         $instance = $instanceBean->box();
-        $images = $instance->get($settingName);
+        $images = $instance->get($fieldName);
+        if (!is_array($images)) {
+            $images = UtilitiesHelper::decodeJson($images, true);
+        }
         $imageFrom = $images[$from];
         $images[$from] = $images[$to];
         $images[$to] = $imageFrom;
-        $instance->set($settingName, $images);
+        $instance->set($fieldName, json_encode($images));
         R::store($instance);
         echo json_encode(array('settingName' => $settingName, 'from' => $from, 'to' => $to));
     }

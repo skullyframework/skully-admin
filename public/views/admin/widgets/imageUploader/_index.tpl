@@ -6,7 +6,11 @@
             </div>
             <div class="TAR">
                 {if $imageSetting._config.multiple}
-                    <a href="#" data-setting_name="{$imageSettingName}" class="add_image btn btn-primary btn-small" title="Add New"><i class="icos-plus1"></i></a>
+                    {if $isSettingModel}
+                        <a href="#" data-setting_id="{$instances.{$imageSettingName}.id}" data-setting_name="{$imageSettingName}" class="add_image btn btn-primary btn-small" title="Add New"><i class="icos-plus1"></i></a>
+                    {else}
+                        <a href="#" data-setting_id="{${$instanceName}.id}" data-setting_name="{$imageSettingName}" class="add_image btn btn-primary btn-small" title="Add New"><i class="icos-plus1"></i></a>
+                    {/if}
                 {/if}
             </div>
         </div>
@@ -49,6 +53,9 @@
                 var $new = $($('#template-'+$(this).data('setting_name')+'-new').html());
                 $new.insertAfter($('.image_row-'+$(this).data('setting_name')+' .image_row-title'));
                 $new.css('display', 'none').slideDown();
+                {if $isSettingModel}
+                    $('#newRow-'+$(this).data('setting_name')).data('setting_id', $(this).data('setting_id'));
+                {/if}
                 $(this).attr('disabled', 'disabled');
             }
             return false;
@@ -56,8 +63,12 @@
 
         $(document).on('click', '.uploadSeparately', function(e) {
             var settingName = $(this).closest('.row-form').attr('id').replace('newRow-', '');
+            {if $isSettingModel}
+                insertNewRow(settingName, $(this).closest('.row-form').data('setting_id'));
+            {else}
+                insertNewRow(settingName, {${$instanceName}.id});
+            {/if}
             $(this).closest('.row-form').remove();
-            insertNewRow(settingName);
             return false;
         });
 
@@ -100,9 +111,9 @@
                                 if (data.message) {
                                     notify(data.message);
                                     _openedModal.modal('hide');
-                                    var settingName = data.field;
+                                    var settingName = data.setting;
                                     var position = parseInt(data.position, 10);
-                                    var $rowForms = $('.image_row-'+data.field + ' .row-form:not(.image_row-title):not(#newRow-'+data.field+')');
+                                    var $rowForms = $('.image_row-'+settingName + ' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
                                     $rowForms.eq(position).slideUp('medium', function() {
                                         $(this).remove();
                                         for (var i=position+1;i<$rowForms.length;i++) {
@@ -192,7 +203,7 @@
         }
 
         // Insert new row to multiple rows.
-        function insertNewRow(settingName, existingRow, position) {
+        function insertNewRow(settingName, instanceId, existingRow, position) {
             var $rowForms = $('.image_row-'+settingName+' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
             if (typeof(position) == 'undefined') {
                 if (existingRow == true) {
@@ -202,11 +213,18 @@
                     position = 0;
                 }
             }
+
+            {if $isSettingModel}
+                var fieldName = 'value';
+            {else}
+                var fieldName = settingName;
+            {/if}
+
             if (typeof(existingRow) == 'undefined' || existingRow == false) {
-                url = '{url path={$imageNewRowPath} id={${$instanceName}.id}}&field='+settingName+'&pos='+position+'&new=1';
+                url = '{url path={$imageNewRowPath}}?id='+instanceId+'&setting='+settingName+'&field='+fieldName+'&pos='+position+'&new=1';
             }
             else {
-                url = '{url path={$imageNewRowPath} id={${$instanceName}.id}}&field='+settingName+'&pos='+position;
+                url = '{url path={$imageNewRowPath}}?id='+instanceId+'&setting='+settingName+'&field='+fieldName+'&pos='+position;
             }
 
             if (position >= $rowForms.length) {
@@ -363,7 +381,7 @@
                                         if (data.type  == 'uploadOnce') {
                                             $('#newRow-'+data.settingName).slideUp();
                                             $('.add_image[data-setting_name="'+data.settingName+'"]').removeAttr('disabled');
-                                            insertNewRow(data.settingName, true);
+                                            insertNewRow(data.settingName, data.id, true);
                                         }
                                     }
                                 }

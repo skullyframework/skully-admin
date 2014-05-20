@@ -4,9 +4,15 @@
 {/block}
 {block name=dialogContent}
     <form method="POST" action="{url path=$imageDestroyPath}">
+        {include file="admin/widgets/_alerts.tpl"}
         <input type="hidden" name="{$instanceName}[id]" value="{${$instanceName}.id}"/>
         <input type="hidden" name="position" value="{$position}" />
-        <input type="hidden" name="field" value="{$imageSettingName}" />
+        <input type="hidden" name="setting" value="{$imageSettingName}" />
+        {if $isSettingModel}
+            <input type="hidden" name="field" value="value" />
+        {else}
+            <input type="hidden" name="field" value="{$imageSettingName}" />
+        {/if}
         <div class="block-fluid">
             <div class="row-form">
                 <div class="span12 largerText">

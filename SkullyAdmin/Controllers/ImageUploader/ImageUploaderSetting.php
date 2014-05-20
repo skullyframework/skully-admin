@@ -1,9 +1,9 @@
 <?php
 
 
-namespace App\Controllers\ImageUploader;
+namespace App\Controllers\Admin\ImageUploader;
 
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 
 /**
  * Class ImageUploaderSetting
@@ -53,16 +53,22 @@ Trait ImageUploaderSetting {
         );
     }
 
+    protected function model() {
+        return 'setting';
+    }
+
     protected function setupInstanceImageAssigns() {
         $images = array();
+        $instances = array();
         $imageSettings = $this->getImageSettings();
         if (!empty($imageSettings)) {
             foreach($imageSettings as $key => $imageSetting) {
                 $settingBean = R::findOne('setting', 'name = ?', array($key));
                 $images[$key] = json_decode($settingBean->value, true);
+                $instances[$key] = $settingBean->box()->export();
             }
         }
-        $this->app->getTemplateEngine()->assign(array('instanceImages' => $images));
+        $this->app->getTemplateEngine()->assign(array('instanceImages' => $images, 'instances' => $instances, 'isSettingModel' => true));
     }
 
     public function images()
@@ -122,11 +128,11 @@ Trait ImageUploaderSetting {
     {
         // Find instance
         /** @var \RedBean_SimpleModel $instanceBean */
-        $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('settingName')));
+        $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('setting')));
         /** @var \App\Models\Setting $instance */
         $instance = $instanceBean->box();
 
-        $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true)));
+        $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true), 'isSettingModel' => true));
         $this->processDeleteImage($instance);
     }
 
@@ -134,11 +140,11 @@ Trait ImageUploaderSetting {
     {
         // Find instance
         /** @var \RedBean_SimpleModel $instanceBean */
-        $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('settingName')));
+        $instanceBean = R::findOne('setting', 'name = ?', array($this->getParam('setting')));
         /** @var \App\Models\Setting $instance */
         $instance = $instanceBean->box();
 
-        $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true)));
-        $this->processDestroyImage($instance, $this->getParam('field'), $this->getParam('position'));
+        $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true), 'isSettingModel' => true));
+        $this->processDestroyImage($instance, $this->getParam('setting'), $this->getParam('field'), $this->getParam('position'));
     }
 } 

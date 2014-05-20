@@ -1,9 +1,9 @@
 <?php
 
 
-namespace App\Controllers\ImageUploader;
+namespace App\Controllers\Admin\ImageUploader;
 
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 
 /**
  * Class ImageUploaderCRUD
@@ -64,7 +64,7 @@ Trait ImageUploaderCRUD {
                 $images[$key] = $instance->get($key);
             }
         }
-        $this->app->getTemplateEngine()->assign(array('instanceImages' => $images));
+        $this->app->getTemplateEngine()->assign(array('instanceImages' => $images, 'isSettingModel' => false));
     }
 
     public function images()
@@ -125,7 +125,7 @@ Trait ImageUploaderCRUD {
         $instance = $this->findInstance(true);
 
         try {
-            $this->processDestroyImage($instance, $this->getParam('field'), $this->getParam('position'));
+            $this->processDestroyImage($instance, $this->getParam('setting'), $this->getParam('field'), $this->getParam('position'));
         }
         catch (\Exception $e) {
             $instance = $this->setupAssigns($instance);
