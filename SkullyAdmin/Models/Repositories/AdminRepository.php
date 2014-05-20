@@ -5,12 +5,12 @@
  * Time: 1:57 AM
  */
 
-namespace App\Models\Repositories;
+namespace SkullyAdmin\Models\Repositories;
 
 
 use Skully\App\Models\Repositories\BaseRepository;
 use SkullyAdmin\Models\Admin;
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 use Skully\App\Helpers\UtilitiesHelper;
 
 class AdminRepository extends BaseRepository {

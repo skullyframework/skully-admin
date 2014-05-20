@@ -36,6 +36,10 @@ class Application extends \Skully\Application {
 }
 ```
 
+Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/images/admin to public/default/resources/images/admin.
+Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/js/admin to public/default/resources/js/admin.
+Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/js/plugins to public/default/resources/js/plugins.
+
 ## Usage
 
 See usage sample in Tests/TestApp/ . To run this sample, clone a copy of this repository somewhere else and access it via web browser.
