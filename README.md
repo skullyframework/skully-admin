@@ -20,6 +20,8 @@ Include this into your composer:
 
 Then update your composer.
 
+And then, basically look at vendor/triodigital/skully-project/Tests/app/ and just follow the structure of that test app within your application.
+
 In your App\Application class, add the following:
 
 ```
