@@ -13,7 +13,7 @@
 			<div class="icon"><i class="icos-stats-up"></i></div>
 			<h2>{$instanceName}</h2>
 			<ul class="buttons">
-				<li><a href="{url path=$addPath}" title="Add Store" data-toggle="dialog"><span class="icos-plus1"></span></a></li>
+				<li><a href="{url path=$addPath}" title="Add {$instanceName}" data-toggle="dialog"><span class="icos-plus1"></span></a></li>
 			</ul>
 		</div>
 		<div class="block-fluid">
