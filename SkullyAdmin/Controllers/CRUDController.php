@@ -424,7 +424,12 @@ class CRUDController extends BaseController
             }
         }
         else {
-            $this->displayInstanceErrors($instance, $this->instanceName, 'add');
+            if ($this->app->isAjax()) {
+                $this->displayInstanceErrors($instance, $this->instanceName, $this->addAjaxTpl);
+            }
+            else {
+                $this->displayInstanceErrors($instance, $this->instanceName, $this->addNoAjaxTpl);
+            }
         }
     }
 
@@ -442,7 +447,12 @@ class CRUDController extends BaseController
 //                'instance' => $this->model()
 //            ));
             $errorMessage = $this->app->getTranslator()->translate('instanceNotFound', array('model' => $this->model()));
-            $this->displayErrors($errorMessage, 'edit', $this->model());
+            if ($this->app->isAjax()) {
+                $this->displayErrors($errorMessage, $this->editAjaxTpl, $this->model());
+            }
+            else {
+                $this->displayErrors($errorMessage, $this->editNoAjaxTpl, $this->model());
+            }
         }
         else {
             $instance = $this->setInstanceAttributes($instance);
@@ -474,7 +484,12 @@ class CRUDController extends BaseController
             }
             if ($error) {
                 $instance = $this->setupAssigns($instance);
-                $this->displayInstanceErrors($instance, $this->instanceName, 'edit');
+                if ($this->app->isAjax()) {
+                    $this->displayInstanceErrors($instance, $this->instanceName, $this->editAjaxTpl);
+                }
+                else {
+                    $this->displayInstanceErrors($instance, $this->instanceName, $this->editNoAjaxTpl);
+                }
             }
         }
     }
@@ -499,7 +514,12 @@ class CRUDController extends BaseController
             if ($this->destroyPath != null) {
                 $this->app->getTemplateEngine()->assign(array('destroyPath' => $this->destroyPath));
             }
-            $this->displayInstanceErrors($instance, $this->instanceName, 'delete');
+            if ($this->app->isAjax()) {
+                $this->displayInstanceErrors($instance, $this->instanceName, $this->deleteAjaxTpl);
+            }
+            else {
+                $this->displayInstanceErrors($instance, $this->instanceName, $this->deleteNoAjaxTpl);
+            }
         }
     }
 
