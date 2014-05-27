@@ -373,7 +373,7 @@ class CRUDController extends BaseController
         }
         $form = $this->fetch($this->deleteFormTpl);
         if ($this->app->isAjax()) {
-            $this->render($this->deleteAjaxTpl, array('form' => $form));
+            $this->render($this->deleteAjaxTpl, array('form' => $form, 'isAjax' => true));
         }
         else {
             $this->render($this->deleteNoAjaxTpl, array('form' => $form));
