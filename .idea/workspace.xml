@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67050672-abb2-4753-9e3b-b067d017adfe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,9 +28,9 @@
       <file leaf-file-name="CRUDController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="375" column="90" selection-start="14560" selection-end="14560" vertical-scroll-proportion="0.749354" vertical-offset="6460" max-vertical-offset="10350">
+            <state line="373" column="51" selection-start="14433" selection-end="14433" vertical-scroll-proportion="0.37726098" vertical-offset="6568" max-vertical-offset="10350">
               <folding>
-                <marker date="1401194255786" expanded="true" signature="2883:2931" placeholder="SELECT * FRO..." />
+                <marker date="1401195246608" expanded="true" signature="2883:2931" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -1566,9 +1565,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="375" column="90" selection-start="14560" selection-end="14560" vertical-scroll-proportion="0.749354" vertical-offset="6460" max-vertical-offset="10350">
+        <state line="373" column="51" selection-start="14433" selection-end="14433" vertical-scroll-proportion="0.37726098" vertical-offset="6568" max-vertical-offset="10350">
           <folding>
-            <marker date="1401194255786" expanded="true" signature="2883:2931" placeholder="SELECT * FRO..." />
+            <marker date="1401195246608" expanded="true" signature="2883:2931" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
