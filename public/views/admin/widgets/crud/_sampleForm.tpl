@@ -1,4 +1,5 @@
 {*sample form, can be used for both update and create:*}
+{*{nocache}*}
 {*{if empty($action)}*}
 	{*{$action='create'}*}
 {*{/if}*}
@@ -53,3 +54,4 @@
 
 	{*</div>*}
 {*{/form}*}
+{*{/nocache}*}

@@ -4,14 +4,16 @@
 {/block}
 {block name=content}
 <div class="span12">
-    {include file='admin/widgets/_alerts.tpl' }
-    <div class="widget">
-        <div class="head">
-            <div class="icon"><i class="icosg-bookmark1"></i></div>
-            <h2>New {$instanceName}</h2>
+    {nocache}
+        {include file='admin/widgets/_alerts.tpl' }
+        <div class="widget">
+            <div class="head">
+                <div class="icon"><i class="icosg-bookmark1"></i></div>
+                <h2>New {$instanceName}</h2>
+            </div>
+            {$form}
         </div>
-        {$form}
-    </div>
+    {/nocache}
 </div>
 {/block}
 {block name=footer}

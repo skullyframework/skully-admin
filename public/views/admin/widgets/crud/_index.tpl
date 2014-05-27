@@ -16,25 +16,29 @@
 				<li><a href="{url path=$addPath}" title="Add Store" data-toggle="dialog"><span class="icos-plus1"></span></a></li>
 			</ul>
 		</div>
-		<div class="block-fluid">
-      {if !empty($dragField)}
-        {$sortableTable = 'sortableTable initialized'}
-      {/if}
-      {html_table
-        loop=''
-        table_attr='class="'|cat: $sortableTable|cat:' aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
-				th_attr=$thAttributes
-				cols=$columns
-			}
-		</div>
+        <div class="block-fluid">
+            {if !empty($dragField)}
+                {$sortableTable = 'sortableTable initialized'}
+            {/if}
+            {nocache}
+                {html_table
+                loop=''
+                table_attr='class="'|cat: $sortableTable|cat:' aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
+                th_attr=$thAttributes
+                cols=$columns
+                }
+            {/nocache}
+        </div>
 	</div>
 </div>
 {/block}
 {block name=footer}
-<script type="text/javascript">
-		{if !empty($columnDefs)}
-		var _columnDefs = {$columnDefs};
-		{/if}
-</script>
+    {nocache}
+        <script type="text/javascript">
+            {if !empty($columnDefs)}
+            var _columnDefs = {$columnDefs};
+            {/if}
+        </script>
+    {/nocache}
 {include file="admin/widgets/crud/widgets/_sortable.tpl"}
 {/block}

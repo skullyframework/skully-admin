@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67050672-abb2-4753-9e3b-b067d017adfe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
@@ -26,86 +34,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="_addAjax.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="144" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+            <state line="7" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CRUDController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
+      <file leaf-file-name="_addNoAjax.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="450" column="88" selection-start="18311" selection-end="18311" vertical-scroll-proportion="0.6022099" vertical-offset="7882" max-vertical-offset="10350">
-              <folding>
-                <marker date="1400638148974" expanded="true" signature="2883:2931" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Models/Repositories/AdminRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="246" selection-end="246" vertical-scroll-proportion="12.666667" vertical-offset="486" max-vertical-offset="1116">
+            <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Repositories/AdminRepository.php">
+      <file leaf-file-name="_deleteAjax.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="216">
+            <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageUploader.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
+      <file leaf-file-name="_deleteForm.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="7254">
-              <folding>
-                <element signature="e#58#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageUploaderCRUD.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="33" selection-start="2956" selection-end="2956" vertical-scroll-proportion="19.25926" vertical-offset="2212" max-vertical-offset="2574">
+            <state line="13" column="11" selection-start="566" selection-end="566" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageUploaderSetting.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
+      <file leaf-file-name="_deleteNoAjax.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="157" selection-end="170" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="2790">
+            <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_new.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
+      <file leaf-file-name="_editAjax.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="576">
+            <state line="7" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Application.php">
+      <file leaf-file-name="_editNoAjax.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="27" selection-end="237" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="324">
+            <state line="15" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="594">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sampleForm.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="11" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="1134">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="17" selection-start="1103" selection-end="1103" vertical-scroll-proportion="-0.33333334" vertical-offset="495" max-vertical-offset="882">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sortable.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
@@ -142,14 +155,6 @@
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/admins/edit.tpl" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editForm.tpl" />
         <option value="$PROJECT_DIR$/vendor/triodigital/skully/Skully/Tests/App/Application.php" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/admins/_form.tpl" />
         <option value="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
         <option value="$PROJECT_DIR$/Tests/app/logs/error.log" />
@@ -157,7 +162,6 @@
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Models/Admin.php" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/settings/_editForm.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/settings/index.tpl" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/SettingsController.php" />
@@ -175,6 +179,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Models/Adminsession.php" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl" />
       </list>
     </option>
   </component>
@@ -932,6 +945,172 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delete" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="settings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1032,7 +1211,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.284925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2896606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1042,11 +1221,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1068,13 +1247,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/App/Models/BaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="19" selection-start="7550" selection-end="7589" vertical-scroll-proportion="0.8" vertical-offset="4680" max-vertical-offset="6876">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/Core/Templating/SmartyAdapter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="0" selection-start="1509" selection-end="1509" vertical-scroll-proportion="-8.888889" vertical-offset="642" max-vertical-offset="4464">
@@ -1084,34 +1256,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/Tests/App/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="18" selection-end="18" vertical-scroll-proportion="0.12189616" vertical-offset="0" max-vertical-offset="443">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="-1.4814814" vertical-offset="140" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="99" selection-end="99" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="688" selection-end="703" vertical-scroll-proportion="-10.0" vertical-offset="108" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="216" />
+        <state line="3" column="10" selection-start="18" selection-end="18" vertical-scroll-proportion="0.12189616" vertical-offset="0" max-vertical-offset="443" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_formDialog.tpl">
@@ -1119,24 +1264,9 @@
         <state line="13" column="73" selection-start="485" selection-end="485" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="396" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="216" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/admins/_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="7" selection-start="2491" selection-end="2491" vertical-scroll-proportion="-42.0" vertical-offset="0" max-vertical-offset="1242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="5" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="324" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="4" selection-start="1761" selection-end="1761" vertical-scroll-proportion="-11.0" vertical-offset="675" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl">
@@ -1158,9 +1288,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/AdminTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="-4.5555553" vertical-offset="255" max-vertical-offset="702">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="-4.5555553" vertical-offset="255" max-vertical-offset="702" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/Application.php">
@@ -1182,16 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="312" selection-end="312" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="966" selection-end="966" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="810" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/settings/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="36" selection-start="484" selection-end="484" vertical-scroll-proportion="-6.6666665" vertical-offset="54" max-vertical-offset="756" />
@@ -1199,30 +1317,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="77" selection-end="77" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="4" column="43" selection-start="77" selection-end="77" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="335">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="335" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/SettingsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="198">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="198" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/AdminsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="234">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/AdminsController.php">
@@ -1234,46 +1344,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/home/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="972">
-          <folding />
-        </state>
+        <state line="42" column="18" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="972" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="647" selection-end="647" vertical-scroll-proportion="-2.8148148" vertical-offset="356" max-vertical-offset="774">
-          <folding />
-        </state>
+        <state line="24" column="25" selection-start="647" selection-end="647" vertical-scroll-proportion="-2.8148148" vertical-offset="356" max-vertical-offset="774" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/App/Models/Traits/Authorizable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="273" selection-end="273" vertical-scroll-proportion="0.35774648" vertical-offset="89" max-vertical-offset="1386">
-          <folding />
-        </state>
+        <state line="12" column="6" selection-start="273" selection-end="273" vertical-scroll-proportion="0.35774648" vertical-offset="89" max-vertical-offset="1386" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Models/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="594">
-          <folding>
-            <element signature="e#38#70#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="9" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/SettingsController.php">
@@ -1285,44 +1381,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="66" selection-start="7144" selection-end="7144" vertical-scroll-proportion="-5.4074073" vertical-offset="1654" max-vertical-offset="2052">
-          <folding />
-        </state>
+        <state line="100" column="66" selection-start="7144" selection-end="7144" vertical-scroll-proportion="-5.4074073" vertical-offset="1654" max-vertical-offset="2052" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/config/config.unique.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="37" selection-start="1605" selection-end="1605" vertical-scroll-proportion="-9.888889" vertical-offset="723" max-vertical-offset="1458">
-          <folding />
-        </state>
+        <state line="55" column="37" selection-start="1605" selection-end="1605" vertical-scroll-proportion="-9.888889" vertical-offset="723" max-vertical-offset="1458" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-0.6296296" vertical-offset="595" max-vertical-offset="1098">
-          <folding>
-            <marker date="1400354244647" expanded="true" signature="-1:-1" placeholder="drop table i..." />
-          </folding>
-        </state>
+        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-0.6296296" vertical-offset="595" max-vertical-offset="1098" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501220633_AdminInit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="27" selection-end="237" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="324">
+        <state line="4" column="0" selection-start="27" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="324">
           <folding />
         </state>
       </provider>
@@ -1336,53 +1420,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="33" selection-start="2956" selection-end="2956" vertical-scroll-proportion="19.25926" vertical-offset="2212" max-vertical-offset="2574">
+        <state line="94" column="33" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.0" vertical-offset="2212" max-vertical-offset="2574">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="157" selection-end="170" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="2790">
+        <state line="9" column="49" selection-start="157" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2790">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="7254">
-          <folding>
-            <element signature="e#58#92#0" expanded="true" />
-          </folding>
+        <state line="9" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="7254">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Models/Repositories/AdminRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="246" selection-end="246" vertical-scroll-proportion="12.666667" vertical-offset="486" max-vertical-offset="1116">
+        <state line="12" column="15" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Repositories/AdminRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="216">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="216">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Adminsession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="59" selection-start="60" selection-end="92" vertical-scroll-proportion="0.15428571" vertical-offset="0" max-vertical-offset="350">
-          <folding />
-        </state>
+        <state line="3" column="59" selection-start="60" selection-end="92" vertical-scroll-proportion="0.15428571" vertical-offset="0" max-vertical-offset="350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Models/Adminsession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="108" selection-end="117" vertical-scroll-proportion="0.288" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
+        <state line="6" column="45" selection-start="108" selection-end="117" vertical-scroll-proportion="0.288" vertical-offset="0" max-vertical-offset="375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1397,10 +1475,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="450" column="88" selection-start="18311" selection-end="18311" vertical-scroll-proportion="0.6022099" vertical-offset="7882" max-vertical-offset="10350">
+        <state line="374" column="4" selection-start="14438" selection-end="14438" vertical-scroll-proportion="-5.4074073" vertical-offset="6586" max-vertical-offset="10350">
           <folding>
-            <marker date="1400638148974" expanded="true" signature="2883:2931" placeholder="SELECT * FRO..." />
+            <marker date="1400638148974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="312" selection-end="312" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addAjax.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/add/_addNoAjax.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteAjax.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteForm.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="566" selection-end="566" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/delete/_deleteNoAjax.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editAjax.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/edit/_editNoAjax.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="11" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="1134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="17" selection-start="1103" selection-end="1103" vertical-scroll-proportion="-0.33333334" vertical-offset="495" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674">
+          <folding />
         </state>
       </provider>
     </entry>

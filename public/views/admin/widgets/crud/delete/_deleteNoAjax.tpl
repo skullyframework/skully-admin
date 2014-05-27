@@ -4,7 +4,9 @@
 {/block}
 {block name=content}
 <div class="span12">
-    {include file='admin/widgets/_alerts.tpl' }
-	{$form}
+    {nocache}
+        {include file='admin/widgets/_alerts.tpl' }
+        {$form}
+    {/nocache}
 </div>
 {/block}

@@ -3,7 +3,9 @@
 <h3>Delete {$instanceName}</h3>
 {/block}
 {block name=dialogContent}
-    {$form}
+    {nocache}
+        {$form}
+    {/nocache}
 {/block}
 {block name=dialogButtons}
 	<a class="btn btn-danger" onclick="return bootstrapModalSubmit();">Delete</a>

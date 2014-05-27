@@ -3,5 +3,7 @@
 <h3>Edit {$instanceName}</h3>
 {/block}
 {block name=dialogContent}
-	{$form}
+    {nocache}
+        {$form}
+    {/nocache}
 {/block}
