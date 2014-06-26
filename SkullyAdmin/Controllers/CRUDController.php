@@ -3,6 +3,7 @@
 namespace SkullyAdmin\Controllers;
 
 use RedBeanPHP\Facade as R;
+use Skully\ApplicationInterface;
 
 /**
  * Class CRUDController
@@ -36,12 +37,17 @@ class CRUDController extends BaseController
     protected $destroyPath = 'instances/destroy';
 
     // -- SORTABLE -- //
+    // If you need sortable feature to be set up automatically, set $setupSortable variable to 'true'.
+    // This will basically run method setupSortability() in __construct() AND some additions to listData().
+    // Inherit & modify these methods when required.
+    protected $setupSortable = false;
     // If dataTable items are sortable, set this to field name in database corresponds with dragging
     protected $dragField = null;
     // Path to do reorder after dragging (e.g. instances/reorder)
     protected $reorderPath = null;
-    // Id column's index number.
-    protected $sortableIdColumnIndex = 0;
+    // Id column's index number (no need to set this unless you require to setup sortable manually
+    // (i.e. not by simply setting $setupSortable to true. Usually for older projects).
+    // protected $sortableIdColumnIndex = 0;
     // -- END - SORTABLE -- //
 
     public $columns = array('column', 'names');
@@ -81,6 +87,9 @@ class CRUDController extends BaseController
 
                     $this->listActions($instanceArray)
                 );
+                if ($this->setupSortable) {
+                    $instanceRow[] = $instanceArray['id'];
+                }
                 $instanceRows[] = $instanceRow;
             }
         }
@@ -107,6 +116,74 @@ class CRUDController extends BaseController
 
     // END - Minimum overriding requirements //
 
+    /**
+     * @param ApplicationInterface $app
+     * @param null $additionalParams
+     * @param string $action
+     */
+    public function __construct(ApplicationInterface $app, $action = null, $additionalParams = null)
+    {
+        parent::__construct($app, $action, $additionalParams);
+        if ($this->setupSortable) {
+            $this->setupSortability();
+        }
+    }
+    /**
+     * Adding relevant settings to support sortability of rows in index page.
+     * To setup, run this method on __construct() method.
+     */
+    protected function setupSortability()
+    {
+        // Adding 'position' field into columns.
+        array_unshift($this->columns, 'position');
+
+        // Setting ID column's index.
+        $this->sortableIdColumnIndex = count($this->columns);
+
+        // Addition on $thAttributes variable to sort ascendingly on position column.
+        array_unshift($this->thAttributes, 'class="sort_asc"');
+
+        // Make all columns unsortable and hide the position column.
+        $columnDefs_r = json_decode($this->columnDefs, true);
+        $sortableAdded = false;
+        $visibleAdded = false;
+        foreach ($columnDefs_r as $index => $column) {
+            // todo: What if there is a bSortable = true and bVisible = true rules??
+            // todo: To fix this, USE TDD!
+
+            // When bSortable = false definition exists
+            if ($column['bSortable'] === false) {
+                $allIndexes = array();
+                foreach($this->columns as $key => $value) {
+                    $allIndexes[] = $key;
+                }
+                $columnDefs_r[$index]['aTargets'] = $allIndexes;
+                $sortableAdded = true;
+            }
+            // When bVisible = false definition exists
+            if ($column['bVisible'] === false) {
+                $allIndexes = array();
+                // Push indexes by one number.
+                foreach($column['aTargets'] as $targetIndex) {
+                    $allIndexes[] = $targetIndex+1;
+                }
+                $columnDefs_r[$index]['aTargets'] = $allIndexes;
+                $sortableAdded = true;
+            }
+        }
+        // If sortable / visible not added, create them.
+        if (!$sortableAdded) {
+            $allIndexes = array();
+            foreach($this->columns as $key => $value) {
+                $allIndexes[] = $key;
+            }
+            $columnDefs_r[] = array('bSortable' => false, 'aTargets' => $allIndexes);
+        }
+        if (!$visibleAdded) {
+            $columnDefs_r[] = array('bVisible' => false, 'aTargets' => array(0));
+        }
+        $this->columnDefs = json_encode($columnDefs_r);
+    }
     /**
      * Convenience method to get actions usable in listData().
      * @var array $instanceArray

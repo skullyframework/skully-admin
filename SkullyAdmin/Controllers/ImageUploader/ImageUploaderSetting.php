@@ -3,7 +3,9 @@
 
 namespace SkullyAdmin\Controllers\ImageUploader;
 
+use App\Models\Setting;
 use RedBeanPHP\Facade as R;
+use Skully\App\Helpers\TextHelper;
 
 /**
  * Class ImageUploaderSetting
@@ -16,7 +18,7 @@ Trait ImageUploaderSetting {
 // Add the following to your Controller:
 //    protected $imageUploadPath = 'admin/rooms/uploadImage';
 //    protected $imageDeletePath = 'admin/rooms/deleteImage';
-//    protected $imageDestroyPath = 'admin/rooms/destroyImage';
+//    protected $imageDeletePath = 'admin/rooms/destroyImage';
 
     protected function getImageSettings()
     {
@@ -64,7 +66,12 @@ Trait ImageUploaderSetting {
         if (!empty($imageSettings)) {
             foreach($imageSettings as $key => $imageSetting) {
                 $settingBean = R::findOne('setting', 'name = ?', array($key));
-                $images[$key] = json_decode($settingBean->value, true);
+                if (TextHelper::isJson($settingBean->value)) {
+                    $images[$key] = json_decode($settingBean->value, true);
+                }
+                else {
+                    $images[$key] = $settingBean->value;
+                }
                 $instances[$key] = $settingBean->box()->export();
             }
         }
@@ -73,6 +80,9 @@ Trait ImageUploaderSetting {
 
     public function images()
     {
+        if (!method_exists(new Setting(), 'imageBaseUrl')) {
+            $this->app->getTemplateEngine()->assign(array('error' => 'WARNING: Model Setting needs HasImages trait, otherwise image won\'t upload!'));
+        }
         $imageSettings = $this->getImageSettings();
         $this->setupInstanceImageAssigns();
         $this->setPaths();

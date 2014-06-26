@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67050672-abb2-4753-9e3b-b067d017adfe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/datatables/dataTables.rowReordering.js" afterPath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/datatables/dataTables.rowReordering.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ruckusing/ruckusing-migrations" afterPath="$PROJECT_DIR$/vendor/ruckusing/ruckusing-migrations" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/triodigital/skully" afterPath="$PROJECT_DIR$/vendor/triodigital/skully" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Inline.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Inline.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Parser.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Parser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/ParserTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/ParserTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Unescaper.php" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/Unescaper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
@@ -107,7 +112,7 @@
       <file leaf-file-name="HasImages.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/App/Models/Traits/HasImages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="30" selection-start="2411" selection-end="2411" vertical-scroll-proportion="4.3264093" vertical-offset="0" max-vertical-offset="1800">
+            <state line="7" column="34" selection-start="141" selection-end="141" vertical-scroll-proportion="0.37388724" vertical-offset="0" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -853,7 +858,7 @@
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25617284" sideWeight="0.49960536" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25617284" sideWeight="0.49960536" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1175,7 +1180,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/triodigital/skully/Skully/App/Models/Traits/HasImages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="30" selection-start="2411" selection-end="2411" vertical-scroll-proportion="4.3264093" vertical-offset="0" max-vertical-offset="1800">
+        <state line="7" column="34" selection-start="141" selection-end="141" vertical-scroll-proportion="0.37388724" vertical-offset="0" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
