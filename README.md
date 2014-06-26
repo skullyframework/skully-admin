@@ -45,3 +45,9 @@ Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/js/plu
 ## Usage
 
 See usage sample in Tests/TestApp/ . To run this sample, clone a copy of this repository somewhere else and access it via web browser.
+
+## Troubleshooting
+
+Issues that may shows up:
+
+*javascript error on index page: Uncaught TypeError: Cannot set property 'aaSorting' of null *

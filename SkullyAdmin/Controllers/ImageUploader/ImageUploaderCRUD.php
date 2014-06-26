@@ -16,7 +16,7 @@ Trait ImageUploaderCRUD {
 // Add the following to your Controller:
 //    protected $imageUploadPath = 'admin/rooms/uploadImage';
 //    protected $imageDeletePath = 'admin/rooms/deleteImage';
-//    protected $imageDeletePath = 'admin/rooms/destroyImage';
+//    protected $imageDestroyPath = 'admin/rooms/destroyImage';
 
     protected function getImageSettings()
     {
