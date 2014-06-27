@@ -1,4 +1,4 @@
-<form class="imageForm" method="POST" enctype="multipart/form-data" action="{url path=$imageUploadPath}">
+{form class="imageForm" method="POST" enctype="multipart/form-data" action="{url path=$imageUploadPath}"}
     {if !empty($instanceName)}
         <input type="hidden" name="{$instanceName}_id" value="{if !empty(${$instanceName}.id)}{${$instanceName}.id}{/if}" />
     {/if}
@@ -27,4 +27,4 @@
             <span class="btn btn-primary fileupload-upload" style="display: none;">Upload</span>
         </div>
     </div>
-</form>
+{/form}

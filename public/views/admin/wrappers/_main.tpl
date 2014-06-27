@@ -6,7 +6,7 @@
 		<title>Administrator Area</title>
 	{/block}
 </head>
-<body>
+<body class="page-{$route|replace:'/':'-'}">
 
 <div class="header">
 	<a href="{url path="home/index"}" class="logo"></a>

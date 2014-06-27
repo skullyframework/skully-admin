@@ -9,10 +9,30 @@ use Skully\Library\ImageProcessor\ImageProcessor;
 use RedBeanPHP\Facade as R;
 
 trait ImageUploader {
-// Add the following to your Controller:
-//    protected $imageUploadPath = 'admin/instanceName/uploadImage';
-//    protected $imageDeletePath = 'admin/instanceName/deleteImage';
-//    protected $imageDeletePath = 'admin/instanceName/destroyImage';
+// IMPORTANT: Add the following to your Controller:
+//    protected $imageUploadPath = 'admin/controllerName/uploadImage';
+//    protected $imageDeletePath = 'admin/controllerName/deleteImage';
+//    protected $imageDestroyPath = 'admin/controllerName/destroyImage';
+
+    protected function multipleManyTypesForm()
+    {
+        return 'admin/widgets/imageUploader/types/_multipleManyTypes.tpl';
+    }
+
+    protected function multipleOneTypeForm()
+    {
+        return 'admin/widgets/imageUploader/types/_multipleOneType.tpl';
+    }
+
+    protected function singleManyTypesForm()
+    {
+        return 'admin/widgets/imageUploader/types/_singleManyTypes.tpl';
+    }
+
+    protected function singleOneTypeForm()
+    {
+        return 'admin/widgets/imageUploader/types/_singleOneType.tpl';
+    }
 
     protected function getImageSettings()
     {
@@ -230,7 +250,11 @@ trait ImageUploader {
             'imageDeletePath' => $this->imageDeletePath,
             'imageNewRowPath' => $this->imageNewRowPath,
             'imageUploadPath' => $this->imageUploadPath,
-            'imageMovePath' => $this->imageMovePath
+            'imageMovePath' => $this->imageMovePath,
+            'multipleManyTypesForm' => $this->multipleManyTypesForm(),
+            'multipleOneTypeForm' => $this->multipleOneTypeForm(),
+            'singleManyTypesForm' => $this->singleManyTypesForm(),
+            'singleOneTypeForm' => $this->singleOneTypeForm()
         ));
     }
     public function processDeleteImage($instance) {

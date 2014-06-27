@@ -14,10 +14,10 @@ use Skully\App\Helpers\TextHelper;
  */
 Trait ImageUploaderCRUD {
     use ImageUploader;
-// Add the following to your Controller:
-//    protected $imageUploadPath = 'admin/rooms/uploadImage';
-//    protected $imageDeletePath = 'admin/rooms/deleteImage';
-//    protected $imageDeletePath = 'admin/rooms/destroyImage';
+// IMPORTANT: Add the following to your Controller:
+//    protected $imageUploadPath = 'admin/controllerName/uploadImage';
+//    protected $imageDeletePath = 'admin/controllerName/deleteImage';
+//    protected $imageDestroyPath = 'admin/controllerName/destroyImage';
 
     protected function getImageSettings()
     {
@@ -84,7 +84,8 @@ Trait ImageUploaderCRUD {
         $this->setupInstanceAssigns($instance);
         $this->setPaths();
         $this->render('images', array(
-            'imageSettings' => $imageSettings
+            'imageSettings' => $imageSettings,
+            'indexContent' => $this->fetch('/admin/widgets/imageUploader/_index', array('imageSettings' => $imageSettings))
         ));
     }
 

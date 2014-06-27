@@ -8,13 +8,14 @@ class SettingsController extends CRUDController {
     // These variables MUST be overridden in inherited class!
     protected $instanceName = 'setting'; // Instance name used in parameter prefix i.e. 'instance' of $this->params['instance']['attributeName']
 
-    protected $editFormTpl = 'admin/settings/_editForm';
+    protected $editFormTpl = '_editForm';
 
     // For redirect when success / error happens
     protected $indexPath = 'admin/settings/index';
     protected $addPath = 'admin/settings/add';
     protected $editPath = 'admin/settings/edit';
     protected $deletePath = 'admin/settings/delete';
+    protected $indexTpl = 'index';
 
     protected $successTarget = 'edit'; // index or edit, where to redirect after success
 
@@ -59,9 +60,15 @@ class SettingsController extends CRUDController {
                 /** @var \TestApp\Models\Setting $instance */
                 $instance = $instanceBean->box();
                 $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="icon-eye-open"></span></a>', 'class' => 'TAC');
+                if ($instance->get('type') == 'password') {
+                    $value = '********';
+                }
+                else {
+                    $value = smarty_modifier_truncate($instance->getDisplayValue(), 40, '...', true);
+                }
                 $instanceRow = array(
                     $instance->get('name'),
-                    smarty_modifier_truncate($instance->getDisplayValue(), 40, '...', true),
+                    $value,
                     $actions,
                     $instance->get('position')
                 );
