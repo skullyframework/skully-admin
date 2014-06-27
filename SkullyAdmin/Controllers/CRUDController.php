@@ -89,6 +89,7 @@ class CRUDController extends BaseController
                 );
                 if ($this->setupSortable) {
                     $instanceRow[] = $instanceArray['id'];
+                    array_unshift($instanceRow, $instanceArray[$this->dragField]);
                 }
                 $instanceRows[] = $instanceRow;
             }
