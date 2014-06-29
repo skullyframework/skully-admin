@@ -1,5 +1,5 @@
 {
-    "name": "triodigital/skully-admin",
+    "name": "skullyframework/admin",
     "version": "0.1",
     "type": "package",
     "description": "Admin for Skully Framework.",
@@ -23,18 +23,12 @@
         "php": ">=5.4",
         "symfony/console": "2.5.x-dev",
         "ruckusing/ruckusing-migrations": "dev-master",
-        "triodigital/skully": "dev-master"
+        "skullyframework/skully": "dev-master"
     },
     "license": "LGPL-2.1",
     "suggest": {
         "ext-runkit": "For using the runkit API."
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/triodigital/skully"
-        }
-    ],
     "autoload": {
         "psr-0": {
             "SkullyAdmin": ""
