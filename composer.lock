@@ -1,22 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "01e1b0a63ead2fa71eecbb53c19f19de",
+    "hash": "b6e38e22e0cb5e9440b9bd4dc29f624a",
     "packages": [
         {
             "name": "ruckusing/ruckusing-migrations",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruckus/ruckusing-migrations.git",
-                "reference": "3062f2f3fa59e7f7d43561eb6c97f57dd4acc968"
+                "reference": "084d1f9043990f7ae5761e40d4e730c9c88b93b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/3062f2f3fa59e7f7d43561eb6c97f57dd4acc968",
-                "reference": "3062f2f3fa59e7f7d43561eb6c97f57dd4acc968",
+                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/084d1f9043990f7ae5761e40d4e730c9c88b93b5",
+                "reference": "084d1f9043990f7ae5761e40d4e730c9c88b93b5",
                 "shasum": ""
             },
             "require": {
@@ -58,21 +59,73 @@
                 "ruckusing",
                 "task"
             ],
-            "time": "2014-05-09 18:24:13"
+            "time": "2014-05-13 14:37:16"
+        },
+        {
+            "name": "skullyframework/skully",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/skullyframework/skully.git",
+                "reference": "6e909a0e1f90248f7e2116fd689211778ddc0026"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/skullyframework/skully/zipball/6e909a0e1f90248f7e2116fd689211778ddc0026",
+                "reference": "6e909a0e1f90248f7e2116fd689211778ddc0026",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "ruckusing/ruckusing-migrations": "1.0.1",
+                "symfony/console": "2.5.*"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "v1.2.0",
+                "phpunit/dbunit": ">=1.2",
+                "phpunit/phpunit": "3.7.28",
+                "phpunit/phpunit-selenium": ">=1.2"
+            },
+            "suggest": {
+                "ext-runkit": "For using the runkit API."
+            },
+            "type": "package",
+            "autoload": {
+                "psr-0": {
+                    "Skully\\": "",
+                    "RedBeanPHP\\": "Skully/Library/redbean"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jay",
+                    "email": "jay@tgitriodesign.com"
+                },
+                {
+                    "name": "Bobby",
+                    "email": "bobby@tgitriodesign.com"
+                }
+            ],
+            "description": "Simple framework by trio digital agency.",
+            "time": "2014-06-29 13:54:20"
         },
         {
             "name": "symfony/console",
-            "version": "dev-master",
+            "version": "2.5.x-dev",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "55ba7eb2543f95cc93f26b1a4c2fc618d2a01cc3"
+                "reference": "5643ea04872456a975ca2101337a45ba7187d00a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/55ba7eb2543f95cc93f26b1a4c2fc618d2a01cc3",
-                "reference": "55ba7eb2543f95cc93f26b1a4c2fc618d2a01cc3",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/5643ea04872456a975ca2101337a45ba7187d00a",
+                "reference": "5643ea04872456a975ca2101337a45ba7187d00a",
                 "shasum": ""
             },
             "require": {
@@ -115,62 +168,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-12 09:28:39"
-        },
-        {
-            "name": "triodigital/skully",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/triodigital/skully.git",
-                "reference": "8f2e817bb6a2772cb6b46fd90ce1210a8c49d60d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/triodigital/skully/zipball/8f2e817bb6a2772cb6b46fd90ce1210a8c49d60d",
-                "reference": "8f2e817bb6a2772cb6b46fd90ce1210a8c49d60d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "ruckusing/ruckusing-migrations": "dev-master",
-                "symfony/console": "2.5.x-dev"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "v1.2.0",
-                "phpunit/dbunit": ">=1.2",
-                "phpunit/phpunit": "3.7.28",
-                "phpunit/phpunit-selenium": ">=1.2"
-            },
-            "suggest": {
-                "ext-runkit": "For using the runkit API."
-            },
-            "type": "package",
-            "autoload": {
-                "psr-0": {
-                    "Skully\\": "",
-                    "RedBeanPHP\\": "Skully/Library/redbean"
-                }
-            },
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Jay",
-                    "email": "jay@tgitriodesign.com"
-                },
-                {
-                    "name": "Bobby",
-                    "email": "bobby@tgitriodesign.com"
-                }
-            ],
-            "description": "Simple framework by trio digital agency.",
-            "support": {
-                "source": "https://github.com/triodigital/skully/tree/master",
-                "issues": "https://github.com/triodigital/skully/issues"
-            },
-            "time": "2014-05-12 15:46:01"
+            "time": "2014-06-20 17:38:20"
         }
     ],
     "packages-dev": [
@@ -686,17 +684,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.4",
+            "version": "v2.5.0",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "65539ecde838f9c0d18b006b2101e3deb4b5c9ff"
+                "reference": "b4b09c68ec2f2727574544ef0173684281a5033c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/65539ecde838f9c0d18b006b2101e3deb4b5c9ff",
-                "reference": "65539ecde838f9c0d18b006b2101e3deb4b5c9ff",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b4b09c68ec2f2727574544ef0173684281a5033c",
+                "reference": "b4b09c68ec2f2727574544ef0173684281a5033c",
                 "shasum": ""
             },
             "require": {
@@ -705,7 +703,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -731,7 +729,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-18 20:37:09"
+            "time": "2014-05-16 14:25:18"
         }
     ],
     "aliases": [
@@ -739,9 +737,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/console": 20,
-        "ruckusing/ruckusing-migrations": 20,
-        "triodigital/skully": 20
+        "symfony/console": 20
     },
     "platform": {
         "php": ">=5.4"

@@ -1,0 +1,36 @@
+{
+    "name": "skullyframework/skully",
+    "type": "package",
+    "description": "Simple framework by trio digital agency.",
+    "authors": [
+        {
+            "name": "Jay",
+            "email": "jay@tgitriodesign.com"
+        },
+        {
+            "name": "Bobby",
+            "email": "bobby@tgitriodesign.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "3.7.28",
+        "phpunit/phpunit-selenium": ">=1.2",
+        "phpunit/dbunit": ">=1.2",
+        "mikey179/vfsStream": "v1.2.0"
+    },
+    "require": {
+        "php": ">=5.4",
+        "symfony/console": "2.5.*",
+        "ruckusing/ruckusing-migrations": "1.0.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Skully\\": "",
+            "RedBeanPHP\\" : "Skully/Library/redbean"
+        }
+    },
+    "license": "MIT",
+    "suggest": {
+        "ext-runkit": "For using the runkit API."
+    }
+}

@@ -1,66 +1,5 @@
 [
     {
-        "name": "symfony/console",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "Symfony/Component/Console",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Console.git",
-            "reference": "9a491e7983209bf320d40917291c03e856eee947"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Console/zipball/9a491e7983209bf320d40917291c03e856eee947",
-            "reference": "9a491e7983209bf320d40917291c03e856eee947",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/event-dispatcher": "~2.1",
-            "symfony/process": "~2.1"
-        },
-        "suggest": {
-            "psr/log": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/process": ""
-        },
-        "time": "2014-06-20 17:41:51",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.6-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\Console\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org",
-                "role": "Lead Developer"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "http://symfony.com"
-    },
-    {
         "name": "mikey179/vfsStream",
         "version": "v1.2.0",
         "version_normalized": "1.2.0.0",
@@ -643,8 +582,8 @@
     },
     {
         "name": "ruckusing/ruckusing-migrations",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/ruckus/ruckusing-migrations.git",
@@ -699,24 +638,83 @@
         ]
     },
     {
-        "name": "triodigital/skully",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "name": "symfony/console",
+        "version": "2.5.x-dev",
+        "version_normalized": "2.5.9999999.9999999-dev",
+        "target-dir": "Symfony/Component/Console",
         "source": {
             "type": "git",
-            "url": "https://github.com/triodigital/skully.git",
-            "reference": "d02cd4a77ad8e660b35c8adfcf9725add8c7300c"
+            "url": "https://github.com/symfony/Console.git",
+            "reference": "5643ea04872456a975ca2101337a45ba7187d00a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/triodigital/skully/zipball/d02cd4a77ad8e660b35c8adfcf9725add8c7300c",
-            "reference": "d02cd4a77ad8e660b35c8adfcf9725add8c7300c",
+            "url": "https://api.github.com/repos/symfony/Console/zipball/5643ea04872456a975ca2101337a45ba7187d00a",
+            "reference": "5643ea04872456a975ca2101337a45ba7187d00a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/event-dispatcher": "~2.1"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": ""
+        },
+        "time": "2014-06-20 17:38:20",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "skullyframework/skully",
+        "version": "v0.1.1",
+        "version_normalized": "0.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/skullyframework/skully.git",
+            "reference": "6e909a0e1f90248f7e2116fd689211778ddc0026"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/skullyframework/skully/zipball/6e909a0e1f90248f7e2116fd689211778ddc0026",
+            "reference": "6e909a0e1f90248f7e2116fd689211778ddc0026",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4",
-            "ruckusing/ruckusing-migrations": "dev-master",
-            "symfony/console": "2.5.x-dev"
+            "ruckusing/ruckusing-migrations": "1.0.1",
+            "symfony/console": "2.5.*"
         },
         "require-dev": {
             "mikey179/vfsstream": "v1.2.0",
@@ -727,17 +725,18 @@
         "suggest": {
             "ext-runkit": "For using the runkit API."
         },
-        "time": "2014-06-26 14:08:11",
+        "time": "2014-06-29 13:54:20",
         "type": "package",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Skully\\": "",
                 "RedBeanPHP\\": "Skully/Library/redbean"
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "LGPL-2.1"
+            "MIT"
         ],
         "authors": [
             {
@@ -749,10 +748,6 @@
                 "email": "bobby@tgitriodesign.com"
             }
         ],
-        "description": "Simple framework by trio digital agency.",
-        "support": {
-            "source": "https://github.com/triodigital/skully/tree/master",
-            "issues": "https://github.com/triodigital/skully/issues"
-        }
+        "description": "Simple framework by trio digital agency."
     }
 ]
