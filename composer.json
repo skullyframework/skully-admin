@@ -1,5 +1,5 @@
 {
-    "name": "skullyframework/admin",
+    "name": "skullyframework/skully-admin",
     "type": "package",
     "description": "Admin for Skully Framework.",
     "authors": [
