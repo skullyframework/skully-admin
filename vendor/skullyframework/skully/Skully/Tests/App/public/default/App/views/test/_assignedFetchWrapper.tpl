@@ -1,1 +1,0 @@
-Content is {block name=content}{/block}

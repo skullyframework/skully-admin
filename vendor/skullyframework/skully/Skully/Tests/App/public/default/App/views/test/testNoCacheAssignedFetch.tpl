@@ -1,1 +1,0 @@
-{nocache}{$content}{/nocache}
