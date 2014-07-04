@@ -8,13 +8,18 @@ Include this into your composer:
 
 ```
 "require": {
+<<<<<<< HEAD
     "skullyframework/admin": "0.1.*"
 }
+=======
+    "skullyframework/skully-admin": "dev-master"
+},
+>>>>>>> bae0f1a1d37cf29f26738851605d8716e9658b8c
 ```
 
 Then update your composer.
 
-And then, basically look at vendor/triodigital/skully-project/Tests/app/ and just follow the structure of that test app within your application.
+And then, basically look at vendor/skullyframework/skully-project/Tests/app/ and just follow the structure of that test app within your application.
 
 ### Don't Forget ###
 In your App\Application class, add the following:
@@ -33,9 +38,9 @@ class Application extends \Skully\Application {
 }
 ```
 
-Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/images/admin to public/default/resources/images/admin.
-Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/js/admin to public/default/resources/js/admin.
-Copy vendor/triodigital/skully-project/Tests/app/public/default/resources/js/plugins to public/default/resources/js/plugins.
+Copy vendor/skullyframework/skully-project/Tests/app/public/default/resources/images/admin to public/default/resources/images/admin.
+Copy vendor/skullyframework/skully-project/Tests/app/public/default/resources/js/admin to public/default/resources/js/admin.
+Copy vendor/skullyframework/skully-project/Tests/app/public/default/resources/js/plugins to public/default/resources/js/plugins.
 
 ## Example
 

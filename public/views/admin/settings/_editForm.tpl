@@ -11,7 +11,7 @@
 		<div class="row-form">
 			<div class="span2">{lang value="value"}</div>
 			<div class="span10">
-				{include file="admin/settings/forms/_"|cat:$setting.type|cat:".tpl"}
+				{include file="admin/settings/forms/_"|cat:$setting.input_type|cat:".tpl"}
 			</div>
 		</div>
 
