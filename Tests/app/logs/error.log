@@ -1,285 +1,245 @@
-[Tuesday, 13-May-14 00:18:01 WIB error] set default assign
-[Tuesday, 13-May-14 00:18:01 WIB error] admin id is: 
-[Tuesday, 13-May-14 00:18:01 WIB error] getAdmin result: 
-[Tuesday, 13-May-14 00:18:01 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/SkullyAdmin/Controllers/BaseController.php | ln:40
-GET: Array
+[Saturday, 05-Jul-2014 19:36:43 WIB error] url is admin/cRUDImages/create
+[Saturday, 05-Jul-2014 19:36:43 WIB error] route and params: Array
 (
-    [_url] => admin/admins/index
+    [route] => admin/cRUDImages/create
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:36:43 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => create
 )
 
-Call to a member function export() on a non-object
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:22:41 WIB error] set default assign
-[Tuesday, 13-May-14 00:22:42 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:22:42 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:22:47 WIB error] set default assign
-[Tuesday, 13-May-14 00:22:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:22:48 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:22:56 WIB error] set default assign
-[Tuesday, 13-May-14 00:22:57 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:23:14 WIB error] set default assign
-[Tuesday, 13-May-14 00:23:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:23:14 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:23:31 WIB error] set default assign
-[Tuesday, 13-May-14 00:23:32 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:23:32 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:01 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:01 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:02 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:06 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:06 WIB error] user is Array
+[Saturday, 05-Jul-2014 19:36:43 WIB error] about to run action create
+[Saturday, 05-Jul-2014 19:36:43 WIB error] url is admin/cRUDImages/add
+[Saturday, 05-Jul-2014 19:36:43 WIB error] route and params: Array
 (
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
+    [route] => admin/cRUDImages/add
+    [params] => Array
+        (
+        )
+
 )
 
-[Tuesday, 13-May-14 00:24:07 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:07 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:13 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:13 WIB error] user is Array
+[Saturday, 05-Jul-2014 19:36:43 WIB error] controller and actions: Array
 (
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
+    [controller] => admin\cRUDImages
+    [action] => add
 )
 
-[Tuesday, 13-May-14 00:24:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:14 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:16 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:16 WIB error] user is Array
+[Saturday, 05-Jul-2014 19:36:43 WIB error] about to run action add
+[Saturday, 05-Jul-2014 19:38:07 WIB error] url is admin/cRUDImages/create
+[Saturday, 05-Jul-2014 19:38:07 WIB error] route and params: Array
 (
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
+    [route] => admin/cRUDImages/create
+    [params] => Array
+        (
+        )
+
 )
 
-[Tuesday, 13-May-14 00:24:16 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:16 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:17 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php | ln:48
-GET: Array
+[Saturday, 05-Jul-2014 19:38:07 WIB error] controller and actions: Array
 (
-    [_url] => admin/settings/index
+    [controller] => admin\cRUDImages
+    [action] => create
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:38:07 WIB error] about to run action create
+[Saturday, 05-Jul-2014 19:38:07 WIB error] url is admin/cRUDImages/add
+[Saturday, 05-Jul-2014 19:38:07 WIB error] route and params: Array
 (
+    [route] => admin/cRUDImages/add
+    [params] => Array
+        (
+        )
+
 )
 
-Uncaught exception 'Skully\Exceptions\PageNotFoundException' with message 'Page http://localhost/skully-admin/Tests/app/admin/settings/index not found' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php:48
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/ControllerFactory.php(71): Skully\Exceptions\PageNotFoundException::alert('admin/settings/...', 'http://localhos...')
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(339): Skully\Core\ControllerFactory::create(Object(TestApp\Application), 'admin\settings', 'index', Array)
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(266): Skully\Application->getController('admin\settings', 'index', Array)
-#3 /media/jay/Data/apache/skully-admin/Tests/app/index.php(16): Skully\Application->runControllerFromRawUrl('admin/settings/...')
-#4 {main}
-  thrown
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:24:20 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:20 WIB error] user is Array
+[Saturday, 05-Jul-2014 19:38:07 WIB error] controller and actions: Array
 (
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
+    [controller] => admin\cRUDImages
+    [action] => add
 )
 
-[Tuesday, 13-May-14 00:24:20 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:21 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:43 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:44 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:44 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:54 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:55 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:55 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:25:00 WIB error] set default assign
-[Tuesday, 13-May-14 00:27:29 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:27:30 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:34:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:34:19 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:34:20 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php | ln:48
-GET: Array
+[Saturday, 05-Jul-2014 19:38:07 WIB error] about to run action add
+[Saturday, 05-Jul-2014 19:38:07 WIB error] 1
+[Saturday, 05-Jul-2014 19:38:07 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:22 WIB error] url is admin/cRUDImages/create
+[Saturday, 05-Jul-2014 19:41:22 WIB error] route and params: Array
 (
-    [_url] => admin/settings/index
+    [route] => admin/cRUDImages/create
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:41:22 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => create
 )
 
-Uncaught exception 'Skully\Exceptions\PageNotFoundException' with message 'Page http://localhost/skully-admin/Tests/app/admin/settings/index not found' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php:48
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/ControllerFactory.php(71): Skully\Exceptions\PageNotFoundException::alert('admin/settings/...', 'http://localhos...')
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(339): Skully\Core\ControllerFactory::create(Object(TestApp\Application), 'admin\settings', 'index', Array)
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(266): Skully\Application->getController('admin\settings', 'index', Array)
-#3 /media/jay/Data/apache/skully-admin/Tests/app/index.php(16): Skully\Application->runControllerFromRawUrl('admin/settings/...')
-#4 {main}
-  thrown
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:36:56 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:36:56 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:37:00 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php | ln:106
-GET: Array
+[Saturday, 05-Jul-2014 19:41:22 WIB error] about to run action create
+[Saturday, 05-Jul-2014 19:41:22 WIB error] 1
+[Saturday, 05-Jul-2014 19:41:22 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:22 WIB error] inside create
+[Saturday, 05-Jul-2014 19:41:22 WIB error] url is admin/cRUDImages/edit
+[Saturday, 05-Jul-2014 19:41:22 WIB error] route and params: Array
 (
-    [_url] => admin/settings/add
+    [route] => admin/cRUDImages/edit
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:41:22 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => edit
 )
 
-Uncaught exception 'Skully\Exceptions\ThemeFileNotFoundException' with message 'Theme file not found after searching at these locations: 
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/public/views/admin/settings/_addForm.tpl' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php:106
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php(143): Skully\Core\Theme\Theme->getPath('views/admin/set...', false, true)
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(298): Skully\Core\Theme\Theme->getAppPath('views/admin/set...')
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(273): Skully\Core\Controller->getActionTemplate('_addForm')
-#3 /media/jay/Dat
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:37:31 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php | ln:106
-GET: Array
+[Saturday, 05-Jul-2014 19:41:22 WIB error] about to run action edit
+[Saturday, 05-Jul-2014 19:41:22 WIB error] 1
+[Saturday, 05-Jul-2014 19:41:22 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:23 WIB error] url is public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:41:23 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:41:23 WIB error] url is public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:41:23 WIB warn] Resource not found: public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:41:28 WIB error] url is admin/cRUDImages/create
+[Saturday, 05-Jul-2014 19:41:28 WIB error] route and params: Array
 (
-    [_url] => admin/settings/add
+    [route] => admin/cRUDImages/create
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:41:28 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => create
 )
 
-Uncaught exception 'Skully\Exceptions\ThemeFileNotFoundException' with message 'Theme file not found after searching at these locations: 
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/public/views/admin/settings/_addForm.tpl' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php:106
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php(143): Skully\Core\Theme\Theme->getPath('views/admin/set...', false, true)
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(298): Skully\Core\Theme\Theme->getAppPath('views/admin/set...')
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(273): Skully\Core\Controller->getActionTemplate('_addForm')
-#3 /media/jay/Dat
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:39:00 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:39:00 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:39:53 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:39:53 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:40:41 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:40:41 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:43:25 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/SettingsController.php | ln:4
-GET: Array
+[Saturday, 05-Jul-2014 19:41:28 WIB error] about to run action create
+[Saturday, 05-Jul-2014 19:41:28 WIB error] 1
+[Saturday, 05-Jul-2014 19:41:28 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:28 WIB error] inside create
+[Saturday, 05-Jul-2014 19:41:28 WIB error] url is admin/cRUDImages/edit
+[Saturday, 05-Jul-2014 19:41:28 WIB error] route and params: Array
 (
-    [_url] => admin/settings/index
+    [route] => admin/cRUDImages/edit
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:41:28 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => edit
 )
 
-Class 'SkullyAdmin\Controllers\SettingsController' not found
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:43:26 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/SettingsController.php | ln:4
-GET: Array
+[Saturday, 05-Jul-2014 19:41:28 WIB error] about to run action edit
+[Saturday, 05-Jul-2014 19:41:28 WIB error] 1
+[Saturday, 05-Jul-2014 19:41:28 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:29 WIB error] url is public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:41:29 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:41:29 WIB error] url is public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:41:29 WIB warn] Resource not found: public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:41:31 WIB error] url is admin/cRUDImages/index
+[Saturday, 05-Jul-2014 19:41:31 WIB error] route and params: Array
 (
-    [_url] => admin/settings/index
+    [route] => admin/cRUDImages/index
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:41:31 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => index
 )
 
-Class 'SkullyAdmin\Controllers\SettingsController' not found
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:43:27 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/SettingsController.php | ln:4
-GET: Array
+[Saturday, 05-Jul-2014 19:41:31 WIB error] about to run action index
+[Saturday, 05-Jul-2014 19:41:31 WIB error] 1
+[Saturday, 05-Jul-2014 19:41:31 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:31 WIB error] url is public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:41:31 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:41:31 WIB error] url is admin/cRUDImages/index
+[Saturday, 05-Jul-2014 19:41:31 WIB error] route and params: Array
 (
-    [_url] => admin/settings/index
+    [route] => admin/cRUDImages/index
+    [params] => Array
+        (
+        )
+
 )
 
-POST: Array
+[Saturday, 05-Jul-2014 19:41:31 WIB error] controller and actions: Array
 (
+    [controller] => admin\cRUDImages
+    [action] => index
 )
 
-Class 'SkullyAdmin\Controllers\SettingsController' not found
-#0  shutdownHandler()
+[Saturday, 05-Jul-2014 19:41:31 WIB error] about to run action index
+[Saturday, 05-Jul-2014 19:41:31 WIB error] 1
+[Saturday, 05-Jul-2014 19:41:31 WIB error] 2
+[Saturday, 05-Jul-2014 19:41:32 WIB error] url is public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:41:32 WIB warn] Resource not found: public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:42:39 WIB error] url is admin/cRUDImages/create
+[Saturday, 05-Jul-2014 19:42:39 WIB error] route and params: Array
+(
+    [route] => admin/cRUDImages/create
+    [params] => Array
+        (
+        )
 
+)
 
-[Tuesday, 13-May-14 00:43:47 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:43:47 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:45:22 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:45:23 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:45:24 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:45:24 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:06 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:07 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:08 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:08 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:13 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:18 WIB warn] Resource not found: public/adminFavicon.ico
-[Thursday, 15-May-14 03:14:09 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Thursday, 15-May-14 03:14:09 WIB warn] Resource not found: public/adminFavicon.ico
-[Thursday, 29-May-14 11:19:44 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Thursday, 29-May-14 11:19:44 WIB warn] Resource not found: public/adminFavicon.ico
-[Thursday, 03-Jul-2014 14:44:22 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Thursday, 03-Jul-2014 14:44:22 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:08:07 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:08:07 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:08:10 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:08:10 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:09:07 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:09:07 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:09:09 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:09:10 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:09:35 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:09:35 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:09:36 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:09:37 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:09:38 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:09:38 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:09:39 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:09:39 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 10:17:08 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 10:17:08 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 21:05:05 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 21:05:05 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 21:05:15 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 21:05:15 WIB warn] Resource not found: public/adminFavicon.ico
-[Friday, 04-Jul-2014 21:05:17 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Friday, 04-Jul-2014 21:05:17 WIB warn] Resource not found: public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:42:39 WIB error] controller and actions: Array
+(
+    [controller] => admin\cRUDImages
+    [action] => create
+)
+
+[Saturday, 05-Jul-2014 19:42:39 WIB error] about to run action create
+[Saturday, 05-Jul-2014 19:42:39 WIB error] params are: Array
+(
+    [_url] => admin/cRUDImages/create
+)
+
+[Saturday, 05-Jul-2014 19:42:39 WIB error] url is admin/cRUDImages/add
+[Saturday, 05-Jul-2014 19:42:39 WIB error] route and params: Array
+(
+    [route] => admin/cRUDImages/add
+    [params] => Array
+        (
+        )
+
+)
+
+[Saturday, 05-Jul-2014 19:42:39 WIB error] controller and actions: Array
+(
+    [controller] => admin\cRUDImages
+    [action] => add
+)
+
+[Saturday, 05-Jul-2014 19:42:39 WIB error] about to run action add
+[Saturday, 05-Jul-2014 19:42:39 WIB error] 1
+[Saturday, 05-Jul-2014 19:42:39 WIB error] 2
+[Saturday, 05-Jul-2014 19:42:39 WIB error] url is public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:42:39 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:42:40 WIB error] url is public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:42:40 WIB warn] Resource not found: public/adminFavicon.ico
+[Saturday, 05-Jul-2014 19:46:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Saturday, 05-Jul-2014 19:46:49 WIB warn] Resource not found: public/adminFavicon.ico

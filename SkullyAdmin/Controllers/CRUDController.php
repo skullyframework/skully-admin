@@ -66,6 +66,7 @@ class CRUDController extends BaseController
     // Minimum overriding requirements //
     /**
      * Override this with model linked with this controller.
+     * Use lowercase.
      */
     protected function model() {
         return 'model';
@@ -359,24 +360,6 @@ class CRUDController extends BaseController
         return $id;
     }
 
-
-    protected function beforeAction() {
-        $action = $this->getCurrentAction();
-        parent::beforeAction();
-        if ($action == 'create') {
-            // For when user go to create page directly
-            if (empty($this->params[$this->instanceName])) {
-                $this->app->redirect($this->addPath);
-            }
-        }
-        elseif ($action == 'update') {
-            // For when user go to edit page directly
-            if (empty($this->params[$this->instanceName]) && !empty($this->params['id'])) {
-                $this->app->redirect($this->editPath, array('id' => $this->params['id']));
-            }
-        }
-    }
-
     public function index() {
         if ($this->app->isAjax()) {
             echo json_encode(array('aaData' => $this->listData()));
@@ -458,7 +441,7 @@ class CRUDController extends BaseController
         }
     }
 
-    // Most of the times you will need to override this method because some variables will be protected.
+    // Most of the times you will need to override this method because some variables are protected.
     // In that scenario, if behaviours in instance creation is similar with update, override $this->setInstanceAttributes() instead.
     // Only override this and update() method when instance creations have different behaviours.
     public function create() {

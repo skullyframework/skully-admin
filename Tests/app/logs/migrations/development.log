@@ -2330,3 +2330,251 @@ Jul 03 14:36:03 [info] CREATE TABLE `setting` (
  PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
 Jul 03 14:36:03 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
 Jul 03 14:36:03 [info] INSERT INTO schema_migrations (version) VALUES ('20140501220633')
+Jul 05 14:50:36 [info] SELECT version FROM schema_migrations
+Jul 05 14:50:36 [info] SELECT version FROM schema_migrations
+Jul 05 14:50:36 [info] SELECT version FROM schema_migrations
+Jul 05 14:50:36 [info] CREATE TABLE `images` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 14:50:36 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Jul 05 17:37:47 [info] SELECT version FROM schema_migrations
+Jul 05 17:37:47 [info] SELECT version FROM schema_migrations
+Jul 05 17:37:47 [info] SELECT version FROM schema_migrations
+Jul 05 17:37:47 [info] INSERT INTO schema_migrations (version) VALUES ('20140705091909')
+Jul 05 17:53:28 [info] SELECT version FROM schema_migrations
+Jul 05 17:53:28 [info] SELECT version FROM schema_migrations
+Jul 05 17:53:28 [info] SELECT version FROM schema_migrations
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='smtpSecurity';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='smtpPort';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='smtpHost';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='smtpPassword';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='smtpUsername';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='senderEmail';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='senderName';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='replyToEmail';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='replyToName';
+Jul 05 17:53:28 [info] DELETE FROM schema_migrations WHERE version = '20140705091909'
+Jul 05 17:53:28 [info] DROP TABLE IF EXISTS `images`
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='multiple_many_types';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='multiple_one_type';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='single_many_types';
+Jul 05 17:53:28 [info] DELETE FROM `setting` WHERE `name`='single_one_type';
+Jul 05 17:53:28 [info] DELETE FROM schema_migrations WHERE version = '20140704031054'
+Jul 05 17:53:28 [info] DELETE FROM schema_migrations WHERE version = '20140501220633'
+Jul 05 17:53:28 [info] DROP TABLE IF EXISTS `session`
+Jul 05 17:53:28 [info] DROP TABLE IF EXISTS `admin`
+Jul 05 17:53:28 [info] DROP TABLE IF EXISTS `adminsession`
+Jul 05 17:53:28 [info] DROP TABLE IF EXISTS `setting`
+Jul 05 17:53:28 [info] DELETE FROM schema_migrations WHERE version = '20140501060456'
+Jul 05 18:12:32 [info] SELECT version FROM schema_migrations
+Jul 05 18:12:32 [info] SELECT version FROM schema_migrations
+Jul 05 18:12:32 [info] SELECT version FROM schema_migrations
+Jul 05 18:12:32 [info] drop table if exists `session`;
+Jul 05 18:12:32 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Jul 05 18:12:32 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:12:32 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:12:32 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:12:32 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Jul 05 18:12:32 [info] INSERT INTO schema_migrations (version) VALUES ('20140501220633')
+Jul 05 18:12:32 [info] CREATE TABLE `images` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:12:32 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Jul 05 18:12:32 [info] INSERT INTO schema_migrations (version) VALUES ('20140705091909')
+Jul 05 18:19:39 [info] SELECT version FROM schema_migrations
+Jul 05 18:19:39 [info] SELECT version FROM schema_migrations
+Jul 05 18:19:39 [info] SELECT version FROM schema_migrations
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='smtpSecurity';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='smtpPort';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='smtpHost';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='smtpPassword';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='smtpUsername';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='senderEmail';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='senderName';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='replyToEmail';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='replyToName';
+Jul 05 18:19:39 [info] DELETE FROM schema_migrations WHERE version = '20140705091909'
+Jul 05 18:19:39 [info] DROP TABLE IF EXISTS `images`
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='multiple_many_types';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='multiple_one_type';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='single_many_types';
+Jul 05 18:19:39 [info] DELETE FROM `setting` WHERE `name`='single_one_type';
+Jul 05 18:19:39 [info] DELETE FROM schema_migrations WHERE version = '20140704031054'
+Jul 05 18:19:39 [info] DELETE FROM schema_migrations WHERE version = '20140501220633'
+Jul 05 18:19:39 [info] DROP TABLE IF EXISTS `session`
+Jul 05 18:19:39 [info] DROP TABLE IF EXISTS `admin`
+Jul 05 18:19:39 [info] DROP TABLE IF EXISTS `adminsession`
+Jul 05 18:19:39 [info] DROP TABLE IF EXISTS `setting`
+Jul 05 18:19:39 [info] DELETE FROM schema_migrations WHERE version = '20140501060456'
+Jul 05 18:19:40 [info] SELECT version FROM schema_migrations
+Jul 05 18:19:40 [info] SELECT version FROM schema_migrations
+Jul 05 18:19:40 [info] SELECT version FROM schema_migrations
+Jul 05 18:19:40 [info] drop table if exists `session`;
+Jul 05 18:19:40 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Jul 05 18:19:41 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:19:41 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:19:41 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:19:41 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Jul 05 18:19:41 [info] INSERT INTO schema_migrations (version) VALUES ('20140501220633')
+Jul 05 18:19:41 [info] CREATE TABLE `images` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 18:19:41 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Jul 05 18:19:41 [info] INSERT INTO schema_migrations (version) VALUES ('20140705091909')
+Jul 05 19:05:09 [info] SELECT version FROM schema_migrations
+Jul 05 19:05:09 [info] SELECT version FROM schema_migrations
+Jul 05 19:05:09 [info] SELECT version FROM schema_migrations
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='smtpSecurity';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='smtpPort';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='smtpHost';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='smtpPassword';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='smtpUsername';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='senderEmail';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='senderName';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='replyToEmail';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='replyToName';
+Jul 05 19:05:09 [info] DELETE FROM schema_migrations WHERE version = '20140705091909'
+Jul 05 19:05:09 [info] DROP TABLE IF EXISTS `images`
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='multiple_many_types';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='multiple_one_type';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='single_many_types';
+Jul 05 19:05:09 [info] DELETE FROM `setting` WHERE `name`='single_one_type';
+Jul 05 19:05:09 [info] DELETE FROM schema_migrations WHERE version = '20140704031054'
+Jul 05 19:05:09 [info] DELETE FROM schema_migrations WHERE version = '20140501220633'
+Jul 05 19:05:09 [info] DROP TABLE IF EXISTS `session`
+Jul 05 19:05:10 [info] DROP TABLE IF EXISTS `admin`
+Jul 05 19:05:10 [info] DROP TABLE IF EXISTS `adminsession`
+Jul 05 19:05:10 [info] DROP TABLE IF EXISTS `setting`
+Jul 05 19:05:10 [info] DELETE FROM schema_migrations WHERE version = '20140501060456'
+Jul 05 19:05:17 [info] SELECT version FROM schema_migrations
+Jul 05 19:05:17 [info] SELECT version FROM schema_migrations
+Jul 05 19:05:17 [info] SELECT version FROM schema_migrations
+Jul 05 19:05:17 [info] drop table if exists `session`;
+Jul 05 19:05:17 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Jul 05 19:05:17 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 19:05:17 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 19:05:17 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 19:05:17 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Jul 05 19:05:17 [info] INSERT INTO schema_migrations (version) VALUES ('20140501220633')
+Jul 05 19:05:17 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Jul 05 19:05:17 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Jul 05 19:05:18 [info] INSERT INTO schema_migrations (version) VALUES ('20140705091909')
