@@ -16,6 +16,8 @@ use SkullyAdmin\Controllers\ImageUploader\ImageUploaderCRUD;
 
 class CRUDImagesController extends CRUDController {
     use ImageUploaderCRUD;
+    protected $imageMovePath = 'admin/cRUDImages/moveImage';
+    protected $imageNewRowPath = 'admin/cRUDImages/newRow';
     protected $imageUploadPath = 'admin/cRUDImages/uploadImage';
     protected $imageDeletePath = 'admin/cRUDImages/deleteImage';
     protected $imageDestroyPath = 'admin/cRUDImages/destroyImage';
@@ -120,8 +122,8 @@ class CRUDImagesController extends CRUDController {
     // protected $sortableIdColumnIndex = 0;
     // -- END - SORTABLE -- //
 
-    public $columns = array('multiple many types', 'multiple one type', 'single many types', 'single one type');
-    public $thAttributes = array('', '', '', ''); // Class sort_asc or sort_desc can be used to set default sorting.
+    public $columns = array('multiple many types', 'multiple one type', 'single many types', 'single one type', '');
+    public $thAttributes = array('', '', '', '', ''); // Class sort_asc or sort_desc can be used to set default sorting.
     public $columnDefs = '[]'; // Use this to handle columns' behaviours, doc: http://www.datatables.net/usage/columns
 
     // --END-- //
@@ -151,12 +153,40 @@ class CRUDImagesController extends CRUDController {
         if (!empty($instances)) {
             foreach ($instances as $instanceArray) {
                 $instance = $this->app->createModel($this->model(), $instanceArray);
+                $image1 = $instance->get('multiple_many_types');
+                if (empty($image1)) {
+                    $image1 = 'no image';
+                }
+                else {
+                    $image1 = $image1[0]['smartphone'];
+                }
+                $image2 = $instance->get('multiple_one_type');
+                if (empty($image2)) {
+                    $image2 = 'no image';
+                }
+                else {
+                    $image2 = $image2[0];
+                }
+                $image3 = $instance->get('single_many_types');
+                if (empty($image3)) {
+                    $image3 = 'no image';
+                }
+                else {
+                    $image3 = $image3['smartphone'];
+                }
+                $image4 = $instance->get('single_one_type');
+                if (empty($image4)) {
+                    $image4 = 'no image';
+                }
                 $instanceRow = array(
                     // List your field names here
-                    $instance->get('multiple_many_types'),
-
+                    $image1,
+                    $image2,
+                    $image3,
+                    $image4,
                     $this->listActions($instanceArray)
                 );
+
                 if ($this->setupSortable) {
                     $instanceRow[] = $instanceArray['id'];
                     array_unshift($instanceRow, $instanceArray[$this->dragField]);

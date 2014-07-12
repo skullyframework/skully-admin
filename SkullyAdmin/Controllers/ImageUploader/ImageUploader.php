@@ -10,6 +10,8 @@ use RedBeanPHP\Facade as R;
 
 trait ImageUploader {
 // IMPORTANT: Add the following to your Controller:
+//    protected $imageMovePath = 'admin/controllerName/moveImage';
+//    protected $imageNewRowPath = 'admin/controllerName/newRow';
 //    protected $imageUploadPath = 'admin/controllerName/uploadImage';
 //    protected $imageDeletePath = 'admin/controllerName/deleteImage';
 //    protected $imageDestroyPath = 'admin/controllerName/destroyImage';
@@ -79,7 +81,6 @@ trait ImageUploader {
         $validFormats = array("jpg", "png", "gif", "bmp","jpeg");
         $imageSettings = $this->getImageSettings();
         $imageSetting = $imageSettings[$settingName];
-
         if (empty($error) && !empty($instance) && !empty($imageSetting)) {
             $nFiles = count($_FILES);
             for($i=0; $i<$nFiles; $i++) {
@@ -151,7 +152,7 @@ trait ImageUploader {
                                 }
                             }
                             else {
-                                // Upload single image.
+                                // Upload one image from "change" button.
                                 if ($imageSetting['types']) {
                                     // Many types
                                     if ($imageSetting['_config']['multiple']) {
@@ -240,6 +241,22 @@ trait ImageUploader {
                 }
             }
         }
+        else {
+            if (empty($instance)) {
+                $uploadedImages = array(
+                    'data' => $this->getParam('data'),
+                    'path' => '',
+                    'message' => $this->app->getTranslator()->translate("errorInstanceEmpty")
+                );
+            }
+            elseif (empty($imageSetting)) {
+                $uploadedImages = array(
+                    'data' => $this->getParam('data'),
+                    'path' => '',
+                    'message' => $this->app->getTranslator()->translate("errorSettingEmpty")
+                );
+            }
+        }
         return $uploadedImages;
     }
 
@@ -282,8 +299,8 @@ trait ImageUploader {
                 $this->setPaths();
                 $this->app->getTemplateEngine()->assign(array(
                     'position' => $this->getParam('position'),
-                    'imageSettingName' => $this->getParam('setting'),
-                    'image' => $image
+                    '_imageSettingName' => $this->getParam('setting'),
+                    '_image' => $image
                 ));
             }
             else {
@@ -353,9 +370,9 @@ trait ImageUploader {
         $this->setupInstanceImageAssigns($instance);
         $this->app->getTemplateEngine()->assign(array(
             'instanceName' => $this->instanceName,
-            'imageSetting' => $imageSetting,
-            'imagePos' => $imagePosition,
-            'imageSettingName' => $settingName
+            '_imageSetting' => $imageSetting,
+            '_imagePos' => $imagePosition,
+            '_imageSettingName' => $settingName
 
         ));
         if (count($imageSetting['types']) > 0) {
@@ -372,7 +389,7 @@ trait ImageUploader {
             else {
                 $image = $images[$imagePosition];
                 $this->app->getTemplateEngine()->assign(array(
-                    'image' => $image
+                    '_image' => $image
                 ));
             }
             $this->app->getTemplateEngine()->assign(array(

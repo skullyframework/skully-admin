@@ -15,7 +15,7 @@ if (!defined('RUCKUSING_TS_SCHEMA_TBL_NAME')) {
 
 function setCommonConfig(Config &$config, $serverName = null) {
 // Config that can be carried over to any server
-    if(empty($serverName)) $serverName = $_SERVER["SERVER_NAME"];
+    if(empty($serverName) && isset($_SERVER["SERVER_NAME"])) $serverName = $_SERVER["SERVER_NAME"];
 
 // clientAndServer configs are readable via javascript.
     if ($serverName == 'localhost' || $serverName == 'test') {

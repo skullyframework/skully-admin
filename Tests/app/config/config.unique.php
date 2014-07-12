@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Jakarta');
 use TestApp\Config\Config;
 
 function setUniqueConfig(Config &$config, $serverName = null) {
-    if(empty($serverName)) $serverName = $_SERVER["SERVER_NAME"];
+    if(empty($serverName) && isset($_SERVER["SERVER_NAME"])) $serverName = $_SERVER["SERVER_NAME"];
 
     if ($serverName == 'localhost') {
         /**

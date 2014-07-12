@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2014-07-04 10:09:06
+<?php /* Smarty version Smarty-3.1.18, created on 2014-07-06 02:03:49
          compiled from "D:\apache\skully-admin\public\views\admin\widgets\_breadcrumbs.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2386653b61ad2a32327-67182926%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1418353b84c15dea138-00261180%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2386653b61ad2a32327-67182926',
+  'nocache_hash' => '1418353b84c15dea138-00261180',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_53b61ad2beb351_06647006',
+  'unifunc' => 'content_53b84c15e768e4_14090227',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53b61ad2beb351_06647006')) {function content_53b61ad2beb351_06647006($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
+<?php if ($_valid && !is_callable('content_53b84c15e768e4_14090227')) {function content_53b84c15e768e4_14090227($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
 ?><?php if (!empty($_smarty_tpl->tpl_vars['breadcrumbs']->value)) {?>
 <div class="breadCrumb clearfix">
 	<ul id="breadcrumbs">

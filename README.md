@@ -8,13 +8,8 @@ Include this into your composer:
 
 ```
 "require": {
-<<<<<<< HEAD
     "skullyframework/admin": "0.1.*"
 }
-=======
-    "skullyframework/skully-admin": "dev-master"
-},
->>>>>>> bae0f1a1d37cf29f26738851605d8716e9658b8c
 ```
 
 Then update your composer.

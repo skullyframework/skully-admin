@@ -16,6 +16,8 @@ use App\Models\Setting;
 Trait ImageUploaderSetting {
     use ImageUploader;
 // IMPORTANT: Add the following to your Controller:
+//    protected $imageMovePath = 'admin/controllerName/moveImage';
+//    protected $imageNewRowPath = 'admin/controllerName/newRow';
 //    protected $imageUploadPath = 'admin/controllerName/uploadImage';
 //    protected $imageDeletePath = 'admin/controllerName/deleteImage';
 //    protected $imageDestroyPath = 'admin/controllerName/destroyImage';
@@ -87,8 +89,8 @@ Trait ImageUploaderSetting {
         $this->setupInstanceImageAssigns();
         $this->setPaths();
         $this->render('images', array(
-            'imageSettings' => $imageSettings,
-            'indexContent' => $this->fetch('/admin/widgets/imageUploader/_index', array('imageSettings' => $imageSettings))
+            '_imageSettings' => $imageSettings,
+            'indexContent' => $this->fetch('/admin/widgets/imageUploader/_index', array('_imageSettings' => $imageSettings))
         ));
     }
 

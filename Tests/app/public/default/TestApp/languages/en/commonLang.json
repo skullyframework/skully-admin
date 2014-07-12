@@ -1,0 +1,4 @@
+{
+    "errorInstanceEmpty": "Instance not found. Check if ID was passed correctly.",
+    "errorSettingEmpty": "ImageSetting not found. Check if controller has the correct setting."
+}

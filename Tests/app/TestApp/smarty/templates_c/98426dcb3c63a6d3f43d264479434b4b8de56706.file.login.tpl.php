@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2014-07-03 14:44:20
+<?php /* Smarty version Smarty-3.1.18, created on 2014-07-08 12:29:00
          compiled from "D:\apache\skully-admin\public\views\admin\admins\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1101453b509d4f0aaa7-40795134%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:243553bb819c48cff0-20454270%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1101453b509d4f0aaa7-40795134',
+  'nocache_hash' => '243553bb819c48cff0-20454270',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_53b509d5012321_04308987',
+  'unifunc' => 'content_53bb819c6237f8_76182589',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53b509d5012321_04308987')) {function content_53b509d5012321_04308987($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
+<?php if ($_valid && !is_callable('content_53bb819c6237f8_76182589')) {function content_53bb819c6237f8_76182589($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,3 @@
-{foreach from=($instanceImages.{$imageSettingName}) item=image key=imagePos}
-    {include file="admin/widgets/imageUploader/multiple/_oneType.tpl" imageSettingName=$imageSettingName imageSetting=$imageSetting image=$image imagePos=$imagePos}
+{foreach from=($instanceImages.{$_imageSettingName}) item=_image key=_imagePos}
+    {include file="admin/widgets/imageUploader/multiple/_oneType.tpl" _imageSettingName=$_imageSettingName _imageSetting=$_imageSetting _image=$_image _imagePos=$_imagePos}
 {/foreach}

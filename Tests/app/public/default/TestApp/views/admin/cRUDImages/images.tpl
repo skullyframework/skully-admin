@@ -9,7 +9,7 @@
             <div class="head dark">
                 <div class="icon"><i class="icos-images"></i></div>
                 <h2>{lang value="Images - Image Manager"}</h2>
-                <a href="{url path="admin/featuredProductSettings/index"}" class="backlink">Back to list</a>
+                <a href="{url path="admin/cRUDImages/index"}" class="backlink">Back to list</a>
             </div>
             {$indexContent}
             {block name="uploadScript"}
