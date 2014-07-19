@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf4cf9-91e2-4918-a853-26c46bd67c62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/admin/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/admin/stylesheets.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/vendor/jquery.jscrollpane.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/vendor/owl.carousel.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" afterPath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" />
     </list>
     <ignored path="skully-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +33,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_index.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_index.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="10" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.71428573" vertical-offset="369" max-vertical-offset="702">
+            <state line="33" column="10" selection-start="2042" selection-end="2042" vertical-scroll-proportion="-8.333333" vertical-offset="369" max-vertical-offset="702">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_settings.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_settings.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="22482">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_stylesheet.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="877" column="75" selection-start="66791" selection-end="66791" vertical-scroll-proportion="0.43448275" vertical-offset="15660" max-vertical-offset="23868">
               <folding />
             </state>
           </provider>
@@ -50,51 +74,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="13" selection-start="0" selection-end="80" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="144">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRUDController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="-9.333333" vertical-offset="594" max-vertical-offset="11448">
-              <folding>
-                <marker date="1405740816457" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sortable.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="-11.740741" vertical-offset="1249" max-vertical-offset="1674">
-              <folding>
-                <marker date="1405761307154" expanded="true" signature="30:3756" placeholder="..." />
-                <marker date="1405761307154" expanded="true" signature="203:601" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="213:375" placeholder="//..." />
-                <marker date="1405761307154" expanded="true" signature="416:481" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="528:594" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="649:3735" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="700:3729" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="790:3530" placeholder="{&quot;bAutoWidth&quot;: true...}" />
-                <marker date="1405761307154" expanded="true" signature="1182:1253" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="1328:1796" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="1350:1389" placeholder="/*...*/" />
-                <marker date="1405761307154" expanded="true" signature="1543:1775" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="1569:1655" placeholder="/*...*/" />
-                <marker date="1405761307154" expanded="true" signature="1843:1922" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="2015:3516" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="2037:2172" placeholder="//..." />
-                <marker date="1405761307154" expanded="true" signature="2333:3322" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="2430:3300" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="2576:3241" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="2650:2755" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="2828:2998" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="3115:3211" placeholder="{...}" />
-                <marker date="1405761307154" expanded="true" signature="3344:3360" placeholder="/*...*/" />
-                <marker date="1405761307154" expanded="true" signature="3546:3682" placeholder="{&quot;sURL&quot;: '{url path=&quot;$reorderPath&quot;}'...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +100,14 @@
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="900">
-              <folding />
+              <folding>
+                <marker date="1402120786000" expanded="true" signature="306:1165" placeholder="..." />
+                <marker date="1402120786000" expanded="true" signature="372:1158" placeholder="..." />
+                <marker date="1402120786000" expanded="true" signature="398:654" placeholder="..." />
+                <marker date="1402120786000" expanded="true" signature="507:645" placeholder="..." />
+                <marker date="1402120786000" expanded="true" signature="688:1150" placeholder="..." />
+                <marker date="1402120786000" expanded="true" signature="1248:1366" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,6 +190,7 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" />
+        <option value="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" />
       </list>
     </option>
   </component>
@@ -604,6 +591,124 @@
               <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foundation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foundation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foundation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -910,14 +1015,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="954" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8" selection-start="620" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="378">
@@ -932,7 +1029,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574" />
+        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/config.rb">
@@ -1035,11 +1134,6 @@
         <state line="18" column="48" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="3978" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22542" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567" />
@@ -1055,7 +1149,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574" />
+        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
@@ -1158,7 +1254,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="-9.333333" vertical-offset="594" max-vertical-offset="11448">
           <folding>
-            <marker date="1405740816457" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
+            <marker date="1405740816457" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
@@ -1167,30 +1263,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="-11.740741" vertical-offset="1249" max-vertical-offset="1674">
           <folding>
-            <marker date="1405761307154" expanded="true" signature="30:3756" placeholder="..." />
-            <marker date="1405761307154" expanded="true" signature="203:601" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="213:375" placeholder="//..." />
-            <marker date="1405761307154" expanded="true" signature="416:481" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="528:594" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="649:3735" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="700:3729" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="790:3530" placeholder="{&quot;bAutoWidth&quot;: true...}" />
-            <marker date="1405761307154" expanded="true" signature="1182:1253" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="1328:1796" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="1350:1389" placeholder="/*...*/" />
-            <marker date="1405761307154" expanded="true" signature="1543:1775" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="1569:1655" placeholder="/*...*/" />
-            <marker date="1405761307154" expanded="true" signature="1843:1922" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="2015:3516" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="2037:2172" placeholder="//..." />
-            <marker date="1405761307154" expanded="true" signature="2333:3322" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="2430:3300" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="2576:3241" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="2650:2755" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="2828:2998" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="3115:3211" placeholder="{...}" />
-            <marker date="1405761307154" expanded="true" signature="3344:3360" placeholder="/*...*/" />
-            <marker date="1405761307154" expanded="true" signature="3546:3682" placeholder="{&quot;sURL&quot;: '{url path=&quot;$reorderPath&quot;}'...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{&quot;bAutoWidth&quot;: true...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1405761307154" expanded="true" signature="-1:-1" placeholder="{&quot;sURL&quot;: '{url path=&quot;$reorderPath&quot;}'...}" />
           </folding>
         </state>
       </provider>
@@ -1240,13 +1336,34 @@
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <marker date="1402120786000" expanded="true" signature="306:1165" placeholder="..." />
+            <marker date="1402120786000" expanded="true" signature="372:1158" placeholder="..." />
+            <marker date="1402120786000" expanded="true" signature="398:654" placeholder="..." />
+            <marker date="1402120786000" expanded="true" signature="507:645" placeholder="..." />
+            <marker date="1402120786000" expanded="true" signature="688:1150" placeholder="..." />
+            <marker date="1402120786000" expanded="true" signature="1248:1366" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.71428573" vertical-offset="369" max-vertical-offset="702">
+        <state line="33" column="10" selection-start="2042" selection-end="2042" vertical-scroll-proportion="-8.333333" vertical-offset="369" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="877" column="75" selection-start="66791" selection-end="66791" vertical-scroll-proportion="0.43448275" vertical-offset="15660" max-vertical-offset="23868">
           <folding />
         </state>
       </provider>
