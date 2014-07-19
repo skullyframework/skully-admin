@@ -2,103 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf4cf9-91e2-4918-a853-26c46bd67c62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/public/images/Image/1/gps-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/public/images/Image/1/gps-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/public/images/Image/1/gps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/public/images/Image/1/gudang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/03ff1883ba4b4be0f6b88840e1e793696a7f1c16.file._singleOneType.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/313bd61c14ec6e1e9ddcf858c513b6998992c6cd.file._imageForm.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/6c01e12cbc113d6dbae5af38f6488bb5fa20f2b9.file._manyTypes.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/7b08fa6f532bd7c3e228b36569ae7785c7dd4448.file._singleManyTypes.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/947e5830dc2a5d7c95b1906a5c44bc427afcd227.file._delete.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/a2442681ca423a1341775f4ae0d08537796b859c.file._multipleManyTypes.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/a389dfa929ae09f52bc4e596f7235ffbee7d5d7c.file._oneType.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/bab8ac003e7f0ed022f17f821476da7742b7cbaf.file.images.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/be4107e3f40df98060b2ff58a617b9c22a662c92.file._multipleOneType.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/languages/en/commonLang.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/dbe6d3310c8d7656b4f43029db8a830979bb5830.file.debug.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/f2d6f6210a03f0d040b00e9590e1beb4c568d065.file._index.tpl.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/01ca7c4d8954b1a3bac33208f3bcf58ea4ce1ccd.file._editForm.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/06407c87f097d3130e6895050cb37413f2282169.file._password.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/116c820b09448b213d5f087f6d6044dc8044f023.file._error.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/11f777e6d6a20c22d8776d96aa172ee21f8c1d5f.file._add.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/12724029030b9c37ed8a7967bdd24bb185be92dd.file._userInfo.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/185eb24103bcb66faf9af5791c758575fc934684.file._editAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/196363ce8e3a872d91a1a7e3e01ad3294db7af2f.file.delete.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/24cd625dc7bf868b71489ad37333ba0cb7762c02.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/28213d2f226ce56051a5921d14664febb0ea46bb.file._header.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/29e2576e913dade7db5b94c175e7aa1831d61c34.file._addAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/31124213de27262fb192d7f5360ab9a4a42b0e28.file._form.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/31df2710377d99f0a3bee5cf0046b1f4f70e9e7f.file._index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/41520127fd68589a191204a35b16510ee514c12c.file._breadcrumbs.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/43a355b4438e1e4751e524c034164a70781156cc.file._header.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/4cc755d1c182bbb3d109539c7d317cfd4c9d065b.file._alerts.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/4f0cf4f1503d191d7d474d05818d84dd158d1d65.file._form.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/55a32b7be9a36b1c3171fe1a46126c497dc914ce.file._editAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/5a6dcac8c3ded957b4839e9119cdf2a4fe5d7683.file._mainMenu.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/5d17a5880842f5fbc001782fe41ac0d6e411e9d9.file._editNoAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/5edf9f42a301342cc135b44ef0080958fdfa8c57.file._userInfo.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/68f06128a3a9c4db7718ab0ccf1e04e00fac1a7a.file._ajaxAlerts.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/6c58132cebf283f30863fd0d97b9bfa97f1ac8da.file.edit.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/6caaf71ff91e811ae9223d4162194747375ed5b9.file._edit.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/6eab26252bbac45a1f7281d1e81e4945726704f1.file._addNoAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/73731bd5204d468ab658af16f1038ede0b7dfab1.file._mainMenu.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/74d782a8326e45336f8013e7100691181fd40c93.file._form.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/773721103fb704bbcd3b94dcc397b20d2e9c2e7d.file._error.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/7bb33eb3d1f7d78a1d2c7984222c5af64e6a8164.file.login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/7be23934556f2cf9056f74f8bc95f322dd18b844.file._breadcrumbs.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/7fec824aca405d58cbf7ca4f6a9a22b62de30aaa.file._deleteAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/9823afd30fd709e6904c0e6ec69e015b76b0d981.file._header.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/9baeeb6393fa2a50fb7f9754c26c1c260d9e48e6.file._deleteForm.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/9dde37c08212cee6b5e2565fade1bfb3a657ebc8.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/a70b0c952d6403dcf59577f4617581de13315e34.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/aa2059146fa07675b56f5b021e576c9e389200c9.file._ajaxAlerts.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/b9c2060d70da4d8b29c1542c09d13dde81ccac6b.file._addAjax.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c2421f850c204b147aea374ae5b57f62fedb214c.file.login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c3dbe427fe2fc6b10b78904ceb0b6f46d7956220.file._editForm.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c4d3518285248705d869f1d219d60a76d8e41a98.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c4f4538288e5c071639481d7b3e9c1613c5160f4.file._addForm.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c65accaee0c1edb8b4336e964a1b44a336fdcce0.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/d107747128dea829dd381822ac311399d0a777f5.file._text.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/e51f1ca04bcb150051cfea3a33c70ddbfaa4e718.file._error.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/fd6a35013fff1f0db934c0738b1f4ec3f527caca.file.add.tpl.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2684052096341b5bc2e43b531e40b16a9a1f0f3a.file._alerts.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/bb4d987039c2ff2774c5f5d8c59d0213d48ddeb9.file._alerts.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/11038a8d647c81616da95d3528ea5e6f2f641f4e.file._userInfo.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/11038a8d647c81616da95d3528ea5e6f2f641f4e.file._userInfo.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/143ce65d8274d3b532b2a50107fa6dc28cb0a468.file._header.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/143ce65d8274d3b532b2a50107fa6dc28cb0a468.file._header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2abac115adf8a287e50c2cb8387b01e47ee05840.file.index.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2abac115adf8a287e50c2cb8387b01e47ee05840.file.index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2da23304e12356867f99004a969bdf7701c95aff.file._mainMenu.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2da23304e12356867f99004a969bdf7701c95aff.file._mainMenu.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/335e8766b008dc8335d260735eb7d8d79b2414b9.file._ajaxAlerts.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/335e8766b008dc8335d260735eb7d8d79b2414b9.file._ajaxAlerts.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/98426dcb3c63a6d3f43d264479434b4b8de56706.file.login.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/98426dcb3c63a6d3f43d264479434b4b8de56706.file.login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/Models/Image.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/Models/Image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/SettingImagesController.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/SettingImagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/_addForm.tpl" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/_addForm.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleOneType.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleOneType.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c7b03972ded63f0b1e3e8b9ff877c2a73bdc94af.file._breadcrumbs.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c7b03972ded63f0b1e3e8b9ff877c2a73bdc94af.file._breadcrumbs.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/cca2121d68351a6a35eb9eb8daba605ae27e908d.file._index.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/cca2121d68351a6a35eb9eb8daba605ae27e908d.file._index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/config/config.common.php" afterPath="$PROJECT_DIR$/Tests/app/config/config.common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/config/config.unique.php" afterPath="$PROJECT_DIR$/Tests/app/config/config.unique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/logs/error.log" afterPath="$PROJECT_DIR$/Tests/app/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" afterPath="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
@@ -125,89 +29,96 @@
       <file leaf-file-name="_index.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="26" selection-start="813" selection-end="813" vertical-scroll-proportion="-3.148148" vertical-offset="113" max-vertical-offset="666">
+            <state line="11" column="26" selection-start="813" selection-end="813" vertical-scroll-proportion="4.740741" vertical-offset="326" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.common.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/config/config.common.php">
+      <file leaf-file-name="_multipleManyTypes.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="604" selection-end="638" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="2808">
+            <state line="1" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="144">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.unique.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/config/config.unique.php">
+      <file leaf-file-name="_main.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="59" selection-start="201" selection-end="201" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="1458">
+            <state line="138" column="19" selection-start="5115" selection-end="5115" vertical-scroll-proportion="-7.9259257" vertical-offset="2270" max-vertical-offset="2628">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CRUDController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.8" vertical-offset="594" max-vertical-offset="11448">
+              <folding>
+                <marker date="1405740816457" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_multipleOneType.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="142" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="144">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_manyTypes.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/app/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.6857143" vertical-offset="108" max-vertical-offset="1998">
+            <state line="50" column="22" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1998">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_imageForm.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl">
+      <file leaf-file-name="_new.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="630">
+            <state line="20" column="18" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mainMenu.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
+      <file leaf-file-name="_oneType.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="8" selection-start="488" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="360">
+            <state line="15" column="55" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mainMenu.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
+      <file leaf-file-name="_delete.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stylesheets.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/config.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="954">
-              <folding />
+            <state line="28" column="5" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="702">
+              <folding>
+                <marker date="1405162173819" expanded="true" signature="713:1179" placeholder="..." />
+                <marker date="1405162173819" expanded="true" signature="748:950" placeholder="..." />
+                <marker date="1405162173819" expanded="true" signature="796:931" placeholder="..." />
+                <marker date="1405162173819" expanded="true" signature="1025:1146" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -244,7 +155,6 @@
         <option value="$PROJECT_DIR$/Tests/app/public/default/resources/js/admin/plugins.js" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/languages/commonLang.json" />
         <option value="$PROJECT_DIR$/Tests/app/logs/error.log" />
-        <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl" />
@@ -269,6 +179,8 @@
         <option value="$PROJECT_DIR$/Tests/app/config/config.common.php" />
         <option value="$PROJECT_DIR$/Tests/app/config/config.unique.php" />
         <option value="$PROJECT_DIR$/Tests/app/bootstrap.php" />
+        <option value="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
+        <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
       </list>
     </option>
   </component>
@@ -305,6 +217,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -320,6 +233,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skullyframework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -492,10 +437,6 @@
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widgets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -526,18 +467,6 @@
               <option name="myItemId" value="TestApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="settingImages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -562,234 +491,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cRUDImages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="languages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skully-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -839,13 +540,188 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SkullyAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wrappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imageUploader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imageUploader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imageUploader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -887,18 +763,18 @@
     <frame x="52" y="-4" width="1315" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2691397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -929,6 +805,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="488" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="954" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8" selection-start="620" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="378">
           <folding />
         </state>
@@ -936,30 +842,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="4" column="5" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574">
-          <folding />
-        </state>
+        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1062">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1062" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
@@ -982,11 +880,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/App/Models/Traits/HasImages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="1440" selection-end="1440" vertical-scroll-proportion="-3.3461537" vertical-offset="712" max-vertical-offset="1717" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="14" selection-start="470" selection-end="470" vertical-scroll-proportion="0.43992606" vertical-offset="0" max-vertical-offset="544" />
@@ -1000,26 +893,6 @@
     <entry file="file://$PROJECT_DIR$/public/views/admin/settings/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.3461537" vertical-offset="165" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Tests/App/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="64" selection-end="64" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Core/ControllerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="20" selection-start="1549" selection-end="1549" vertical-scroll-proportion="-4.6538463" vertical-offset="950" max-vertical-offset="2176" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="83" selection-start="7016" selection-end="7016" vertical-scroll-proportion="-1.5769231" vertical-offset="4124" max-vertical-offset="11832" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Core/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="40" selection-start="1731" selection-end="1731" vertical-scroll-proportion="-5.3076925" vertical-offset="882" max-vertical-offset="5933" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/js/admin/plugins.js">
@@ -1047,34 +920,14 @@
         <state line="56" column="0" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1428" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="452" column="40" selection-start="18278" selection-end="18278" vertical-scroll-proportion="-4.3076925" vertical-offset="7555" max-vertical-offset="10812" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleOneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="113" selection-start="252" selection-end="252" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="1186" selection-end="1186" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="663" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="40" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="142" selection-start="222" selection-end="222" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
@@ -1087,24 +940,9 @@
         <state line="16" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="680" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="389" column="67" selection-start="16395" selection-end="16395" vertical-scroll-proportion="0.0" vertical-offset="5427" max-vertical-offset="6766" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="52" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Library/ImageProcessor/ImageProcessor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="3" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="5406" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
@@ -1127,34 +965,6 @@
         <state line="18" column="48" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="3978" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="136">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="488" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22542" />
@@ -1162,9 +972,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1172,50 +980,130 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="954">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="954" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574">
-          <folding />
-        </state>
+        <state line="42" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2574" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="813" selection-end="813" vertical-scroll-proportion="-3.148148" vertical-offset="113" max-vertical-offset="666">
-          <folding />
-        </state>
+        <state line="11" column="5" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="306" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/config/config.common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="604" selection-end="638" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="2808">
-          <folding />
-        </state>
+        <state line="17" column="25" selection-start="604" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2808" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/config/config.unique.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="201" selection-end="201" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="1458">
+        <state line="6" column="59" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1458">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.6857143" vertical-offset="108" max-vertical-offset="1998">
+        <state line="50" column="22" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1998">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="488" selection-end="493" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="55" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="702">
+          <folding>
+            <marker date="1405162173819" expanded="true" signature="713:1179" placeholder="..." />
+            <marker date="1405162173819" expanded="true" signature="748:950" placeholder="..." />
+            <marker date="1405162173819" expanded="true" signature="796:931" placeholder="..." />
+            <marker date="1405162173819" expanded="true" signature="1025:1146" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="142" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="9.333333" vertical-offset="270" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="373" column="19" selection-start="15880" selection-end="15880" vertical-scroll-proportion="11.935294" vertical-offset="2656" max-vertical-offset="7164">
+          <folding>
+            <marker date="1405162173818" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1405162173818" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1405162173818" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="813" selection-end="813" vertical-scroll-proportion="4.740741" vertical-offset="326" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="19" selection-start="5115" selection-end="5115" vertical-scroll-proportion="-7.9259257" vertical-offset="2270" max-vertical-offset="2628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.8" vertical-offset="594" max-vertical-offset="11448">
+          <folding>
+            <marker date="1405740816457" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
+          </folding>
         </state>
       </provider>
     </entry>

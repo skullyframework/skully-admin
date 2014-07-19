@@ -45,7 +45,7 @@ class CRUDController extends BaseController
     protected $dragField = null;
     // Path to do reorder after dragging (e.g. instances/reorder)
     protected $reorderPath = null;
-    // Id column's index number (no need to set this unless you require to setup sortable manually
+    // Id column's index number. No need to set this unless you require to setup sortable manually
     // (i.e. not by simply setting $setupSortable to true. Usually for older projects).
     // protected $sortableIdColumnIndex = 0;
     // -- END - SORTABLE -- //
