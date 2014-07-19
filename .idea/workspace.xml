@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf4cf9-91e2-4918-a853-26c46bd67c62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,10 +64,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sortable.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_sortable.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.93235296" vertical-offset="1249" max-vertical-offset="1674">
+            <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="-11.740741" vertical-offset="1249" max-vertical-offset="1674">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sampleForm.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="87" selection-start="702" selection-end="702" vertical-scroll-proportion="0.68235296" vertical-offset="74" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -85,15 +95,6 @@
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="522">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_new.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
@@ -148,7 +149,6 @@
         <option value="$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140704031054_ImageAdmin.php" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/SettingsController.php" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/_addForm.tpl" />
-        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
         <option value="$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Application.php" />
         <option value="$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Core/Controller.php" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/resources/js/admin/plugins.js" />
@@ -181,6 +181,7 @@
         <option value="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
       </list>
     </option>
   </component>
@@ -987,11 +988,6 @@
         <state line="1" column="40" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="340" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="92" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="1071" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/_addForm.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="680" />
@@ -1166,7 +1162,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.93235296" vertical-offset="1249" max-vertical-offset="1674">
+        <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="-11.740741" vertical-offset="1249" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="87" selection-start="702" selection-end="702" vertical-scroll-proportion="0.68235296" vertical-offset="74" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>
