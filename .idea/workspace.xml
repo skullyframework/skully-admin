@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf4cf9-91e2-4918-a853-26c46bd67c62" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/admin/ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/admin/stylesheets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/tooltip.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/vendor/jquery.jscrollpane.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/vendor/owl.carousel.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" afterPath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +47,7 @@
       <file leaf-file-name="_stylesheet.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="877" column="75" selection-start="66791" selection-end="66791" vertical-scroll-proportion="0.43448275" vertical-offset="15660" max-vertical-offset="23868">
+            <state line="877" column="72" selection-start="66788" selection-end="66788" vertical-scroll-proportion="0.43448275" vertical-offset="15660" max-vertical-offset="23868">
               <folding />
             </state>
           </provider>
@@ -1363,7 +1356,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="877" column="75" selection-start="66791" selection-end="66791" vertical-scroll-proportion="0.43448275" vertical-offset="15660" max-vertical-offset="23868">
+        <state line="877" column="72" selection-start="66788" selection-end="66788" vertical-scroll-proportion="0.43448275" vertical-offset="15660" max-vertical-offset="23868">
           <folding />
         </state>
       </provider>
