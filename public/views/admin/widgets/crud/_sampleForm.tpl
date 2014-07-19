@@ -13,10 +13,12 @@
 				{*<input name="{$instanceName}[id]" type="hidden" value="{${$instanceName}.id}">*}
 				{*{lang value="Edit "|cat:$instanceName}*}
 			{*{/if}*}
+            {*{if $action!='create'}*}
+                {*<div class="TAR">*}
+                    {*<a href="{url path="admin/CONTROLLER_PATH/images" id={${$instanceName}.id}}" class="btn">Image Manager</a>*}
+                {*</div>*}
+            {*{/if}*}
 			{*</div>*}
-            {*<div class="TAR">*}
-                {*<a href="{url path="admin/CONTROLLER_PATH/images" id={${$instanceName}.id}}" class="btn">Image Manager</a>*}
-            {*</div>*}
 		{*</div>*}
 		{*<div class="row-form">*}
 			{*<div class="span2">{lang value="Name"}</div>*}
