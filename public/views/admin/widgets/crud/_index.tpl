@@ -17,10 +17,10 @@
 			</ul>
 		</div>
         <div class="block-fluid">
-            {if !empty($dragField)}
-                {$sortableTable = 'sortableTable initialized'}
-            {/if}
             {nocache}
+                {if !empty($dragField)}
+                    {$sortableTable = 'sortableTable initialized'}
+                {/if}
                 {html_table
                 loop=''
                 table_attr='class="'|cat: $sortableTable|cat:' aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'

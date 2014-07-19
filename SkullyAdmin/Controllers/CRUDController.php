@@ -254,7 +254,6 @@ class CRUDController extends BaseController
             $action = $currentAction;
         }
 
-        $this->app->getLogger()->log("instanceName: ".$this->instanceName." instance to be exported: " . print_r($instance->export(true), true));
         $this->app->getTemplateEngine()->assign(array(
             $this->instanceName => $instance->export(true),
             'instanceName' => $this->instanceName,
