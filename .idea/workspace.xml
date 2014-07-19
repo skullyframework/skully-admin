@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf4cf9-91e2-4918-a853-26c46bd67c62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" afterPath="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" />
     </list>
     <ignored path="skully-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,13 +52,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CRUDController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CRUDController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.8" vertical-offset="594" max-vertical-offset="11448">
+            <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="-9.333333" vertical-offset="594" max-vertical-offset="11448">
               <folding>
                 <marker date="1405740816457" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sortable.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.93235296" vertical-offset="1249" max-vertical-offset="1674">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,15 +85,6 @@
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="522">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="22" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1998">
               <folding />
             </state>
           </provider>
@@ -181,6 +180,7 @@
         <option value="$PROJECT_DIR$/Tests/app/bootstrap.php" />
         <option value="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" />
       </list>
     </option>
   </component>
@@ -719,6 +719,70 @@
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -803,13 +867,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/_mainMenu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="488" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="5" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="306" />
@@ -1100,10 +1157,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.8" vertical-offset="594" max-vertical-offset="11448">
+        <state line="48" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="-9.333333" vertical-offset="594" max-vertical-offset="11448">
           <folding>
             <marker date="1405740816457" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="9" selection-start="3757" selection-end="3757" vertical-scroll-proportion="0.93235296" vertical-offset="1249" max-vertical-offset="1674">
+          <folding />
         </state>
       </provider>
     </entry>
