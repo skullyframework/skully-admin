@@ -8,6 +8,7 @@
 {block name=content}
 <div class="span12">
 {include file='admin/widgets/_alerts.tpl' }
+    {nocache}
 	<div class="widget">
 		<div class="head dark">
 			<div class="icon"><i class="icos-stats-up"></i></div>
@@ -17,7 +18,6 @@
 			</ul>
 		</div>
         <div class="block-fluid">
-            {nocache}
                 {if !empty($dragField)}
                     {$sortableTable = 'sortableTable initialized'}
                 {/if}
@@ -27,9 +27,9 @@
                 th_attr=$thAttributes
                 cols=$columns
                 }
-            {/nocache}
         </div>
 	</div>
+    {/nocache}
 </div>
 {/block}
 {block name=footer}
