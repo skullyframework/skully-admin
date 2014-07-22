@@ -1,3 +1,4 @@
+{nocache}
 <div class="row-form" id="newRow-{$_imageSettingName}">
     <div class="span6">
         {form enctype="multipart/form-data" method="POST" action="{url path=$imageUploadPath}"}
@@ -25,3 +26,4 @@
         <a href="#" class="btn btn-large largeText uploadSeparately">Upload separate image for each type</a>
     </div>
 </div>
+{/nocache}

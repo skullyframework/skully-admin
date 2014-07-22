@@ -1,3 +1,4 @@
+{nocache}
 <div class="row-form imageManagerRow">
     <input type="hidden" name="position" value="{$_imagePos}" />
     <div class="FR">
@@ -22,3 +23,4 @@
         {$i = $i+1}
     {/foreach}
 </div>
+{/nocache}
