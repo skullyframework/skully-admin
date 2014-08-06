@@ -75,8 +75,6 @@
 
 <script type='text/javascript' src="{theme_url path="resources/js/plugins/media/mediaelement-and-player.min.js"}"></script>
 
-<script type='text/javascript' src="{theme_url path="resources/js/plugins/cleditor/jquery.cleditor.js"}"></script>
-
 <script type='text/javascript' src="{theme_url path="resources/js/plugins/shbrush/XRegExp.js"}"></script>
 <script type='text/javascript' src="{theme_url path="resources/js/plugins/shbrush/shCore.js"}"></script>
 <script type='text/javascript' src="{theme_url path="resources/js/plugins/shbrush/shBrushXml.js"}"></script>

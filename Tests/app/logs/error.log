@@ -840,3 +840,225 @@ Stack trace:
 
 [Tuesday, 08-Jul-2014 13:53:26 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
 [Tuesday, 08-Jul-2014 13:53:26 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:11:05 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Exceptions/InvalidTemplateException.php | ln:36
+GET: Array
+(
+    [_url] => admin/login
+)
+
+POST: Array
+(
+)
+
+Uncaught exception 'Skully\Exceptions\InvalidTemplateException' with message 'Theme file not found after searching at these locations: 
+/media/jay/Data/apache/skully-admin/Tests/app/public/default/resources/css/admin/stylesheets.css
+/media/jay/Data/apache/skully-admin/Tests/app/public/default/resources/css/admin/stylesheets.css
+' in /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Exceptions/InvalidTemplateException.php:36
+Stack trace:
+#0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Templating/SmartyAdapter.php(131): Skully\Exceptions\InvalidTemplateException::throwError(Object(Skully\Exceptions\ThemeFileNotFoundException), 'admin/admins/lo...')
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Controller.php(254): Skully\Core\Templating\SmartyAdapter->display('admin/admins/lo...')
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/App/Controllers/BaseController.php(67): Skully\Core\Controller->ren
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:12:24 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Exceptions/InvalidTemplateException.php | ln:36
+GET: Array
+(
+    [_url] => admin/login
+)
+
+POST: Array
+(
+)
+
+Uncaught exception 'Skully\Exceptions\InvalidTemplateException' with message 'Theme file not found after searching at these locations: 
+/media/jay/Data/apache/skully-admin/Tests/app/public/default/resources/css/admin/stylesheets.css
+/media/jay/Data/apache/skully-admin/Tests/app/public/default/resources/css/admin/stylesheets.css
+' in /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Exceptions/InvalidTemplateException.php:36
+Stack trace:
+#0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Templating/SmartyAdapter.php(131): Skully\Exceptions\InvalidTemplateException::throwError(Object(Skully\Exceptions\ThemeFileNotFoundException), 'admin/admins/lo...')
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Controller.php(254): Skully\Core\Templating\SmartyAdapter->display('admin/admins/lo...')
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/App/Controllers/BaseController.php(67): Skully\Core\Controller->ren
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:12:30 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Exceptions/InvalidTemplateException.php | ln:36
+GET: Array
+(
+    [_url] => admin/login
+)
+
+POST: Array
+(
+)
+
+Uncaught exception 'Skully\Exceptions\InvalidTemplateException' with message 'Theme file not found after searching at these locations: 
+/media/jay/Data/apache/skully-admin/Tests/app/public/default/resources/css/admin/stylesheets.css
+/media/jay/Data/apache/skully-admin/Tests/app/public/default/resources/css/admin/stylesheets.css
+' in /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Exceptions/InvalidTemplateException.php:36
+Stack trace:
+#0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Templating/SmartyAdapter.php(131): Skully\Exceptions\InvalidTemplateException::throwError(Object(Skully\Exceptions\ThemeFileNotFoundException), 'admin/admins/lo...')
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Controller.php(254): Skully\Core\Templating\SmartyAdapter->display('admin/admins/lo...')
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/App/Controllers/BaseController.php(67): Skully\Core\Controller->ren
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:12:57 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:12:57 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:13:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:13:13 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:14:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:14:13 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:14:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:14:14 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:14:15 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:14:15 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:14:16 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:14:16 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:14:56 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:14:57 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:15:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:15:18 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:15:19 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:15:19 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:15:44 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:15:44 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:16:05 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:16:05 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:16:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:16:13 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:16:13 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php | ln:164
+GET: Array
+(
+    [_url] => admin/cRUDImages/index
+)
+
+POST: Array
+(
+)
+
+Uncaught [42S02] - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'skully_admin.image' doesn't exist
+trace: #0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php(289): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM i...', Array)
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Adapter/DBAdapter.php(79): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM i...', Array)
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(145): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM i...', Array)
+#3 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(721): RedBeanPHP\Facade::query('get', 'SELECT * FROM i...', Array)
+#4 /media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php(151): RedBeanPHP\Facade::getAll('SELECT * FROM i...')
+#5 /media/
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:16:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:16:14 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:17:19 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:17:19 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:17:20 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:17:21 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:18:04 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:18:04 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:18:47 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:18:47 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:18:53 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:18:53 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:18:55 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:18:55 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:18:55 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php | ln:164
+GET: Array
+(
+    [_url] => admin/cRUDImages/index
+)
+
+POST: Array
+(
+)
+
+Uncaught [42S02] - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'skully_admin.image' doesn't exist
+trace: #0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php(289): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM i...', Array)
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Adapter/DBAdapter.php(79): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM i...', Array)
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(145): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM i...', Array)
+#3 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(721): RedBeanPHP\Facade::query('get', 'SELECT * FROM i...', Array)
+#4 /media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php(151): RedBeanPHP\Facade::getAll('SELECT * FROM i...')
+#5 /media/
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:18:58 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:18:58 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:18:58 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php | ln:164
+GET: Array
+(
+    [_url] => admin/cRUDImages/index
+)
+
+POST: Array
+(
+)
+
+Uncaught [42S02] - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'skully_admin.image' doesn't exist
+trace: #0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php(289): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM i...', Array)
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Adapter/DBAdapter.php(79): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM i...', Array)
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(145): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM i...', Array)
+#3 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(721): RedBeanPHP\Facade::query('get', 'SELECT * FROM i...', Array)
+#4 /media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php(151): RedBeanPHP\Facade::getAll('SELECT * FROM i...')
+#5 /media/
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:19:06 WIB error] error happened when updating from CRUDController (model image): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'skully_admin.image' doesn't exist
+[Wednesday, 06-Aug-14 14:19:06 WIB debug] debug backtrace: Array
+(
+    [0] => Skully\Logging\Logger->debugBacktrace() /media/jay/Data/apache/skully-admin/SkullyAdmin/Controllers/CRUDController.php(472)
+    [1] => SkullyAdmin\Controllers\CRUDController->create() /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Controller.php(108)
+    [2] => Skully\Core\Controller->runAction(create) /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Core/Controller.php(68)
+    [3] => Skully\Core\Controller->runCurrentAction() /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Application.php(285)
+    [4] => Skully\Application->runControllerFromRawUrl(admin/cRUDImages/create) /media/jay/Data/apache/skully-admin/Tests/app/index.php(16)
+)
+
+[Wednesday, 06-Aug-14 14:19:06 WIB error] params are: Array
+(
+    [_url] => admin/cRUDImages/create
+)
+
+[Wednesday, 06-Aug-14 14:20:35 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:20:36 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:20:36 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php | ln:164
+GET: Array
+(
+    [_url] => admin/cRUDImages/index
+)
+
+POST: Array
+(
+)
+
+Uncaught [42S02] - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'skully_admin.image' doesn't exist
+trace: #0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php(289): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM i...', Array)
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Adapter/DBAdapter.php(79): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM i...', Array)
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(145): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM i...', Array)
+#3 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(721): RedBeanPHP\Facade::query('get', 'SELECT * FROM i...', Array)
+#4 /media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php(151): RedBeanPHP\Facade::getAll('SELECT * FROM i...')
+#5 /media/
+#0  shutdownHandler()
+
+
+[Wednesday, 06-Aug-14 14:20:37 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Wednesday, 06-Aug-14 14:20:37 WIB warn] Resource not found: public/adminFavicon.ico
+[Wednesday, 06-Aug-14 14:20:37 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php | ln:164
+GET: Array
+(
+    [_url] => admin/cRUDImages/index
+)
+
+POST: Array
+(
+)
+
+Uncaught [42S02] - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'skully_admin.image' doesn't exist
+trace: #0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Driver/RPDO.php(289): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM i...', Array)
+#1 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Adapter/DBAdapter.php(79): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM i...', Array)
+#2 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(145): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM i...', Array)
+#3 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/Library/redbean/RedBeanPHP/Facade.php(721): RedBeanPHP\Facade::query('get', 'SELECT * FROM i...', Array)
+#4 /media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php(151): RedBeanPHP\Facade::getAll('SELECT * FROM i...')
+#5 /media/
+#0  shutdownHandler()
+
+
