@@ -160,4 +160,8 @@ Trait ImageUploaderSetting {
         $this->app->getTemplateEngine()->assign(array('instanceName' => 'setting', 'setting' => $instance->export(true), 'isSettingModel' => true));
         $this->processDestroyImage($instance, $this->getParam('setting'), $this->getParam('field'), $this->getParam('position'));
     }
+
+    protected function getImagesValue($instance, $settingName){
+        return $instance->get("value");
+    }
 } 

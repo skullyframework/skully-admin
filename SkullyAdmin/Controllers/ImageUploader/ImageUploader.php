@@ -344,6 +344,10 @@ trait ImageUploader {
         }
     }
 
+    protected function getImagesValue($instance, $settingName){
+        return $instance->get($settingName);
+    }
+
     /**
      * If pos is empty, means it creates a new row
      */
@@ -357,7 +361,7 @@ trait ImageUploader {
         $imageSettings = $this->getImageSettings();
         $settingName = $this->getParam('setting');
         $imageSetting = $imageSettings[$settingName];
-        $images = $instance->get($settingName);
+        $images = $this->getImagesValue($instance, $settingName);
         if (empty($images)) {
             $images = array();
         }
