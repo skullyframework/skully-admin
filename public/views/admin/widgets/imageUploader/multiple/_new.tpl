@@ -15,6 +15,7 @@
                 <div>
                     <span class="btn btn-file btn-large">
                         <span class="fileupload-new largeText uploadOnc fileupload-upload">Upload one image, resize to all types (can change later)</span>
+                        <span class="fileupload-exists largeText uploadOnc">Upload one image, resize to all types (can change later)</span>
                         <input type="file" name="image" />
                     </span>
                 </div>
