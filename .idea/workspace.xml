@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf4cf9-91e2-4918-a853-26c46bd67c62" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
@@ -25,28 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="images.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/settingImages/images.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_main.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="19" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.0" vertical-offset="2484" max-vertical-offset="2628">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_header.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="733" selection-end="733" vertical-scroll-proportion="0.45396826" vertical-offset="127" max-vertical-offset="2016">
+            <state line="12" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-3.2962964" vertical-offset="127" max-vertical-offset="2016">
+              <folding>
+                <marker date="1407308978186" expanded="true" signature="184:263" placeholder="..." />
+                <marker date="1407308978186" expanded="true" signature="637:653" placeholder="..." />
+                <marker date="1407308978186" expanded="true" signature="654:798" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageUploader.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="30" selection-start="591" selection-end="591" vertical-scroll-proportion="-3.3333333" vertical-offset="144" max-vertical-offset="7938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageUploaderCRUD.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="-0.6666667" vertical-offset="288" max-vertical-offset="2772">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageUploaderSetting.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.22857143" vertical-offset="234" max-vertical-offset="2988">
               <folding />
             </state>
           </provider>
@@ -168,8 +182,8 @@
         <option value="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/stylesheets.scss" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/AdminsController.php" />
-        <option value="$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl" />
         <option value="$PROJECT_DIR$/Tests/app/public/default/resources/js/admin/plugins.js" />
+        <option value="$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl" />
       </list>
     </option>
   </component>
@@ -668,6 +682,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SkullyAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageUploader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -983,7 +1019,11 @@
     <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-          <folding />
+          <folding>
+            <marker date="1407308978186" expanded="true" signature="184:263" placeholder="..." />
+            <marker date="1407308978186" expanded="true" signature="637:653" placeholder="..." />
+            <marker date="1407308978186" expanded="true" signature="654:798" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,21 +1107,6 @@
     <entry file="file://$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/_addForm.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="286" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="7548" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2856" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Controllers/Admin/CRUDImagesController.php">
@@ -1230,7 +1255,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="733" selection-end="733" vertical-scroll-proportion="0.45396826" vertical-offset="127" max-vertical-offset="2016">
+        <state line="12" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-3.2962964" vertical-offset="127" max-vertical-offset="2016">
+          <folding>
+            <marker date="1407308978186" expanded="true" signature="184:263" placeholder="..." />
+            <marker date="1407308978186" expanded="true" signature="637:653" placeholder="..." />
+            <marker date="1407308978186" expanded="true" signature="654:798" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="591" selection-end="591" vertical-scroll-proportion="-3.3333333" vertical-offset="144" max-vertical-offset="7938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="-0.6666667" vertical-offset="288" max-vertical-offset="2772">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.22857143" vertical-offset="234" max-vertical-offset="2988">
           <folding />
         </state>
       </provider>
