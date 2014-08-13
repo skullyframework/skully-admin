@@ -1,5 +1,5 @@
 # skully-admin
-
+updated
 Admin scaffold to use with Skully Framework
 
 ## Installation
@@ -8,7 +8,6 @@ Include this into your composer:
 
 ```
 "require": {
-<<<<<<< HEAD
     "skullyframework/admin": "0.1.*"
 }
 =======
