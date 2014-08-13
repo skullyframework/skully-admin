@@ -1,0 +1,1 @@
+{* todo: select input for settings *}

@@ -1,1 +1,0 @@
-{theme_url value="test"}

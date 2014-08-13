@@ -23,7 +23,7 @@
         "symfony/console": "2.5.x-dev",
         "skullyframework/skully": "0.1.*"
     },
-    "license": "LGPL-2.1",
+    "license": "MIT",
     "suggest": {
         "ext-runkit": "For using the runkit API."
     },

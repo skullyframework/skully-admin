@@ -33,7 +33,7 @@ class SettingsController extends CRUDController {
 
     protected function setInstanceAttributes($instance) {
         if (!empty($this->params[$this->instanceName])) {
-            if ($instance->get('inputType') == 'password') {
+            if ($instance->get('input_type') == 'password') {
                 // If nothing changed and "save" is pressed, don't re-encrypt the encrypted value.
                 if ($this->params[$this->instanceName]['value'] == $instance->get('value')) {
                     $crypt = new EncryptionClass();
@@ -59,8 +59,8 @@ class SettingsController extends CRUDController {
             foreach ($instanceBeans as $instanceBean) {
                 /** @var \TestApp\Models\Setting $instance */
                 $instance = $instanceBean->box();
-                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="icon-eye-open"></span></a>', 'class' => 'TAC');
-                if ($instance->get('type') == 'password') {
+                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="icon-pencil"></span></a>', 'class' => 'TAC');
+                if ($instance->get('input_type') == 'password') {
                     $value = '********';
                 }
                 else {

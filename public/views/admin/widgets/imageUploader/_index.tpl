@@ -1,30 +1,31 @@
-{foreach from=$imageSettings item=imageSetting key=imageSettingName}
-    <div class="block-fluid image_row-{$imageSettingName}">
+{foreach from=$_imageSettings item=_imageSetting key=_imageSettingName}
+    <div class="block-fluid image_row-{$_imageSettingName}">
         <div class="row-form image_row-title">
             <div class="span3 largerText">
-                {$instanceInfo}{$imageSetting._config.adminName}
+                {$instanceInfo}{$_imageSetting._config.adminName}
             </div>
             <div class="TAR">
-                {if $imageSetting._config.multiple}
+                {if $_imageSetting._config.multiple}
+                    {* If coming from ImageUploaderSetting, $isSettingModel is true *}
                     {if $isSettingModel}
-                        <a href="#" data-setting_id="{$instances.{$imageSettingName}.id}" data-setting_name="{$imageSettingName}" class="add_image btn btn-primary btn-small" title="Add New"><i class="icos-plus1"></i></a>
+                        <a href="#" data-setting_id="{$instances.{$_imageSettingName}.id}" data-setting_name="{$_imageSettingName}" class="add_image btn btn-primary btn-small{if $_imageSetting.types} many{else} one{/if}" title="Add New"><i class="icos-plus1"></i></a>
                     {else}
-                        <a href="#" data-setting_id="{${$instanceName}.id}" data-setting_name="{$imageSettingName}" class="add_image btn btn-primary btn-small" title="Add New"><i class="icos-plus1"></i></a>
+                        <a href="#" data-setting_id="{${$instanceName}.id}" data-setting_name="{$_imageSettingName}" class="add_image btn btn-primary btn-small{if $_imageSetting.types} many{else} one{/if}" title="Add New"><i class="icos-plus1"></i></a>
                     {/if}
                 {/if}
             </div>
         </div>
-        {if $imageSetting._config.multiple}
-            {if $imageSetting.types}
-                {include file=$multipleManyTypesForm imageSettingName=$imageSettingName imageSetting=$imageSetting}
+        {if $_imageSetting._config.multiple}
+            {if $_imageSetting.types}
+                {include file=$multipleManyTypesForm imageSettingName=$_imageSettingName imageSetting=$_imageSetting}
             {else}
-                {include file=$multipleOneTypeForm imageSettingName=$imageSettingName imageSetting=$imageSetting}
+                {include file=$multipleOneTypeForm imageSettingName=$_imageSettingName imageSetting=$_imageSetting}
             {/if}
-        {elseif !$imageSetting._config.multiple}
-            {if $imageSetting.types}
-                {include file=$singleManyTypesForm imageSettingName=$imageSettingName imageSetting=$imageSetting}
+        {elseif !$_imageSetting._config.multiple}
+            {if $_imageSetting.types}
+                {include file=$singleManyTypesForm imageSettingName=$_imageSettingName imageSetting=$_imageSetting}
             {else}
-                {include file=$singleOneTypeForm imageSettingName=$imageSettingName imageSetting=$imageSetting}
+                {include file=$singleOneTypeForm imageSettingName=$_imageSettingName imageSetting=$_imageSetting}
             {/if}
         {/if}
     </div>

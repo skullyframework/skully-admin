@@ -1,16 +1,16 @@
-{foreach from=$imageSettings item=imageSetting key=imageSettingName}
-    {if $imageSetting._config.multiple}
-        {if $imageSetting.types}
-            <script id="template-{$imageSettingName}" type="html/template">
-{include file="admin/widgets/imageUploader/multiple/_manyTypes.tpl" imageSettingName=$imageSettingName imageSetting=$imageSetting}
+{foreach from=$_imageSettings item=_imageSetting key=_imageSettingName}
+    {if $_imageSetting._config.multiple}
+        {if $_imageSetting.types}
+            <script id="template-{$_imageSettingName}" type="html/template">
+{include file="admin/widgets/imageUploader/multiple/_manyTypes.tpl" _imageSettingName=$_imageSettingName _imageSetting=$_imageSetting}
                 </script>
         {else}
-            <script id="template-{$imageSettingName}" type="html/template">
-{include file="admin/widgets/imageUploader/multiple/_oneType.tpl" imageSettingName=$imageSettingName imageSetting=$imageSetting}
+            <script id="template-{$_imageSettingName}" type="html/template">
+{include file="admin/widgets/imageUploader/multiple/_oneType.tpl" _imageSettingName=$_imageSettingName _imageSetting=$_imageSetting}
                 </script>
         {/if}
-        <script id="template-{$imageSettingName}-new" type="html/template">
-{include file="admin/widgets/imageUploader/multiple/_new.tpl" imageSettingName=$imageSettingName imageSetting=$imageSetting}
+        <script id="template-{$_imageSettingName}-new" type="html/template">
+{include file="admin/widgets/imageUploader/multiple/_new.tpl" _imageSettingName=$_imageSettingName _imageSetting=$_imageSetting}
             </script>
     {/if}
 {/foreach}
@@ -19,23 +19,37 @@ $('.add_image').click(function(e) {
     if (!$(this).attr('disabled')) {
         var $new = $($('#template-'+$(this).data('setting_name')+'-new').html());
         $new.insertAfter($('.image_row-'+$(this).data('setting_name')+' .image_row-title'));
-        $new.css('display', 'none').slideDown();
-        {if $isSettingModel}
-        $('#newRow-'+$(this).data('setting_name')).data('setting_id', $(this).data('setting_id'));
-        {/if}
-        $(this).attr('disabled', 'disabled');
+        if ($(this).hasClass('many')) {
+            $new.css('display', 'none').slideDown();
+            {if $isSettingModel}
+            $('#newRow-'+$(this).data('setting_name')).data('setting_id', $(this).data('setting_id'));
+            {/if}
+            $(this).attr('disabled', 'disabled');
+        }
+        else {
+            $new.css('display', 'none');
+            {if $isSettingModel}
+            $('#newRow-'+$(this).data('setting_name')).data('setting_id', $(this).data('setting_id'));
+            {/if}
+            $(this).attr('disabled', 'disabled');
+            uploadSeparately($(this).closest('.image_row-'+$(this).data('setting_name')).find('.uploadSeparately'));
+        }
     }
     return false;
 });
 
-$(document).on('click', '.uploadSeparately', function(e) {
-    var settingName = $(this).closest('.row-form').attr('id').replace('newRow-', '');
+function uploadSeparately(el)
+{
+    var settingName = $(el).closest('.row-form').attr('id').replace('newRow-', '');
     {if $isSettingModel}
-    insertNewRow(settingName, $(this).closest('.row-form').data('setting_id'));
+    insertNewRow(settingName, $(el).closest('.row-form').data('setting_id'));
     {else}
     insertNewRow(settingName, {${$instanceName}.id});
     {/if}
-    $(this).closest('.row-form').remove();
+    $(el).closest('.row-form').remove();
+}
+$(document).on('click', '.uploadSeparately', function(e) {
+    uploadSeparately(this);
     return false;
 });
 

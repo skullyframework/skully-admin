@@ -8,14 +8,15 @@ Include this into your composer:
 
 ```
 "require": {
-    "skullyframework/skully-admin": "dev-master"
-},
+    "skullyframework/admin": "0.1.*"
+}
 ```
 
 Then update your composer.
 
 And then, basically look at vendor/skullyframework/skully-project/Tests/app/ and just follow the structure of that test app within your application.
 
+### Don't Forget ###
 In your App\Application class, add the following:
 
 ```
@@ -36,12 +37,11 @@ Copy vendor/skullyframework/skully-project/Tests/app/public/default/resources/im
 Copy vendor/skullyframework/skully-project/Tests/app/public/default/resources/js/admin to public/default/resources/js/admin.
 Copy vendor/skullyframework/skully-project/Tests/app/public/default/resources/js/plugins to public/default/resources/js/plugins.
 
-## Usage
+## Example
 
-See usage sample in Tests/TestApp/ . To run this sample, clone a copy of this repository somewhere else and access it via web browser.
-
-## Troubleshooting
-
-Issues that may shows up:
-
-*javascript error on index page: Uncaught TypeError: Cannot set property 'aaSorting' of null *
+There is a sample application ready in Tests/TestApp/app. To set this up:
+1. Clone this repository into your web server ```git clone https://github.com/skullyframework/admin ```.
+2. Create a database named `skully_admin` and `skully_admin_test`.
+3. Browse to the test app ```cd Tests/app```.
+4. Run db migration ```./console skully:schema db:migration```.
+5. Browse to your app

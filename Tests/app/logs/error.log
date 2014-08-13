@@ -1,259 +1,842 @@
-[Tuesday, 13-May-14 00:18:01 WIB error] set default assign
-[Tuesday, 13-May-14 00:18:01 WIB error] admin id is: 
-[Tuesday, 13-May-14 00:18:01 WIB error] getAdmin result: 
-[Tuesday, 13-May-14 00:18:01 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/SkullyAdmin/Controllers/BaseController.php | ln:40
+[Sunday, 06-Jul-2014 02:25:42 WIB error] instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:25:42 WIB error] instance is Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:25:44 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:25:44 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:26:34 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:26:34 WIB error] instance is Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:26:35 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:26:35 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:31:09 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:31:09 WIB error] instance is Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:31:10 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:31:10 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:32:47 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:32:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:32:48 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:39:04 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:39:06 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:39:06 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:39:21 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:39:22 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:39:22 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:40:28 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:40:30 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:40:30 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:42:42 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:42:43 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:42:43 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:43:28 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpB1F2.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 02:44:37 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:44:38 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:44:38 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:45:41 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:45:42 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:45:43 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:45:51 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpEB49.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 02:50:59 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 02:51:00 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 02:51:00 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 02:51:06 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpB993.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 15:07:59 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:08:01 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:08:01 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:08:09 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\php8514.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: 
+[Sunday, 06-Jul-2014 15:08:31 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:08:32 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:08:32 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:08:36 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpEDE1.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: Array
+[Sunday, 06-Jul-2014 15:14:39 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:14:39 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:14:40 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:14:44 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\php8D46.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", output: 
+[Sunday, 06-Jul-2014 15:30:12 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:30:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:30:13 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:30:17 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpC9EE.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 15:31:08 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:31:09 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:31:09 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:31:13 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpA51D.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 15:46:42 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:46:49 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:46:49 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:46:50 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:46:52 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:46:55 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:46:55 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:46:55 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:47:04 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 15:47:05 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 15:47:05 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 15:47:42 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:03:53 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:03:53 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:03:54 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:04:09 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:04:10 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:04:10 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:04:11 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:04:15 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:04:15 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:04:16 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:04:47 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:04:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:04:48 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:07:26 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:07:27 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:07:27 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:08:13 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:08:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:08:14 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:08:35 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:08:35 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:08:36 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:08:37 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:08:38 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:08:38 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:08:54 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:08:54 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:08:55 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:09:51 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:09:52 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:09:52 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:09:59 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:10:00 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:10:00 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:10:21 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:10:22 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:10:22 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:10:41 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:10:43 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:10:43 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:11:12 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:11:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:11:14 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:11:27 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:13:45 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:14:46 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:14:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:14:48 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:18:14 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:18:15 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:18:19 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:18:20 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:18:20 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:19:39 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:20:15 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => 
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:20:16 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:20:16 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:20:57 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:20:58 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:20:58 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:21:00 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:21:05 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => []
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:21:32 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => []
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:21:33 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:21:33 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:21:42 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => []
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:21:54 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => []
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:22:30 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:22:31 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:22:32 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:23:02 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:23:03 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:23:03 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:23:32 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:23:34 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:23:34 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:24:09 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:24:10 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:24:10 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:26:27 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:26:28 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:26:29 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:26:38 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\php5F81.tmp" -resize "768x273" -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gudang.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 16:26:42 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:26:47 WIB error] instanceName: image instance to be exported: Array
+(
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => []
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
+)
+
+[Sunday, 06-Jul-2014 16:26:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:26:48 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:26:55 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpA19C.tmp" -resize "768x273" -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps-1.png", return code: 1, output: Array
+(
+)
+
+[Sunday, 06-Jul-2014 16:27:04 WIB warn] Path not found: admin/featuredProductSettings/index
+[Sunday, 06-Jul-2014 16:27:04 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Exceptions\PageNotFoundException.php | ln:48
 GET: Array
 (
-    [_url] => admin/admins/index
+    [_url] => admin/featuredProductSettings/index
 )
 
 POST: Array
 (
 )
 
-Call to a member function export() on a non-object
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:22:41 WIB error] set default assign
-[Tuesday, 13-May-14 00:22:42 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:22:42 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:22:47 WIB error] set default assign
-[Tuesday, 13-May-14 00:22:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:22:48 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:22:56 WIB error] set default assign
-[Tuesday, 13-May-14 00:22:57 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:23:14 WIB error] set default assign
-[Tuesday, 13-May-14 00:23:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:23:14 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:23:31 WIB error] set default assign
-[Tuesday, 13-May-14 00:23:32 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:23:32 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:01 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:01 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:02 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:06 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:06 WIB error] user is Array
-(
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
-)
-
-[Tuesday, 13-May-14 00:24:07 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:07 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:13 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:13 WIB error] user is Array
-(
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
-)
-
-[Tuesday, 13-May-14 00:24:14 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:14 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:16 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:16 WIB error] user is Array
-(
-    [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
-)
-
-[Tuesday, 13-May-14 00:24:16 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:16 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:17 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php | ln:48
-GET: Array
-(
-    [_url] => admin/settings/index
-)
-
-POST: Array
-(
-)
-
-Uncaught exception 'Skully\Exceptions\PageNotFoundException' with message 'Page http://localhost/skully-admin/Tests/app/admin/settings/index not found' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php:48
+Uncaught exception 'Skully\Exceptions\PageNotFoundException' with message 'Page http://localhost/skully-admin/Tests/app/admin\featuredProductSettings/index not found' in D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Exceptions\PageNotFoundException.php:48
 Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/ControllerFactory.php(71): Skully\Exceptions\PageNotFoundException::alert('admin/settings/...', 'http://localhos...')
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(339): Skully\Core\ControllerFactory::create(Object(TestApp\Application), 'admin\settings', 'index', Array)
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(266): Skully\Application->getController('admin\settings', 'index', Array)
-#3 /media/jay/Data/apache/skully-admin/Tests/app/index.php(16): Skully\Application->runControllerFromRawUrl('admin/settings/...')
+#0 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Core\ControllerFactory.php(71): Skully\Exceptions\PageNotFoundException::alert('admin\featuredP...', 'http://localhos...')
+#1 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Application.php(354): Skully\Core\ControllerFactory::create(Object(TestApp\Application), 'admin\featuredP...', 'index', Array)
+#2 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Application.php(274): Skully\Application->getController('admin\featuredP...', 'index', Array)
+#3 D:\apache\skully-admin\Tests\app\index.php(16): Skully\Application->runControllerFromRawUrl('admin/featuredP...')
 #4 {main}
   thrown
 #0  shutdownHandler()
 
 
-[Tuesday, 13-May-14 00:24:20 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:20 WIB error] user is Array
+[Sunday, 06-Jul-2014 16:27:15 WIB error] instanceName: image instance to be exported: Array
 (
     [id] => 1
-    [name] => Admin
-    [email] => admin@skullyframework.com
-    [salt] => 1399114251
-    [password_hash] => 586ad0ce64993d340f91f0ede7e1e2d5
-    [status] => active
-    [created_at] => 2014-05-03 17:50:51
-    [updated_at] => 0000-00-00 00:00:00
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-[Tuesday, 13-May-14 00:24:20 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:21 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:43 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:44 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:44 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:24:54 WIB error] set default assign
-[Tuesday, 13-May-14 00:24:55 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:24:55 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:25:00 WIB error] set default assign
-[Tuesday, 13-May-14 00:27:29 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:27:30 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:34:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:34:19 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:34:20 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php | ln:48
-GET: Array
+[Sunday, 06-Jul-2014 16:27:16 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:27:17 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:27:36 WIB error] instanceName: image instance to be exported: Array
 (
-    [_url] => admin/settings/index
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-POST: Array
+[Sunday, 06-Jul-2014 16:27:38 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:27:38 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:28:46 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\php53E1.tmp" -thumbnail 300\> -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gudang-1.png", return code: 1, output: Array
 (
 )
 
-Uncaught exception 'Skully\Exceptions\PageNotFoundException' with message 'Page http://localhost/skully-admin/Tests/app/admin/settings/index not found' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Exceptions/PageNotFoundException.php:48
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/ControllerFactory.php(71): Skully\Exceptions\PageNotFoundException::alert('admin/settings/...', 'http://localhos...')
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(339): Skully\Core\ControllerFactory::create(Object(TestApp\Application), 'admin\settings', 'index', Array)
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Application.php(266): Skully\Application->getController('admin\settings', 'index', Array)
-#3 /media/jay/Data/apache/skully-admin/Tests/app/index.php(16): Skully\Application->runControllerFromRawUrl('admin/settings/...')
-#4 {main}
-  thrown
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:36:56 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:36:56 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:37:00 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php | ln:106
-GET: Array
+[Sunday, 06-Jul-2014 16:31:24 WIB error] instanceName: image instance to be exported: Array
 (
-    [_url] => admin/settings/add
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-POST: Array
+[Sunday, 06-Jul-2014 16:31:25 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Sunday, 06-Jul-2014 16:31:25 WIB warn] Resource not found: public/adminFavicon.ico
+[Sunday, 06-Jul-2014 16:31:35 WIB error] error with message Tried to execute : convert "C:\xampp\tmp\phpE914.tmp" -resize "768x273" -quality "90" "D:\apache\skully-admin\Tests\app\public\images\Image\1\gps-2.png", return code: 1, output: Array
 (
 )
 
-Uncaught exception 'Skully\Exceptions\ThemeFileNotFoundException' with message 'Theme file not found after searching at these locations: 
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/public/views/admin/settings/_addForm.tpl' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php:106
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php(143): Skully\Core\Theme\Theme->getPath('views/admin/set...', false, true)
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(298): Skully\Core\Theme\Theme->getAppPath('views/admin/set...')
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(273): Skully\Core\Controller->getActionTemplate('_addForm')
-#3 /media/jay/Dat
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:37:31 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php | ln:106
-GET: Array
+[Monday, 07-Jul-2014 12:37:48 WIB error] instanceName: image instance to be exported: Array
 (
-    [_url] => admin/settings/add
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-POST: Array
+[Monday, 07-Jul-2014 12:37:50 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Monday, 07-Jul-2014 12:37:50 WIB warn] Resource not found: public/adminFavicon.ico
+[Monday, 07-Jul-2014 12:37:56 WIB error] instanceName: image instance to be exported: Array
 (
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""}]
+    [multiple_one_type] => ["",""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-Uncaught exception 'Skully\Exceptions\ThemeFileNotFoundException' with message 'Theme file not found after searching at these locations: 
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/Tests/app/public/default/TestApp/views/admin/settings/_addForm.tpl
-/media/jay/Data/apache/skully-admin/public/views/admin/settings/_addForm.tpl' in /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php:106
-Stack trace:
-#0 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Theme/Theme.php(143): Skully\Core\Theme\Theme->getPath('views/admin/set...', false, true)
-#1 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(298): Skully\Core\Theme\Theme->getAppPath('views/admin/set...')
-#2 /media/jay/Data/apache/skully-admin/vendor/triodigital/skully/Skully/Core/Controller.php(273): Skully\Core\Controller->getActionTemplate('_addForm')
-#3 /media/jay/Dat
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:39:00 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:39:00 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:39:53 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:39:53 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:40:41 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:40:41 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:43:25 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/SettingsController.php | ln:4
-GET: Array
+[Monday, 07-Jul-2014 12:38:04 WIB error] instanceName: image instance to be exported: Array
 (
-    [_url] => admin/settings/index
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""},{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-POST: Array
+[Monday, 07-Jul-2014 12:38:21 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Monday, 07-Jul-2014 12:43:44 WIB error] instanceName: image instance to be exported: Array
 (
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""},{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-Class 'SkullyAdmin\Controllers\SettingsController' not found
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:43:26 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/SettingsController.php | ln:4
-GET: Array
+[Monday, 07-Jul-2014 12:43:45 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Monday, 07-Jul-2014 12:43:45 WIB warn] Resource not found: public/adminFavicon.ico
+[Monday, 07-Jul-2014 12:46:56 WIB error] instanceName: image instance to be exported: Array
 (
-    [_url] => admin/settings/index
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""},{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-POST: Array
+[Monday, 07-Jul-2014 12:46:56 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Monday, 07-Jul-2014 12:46:56 WIB warn] Resource not found: public/adminFavicon.ico
+[Monday, 07-Jul-2014 12:47:40 WIB error] instanceName: image instance to be exported: Array
 (
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""},{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-Class 'SkullyAdmin\Controllers\SettingsController' not found
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:43:27 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully-admin/Tests/app/TestApp/Controllers/Admin/SettingsController.php | ln:4
-GET: Array
+[Monday, 07-Jul-2014 12:47:41 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Monday, 07-Jul-2014 12:47:41 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:29:01 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:29:01 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:29:15 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:29:15 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:31:39 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:31:39 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:51:15 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:51:16 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:54:46 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:54:46 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:54:47 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:54:47 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 12:54:48 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 12:54:49 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 13:52:02 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 13:52:02 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 13:52:33 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 13:52:33 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 13:53:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 13:53:18 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 13:53:26 WIB error] instanceName: image instance to be exported: Array
 (
-    [_url] => admin/settings/index
+    [id] => 1
+    [multiple_many_types] => [{"smartphone":"","desktop":""},{"smartphone":"","desktop":""}]
+    [multiple_one_type] => [""]
+    [single_many_types] => 
+    [single_one_type] => 
+    [position] => 
 )
 
-POST: Array
-(
-)
-
-Class 'SkullyAdmin\Controllers\SettingsController' not found
-#0  shutdownHandler()
-
-
-[Tuesday, 13-May-14 00:43:47 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:43:47 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:45:22 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:45:23 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:45:24 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:45:24 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:06 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:07 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:08 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:08 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:13 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:13 WIB warn] Resource not found: public/adminFavicon.ico
-[Tuesday, 13-May-14 00:49:18 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Tuesday, 13-May-14 00:49:18 WIB warn] Resource not found: public/adminFavicon.ico
-[Thursday, 15-May-14 03:14:09 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Thursday, 15-May-14 03:14:09 WIB warn] Resource not found: public/adminFavicon.ico
-[Thursday, 29-May-14 11:19:44 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
-[Thursday, 29-May-14 11:19:44 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 08-Jul-2014 13:53:26 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 08-Jul-2014 13:53:26 WIB warn] Resource not found: public/adminFavicon.ico

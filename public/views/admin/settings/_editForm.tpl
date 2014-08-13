@@ -1,4 +1,4 @@
-<form class="validate" method="POST" action="{url path="admin/settings/update"}">
+{form class="validate" method="POST" action="{url path="admin/settings/update"}"}
 	<div class="block-fluid">
 
 		<div class="row-form">
@@ -24,4 +24,4 @@
 	{/if}
 
 	</div>
-</form>
+{/form}

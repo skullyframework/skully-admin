@@ -2,18 +2,18 @@
     {if !empty($instanceName)}
         <input type="hidden" name="{$instanceName}_id" value="{if !empty(${$instanceName}.id)}{${$instanceName}.id}{/if}" />
     {/if}
-    <input type="hidden" name="settingName" value="{$imageSettingName}" />
+    <input type="hidden" name="settingName" value="{$_imageSettingName}" />
     {if !empty($typeName)}
         <input type="hidden" name="type" value="{$typeName}" />
     {/if}
     {if isset($position)}
         <input type="hidden" name="position" value="{$position}"/>
     {/if}
-    <div class="fileupload {if !empty($image)}fileupload-exists{else}fileupload-new{/if}" data-provides="fileupload">
+    <div class="fileupload {if !empty($_image)}fileupload-exists{else}fileupload-new{/if}" data-provides="fileupload">
         <div class="fileupload-preview thumbnail">
-            {if !empty($image)}
-                <input type="hidden" name="imageUrl" value="{public_url path=$image}" />
-                <a href="{public_url path=$image}" class="fb" rel="{$group}"><img src="{public_url path=$image}" /></a>
+            {if !empty($_image)}
+                <input type="hidden" name="imageUrl" value="{public_url path=$_image}" />
+                <a href="{public_url path=$_image}" class="fb" rel="{$group}"><img src="{public_url path=$_image}" /></a>
             {else}
                 <div class="emptyInfo">{lang value="No Image"}</div>
             {/if}
