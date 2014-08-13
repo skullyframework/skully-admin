@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67050672-abb2-4753-9e3b-b067d017adfe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
@@ -45,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="27" selection-start="932" selection-end="932" vertical-scroll-proportion="0.5707071" vertical-offset="201" max-vertical-offset="795">
+            <state line="36" column="27" selection-start="932" selection-end="932" vertical-scroll-proportion="-21.6" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -75,16 +73,16 @@
       <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="49" selection-start="739" selection-end="739" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="690">
+            <state line="27" column="49" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_editForm.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_editForm.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="74" selection-start="448" selection-end="448" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="480">
+            <state line="13" column="74" selection-start="448" selection-end="448" vertical-scroll-proportion="0.3277311" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -93,7 +91,7 @@
       <file leaf-file-name="20140501220633_AdminInit.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501220633_AdminInit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -102,7 +100,7 @@
       <file leaf-file-name="20140501060456_SetupAdmin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-8.916667" vertical-offset="296" max-vertical-offset="915">
+            <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="915">
               <folding>
                 <marker date="1404440046000" expanded="true" signature="123:153" placeholder="drop table i..." />
               </folding>
@@ -218,6 +216,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -748,7 +747,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -821,14 +819,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24813631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25079873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.50039464" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -858,11 +856,74 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
+    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Setting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="27" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/home/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="0" selection-start="3983" selection-end="3983" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="9795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="49" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="74" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501220633_AdminInit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="915">
+          <folding>
+            <marker date="1404440046000" expanded="true" signature="123:153" placeholder="drop table i..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestAdminCreation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Adminsession.php">
@@ -916,9 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Adminsession.php">
@@ -958,9 +1017,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Adminsession.php">
@@ -1057,9 +1114,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="4" column="48" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/TestApp/Models/Setting.php">
@@ -1097,7 +1152,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="49" selection-start="739" selection-end="739" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="690">
+        <state line="27" column="49" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
@@ -1111,23 +1166,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/app/migrations/skully_admin/20140501060456_SetupAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-8.916667" vertical-offset="296" max-vertical-offset="915">
+        <state line="34" column="78" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="915">
           <folding>
             <marker date="1404440046000" expanded="true" signature="123:153" placeholder="drop table i..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="74" selection-start="448" selection-end="448" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="480">
+        <state line="36" column="27" selection-start="932" selection-end="932" vertical-scroll-proportion="-21.6" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/public/views/admin/settings/_editForm.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="27" selection-start="932" selection-end="932" vertical-scroll-proportion="0.5707071" vertical-offset="201" max-vertical-offset="795">
+        <state line="13" column="74" selection-start="448" selection-end="448" vertical-scroll-proportion="0.3277311" vertical-offset="0" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
