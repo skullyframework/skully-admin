@@ -11,8 +11,8 @@
                 <h2>{lang value="Images - Image Manager"}</h2>
                 <a href="{url path="admin/cRUDImages/index"}" class="backlink">Back to list</a>
             </div>
-            {$indexContent}
             {nocache}
+                {$indexContent}
                 {block name="uploadScript"}
                     {include file="admin/widgets/imageUploader/_uploadScript.tpl"}
                 {/block}
