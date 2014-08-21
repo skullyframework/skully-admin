@@ -1,5 +1,5 @@
 {nocache}
-    <div class="FR">
+    <div class="FR TAR" style="width: 100%; padding: 5px 10px;">
         {if $isSettingModel}
             <a href="{url path=$imageDeletePath id={$instances.{$_imageSettingName}.id} setting={$_imageSettingName} field='value'}" data-toggle="dialog" class="btn btn-danger btn-small btnRemove hasPosition" title="{lang value="Delete"}"><i class="icos-remove"></i></a>
         {else}
