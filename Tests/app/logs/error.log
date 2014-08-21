@@ -1062,3 +1062,63 @@ trace: #0 /media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skul
 #0  shutdownHandler()
 
 
+[Thursday, 21-Aug-2014 12:24:16 WIB fatal] [SHUTDOWN] lvl:32 | file:Unknown | ln:0
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+PHP Startup: Unable to load dynamic library '/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so' - dlopen(/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so, 9): Library not loaded: /usr/local/lib/libjpeg.8.dylib
+  Referenced from: /Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so
+  Reason: image not found
+#0  shutdownHandler()
+
+
+[Thursday, 21-Aug-2014 12:24:19 WIB fatal] [SHUTDOWN] lvl:32 | file:Unknown | ln:0
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+PHP Startup: Unable to load dynamic library '/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so' - dlopen(/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so, 9): Library not loaded: /usr/local/lib/libjpeg.8.dylib
+  Referenced from: /Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so
+  Reason: image not found
+#0  shutdownHandler()
+
+
+[Thursday, 21-Aug-2014 12:26:24 WIB fatal] [SHUTDOWN] lvl:32 | file:Unknown | ln:0
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+PHP Startup: Unable to load dynamic library '/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so' - dlopen(/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so, 9): Library not loaded: /usr/local/lib/libjpeg.8.dylib
+  Referenced from: /Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so
+  Reason: image not found
+#0  shutdownHandler()
+
+
+[Thursday, 21-Aug-2014 14:45:26 WIB fatal] [SHUTDOWN] lvl:32 | file:Unknown | ln:0
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+PHP Startup: Unable to load dynamic library '/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so' - dlopen(/Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so, 9): Library not loaded: /usr/local/lib/libjpeg.8.dylib
+  Referenced from: /Applications/XAMPP/xamppfiles/lib/php/extensions/no-debug-non-zts-20121212/imagick.so
+  Reason: image not found
+#0  shutdownHandler()
+
+

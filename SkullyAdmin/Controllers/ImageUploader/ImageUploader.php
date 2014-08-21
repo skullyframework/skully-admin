@@ -288,7 +288,10 @@ trait ImageUploader {
                 if (!is_array($imagesField)) {
                     $imagesField = UtilitiesHelper::decodeJson($imagesField, true);
                 }
-                $imageField = $imagesField[$this->getParam('position')];
+                $position = $this->getParam('position');
+                if(!empty($position)) $imageField = $imagesField[$position];
+                else $imageField = $imagesField;
+
                 if (is_array($imageField)) {
                     $values = array_values($imageField);
                     $image = $values[0];
@@ -317,19 +320,34 @@ trait ImageUploader {
     public function processDestroyImage($instance, $imageSetting, $imageField, $position) {
         if (!$instance->hasError()) {
             try {
-                $imageValue = $instance->get($imageField);
-                if (!is_array($imageValue)) {
-                    $imageValue = UtilitiesHelper::decodeJson($imageValue, true);
-                }
-                $imagesAtPosition = $imageValue[$position];
-                if (!empty($imagesAtPosition)) {
-                    foreach($imagesAtPosition as $key => $image) {
-                        unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
+                $imageSettings = $this->getImageSettings();
+                if($imageSettings[$imageSetting]["_config"]["multiple"] && !empty($imageSettings[$imageSetting]["types"])){
+                    $imageValue = $instance->get($imageField);
+                    if (!is_array($imageValue)) {
+                        $imageValue = UtilitiesHelper::decodeJson($imageValue, true);
                     }
+                    $imagesAtPosition = $imageValue[$position];
+                    if (!empty($imagesAtPosition)) {
+                        foreach($imagesAtPosition as $key => $image) {
+                            unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
+                        }
+                    }
+                    unset($imageValue[$position]);
+                    $imageValue = array_values($imageValue);
+                    $instance->set($imageField, json_encode($imageValue));
                 }
-                unset($imageValue[$position]);
-                $imageValue = array_values($imageValue);
-                $instance->set($imageField, json_encode($imageValue));
+                else if(!$imageSettings[$imageSetting]["_config"]["multiple"] && !empty($imageSettings[$imageSetting]["types"])){
+                    $imageValue = $instance->get($imageField);
+                    if (!is_array($imageValue)) {
+                        $imageValue = UtilitiesHelper::decodeJson($imageValue, true);
+                    }
+                    if(!empty($imageValue) && is_array($imageValue)){
+                        foreach($imageValue as $key => $image) {
+                            unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
+                        }
+                    }
+                    $instance->set($imageField, "");
+                }
                 R::store($instance);
                 echo json_encode(array(
                     'message' => $this->app->getTranslator()->translate('deleted'),
