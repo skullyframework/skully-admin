@@ -3,10 +3,10 @@
 {*{if empty($action)}*}
 	{*{$action='create'}*}
 {*{/if}*}
-{*{form class="validate" method="POST" action="{url path="admin/$CONTROLLER_PATH/"|cat:$action}"}*}
+{*{form class="validate" method="POST" action="{url path="admin/CONTROLLER_PATH/"|cat:$action}"}*}
 	{*<div class="block-fluid">*}
 		{*<div class="row-form">*}
-			{*<div class="span12 largerText">*}
+			{*<div class="span10 largerText">*}
 			{*{if $action=='create'}*}
 				{*{lang value="Create "|cat:$instanceName}*}
 			{*{else}*}
@@ -14,6 +14,11 @@
 				{*{lang value="Edit "|cat:$instanceName}*}
 			{*{/if}*}
 			{*</div>*}
+            {*{if $action!='create'}*}
+                {*<div class="TAR">*}
+                    {*<a href="{url path="admin/CONTROLLER_PATH/images" id={${$instanceName}.id}}" class="btn">Image Manager</a>*}
+                {*</div>*}
+            {*{/if}*}
 		{*</div>*}
 		{*<div class="row-form">*}
 			{*<div class="span2">{lang value="Name"}</div>*}

@@ -136,5 +136,6 @@
 </div>
 {block name=footer}{/block}
 <div class="loadingframe"></div>
+{block name="script"}{/block}
 </body>
 </html>

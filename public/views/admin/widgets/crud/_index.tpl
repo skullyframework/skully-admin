@@ -8,6 +8,7 @@
 {block name=content}
 <div class="span12">
 {include file='admin/widgets/_alerts.tpl' }
+    {nocache}
 	<div class="widget">
 		<div class="head dark">
 			<div class="icon"><i class="icos-stats-up"></i></div>
@@ -17,19 +18,18 @@
 			</ul>
 		</div>
         <div class="block-fluid">
-            {if !empty($dragField)}
-                {$sortableTable = 'sortableTable initialized'}
-            {/if}
-            {nocache}
+                {if !empty($dragField)}
+                    {$sortableTable = 'sortableTable initialized'}
+                {/if}
                 {html_table
                 loop=''
                 table_attr='class="'|cat: $sortableTable|cat:' aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
                 th_attr=$thAttributes
                 cols=$columns
                 }
-            {/nocache}
         </div>
 	</div>
+    {/nocache}
 </div>
 {/block}
 {block name=footer}

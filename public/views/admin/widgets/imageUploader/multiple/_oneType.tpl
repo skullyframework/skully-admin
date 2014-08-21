@@ -1,3 +1,4 @@
+{nocache}
 <div class="row-form imageManagerRow">
     <input type="hidden" name="position" value="{$_imagePos}" />
     <div class="FR">
@@ -17,3 +18,4 @@
         {include file="admin/widgets/imageUploader/_imageForm.tpl" group=($_imageSettingName|cat:'_'|cat:{$_imagePos}) _image=($_image) _imageSetting=$_imageSetting _imageSettingName=$_imageSettingName position=$_imagePos}
     </div>
 </div>
+{/nocache}

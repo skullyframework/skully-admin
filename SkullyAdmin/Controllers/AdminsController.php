@@ -52,7 +52,7 @@ class AdminsController extends CRUDController
         $instanceList = array();
         if (!empty($instances)) {
             foreach($instances as $instance) {
-                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/admins/edit', array('id' => $instance->id)).'" data-toggle="dialog"><span class="icon-eye-open"></span></a>
+                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/admins/edit', array('id' => $instance->id)).'" data-toggle="dialog"><span class="icon-pencil"></span></a>
 					<a title="Delete" href="'.$this->app->getRouter()->getUrl('admin/admins/delete', array('id' => $instance->id)).'" data-toggle="dialog"><span class="icon-trash"></span></a>', 'class' => 'TAC');
                 $instanceList[] = array(
                     $instance->email,

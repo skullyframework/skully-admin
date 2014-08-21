@@ -1,5 +1,4 @@
 # skully-admin
-
 Admin scaffold to use with Skully Framework
 
 ## Installation
@@ -45,3 +44,4 @@ There is a sample application ready in Tests/TestApp/app. To set this up:
 3. Browse to the test app ```cd Tests/app```.
 4. Run db migration ```./console skully:schema db:migration```.
 5. Browse to your app
+=======

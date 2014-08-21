@@ -555,15 +555,6 @@ $(document).ready(function(){
     if($('audio').length > 0 || $('video').length > 0) $('audio,video').mediaelementplayer();
     // eof media
     
-    //wysiwyg editor
-    if($("#wysiwyg").length > 0){
-        wEditor = $("#wysiwyg").cleditor({width:"100%", height:"300px"});
-    }          
-    if($("#mail_wysiwyg").length > 0)
-        m_editor = $("#mail_wysiwyg").cleditor({width:"100%", height:"100%",controls:"bold italic underline strikethrough | font size style | color highlight removeformat | bullets numbering | outdent alignleft center alignright justify"})[0].focus();    
-    
-    // eof wysiwyg editor
-    
     //syntax highlight
     if($("pre[class^=brush]").length > 0){
         SyntaxHighlighter.defaults['toolbar'] = false;
