@@ -2,492 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13ad6c0-5a70-4d7a-8706-4b3ed2d70e1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/29e2576e913dade7db5b94c175e7aa1831d61c34.file._addAjax.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/5edf9f42a301342cc135b44ef0080958fdfa8c57.file._userInfo.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/68f06128a3a9c4db7718ab0ccf1e04e00fac1a7a.file._ajaxAlerts.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/df6760c78ead0b8dea7c1d51a6baa2000578d3b4.file._addForm.tpl.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/03ff1883ba4b4be0f6b88840e1e793696a7f1c16.file._singleOneType.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/11038a8d647c81616da95d3528ea5e6f2f641f4e.file._userInfo.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2abac115adf8a287e50c2cb8387b01e47ee05840.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/313bd61c14ec6e1e9ddcf858c513b6998992c6cd.file._imageForm.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/335e8766b008dc8335d260735eb7d8d79b2414b9.file._ajaxAlerts.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/6c01e12cbc113d6dbae5af38f6488bb5fa20f2b9.file._manyTypes.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/7b08fa6f532bd7c3e228b36569ae7785c7dd4448.file._singleManyTypes.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/947e5830dc2a5d7c95b1906a5c44bc427afcd227.file._delete.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/98426dcb3c63a6d3f43d264479434b4b8de56706.file.login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/a2442681ca423a1341775f4ae0d08537796b859c.file._multipleManyTypes.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/a389dfa929ae09f52bc4e596f7235ffbee7d5d7c.file._oneType.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/bab8ac003e7f0ed022f17f821476da7742b7cbaf.file.images.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/bb4d987039c2ff2774c5f5d8c59d0213d48ddeb9.file._alerts.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/be4107e3f40df98060b2ff58a617b9c22a662c92.file._multipleOneType.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/dbe6d3310c8d7656b4f43029db8a830979bb5830.file.debug.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/f2d6f6210a03f0d040b00e9590e1beb4c568d065.file._index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/tooltip.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/vendor/jquery.jscrollpane.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/vendor/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/fastclick/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/fastclick/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/fastclick/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/fastclick/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/fastclick/lib/fastclick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/css/foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/css/foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/humans.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.abide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.accordion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.clearing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.equalizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.interchange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.joyride.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.magellan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.orbit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.reveal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.slider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/foundation/foundation.topbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/vendor/fastclick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/vendor/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/vendor/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/vendor/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/js/vendor/placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/sache.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/_functions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/_settings.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_accordion.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_alert-boxes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_block-grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_clearing.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_dropdown.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_flex-video.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_global.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_inline-lists.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_joyride.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_keystrokes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_magellan.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_offcanvas.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_orbit.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_pricing-tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_range-slider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_reveal-new.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_reveal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_side-nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_split-buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_sub-nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_switch.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_thumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_tooltips.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_top-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/foundation/components/_xy-center.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/foundation/scss/normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/LICENSE-GPL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/LICENSE-MIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/jquery.placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery-placeholder/jquery.placeholder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery.cookie/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery.cookie/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/dist/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/dist/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/dist/jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/jsonp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/load.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/parseJSON.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/parseXML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/var/nonce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/var/rquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/ajax/xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/attributes/attr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/attributes/classes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/attributes/prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/attributes/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/attributes/val.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/core/access.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/core/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/core/parseHTML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/core/ready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/addGetHookIf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/curCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/defaultDisplay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/swap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/var/cssExpand.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/var/getStyles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/var/isHidden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/var/rmargin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/data/Data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/data/accepts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/data/var/data_priv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/data/var/data_user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/effects/Tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/effects/animatedSelector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/event.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/event/alias.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/event/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/exports/amd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/exports/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/intro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/manipulation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/manipulation/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/offset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/outro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/queue/delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/selector-native.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/selector-sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/sizzle/dist/sizzle.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/traversing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/traversing/findFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/class2type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/hasOwn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/indexOf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/pnum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/push.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/rnotwhite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/slice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/strundefined.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/toString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/var/trim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/jquery/src/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/a-download.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/audio-audiodata-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/audio-webaudio-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/battery-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/battery-level.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/blob-constructor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/canvas-todataurl-type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/contenteditable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/contentsecuritypolicy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/contextmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/cors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-backgroundposition-shorthand.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-backgroundposition-xy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-backgroundrepeat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-backgroundsizecover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-boxsizing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-calc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-cubicbezierrange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-displayrunin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-displaytable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-filters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-hyphens.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-lastchild.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-mask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-mediaqueries.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-objectfit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-overflow-scrolling.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-pointerevents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-positionsticky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-regions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-remunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-scrollbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-subpixelfont.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-supports.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-userselect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-vhunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-vmaxunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-vminunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/css-vwunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/custom-protocol-handler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/dart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/dataview-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/dom-classlist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/dom-createElement-attrs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/dom-dataset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/dom-microdata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-datalist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-details.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-output.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-progress-meter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/elem-track.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/emoji.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/es5-strictmode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/event-deviceorientation-motion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/exif-orientation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/file-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/file-filesystem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/forms-fileinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/forms-formattribute.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/forms-inputnumber-l10n.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/forms-placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/forms-speechinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/forms-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/fullscreen-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/gamepad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/getusermedia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/ie8compat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/iframe-sandbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/iframe-seamless.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/iframe-srcdoc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/img-apng.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/img-webp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/lists-reversed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/mathml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/network-connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/network-eventsource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/network-xhr2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/notification.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/performance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/pointerlock-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/quota-management-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/requestanimationframe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/script-async.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/script-defer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/style-scoped.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/svg-filters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/unicode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/url-data-uri.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/userdata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/vibration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/web-intents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/webgl-extensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/websockets-binary.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/window-framed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/workers-blobworkers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/workers-dataworkers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/feature-detects/workers-sharedworkers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/grunt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/media/Modernizr 2 Logo.ai" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/media/Modernizr 2 Logo.eps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/media/Modernizr 2 Logo.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/media/Modernizr 2 Logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/media/Modernizr 2 Logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/Windsong-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/Windsong-webfont.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/Windsong-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/Windsong-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/Windsong-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/apng_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/before-after.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/form_validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/ga.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/green5x5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/hashchange.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/mathml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/mathml_ref.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/modernizr-1.7.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/png_alpha_result.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/pushstate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/red30x30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/ruby.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/stroked-text.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/svg-html-blur.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/svg-img.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/svg-img.svg.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/svg_blur.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/table.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/text-shadow1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/text-shadow2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/windsong_font.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/caniuse_files/xhtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/dumpdata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/lib/detect-global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/lib/jquery-1.7b2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/lib/jsonselect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/lib/polyfills.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/lib/uaparser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/setup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/unit-caniuse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/js/unit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/qunit/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/qunit/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/bower_components/modernizr/test/qunit/run-qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/css/admin/ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/css/admin/stylesheets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_footer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_inputs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_mediaSetup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_orbit.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageAbout.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageCareer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageContactUs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageFacilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageHome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageNews.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageReservation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageRooms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_pageTerms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_previewPage.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_reveal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_settings.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_tools.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_topnav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/_typography.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/cleditor/_cleditor.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/backup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/cycle2iosfix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.abide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.accordion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.clearing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.interchange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.joyride.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.magellan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.orbit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.reveal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/foundation/foundation.topbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/googleMap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.fancybox-buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.fancybox-media.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.fancybox-thumbs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.fancybox.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.jscrollpane.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/jquery.mousewheel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/libraries.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/cleditor/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/cleditor/jquery.cleditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/gyro.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/gyro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/krpano.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/krpanoiphone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/krpanoiphone.license.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/pano_b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/pano_d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/pano_f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/pano_l.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/pano_r.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/pano_u.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/preview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/swfkrpano.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/plugins/v360/v360.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/blocksit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/custom.modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/fastclick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/jquery.autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/jquery.cycle2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/jquery.jscrollpane.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/owl.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/vendor/unslider.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/143ce65d8274d3b532b2a50107fa6dc28cb0a468.file._header.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/9823afd30fd709e6904c0e6ec69e015b76b0d981.file._header.tpl.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/2da23304e12356867f99004a969bdf7701c95aff.file._mainMenu.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/73731bd5204d468ab658af16f1038ede0b7dfab1.file._mainMenu.tpl.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/c7b03972ded63f0b1e3e8b9ff877c2a73bdc94af.file._breadcrumbs.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/41520127fd68589a191204a35b16510ee514c12c.file._breadcrumbs.tpl.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/cca2121d68351a6a35eb9eb8daba605ae27e908d.file._index.tpl.php" afterPath="$PROJECT_DIR$/Tests/app/TestApp/smarty/templates_c/31df2710377d99f0a3bee5cf0046b1f4f70e9e7f.file._index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/AdminsController.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/AdminsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" afterPath="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl" afterPath="$PROJECT_DIR$/public/views/admin/wrappers/_header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_imageForm.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/_index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" afterPath="$PROJECT_DIR$/public/views/admin/wrappers/_main.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/widgets/_mainMenu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleOneType.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/_sampleForm.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleOneType.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleOneType.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/crud/widgets/_sortable.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" afterPath="$PROJECT_DIR$/Tests/app/public/default/resources/foundation/scss/admin/_stylesheet.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl" afterPath="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/logs/error.log" afterPath="$PROJECT_DIR$/Tests/app/logs/error.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" afterPath="$PROJECT_DIR$/Tests/app/public/default/TestApp/views/admin/cRUDImages/images.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/js/admin/plugins.js" afterPath="$PROJECT_DIR$/Tests/app/public/default/resources/js/admin/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/app/public/default/resources/css/admin/stylesheets.css" afterPath="$PROJECT_DIR$/Tests/app/public/default/resources/css/admin/stylesheets.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skully-admin.iws" />
@@ -511,10 +27,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_new.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_new.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="49" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="836">
+            <state line="27" column="10" selection-start="1860" selection-end="1860" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_multipleManyTypes.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_manyTypes.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="10" selection-start="118" selection-end="1955" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_singleManyTypes.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="10" selection-start="639" selection-end="639" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="539">
               <folding />
             </state>
           </provider>
@@ -541,7 +84,7 @@
       <file leaf-file-name="ImageUploaderSetting.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="72" selection-start="751" selection-end="751" vertical-scroll-proportion="1.25" vertical-offset="330" max-vertical-offset="2550">
+            <state line="22" column="72" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2580">
               <folding />
             </state>
           </provider>
@@ -550,7 +93,7 @@
       <file leaf-file-name="_oneType.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding>
                 <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
                 <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
@@ -577,6 +120,7 @@
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php" />
+        <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl" />
       </list>
     </option>
   </component>
@@ -793,6 +337,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skully-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imageUploader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="multiple" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -821,11 +399,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2550586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2284345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -857,6 +435,46 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="49" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="348" column="5" selection-start="17212" selection-end="17322" vertical-scroll-proportion="0.0" vertical-offset="5031" max-vertical-offset="6720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderCRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="72" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
+            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
+            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
+            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="74" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="540">
@@ -953,7 +571,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploaderSetting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="72" selection-start="751" selection-end="751" vertical-scroll-proportion="1.25" vertical-offset="330" max-vertical-offset="2550">
+        <state line="22" column="72" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2580">
           <folding />
         </state>
       </provider>
@@ -972,7 +590,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="836">
+        <state line="27" column="10" selection-start="1860" selection-end="1860" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_manyTypes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="118" selection-end="1955" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="639" selection-end="639" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="539">
           <folding />
         </state>
       </provider>
