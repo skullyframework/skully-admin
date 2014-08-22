@@ -94,20 +94,26 @@
                                 notify(data.message);
                                 _openedModal.modal('hide');
                                 var settingName = data.setting;
-                                var position = parseInt(data.position, 10);
-                                var $rowForms = $('.image_row-'+settingName + ' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
-                                $rowForms.eq(position).slideUp('medium', function() {
-                                    $(this).remove();
-                                    for (var i=position+1;i<$rowForms.length;i++) {
-                                        $rowForms.eq(i).find('.position').text(i-1);
-                                        $rowForms.eq(i).find('[name=position]').each(function(id, el) {
-                                            $(el).val(i-1);
-                                        });
-                                        $rowForms.eq(i).find('a.hasPosition').each(function(id,el) {
-                                            $(el).attr('href', replaceQueryParam('position', i-1, $(el).attr('href')));
-                                        })
-                                    }
-                                });
+                                if(data.position){
+                                    var position = parseInt(data.position, 10);
+                                    var $rowForms = $('.image_row-'+settingName + ' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
+                                    $rowForms.eq(position).slideUp('medium', function() {
+                                        $(this).remove();
+                                        for (var i=position+1;i<$rowForms.length;i++) {
+                                            $rowForms.eq(i).find('.position').text(i-1);
+                                            $rowForms.eq(i).find('[name=position]').each(function(id, el) {
+                                                $(el).val(i-1);
+                                            });
+                                            $rowForms.eq(i).find('a.hasPosition').each(function(id,el) {
+                                                $(el).attr('href', replaceQueryParam('position', i-1, $(el).attr('href')));
+                                            })
+                                        }
+                                    });
+                                }
+                                else{
+                                    var $rowForms = $('.image_row-'+settingName + ' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
+                                    $rowForms.find(".fileupload .thumbnail").html('<div class="emptyInfo">{lang value="No Image"}</div>');
+                                }
                             }
                             if (data.error) {
                                 _openedModal.find('.modal-body').stop().animate({
