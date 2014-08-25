@@ -427,7 +427,8 @@ trait ImageUploader {
         else {
             $newImageRow = '';
             array_unshift($images, $newImageRow);
-            $instance->set($imageField, $images);
+            $json_encoded = json_encode($images);
+            $instance->set($imageField, $json_encoded);
             R::store($instance);
             $this->app->getTemplateEngine()->assign(array(
                 $this->instanceName => $instance->export()
