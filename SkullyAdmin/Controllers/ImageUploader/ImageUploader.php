@@ -289,7 +289,7 @@ trait ImageUploader {
                     $imagesField = UtilitiesHelper::decodeJson($imagesField, true);
                 }
                 $position = $this->getParam('position');
-                if(!empty($position)) $imageField = $imagesField[$position];
+                if(!empty($position) || $position === 0) $imageField = $imagesField[$position];
                 else $imageField = $imagesField;
 
                 if (is_array($imageField)) {
@@ -321,15 +321,20 @@ trait ImageUploader {
         if (!$instance->hasError()) {
             try {
                 $imageSettings = $this->getImageSettings();
-                if($imageSettings[$imageSetting]["_config"]["multiple"] && !empty($imageSettings[$imageSetting]["types"])){
+                if($imageSettings[$imageSetting]["_config"]["multiple"]){
                     $imageValue = $instance->get($imageField);
                     if (!is_array($imageValue)) {
                         $imageValue = UtilitiesHelper::decodeJson($imageValue, true);
                     }
                     $imagesAtPosition = $imageValue[$position];
                     if (!empty($imagesAtPosition)) {
-                        foreach($imagesAtPosition as $key => $image) {
-                            unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
+                        if(!empty($imageSettings[$imageSetting]["types"])){ //multiple many types
+                            foreach($imagesAtPosition as $key => $image) {
+                                unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
+                            }
+                        }
+                        else{ //multiple single types
+                            unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $imagesAtPosition));
                         }
                     }
                     unset($imageValue[$position]);
