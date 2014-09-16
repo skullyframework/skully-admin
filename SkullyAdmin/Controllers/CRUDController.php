@@ -617,6 +617,17 @@ class CRUDController extends BaseController
             ));
         }
         else {
+            $formTemplate = "";
+            if($template == $this->addNoAjaxTpl || $template == $this->addAjaxTpl) $formTemplate = $this->addFormTpl;
+            else if($template == $this->editNoAjaxTpl || $template == $this->editAjaxTpl) $formTemplate = $this->editFormTpl;
+            else if($template == $this->deleteNoAjaxTpl || $template == $this->deleteAjaxTpl) $formTemplate = $this->deleteFormTpl;
+
+            if(!empty($formTemplate)){
+                $this->app->getTemplateEngine()->assign(array(
+                    "form" => $this->fetch($formTemplate)
+                ));
+            }
+
             $this->app->getTemplateEngine()->assign(array(
                 'error' => $message,
                 'errorAttributes' => $errorObjects,
