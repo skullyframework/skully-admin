@@ -111,7 +111,7 @@ trait ImageUploader {
                             $options = array(
                                 'resultDir' => $fullPath,
                                 'noImagick' => $this->app->config('noImagick'),
-                                'outputFilename' => $name
+                                'outputFilename' => str_replace(" ", "-", $name)
                             );
                             $instanceImages = $instance->get($imageFieldName);
                             if (is_string($instanceImages) && $imageSetting["types"]) {
@@ -125,7 +125,7 @@ trait ImageUploader {
                                     $newInstanceImage = array();
                                     foreach($imageSetting['types'] as $key => $typeOptions) {
                                         $options = array_merge($options, $imageSetting['types'][$key]);
-                                        $options['outputFilename'] = $imageName.'-'.$key.'.'.$ext;
+                                        $options['outputFilename'] = str_replace(" ", "-", $imageName) .'-'.$key.'.'.$ext;
                                         try {
                                             $path = $this->processTempImage($tmp, $options);
                                             $newInstanceImage[$key] = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
