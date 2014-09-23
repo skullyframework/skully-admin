@@ -127,3 +127,37 @@ label {
 .aTable img {
   max-height: 80px;
 }
+
+.icon-inline {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.table-hover {
+  tr:hover {
+    cursor: pointer;
+  }
+}
+
+.toolbar form {
+  display: inline-block;
+  float: left;
+}
+.toolbar .breadcrumbs {
+  display: inline-block;
+  margin: 4px 10px 0 10px;
+  float: left;
+  li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    &:after {
+      content: '/';
+      margin-left: 10px;
+    }
+    &:last-child:after {
+      content: '';
+    }
+  }
+}
