@@ -26,20 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_multipleManyTypes.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
+      <file leaf-file-name="ImageUploader.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="127" column="103" selection-start="5187" selection-end="5187" vertical-scroll-proportion="0.705104" vertical-offset="1487" max-vertical-offset="7035">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageUploader.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
+      <file leaf-file-name="ImageProcessor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Library/ImageProcessor/ImageProcessor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="430" column="55" selection-start="21003" selection-end="21003" vertical-scroll-proportion="0.59546316" vertical-offset="6090" max-vertical-offset="7035">
+            <state line="100" column="101" selection-start="4056" selection-end="4070" vertical-scroll-proportion="-10.0" vertical-offset="1260" max-vertical-offset="4770">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CRUDController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="629" column="0" selection-start="26255" selection-end="26255" vertical-scroll-proportion="-55.25" vertical-offset="8094" max-vertical-offset="9690">
+              <folding>
+                <marker date="1410840793000" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,7 +58,7 @@
       <file leaf-file-name="_delete.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_delete.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="645">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -116,20 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_oneType.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <folding>
-                <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-                <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-                <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-                <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -148,6 +145,7 @@
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_singleManyTypes.tpl" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/views/admin/widgets/imageUploader/_uploadScript.tpl" />
+        <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php" />
         <option value="$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php" />
       </list>
     </option>
@@ -184,6 +182,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -498,7 +497,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,7 +538,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23269436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23695421" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -548,11 +546,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -572,13 +570,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="339" column="50" selection-start="17255" selection-end="17255" vertical-scroll-proportion="0.0" vertical-offset="5085" max-vertical-offset="7020">
@@ -646,14 +637,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/types/_multipleManyTypes.tpl">
@@ -730,14 +714,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
@@ -764,14 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
@@ -798,14 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
@@ -832,14 +795,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding>
-            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_new.tpl">
@@ -934,19 +890,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/admin/widgets/imageUploader/multiple/_oneType.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/CRUDController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="629" column="0" selection-start="26255" selection-end="26255" vertical-scroll-proportion="-55.25" vertical-offset="8094" max-vertical-offset="9690">
           <folding>
-            <marker date="1407913188000" expanded="true" signature="47:2467" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="133:1954" placeholder="..." />
-            <marker date="1407913188000" expanded="false" signature="2149:2164" placeholder="..." />
-            <marker date="1407913188000" expanded="true" signature="2165:2460" placeholder="..." />
+            <marker date="1410840793000" expanded="true" signature="3397:3445" placeholder="SELECT * FRO..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/skullyframework/skully/Skully/Library/ImageProcessor/ImageProcessor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="101" selection-start="4056" selection-end="4070" vertical-scroll-proportion="-10.0" vertical-offset="1260" max-vertical-offset="4770">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SkullyAdmin/Controllers/ImageUploader/ImageUploader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="430" column="55" selection-start="21003" selection-end="21003" vertical-scroll-proportion="0.59546316" vertical-offset="6090" max-vertical-offset="7035">
+        <state line="127" column="103" selection-start="5187" selection-end="5187" vertical-scroll-proportion="0.705104" vertical-offset="1487" max-vertical-offset="7035">
           <folding />
         </state>
       </provider>
