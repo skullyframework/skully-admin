@@ -209,19 +209,40 @@ trait ImageUploader {
                                 else {
                                     // One type
                                     $options = array_merge($options, $imageSetting['options']);
-                                    $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages;
-                                    try {
-                                        $path = $this->processTempImage($tmp, $options, $oldFile);
-                                        $instanceImages = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
-                                        $instance->set($imageFieldName, $instanceImages);
-                                        $uploadedImages[] = array(
-                                            'data' => $this->getParam('data'),
-                                            'path' => $instanceImages,
-                                            'message' => $this->app->getTranslator()->translate("imageUploaded")
-                                        );
+                                    if($imageSetting['_config']['multiple']){
+                                        //MULTIPLE
+                                        $position = $this->getParam("position");
+                                        $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages[$position];
+                                        try {
+                                            $path = $this->processTempImage($tmp, $options, $oldFile);
+                                            $instanceImages[$position] = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $instance->set($imageFieldName, $instanceImages);
+                                            $uploadedImages[] = array(
+                                                'data' => $this->getParam('data'),
+                                                'path' => $instanceImages[$position],
+                                                'message' => $this->app->getTranslator()->translate("imageUploaded")
+                                            );
+                                        }
+                                        catch (\Exception $e) {
+                                            throw new \Exception($e->getMessage());
+                                        }
                                     }
-                                    catch (\Exception $e) {
-                                        throw new \Exception($e->getMessage());
+                                    else{
+                                        //SINGLE
+                                        $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages;
+                                        try {
+                                            $path = $this->processTempImage($tmp, $options, $oldFile);
+                                            $instanceImages = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $instance->set($imageFieldName, $instanceImages);
+                                            $uploadedImages[] = array(
+                                                'data' => $this->getParam('data'),
+                                                'path' => $instanceImages,
+                                                'message' => $this->app->getTranslator()->translate("imageUploaded")
+                                            );
+                                        }
+                                        catch (\Exception $e) {
+                                            throw new \Exception($e->getMessage());
+                                        }
                                     }
                                 }
                             }
