@@ -70,7 +70,7 @@ class AdminsController extends CRUDController
     protected function beforeAction() {
         $action = $this->currentAction;
         // If given action is not one of given array, run parent's beforeAction.
-        if (!in_array($action, array('login', 'loginProcess', 'forgetPassword', 'forgetConfirm'))) {
+        if (!in_array($action, array('login', 'loginProcess', 'forgetPassword', 'forgetPasswordConfirm'))) {
             parent::beforeAction($action);
         }
     }
@@ -119,7 +119,7 @@ class AdminsController extends CRUDController
     public function forgetPassword(){
         if (!empty($this->params['email'])) {
             /** @var \Redbean_SimpleModel $userBean */
-            $userBean = R::findOne('user', "email=?", array($this->params['email']));
+            $userBean = R::findOne('admin', "email=?", array($this->params['email']));
             if(empty($userBean)){
                 echo json_encode(array(
                     "errors" => $this->app->getTranslator()->translate('invalidUser')
@@ -159,13 +159,11 @@ class AdminsController extends CRUDController
     }
 
     public function forgetPasswordConfirm(){
-        $result = array();
-
 //        $this->app->getLogger()->log('confirm new password after reset..');
 //        $this->app->getLogger()->log("referer : " . (empty($_SERVER["HTTP_REFERER"]) ? " empty referer " : $_SERVER["HTTP_REFERER"]));
         $params = $this->getParams();
         /** @var \Redbean_SimpleModel $userBean */
-        $userBean = R::findOne('user', "id = ? and activation_key = ?", array($params["id"], $params["activation_key"]));
+        $userBean = R::findOne('admin', "id = ? and activation_key = ?", array($params["id"], $params["activation_key"]));
         if (!empty($params['activation_key']) && !empty($userBean)) {
             /** @var \SkullyAdmin\Models\Admin $user */
             $user = $userBean->box();
@@ -174,17 +172,19 @@ class AdminsController extends CRUDController
             $newPassword = $user->resetPassword();
 
             try{
+//                $this->app->getLogger()->log('store new password');
                 R::store($user);
 
                 if($this->SendNewPassword($user, $newPassword)){
-                    $this->showMessage($this->app->getTranslator()->translate('emailNewPasswordSent'), 'success');
+                    $this->showMessage($this->app->getTranslator()->translate('emailNewPasswordSent'), 'message');
                 }
                 else{
                     $this->showMessage($this->app->getTranslator()->translate("unknownError"), 'error');
                 }
             }
             catch(\Exception $e){
-                $this->showMessage($user->errorMessage(), 'error');
+//                $this->app->getLogger()->log('error saving new password');
+                $this->showMessage($e->getMessage(), 'error');
             }
         }
         else {
@@ -210,8 +210,9 @@ class AdminsController extends CRUDController
             "websiteName" => $websiteName == "" ? "Skully Admin" : $websiteName
         ));
 
-        $content = $this->fetch("new.password.confirmation.tpl");
+        $content = $this->fetch("new.password.confirmation");
         $altContent = new \HtmlPlainText($content);
+//        $this->app->getLogger()->log('Message : ' . $altContent->plainText);
         $res = $mailer->send(array(
             'to' => array($user->email),
             'message' => $content,
@@ -222,6 +223,7 @@ class AdminsController extends CRUDController
 
         if(!$res) {
             $this->app->getLogger()->log("Failed to send new password confirmation to user");
+
         }
 
         return $res;
@@ -243,8 +245,9 @@ class AdminsController extends CRUDController
             "newPassword" => $newPassword,
             "websiteName" => $websiteName == "" ? "Skully Admin" : $websiteName
         ));
-        $content = $this->app->getTemplateEngine()->fetch("new.password.tpl");
+        $content = $this->fetch("new.password");
         $altContent = new \HtmlPlainText($content);
+//        $this->app->getLogger()->log('Message : ' . $altContent->plainText);
         $res = $mailer->send(array(
             'to' => array($userAttributes["email"]),
             'message' => $content,

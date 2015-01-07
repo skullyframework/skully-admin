@@ -74,7 +74,7 @@
                 url  : '{url path="admin/admins/forgetPassword"}',
                 type : 'POST',
                 data : {
-                    email : $("[name=email]").val()
+                    email : $("#forgot [name=email]").val()
                 },
                 success: function(response){
                     var data = JSON.parse(response);
