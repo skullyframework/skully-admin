@@ -206,7 +206,7 @@ class AdminsController extends CRUDController
 
         $this->app->getTemplateEngine()->assign(array(
             "user" => $userAttributes,
-            "activationUrl" => $this->app->getRouter()->getUrl('admin/forgot/confirm', array('id' => $user->getID(), 'activation_key' => $user->activationKey)),
+            "activationUrl" => $this->app->getRouter()->getUrl('admin/admins/forgetPasswordConfirm', array('id' => $user->getID(), 'activation_key' => $user->activationKey)),
             "websiteName" => $websiteName == "" ? "Skully Admin" : $websiteName
         ));
 
