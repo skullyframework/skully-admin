@@ -250,11 +250,11 @@ trait ImageUploader {
                             R::store($instance);
                         }
                         else {
-                            throw new \Exception($this->app->getTranslator()->translate('errorFilesizeTooBig', array(FileHelper::parseBytes($maxFilesize))));
+                            throw new \Exception($this->app->getTranslator()->translate('errorFilesizeTooBig', array("fileSize" => FileHelper::parseBytes($maxFilesize))));
                         }
                     }
                     else {
-                        throw new \Exception($this->app->getTranslator()->translate("errorInvalidFormat", array($ext)));
+                        throw new \Exception($this->app->getTranslator()->translate("errorInvalidFormat", array("ext" => implode(", ", $validFormats))));
                     }
                 }
                 else {

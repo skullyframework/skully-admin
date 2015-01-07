@@ -1,6 +1,7 @@
 <?php
 namespace SkullyAdmin\Controllers;
 
+use App\Mailer;
 use RedBeanPHP\Facade as R;
 use Skully\App\Helpers\TimeHelper;
 
@@ -69,7 +70,7 @@ class AdminsController extends CRUDController
     protected function beforeAction() {
         $action = $this->currentAction;
         // If given action is not one of given array, run parent's beforeAction.
-        if (!in_array($action, array('login', 'loginProcess'))) {
+        if (!in_array($action, array('login', 'loginProcess', 'forgetPassword', 'forgetConfirm'))) {
             parent::beforeAction($action);
         }
     }
@@ -113,5 +114,148 @@ class AdminsController extends CRUDController
             ));
             $this->render('login');
         }
+    }
+
+    public function forgetPassword(){
+        if (!empty($this->params['email'])) {
+            /** @var \Redbean_SimpleModel $userBean */
+            $userBean = R::findOne('user', "email=?", array($this->params['email']));
+            if(empty($userBean)){
+                echo json_encode(array(
+                    "errors" => $this->app->getTranslator()->translate('invalidUser')
+                ));
+            }
+            else{
+                /** @var \SkullyAdmin\Models\Admin $user */
+                $user = $userBean->box();
+                $user->generateActivationKey();
+
+                try{
+                    R::store($user);
+
+                    if( $this->SendNewPasswordConfirmation($user) ){
+                        echo json_encode(array(
+                            "success" => 1
+                        ));
+                    }
+                    else{
+                        echo json_encode(array(
+                            "errors" => $this->app->getTranslator()->translate('unknownError')
+                        ));
+                    }
+                }
+                catch(\Exception $e){
+                    echo json_encode(array(
+                        "errors" => $e->getMessage()
+                    ));
+                }
+            }
+        }
+        else {
+            echo json_encode(array(
+                "errors" => $this->app->getTranslator()->translate('invalidUser')
+            ));
+        }
+    }
+
+    public function forgetPasswordConfirm(){
+        $result = array();
+
+//        $this->app->getLogger()->log('confirm new password after reset..');
+//        $this->app->getLogger()->log("referer : " . (empty($_SERVER["HTTP_REFERER"]) ? " empty referer " : $_SERVER["HTTP_REFERER"]));
+        $params = $this->getParams();
+        /** @var \Redbean_SimpleModel $userBean */
+        $userBean = R::findOne('user', "id = ? and activation_key = ?", array($params["id"], $params["activation_key"]));
+        if (!empty($params['activation_key']) && !empty($userBean)) {
+            /** @var \SkullyAdmin\Models\Admin $user */
+            $user = $userBean->box();
+            $user->activationKey = '';
+
+            $newPassword = $user->resetPassword();
+
+            try{
+                R::store($user);
+
+                if($this->SendNewPassword($user, $newPassword)){
+                    $this->showMessage($this->app->getTranslator()->translate('emailNewPasswordSent'), 'success');
+                }
+                else{
+                    $this->showMessage($this->app->getTranslator()->translate("unknownError"), 'error');
+                }
+            }
+            catch(\Exception $e){
+                $this->showMessage($user->errorMessage(), 'error');
+            }
+        }
+        else {
+            $this->showMessage($this->app->getTranslator()->translate("userNotFoundOrInvalidActivationKey"), 'error');
+        }
+        $this->render('login');
+    }
+
+    /**
+     * @param \SkullyAdmin\Models\Admin $user
+     * @return bool
+     */
+    protected function SendNewPasswordConfirmation($user){
+        $mailer = new Mailer($this->app);
+        $userAttributes = $user->export();
+        $result = true;
+
+        $websiteName = $this->app->getTranslator()->translate('websiteName');
+
+        $this->app->getTemplateEngine()->assign(array(
+            "user" => $userAttributes,
+            "activationUrl" => $this->app->getRouter()->getUrl('admin/forgot/confirm', array('id' => $user->getID(), 'activation_key' => $user->activationKey)),
+            "websiteName" => $websiteName == "" ? "Skully Admin" : $websiteName
+        ));
+
+        $content = $this->fetch("new.password.confirmation.tpl");
+        $altContent = new \HtmlPlainText($content);
+        $res = $mailer->send(array(
+            'to' => array($user->email),
+            'message' => $content,
+            'altMessage' => $altContent->plainText,
+            'subject' => $this->app->getTranslator()->translate("adminEmailNewPasswordConfirmationSubject", array("websiteName" => $websiteName)),
+            'isHtml' => true
+        ));
+
+        if(!$res) {
+            $this->app->getLogger()->log("Failed to send new password confirmation to user");
+        }
+
+        return $res;
+    }
+
+    /**
+     * @param \SkullyAdmin\Models\Admin $user
+     * @param string $newPassword
+     * @return bool
+     */
+    public function SendNewPassword($user, $newPassword){
+        $mailer = new Mailer($this->app);
+        $userAttributes = $user->export();
+
+        $websiteName = $this->app->getTranslator()->translate('websiteName');
+
+        $this->app->getTemplateEngine()->assign(array(
+            "user" => $userAttributes,
+            "newPassword" => $newPassword,
+            "websiteName" => $websiteName == "" ? "Skully Admin" : $websiteName
+        ));
+        $content = $this->app->getTemplateEngine()->fetch("new.password.tpl");
+        $altContent = new \HtmlPlainText($content);
+        $res = $mailer->send(array(
+            'to' => array($userAttributes["email"]),
+            'message' => $content,
+            'altMessage' => $altContent->plainText,
+            'subject' => $this->app->getTranslator()->translate("adminEmailNewPasswordSubject", array("websiteName" => $websiteName)),
+            'isHtml' => true
+        ));
+
+        if(!$res){
+            $this->app->getLogger()->log("Failed to send new password to user");
+        }
+        return $res;
     }
 }
