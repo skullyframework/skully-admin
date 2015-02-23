@@ -1122,3 +1122,43 @@ PHP Startup: Unable to load dynamic library '/Applications/XAMPP/xamppfiles/lib/
 #0  shutdownHandler()
 
 
+[Tuesday, 24-Feb-2015 02:26:59 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\Driver\RPDO.php | ln:280
+GET: Array
+(
+    [_url] => 
+)
+
+POST: Array
+(
+)
+
+Uncaught exception 'PDOException' with message 'Could not connect to database (skully_admin).' in D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\Driver\RPDO.php:280
+Stack trace:
+#0 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\Driver\RPDO.php(126): RedBeanPHP\Driver\RPDO->connect()
+#1 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\Driver\RPDO.php(289): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM `...', Array)
+#2 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\Adapter\DBAdapter.php(79): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM `...', Array)
+#3 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php(576): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM `...', Array)
+#4 D:\apache\skully-admin\vendor\skullyframework\skully\Skully\Library\redbean\RedBeanPHP\OODB.php(795): RedBeanPHP\Query
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-2015 02:33:35 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:33:35 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:33:49 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:33:49 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:34:36 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:34:36 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:34:40 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:34:40 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:35:15 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:35:16 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:36:01 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:36:02 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:36:20 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:36:20 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:36:25 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:36:25 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 02:36:29 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 02:36:29 WIB warn] Resource not found: public/adminFavicon.ico
+[Tuesday, 24-Feb-2015 03:02:19 WIB warn] Resource not found: public/default/resources/images/main/logo-smallest.png
+[Tuesday, 24-Feb-2015 03:02:19 WIB warn] Resource not found: public/adminFavicon.ico
