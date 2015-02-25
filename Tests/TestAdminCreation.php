@@ -8,7 +8,7 @@ use RedBeanPHP\Facade as R;
 
 require_once('DatabaseTestCase.php');
 
-class TestAdminCreation extends DatabaseTestCase {
+class TestAdminCreation extends AdminTestCase {
     public function testCreateAdmin()
     {
         $this->migrate();

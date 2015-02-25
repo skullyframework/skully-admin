@@ -2713,3 +2713,2199 @@ Feb 04 17:23:40 [info] CREATE TABLE `setting` (
 `is_visible` tinyint(1) DEFAULT '1',
  PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
 Feb 04 17:23:40 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 24 22:29:32 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 24 22:29:33 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 24 22:29:33 [info] SELECT version FROM schema_migrations
+Feb 24 22:29:33 [info] SELECT version FROM schema_migrations
+Feb 24 22:29:33 [info] SELECT version FROM schema_migrations
+Feb 24 22:29:33 [info] drop table if exists `session`;
+Feb 24 22:29:33 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 24 22:29:33 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 24 22:29:33 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 24 22:29:33 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 24 22:29:33 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 24 23:08:33 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 24 23:08:34 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 24 23:08:34 [info] SELECT version FROM schema_migrations
+Feb 24 23:08:34 [info] SELECT version FROM schema_migrations
+Feb 24 23:08:34 [info] SELECT version FROM schema_migrations
+Feb 24 23:08:34 [info] drop table if exists `session`;
+Feb 24 23:08:34 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 24 23:08:34 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 24 23:08:35 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 24 23:08:35 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 24 23:08:36 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 11:54:27 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 11:54:27 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 11:54:27 [info] SELECT version FROM schema_migrations
+Feb 25 11:54:27 [info] SELECT version FROM schema_migrations
+Feb 25 11:54:27 [info] SELECT version FROM schema_migrations
+Feb 25 11:54:27 [info] drop table if exists `session`;
+Feb 25 11:54:27 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 11:54:27 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 11:54:27 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 11:54:27 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 11:54:27 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:00:42 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:00:42 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:00:42 [info] SELECT version FROM schema_migrations
+Feb 25 14:00:42 [info] SELECT version FROM schema_migrations
+Feb 25 14:00:42 [info] SELECT version FROM schema_migrations
+Feb 25 14:00:42 [info] drop table if exists `session`;
+Feb 25 14:00:42 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:00:43 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:00:43 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:00:43 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:00:43 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:01:32 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:01:32 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:01:32 [info] SELECT version FROM schema_migrations
+Feb 25 14:01:32 [info] SELECT version FROM schema_migrations
+Feb 25 14:01:32 [info] SELECT version FROM schema_migrations
+Feb 25 14:01:32 [info] drop table if exists `session`;
+Feb 25 14:01:32 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:01:32 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:01:33 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:01:33 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:01:33 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:03:16 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:03:16 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:03:16 [info] SELECT version FROM schema_migrations
+Feb 25 14:03:16 [info] SELECT version FROM schema_migrations
+Feb 25 14:03:16 [info] SELECT version FROM schema_migrations
+Feb 25 14:03:16 [info] drop table if exists `session`;
+Feb 25 14:03:16 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:03:16 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:03:16 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:03:16 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:03:16 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:03:55 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:03:55 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:03:56 [info] SELECT version FROM schema_migrations
+Feb 25 14:03:56 [info] SELECT version FROM schema_migrations
+Feb 25 14:03:56 [info] SELECT version FROM schema_migrations
+Feb 25 14:03:56 [info] drop table if exists `session`;
+Feb 25 14:03:56 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:03:56 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:03:56 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:03:56 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:03:56 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:04:16 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:04:16 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:04:16 [info] SELECT version FROM schema_migrations
+Feb 25 14:04:16 [info] SELECT version FROM schema_migrations
+Feb 25 14:04:16 [info] SELECT version FROM schema_migrations
+Feb 25 14:04:16 [info] drop table if exists `session`;
+Feb 25 14:04:16 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:04:16 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:04:16 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:04:16 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:04:17 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:05:32 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:05:32 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:05:32 [info] SELECT version FROM schema_migrations
+Feb 25 14:05:32 [info] SELECT version FROM schema_migrations
+Feb 25 14:05:32 [info] SELECT version FROM schema_migrations
+Feb 25 14:05:32 [info] drop table if exists `session`;
+Feb 25 14:05:32 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:05:32 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:05:33 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:05:33 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:05:33 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:06:53 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:06:53 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:06:53 [info] SELECT version FROM schema_migrations
+Feb 25 14:06:53 [info] SELECT version FROM schema_migrations
+Feb 25 14:06:53 [info] SELECT version FROM schema_migrations
+Feb 25 14:06:53 [info] drop table if exists `session`;
+Feb 25 14:06:53 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:06:54 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:06:54 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:06:54 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:06:54 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 14:07:36 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 14:07:36 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 14:07:36 [info] SELECT version FROM schema_migrations
+Feb 25 14:07:36 [info] SELECT version FROM schema_migrations
+Feb 25 14:07:36 [info] SELECT version FROM schema_migrations
+Feb 25 14:07:36 [info] drop table if exists `session`;
+Feb 25 14:07:36 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 14:07:36 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:07:36 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:07:36 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 14:07:36 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 23:53:26 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 23:53:26 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 23:53:26 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:26 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:26 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:26 [info] drop table if exists `session`;
+Feb 25 23:53:26 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 23:53:26 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:26 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:26 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:26 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 23:53:43 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 23:53:43 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 23:53:43 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:43 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:43 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:43 [info] drop table if exists `session`;
+Feb 25 23:53:43 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 23:53:43 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:43 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:43 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:43 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 23:53:57 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 23:53:57 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 23:53:57 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:57 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:57 [info] SELECT version FROM schema_migrations
+Feb 25 23:53:57 [info] drop table if exists `session`;
+Feb 25 23:53:57 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 23:53:57 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:57 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:57 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:53:57 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 25 23:55:06 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 25 23:55:06 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 25 23:55:06 [info] SELECT version FROM schema_migrations
+Feb 25 23:55:06 [info] SELECT version FROM schema_migrations
+Feb 25 23:55:06 [info] SELECT version FROM schema_migrations
+Feb 25 23:55:06 [info] drop table if exists `session`;
+Feb 25 23:55:06 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 25 23:55:07 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:55:07 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:55:07 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 25 23:55:07 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:11:46 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:11:46 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:11:46 [info] SELECT version FROM schema_migrations
+Feb 26 00:11:46 [info] SELECT version FROM schema_migrations
+Feb 26 00:11:46 [info] SELECT version FROM schema_migrations
+Feb 26 00:11:46 [info] drop table if exists `session`;
+Feb 26 00:11:46 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:11:46 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:11:46 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:11:46 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:11:46 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:12:15 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:12:15 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:12:15 [info] SELECT version FROM schema_migrations
+Feb 26 00:12:15 [info] SELECT version FROM schema_migrations
+Feb 26 00:12:15 [info] SELECT version FROM schema_migrations
+Feb 26 00:12:15 [info] drop table if exists `session`;
+Feb 26 00:12:15 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:12:15 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:12:15 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:12:15 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:12:15 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:12:27 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:12:27 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:12:27 [info] SELECT version FROM schema_migrations
+Feb 26 00:12:27 [info] SELECT version FROM schema_migrations
+Feb 26 00:12:27 [info] SELECT version FROM schema_migrations
+Feb 26 00:12:27 [info] drop table if exists `session`;
+Feb 26 00:12:27 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:12:27 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:12:27 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:12:27 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:12:28 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:15:41 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:15:41 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:15:41 [info] SELECT version FROM schema_migrations
+Feb 26 00:15:41 [info] SELECT version FROM schema_migrations
+Feb 26 00:15:41 [info] SELECT version FROM schema_migrations
+Feb 26 00:15:41 [info] drop table if exists `session`;
+Feb 26 00:15:41 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:15:41 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:15:42 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:15:42 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:15:42 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:17:02 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:17:02 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:17:02 [info] SELECT version FROM schema_migrations
+Feb 26 00:17:02 [info] SELECT version FROM schema_migrations
+Feb 26 00:17:02 [info] SELECT version FROM schema_migrations
+Feb 26 00:17:02 [info] drop table if exists `session`;
+Feb 26 00:17:02 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:17:03 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:17:03 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:17:03 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:17:03 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:18:03 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:18:03 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:18:03 [info] SELECT version FROM schema_migrations
+Feb 26 00:18:03 [info] SELECT version FROM schema_migrations
+Feb 26 00:18:03 [info] SELECT version FROM schema_migrations
+Feb 26 00:18:03 [info] drop table if exists `session`;
+Feb 26 00:18:03 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:18:03 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:18:03 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:18:04 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:18:04 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:19:33 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:19:33 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:19:33 [info] SELECT version FROM schema_migrations
+Feb 26 00:19:33 [info] SELECT version FROM schema_migrations
+Feb 26 00:19:33 [info] SELECT version FROM schema_migrations
+Feb 26 00:19:33 [info] drop table if exists `session`;
+Feb 26 00:19:33 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:19:33 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:19:33 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:19:33 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:19:33 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:20:35 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:20:35 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:20:35 [info] SELECT version FROM schema_migrations
+Feb 26 00:20:35 [info] SELECT version FROM schema_migrations
+Feb 26 00:20:35 [info] SELECT version FROM schema_migrations
+Feb 26 00:20:35 [info] drop table if exists `session`;
+Feb 26 00:20:35 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:20:35 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:20:35 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:20:35 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:20:35 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:21:10 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:21:10 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:21:10 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:10 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:10 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:10 [info] drop table if exists `session`;
+Feb 26 00:21:10 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:21:10 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:10 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:10 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:10 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:21:38 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:21:38 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:21:38 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:38 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:38 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:38 [info] drop table if exists `session`;
+Feb 26 00:21:38 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:21:38 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:38 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:38 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:38 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:21:54 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:21:54 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:21:54 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:54 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:54 [info] SELECT version FROM schema_migrations
+Feb 26 00:21:54 [info] drop table if exists `session`;
+Feb 26 00:21:54 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:21:54 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:54 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:54 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:21:55 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:24:09 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:24:09 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:24:09 [info] SELECT version FROM schema_migrations
+Feb 26 00:24:09 [info] SELECT version FROM schema_migrations
+Feb 26 00:24:09 [info] SELECT version FROM schema_migrations
+Feb 26 00:24:09 [info] drop table if exists `session`;
+Feb 26 00:24:09 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:24:09 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:24:09 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:24:09 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:24:09 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:25:21 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:25:21 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:25:21 [info] SELECT version FROM schema_migrations
+Feb 26 00:25:21 [info] SELECT version FROM schema_migrations
+Feb 26 00:25:21 [info] SELECT version FROM schema_migrations
+Feb 26 00:25:21 [info] drop table if exists `session`;
+Feb 26 00:25:21 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:25:21 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:25:21 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:25:21 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:25:22 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:25:48 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:25:48 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:25:48 [info] SELECT version FROM schema_migrations
+Feb 26 00:25:48 [info] SELECT version FROM schema_migrations
+Feb 26 00:25:48 [info] SELECT version FROM schema_migrations
+Feb 26 00:25:48 [info] drop table if exists `session`;
+Feb 26 00:25:48 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:25:48 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:25:48 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:25:48 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:25:48 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:26:13 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:26:13 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:26:13 [info] SELECT version FROM schema_migrations
+Feb 26 00:26:13 [info] SELECT version FROM schema_migrations
+Feb 26 00:26:13 [info] SELECT version FROM schema_migrations
+Feb 26 00:26:13 [info] drop table if exists `session`;
+Feb 26 00:26:13 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:26:13 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:26:13 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:26:13 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:26:13 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:27:49 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:27:49 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:27:49 [info] SELECT version FROM schema_migrations
+Feb 26 00:27:49 [info] SELECT version FROM schema_migrations
+Feb 26 00:27:49 [info] SELECT version FROM schema_migrations
+Feb 26 00:27:49 [info] drop table if exists `session`;
+Feb 26 00:27:49 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:27:49 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:27:49 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:27:49 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:27:50 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:28:38 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:28:38 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:28:38 [info] SELECT version FROM schema_migrations
+Feb 26 00:28:38 [info] SELECT version FROM schema_migrations
+Feb 26 00:28:38 [info] SELECT version FROM schema_migrations
+Feb 26 00:28:38 [info] drop table if exists `session`;
+Feb 26 00:28:38 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:28:38 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:28:38 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:28:38 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:28:38 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:28:49 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:28:49 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:28:49 [info] SELECT version FROM schema_migrations
+Feb 26 00:28:49 [info] SELECT version FROM schema_migrations
+Feb 26 00:28:49 [info] SELECT version FROM schema_migrations
+Feb 26 00:28:49 [info] drop table if exists `session`;
+Feb 26 00:28:49 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:28:49 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:28:49 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:28:49 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:28:49 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:30:30 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:30:30 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:30:30 [info] SELECT version FROM schema_migrations
+Feb 26 00:30:30 [info] SELECT version FROM schema_migrations
+Feb 26 00:30:30 [info] SELECT version FROM schema_migrations
+Feb 26 00:30:30 [info] drop table if exists `session`;
+Feb 26 00:30:30 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:30:30 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:30:30 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:30:30 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:30:30 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:31:22 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:31:22 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:31:22 [info] SELECT version FROM schema_migrations
+Feb 26 00:31:22 [info] SELECT version FROM schema_migrations
+Feb 26 00:31:22 [info] SELECT version FROM schema_migrations
+Feb 26 00:31:22 [info] drop table if exists `session`;
+Feb 26 00:31:22 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:31:22 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:31:22 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:31:22 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:31:22 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:39:47 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:39:47 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:39:47 [info] SELECT version FROM schema_migrations
+Feb 26 00:39:47 [info] SELECT version FROM schema_migrations
+Feb 26 00:39:47 [info] SELECT version FROM schema_migrations
+Feb 26 00:39:47 [info] drop table if exists `session`;
+Feb 26 00:39:47 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:39:47 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:39:47 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:39:47 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:39:47 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:39:54 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:39:54 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:39:54 [info] SELECT version FROM schema_migrations
+Feb 26 00:39:54 [info] SELECT version FROM schema_migrations
+Feb 26 00:39:54 [info] SELECT version FROM schema_migrations
+Feb 26 00:39:54 [info] drop table if exists `session`;
+Feb 26 00:39:54 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:39:54 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:39:54 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:39:54 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:39:54 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 00:40:07 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 00:40:07 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 00:40:07 [info] SELECT version FROM schema_migrations
+Feb 26 00:40:07 [info] SELECT version FROM schema_migrations
+Feb 26 00:40:07 [info] SELECT version FROM schema_migrations
+Feb 26 00:40:07 [info] drop table if exists `session`;
+Feb 26 00:40:07 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 00:40:08 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:40:08 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:40:08 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 00:40:08 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:28:26 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:28:26 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:28:26 [info] SELECT version FROM schema_migrations
+Feb 26 01:28:26 [info] SELECT version FROM schema_migrations
+Feb 26 01:28:26 [info] SELECT version FROM schema_migrations
+Feb 26 01:28:26 [info] drop table if exists `session`;
+Feb 26 01:28:26 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:28:26 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:26 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:27 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:27 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:28:27 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:27 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:28:47 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:28:47 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:28:47 [info] SELECT version FROM schema_migrations
+Feb 26 01:28:47 [info] SELECT version FROM schema_migrations
+Feb 26 01:28:47 [info] SELECT version FROM schema_migrations
+Feb 26 01:28:47 [info] drop table if exists `session`;
+Feb 26 01:28:47 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:28:47 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:47 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:47 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:47 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:28:47 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:28:48 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:30:12 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:30:12 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:30:12 [info] SELECT version FROM schema_migrations
+Feb 26 01:30:12 [info] SELECT version FROM schema_migrations
+Feb 26 01:30:12 [info] SELECT version FROM schema_migrations
+Feb 26 01:30:12 [info] drop table if exists `session`;
+Feb 26 01:30:12 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:30:12 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:30:12 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:30:12 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:30:12 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:30:12 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:30:12 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:31:16 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:31:16 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:31:16 [info] SELECT version FROM schema_migrations
+Feb 26 01:31:16 [info] SELECT version FROM schema_migrations
+Feb 26 01:31:16 [info] SELECT version FROM schema_migrations
+Feb 26 01:31:16 [info] drop table if exists `session`;
+Feb 26 01:31:16 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:31:16 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:31:16 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:31:16 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:31:16 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:31:16 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:31:16 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:32:42 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:32:42 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:32:42 [info] SELECT version FROM schema_migrations
+Feb 26 01:32:42 [info] SELECT version FROM schema_migrations
+Feb 26 01:32:42 [info] SELECT version FROM schema_migrations
+Feb 26 01:32:42 [info] drop table if exists `session`;
+Feb 26 01:32:42 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:32:42 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:32:42 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:32:42 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:32:42 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:32:42 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:32:42 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:33:06 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:33:06 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:33:06 [info] SELECT version FROM schema_migrations
+Feb 26 01:33:06 [info] SELECT version FROM schema_migrations
+Feb 26 01:33:06 [info] SELECT version FROM schema_migrations
+Feb 26 01:33:06 [info] drop table if exists `session`;
+Feb 26 01:33:06 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:33:06 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:06 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:06 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:06 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:33:06 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:07 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:33:50 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:33:50 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:33:50 [info] SELECT version FROM schema_migrations
+Feb 26 01:33:50 [info] SELECT version FROM schema_migrations
+Feb 26 01:33:50 [info] SELECT version FROM schema_migrations
+Feb 26 01:33:50 [info] drop table if exists `session`;
+Feb 26 01:33:50 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:33:50 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:51 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:51 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:51 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:33:51 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:33:51 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:34:51 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:34:51 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:34:51 [info] SELECT version FROM schema_migrations
+Feb 26 01:34:51 [info] SELECT version FROM schema_migrations
+Feb 26 01:34:51 [info] SELECT version FROM schema_migrations
+Feb 26 01:34:51 [info] drop table if exists `session`;
+Feb 26 01:34:51 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:34:51 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:34:51 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:34:51 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:34:51 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:34:51 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:34:52 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')
+Feb 26 01:35:44 [info] CREATE TABLE `schema_migrations` (
+`version` varchar(255))  DEFAULT CHARSET=utf8;
+Feb 26 01:35:44 [info] CREATE UNIQUE INDEX idx_schema_migrations_version ON `schema_migrations`(`version`)
+Feb 26 01:35:44 [info] SELECT version FROM schema_migrations
+Feb 26 01:35:44 [info] SELECT version FROM schema_migrations
+Feb 26 01:35:44 [info] SELECT version FROM schema_migrations
+Feb 26 01:35:44 [info] drop table if exists `session`;
+Feb 26 01:35:44 [info] create table `session` (
+  `id` int(11) not null auto_increment,
+  `session_id` varchar(32) collate utf8_unicode_ci default null,
+  `data` longtext collate utf8_unicode_ci,
+  `created_at` timestamp,
+  `updated_at` timestamp,
+  primary key (`id`)
+) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
+Feb 26 01:35:44 [info] CREATE TABLE `admin` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`email` varchar(255),
+`salt` varchar(255),
+`password_hash` varchar(255),
+`status` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:35:44 [info] CREATE TABLE `adminsession` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`admin_id` int(11),
+`session_id` varchar(255),
+`created_at` timestamp,
+`updated_at` timestamp,
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:35:44 [info] CREATE TABLE `setting` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`name` varchar(255),
+`description` text,
+`value` text,
+`type` varchar(255) DEFAULT 'string',
+`is_client` tinyint(1) DEFAULT '0',
+`input_type` varchar(255) DEFAULT 'text',
+`position` int(11) DEFAULT 0,
+`info` text,
+`is_visible` tinyint(1) DEFAULT '1',
+ PRIMARY KEY (`id`)) Engine=InnoDB default charset=utf8 collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:35:44 [info] INSERT INTO schema_migrations (version) VALUES ('20140501060456')
+Feb 26 01:35:44 [info] CREATE TABLE `image` (
+`id` int(11) UNSIGNED auto_increment NOT NULL,
+`multiple_many_types` text,
+`multiple_one_type` text,
+`single_many_types` text,
+`single_one_type` text,
+`position` int(11),
+ PRIMARY KEY (`id`)) Engine=InnoDB collate=utf8_unicode_ci DEFAULT CHARSET=utf8;
+Feb 26 01:35:45 [info] INSERT INTO schema_migrations (version) VALUES ('20140704031054')

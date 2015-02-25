@@ -21,15 +21,14 @@
     "require": {
         "php": ">=5.4",
         "symfony/console": "2.5.2",
-        "skullyframework/skully": "0.1.*"
+        "skullyframework/skully": "0.1.*",
+        "aws/aws-sdk-php": "2.6.*"
     },
     "license": "MIT",
-    "suggest": {
-        "ext-runkit": "For using the runkit API."
-    },
     "autoload": {
         "psr-0": {
-            "SkullyAdmin": ""
+            "SkullyAdmin": "",
+            "SkullyAwsS3": ""
         }
     },
     "autoload-dev": {

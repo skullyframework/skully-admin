@@ -122,7 +122,18 @@ function setCommonConfig(Config &$config, $serverName = null) {
             'db_dir' => BASE_PATH . 'db',
             'log_dir' => BASE_PATH . 'logs' . DIRECTORY_SEPARATOR . 'migrations',
             'ruckusing_base' => RUCKUSING_BASE
-        )
+        ),
+
+        'amazonS3' => array(
+            'enabled' => false,
+            'bucket' => 'skully-admin',
+            'region' => 's3-ap-southeast-1',
+            'settings' => array(
+                'profile'=> 'skully.boss.default',
+                'key'    => 'AKIAJK5NJYOZJNFRABJQ',
+                'secret' => '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',
+            )
+        ),
     ), $serverConfigAdd);
 
     $clientAndServerConfig = array_merge(array(

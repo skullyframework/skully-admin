@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-25 22:46:14
-         compiled from "D:\apache\skully-admin\public\views\admin\admins\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3258454eb808bbc8990-57852884%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.18, created on 2015-02-25 18:44:00
+         compiled from "/media/jay/Data/apache/skully-admin/public/views/admin/admins/login.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:150286883854edb58033f4e7-21550967%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '98426dcb3c63a6d3f43d264479434b4b8de56706' => 
+    'c2421f850c204b147aea374ae5b57f62fedb214c' => 
     array (
-      0 => 'D:\\apache\\skully-admin\\public\\views\\admin\\admins\\login.tpl',
+      0 => '/media/jay/Data/apache/skully-admin/public/views/admin/admins/login.tpl',
       1 => 1424720148,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3258454eb808bbc8990-57852884',
+  'nocache_hash' => '150286883854edb58033f4e7-21550967',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_54eb808c5c6d16_64728003',
   'variables' => 
   array (
     'email' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_54edb58042bcc7_27571807',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54eb808c5c6d16_64728003')) {function content_54eb808c5c6d16_64728003($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
+<?php if ($_valid && !is_callable('content_54edb58042bcc7_27571807')) {function content_54edb58042bcc7_27571807($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include '/media/jay/Data/apache/skully-admin/vendor/skullyframework/skully/Skully/App/smarty/plugins/function.url.php';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

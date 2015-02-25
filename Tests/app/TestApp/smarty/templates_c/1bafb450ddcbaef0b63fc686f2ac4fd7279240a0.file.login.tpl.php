@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-25 22:46:14
-         compiled from "D:\apache\skully-admin\public\views\admin\admins\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3258454eb808bbc8990-57852884%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.18, created on 2015-02-25 23:53:43
+         compiled from "D:\apache\skully-admin\public\views\admin\Admins\login.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2454154edfe176f1106-54929629%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '98426dcb3c63a6d3f43d264479434b4b8de56706' => 
+    '1bafb450ddcbaef0b63fc686f2ac4fd7279240a0' => 
     array (
-      0 => 'D:\\apache\\skully-admin\\public\\views\\admin\\admins\\login.tpl',
+      0 => 'D:\\apache\\skully-admin\\public\\views\\admin\\Admins\\login.tpl',
       1 => 1424720148,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3258454eb808bbc8990-57852884',
+  'nocache_hash' => '2454154edfe176f1106-54929629',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_54eb808c5c6d16_64728003',
   'variables' => 
   array (
     'email' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_54edfe17753ed9_94012745',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54eb808c5c6d16_64728003')) {function content_54eb808c5c6d16_64728003($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
+<?php if ($_valid && !is_callable('content_54edfe17753ed9_94012745')) {function content_54edfe17753ed9_94012745($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

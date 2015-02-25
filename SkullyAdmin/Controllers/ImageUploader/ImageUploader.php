@@ -81,6 +81,7 @@ trait ImageUploader {
         $validFormats = array("jpg", "png", "gif", "bmp","jpeg");
         $imageSettings = $this->getImageSettings();
         $imageSetting = $imageSettings[$settingName];
+        $this->app->getLogger()->log("files uploaded: " . print_r($_FILES, true));
         if (empty($error) && !empty($instance) && !empty($imageSetting)) {
             $nFiles = count($_FILES);
             for($i=0; $i<$nFiles; $i++) {

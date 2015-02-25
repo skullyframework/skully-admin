@@ -67,7 +67,7 @@ class AdminsController extends CRUDController
         return $instanceList;
     }
 
-    protected function beforeAction() {
+    protected function beforeAction($action = '') {
         $action = $this->currentAction;
         // If given action is not one of given array, run parent's beforeAction.
         if (!in_array($action, array('login', 'loginProcess', 'forgetPassword', 'forgetPasswordConfirm'))) {

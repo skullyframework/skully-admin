@@ -7,12 +7,13 @@ require_once(dirname(__FILE__) . '/include.php');
 require_once(dirname(__FILE__).'/app/bootstrap.php');
 require_once(dirname(__FILE__) . '/functions.php');
 
+use SkullyAdmin\Models\Admin;
 use TestApp\Application;
 use RedBeanPHP\Facade as R;
 use TestApp\Config\Config;
 use Skully\Console\Console;
 
-abstract class DatabaseTestCase extends \PHPUnit_Framework_TestCase{
+abstract class AdminTestCase extends \PHPUnit_Framework_TestCase{
     /** @var Application */
     protected $app;
 
@@ -64,6 +65,34 @@ abstract class DatabaseTestCase extends \PHPUnit_Framework_TestCase{
             echo $e->getMessage();
         }
         ob_clean();
+    }
+
+    protected function login()
+    {
+        $admin = $this->app->createModel('admin', array(
+            'name' => 'Admin',
+            'email' => 'admin@skullyframework.com',
+            'password' => 'lepass',
+            'password_confirmation' => 'lepass',
+            'status' => Admin::STATUS_ACTIVE
+        ));
+        R::store($admin);
+
+        $params = array(
+            'email' => 'admin@skullyframework.com',
+            'password' => 'lepass'
+        );
+
+        // This is the code to emulate sending parameter to a page:
+        $this->app->runControllerFromRawUrl('admin/loginProcess', $params);
+
+        // This is the alternative way we can do it:
+//        $controller = $this->app->getController('Admin\\Admins', 'loginProcess');
+//        $controller->setParams($params);
+//        $controller->runCurrentAction();
+
+        $this->assertEquals(1, $this->app->getSession()->get('adminId'));
+
     }
 
 }
