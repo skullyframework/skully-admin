@@ -1,7 +1,7 @@
 {extends file="admin/wrappers/_main.tpl"}
 {block name=header}
     <title>{$instanceName}</title>
-    {if !empty($dragField) && !$clientConfig.dataTableServerSide}
+    {if !empty($dragField) && !$dataTableServerSide}
         <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
     {/if}
 {/block}
@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 <div class="block-fluid">
-                    {if !$clientConfig.dataTableServerSide}
+                    {if !$dataTableServerSide}
                         {if !empty($dragField)}
                             {$sortableTable = 'sortableTable initialized'}
                         {/if}
@@ -72,7 +72,7 @@
     </div>
 {/block}
 
-{if !$clientConfig.dataTableServerSide}
+{if !$dataTableServerSide}
     {block name=footer}
         {nocache}
             <script type="text/javascript">

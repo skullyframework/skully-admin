@@ -36,6 +36,7 @@ trait DataTablesServerSideTrait {
             }
             else {
                 $this->render($this->indexTpl, array(
+                    'dataTableServerSide' => true,
                     'indexPath' => $this->indexPath,
                     'addPath' => $this->addPath,
                     'instanceName' => $this->instanceName,
