@@ -50,9 +50,14 @@
 
 <script type='text/javascript' src="{theme_url path="resources/js/plugins/fullcalendar/fullcalendar.min.js"}"></script>
 
-<script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/jquery.dataTables.min.js"}"></script>
-<script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.reloadAjax.js"}"></script>
-<script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.dateSorting.js"}"></script>
+{if $clientConfig.dataTableServerSide}
+    <link rel="stylesheet" href="{theme_url path='resources/js/plugins/datatables-1.10.5/media/css/jquery.dataTables.min.css'}" />
+    <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables-1.10.5/media/js/jquery.dataTables.min.js"}"></script>
+{else}
+    <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/jquery.dataTables.min.js"}"></script>
+    <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.reloadAjax.js"}"></script>
+    <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.dateSorting.js"}"></script>
+{/if}
 
 <script type='text/javascript' src="{theme_url path="resources/js/plugins/wookmark/jquery.wookmark.js"}"></script>
 
