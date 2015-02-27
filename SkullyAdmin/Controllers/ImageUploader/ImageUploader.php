@@ -61,6 +61,7 @@ trait ImageUploader {
             $this->app->getLogger()->log("error with message " . $e->getMessage());
             throw new \Exception($e->getMessage());
         }
+        $path = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
         return $path;
     }
     /**
@@ -129,7 +130,7 @@ trait ImageUploader {
                                         $options['outputFilename'] = str_replace(" ", "-", $imageName) .'-'.$key.'.'.$ext;
                                         try {
                                             $path = $this->processTempImage($tmp, $options);
-                                            $newInstanceImage[$key] = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $newInstanceImage[$key] = $path;
                                             $uploadedImages[] = array(
                                                 'data' => $this->getParam('data'),
                                                 'path' => $newInstanceImage[$key],
@@ -164,7 +165,7 @@ trait ImageUploader {
                                         $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages[$position][$type];
                                         try {
                                             $path = $this->processTempImage($tmp, $options, $oldFile);
-                                            $instanceImages[$position][$type] = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $instanceImages[$position][$type] = $path;
                                             $instance->set($imageFieldName, json_encode($instanceImages));
                                             $uploadedImages[] = array(
                                                 'data' => $this->getParam('data'),
@@ -194,7 +195,7 @@ trait ImageUploader {
                                         $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages[$type];
                                         try {
                                             $path = $this->processTempImage($tmp, $options, $oldFile);
-                                            $instanceImages[$type] = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $instanceImages[$type] = $path;
                                             $instance->set($imageFieldName, json_encode($instanceImages));
                                             $uploadedImages[] = array(
                                                 'data' => $this->getParam('data'),
@@ -216,7 +217,7 @@ trait ImageUploader {
                                         $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages[$position];
                                         try {
                                             $path = $this->processTempImage($tmp, $options, $oldFile);
-                                            $instanceImages[$position] = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $instanceImages[$position] = $path;
                                             $instance->set($imageFieldName, $instanceImages);
                                             $uploadedImages[] = array(
                                                 'data' => $this->getParam('data'),
@@ -233,7 +234,7 @@ trait ImageUploader {
                                         $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages;
                                         try {
                                             $path = $this->processTempImage($tmp, $options, $oldFile);
-                                            $instanceImages = str_replace(array($this->app->getTheme()->getPublicBasePath(),DIRECTORY_SEPARATOR), array('', '/'), $path);
+                                            $instanceImages = $path;
                                             $instance->set($imageFieldName, $instanceImages);
                                             $uploadedImages[] = array(
                                                 'data' => $this->getParam('data'),

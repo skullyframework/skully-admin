@@ -6,6 +6,7 @@ use Skully\Core\Theme\ThemeInterface;
 use Skully\Exceptions\ThemeFileNotFoundException;
 
 class S3Theme extends Theme implements ThemeInterface {
+    protected $publicDirectory;
 
     /**
      * @param string $basePath Base path of the main app.
@@ -23,9 +24,7 @@ class S3Theme extends Theme implements ThemeInterface {
         }
         $this->publicBaseUrl = $baseUrl;
         if (!empty($publicDirectory)) {
-            if (substr($publicDirectory, -1, 1) == '/') {
-                $publicDirectory = substr($publicDirectory, 0, strlen($publicDirectory)-1);
-            }
+            $publicDirectory = trim($publicDirectory, '/');
             $this->publicBaseUrl .= $publicDirectory.'/';
         }
         $this->basePath = $basePath . $publicDirectory . DIRECTORY_SEPARATOR;
@@ -70,5 +69,4 @@ class S3Theme extends Theme implements ThemeInterface {
         }
         return $url;
     }
-
 }

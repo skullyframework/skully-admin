@@ -12,7 +12,7 @@ namespace TestApp\Controllers\Admin;
 use Skully\App\Helpers\UtilitiesHelper;
 use SkullyAdmin\Controllers\CRUDController;
 use RedBeanPHP\Facade as R;
-use SkullyAdmin\Controllers\ImageUploader\ImageUploaderCRUD;
+use SkullyAwsS3\Controllers\ImageUploader\ImageUploaderCRUD;
 
 class CRUDImagesController extends CRUDController {
     use ImageUploaderCRUD;

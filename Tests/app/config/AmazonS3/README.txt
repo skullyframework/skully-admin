@@ -1,0 +1,1 @@
+Copy credentials.csv from Amazon AWS to this directory.

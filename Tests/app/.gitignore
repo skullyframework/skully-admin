@@ -1,0 +1,2 @@
+config/AmazonS3/*
+!config/AmazonS3/README.txt
