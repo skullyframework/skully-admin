@@ -51,7 +51,7 @@ trait DataTablesServerSideTrait {
 
     //region Attributes
     private $dtsPrimaryKey = 'id';
-    private $dtsTable = 'test';
+    private $dtsTableName = 'test';
     private $dtsPositionFieldName = 'position';
     private $dtsIsSortable = false;
     private $dtsFields = array();
@@ -83,7 +83,7 @@ trait DataTablesServerSideTrait {
 
     //region Get Set Attributes
     public function setTableName ( $value ) {
-        $this->dtsTable = $value;
+        $this->dtsTableName = $value;
     }
 
     public function setPositionFieldName ( $value ) {
@@ -105,6 +105,8 @@ trait DataTablesServerSideTrait {
             $this->dtsFields[]['db'] = $value['field'];
             $this->dtsFields[count( $this->dtsFields ) - 1]['dt'] = $this->dtsIsSortable ? $key + 2 : $key + 1;
             $this->dtsFields[count( $this->dtsFields ) - 1]['prefix'] = isset( $value['prefix'] ) ? $value['prefix'] : 't';
+            $this->dtsFields[count( $this->dtsFields ) - 1]['rawSql'] = isset( $value['rawSql'] ) ? $value['rawSql'] : null;
+            $this->dtsFields[count( $this->dtsFields ) - 1]['formatter'] = isset( $value['formatter'] ) ? $value['formatter'] : null;
         }
     }
 
@@ -165,8 +167,8 @@ trait DataTablesServerSideTrait {
         return $this->dtsPrimaryKey;
     }
 
-    public function getTable() {
-        return $this->dtsTable;
+    public function getTableName() {
+        return $this->dtsTableName;
     }
 
     public function getPositionFieldName() {
@@ -220,12 +222,12 @@ trait DataTablesServerSideTrait {
                 $columnIdx = array_search( $requestColumn['data'], $dtColumns );
                 $column = $columns[$columnIdx];
 
-                if ( $requestColumn['orderable'] == 'true' ) {
+                if ( $requestColumn['orderable'] == 'true' &&  empty( $column['rawSql'] ) ) {
                     $dir = $request['order'][$i]['dir'] === 'asc' ?
                         'ASC' :
                         'DESC';
 
-                    $orderBy[] = '`' . $column['db'] . '` ' . $dir;
+                    $orderBy[] = $column['prefix'] . '.`' . $column['db'] . '` ' . $dir;
                 }
             }
 
@@ -249,7 +251,12 @@ trait DataTablesServerSideTrait {
         $out = array();
 
         for ( $i = 0, $len = count($a); $i < $len; $i++ ) {
-            $out[] = $a[$i]['prefix'] . '.`' . $a[$i][$prop] . '`';
+            if ( isset( $a[$i]['rawSql'] ) && !empty($a[$i]['rawSql']) ) {
+                $out[] = $a[$i]['rawSql'] . ' AS ' . $a[$i][$prop];
+            }
+            else {
+                $out[] = $a[$i]['prefix'] . '.`' . $a[$i][$prop] . '`';
+            }
         }
 
         return implode( ',', $out );
@@ -268,8 +275,8 @@ trait DataTablesServerSideTrait {
                 $columnIdx = array_search( $requestColumn['data'], $dtColumns );
                 $column = $columns[$columnIdx];
 
-                if ( $requestColumn['searchable'] == 'true' ) {
-                    $globalSearch[] = "`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
+                if ( $requestColumn['searchable'] == 'true' &&  empty( $column['rawSql'] ) ) {
+                    $globalSearch[] = $column['prefix'] . ".`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
                 }
             }
         }
@@ -283,8 +290,8 @@ trait DataTablesServerSideTrait {
             $str = $requestColumn['search']['value'];
 
             if ( $requestColumn['searchable'] == 'true' &&
-                $str != '' ) {
-                $columnSearch[] = "`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
+                $str != '' &&  empty( $column['rawSql'] ) ) {
+                $columnSearch[] = $column['prefix'] . ".`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
             }
         }
 
@@ -362,7 +369,7 @@ trait DataTablesServerSideTrait {
 
 
         $data = R::getAll("SELECT SQL_CALC_FOUND_ROWS " . $this->pluckString( $fields, 'db' ) . "
-			 FROM `{$this->getTable()}` t
+			 FROM `{$this->getTableName()}` t
 			 $where
 			 $order
 			 $limit");
@@ -375,7 +382,7 @@ trait DataTablesServerSideTrait {
 
         $resTotalLength = R::getAll(
             "SELECT COUNT(t.`{$this->getPrimaryKey()}`) AS count
-			 FROM   `{$this->getTable()}` t"
+			 FROM   `{$this->getTableName()}` t"
         );
         $recordsTotal = $resTotalLength[0]['count'];
 
@@ -394,12 +401,12 @@ trait DataTablesServerSideTrait {
             $id = $_POST['id'];
 
             if ($oldPosition > $newPosition) {
-                R::exec("UPDATE {$this->getTable()} SET {$this->getPositionFieldName()} = ({$this->getPositionFieldName()} + 1) WHERE {$this->getPositionFieldName()} < {$oldPosition} AND {$this->getPositionFieldName()} >= {$newPosition}");
+                R::exec("UPDATE {$this->getTableName()} SET {$this->getPositionFieldName()} = ({$this->getPositionFieldName()} + 1) WHERE {$this->getPositionFieldName()} < {$oldPosition} AND {$this->getPositionFieldName()} >= {$newPosition}");
             } else if ($oldPosition < $newPosition) {
-                R::exec("UPDATE {$this->getTable()} SET {$this->getPositionFieldName()} = ({$this->getPositionFieldName()} - 1) WHERE {$this->getPositionFieldName()} > {$oldPosition} AND {$this->getPositionFieldName()} <= {$newPosition}");
+                R::exec("UPDATE {$this->getTableName()} SET {$this->getPositionFieldName()} = ({$this->getPositionFieldName()} - 1) WHERE {$this->getPositionFieldName()} > {$oldPosition} AND {$this->getPositionFieldName()} <= {$newPosition}");
             }
 
-            R::exec("UPDATE {$this->getTable()} SET {$this->getPositionFieldName()} = {$newPosition} WHERE id = {$id}");
+            R::exec("UPDATE {$this->getTableName()} SET {$this->getPositionFieldName()} = {$newPosition} WHERE id = {$id}");
         }
     }
     //endregion

@@ -36,6 +36,10 @@
                         cols=$columns
                         }
 
+                        <style type="text/css">
+                            .dataTables_processing { z-index: 1000; }
+                        </style>
+
                         <script type="text/javascript">
                             $(function(){
                                 $('#datatable-media').dataTable({
