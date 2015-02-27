@@ -19,16 +19,16 @@ trait DataTablesServerSideTrait {
             $this->setShowActionButtons( true );
             $this->setHrefActionButton('view', $this->app->getRouter()->getUrl($this->editPath));
             $this->setHrefActionButton('delete', $this->app->getRouter()->getUrl($this->deletePath));
-            $this->setSortable( true );
+            $this->setSortable( false );
             $this->setColumnsDef( '' );
             $this->setThAttributes( array() );
             $this->setFields(array(
-                'name',
-                'email'
+                array( 'field' => 'name' ),
+                array( 'field' => 'email' ),
             ));
             $this->setColumns(array(
                 'Name',
-                'Email'
+                'Email',
             ));
 
             if ($this->app->isAjax()) {
@@ -97,12 +97,14 @@ trait DataTablesServerSideTrait {
     public function setFields ( $array ) {
         $this->dtsFields = $this->dtsIsSortable ? array(array('db' => $this->dtsPositionFieldName, 'dt' => 0)) : array();
         $this->dtsFields[] = array(
-            'db' => 'id',
-            'dt' => $this->dtsIsSortable ? 1 : 0
+            'db'        => $this->dtsPrimaryKey,
+            'dt'        => $this->dtsIsSortable ? 1 : 0,
+            'prefix'    => 't'
         );
         foreach($array as $key => $value) {
-            $this->dtsFields[]['db'] = $value;
+            $this->dtsFields[]['db'] = $value['field'];
             $this->dtsFields[count( $this->dtsFields ) - 1]['dt'] = $this->dtsIsSortable ? $key + 2 : $key + 1;
+            $this->dtsFields[count( $this->dtsFields ) - 1]['prefix'] = isset( $value['prefix'] ) ? $value['prefix'] : 't';
         }
     }
 
@@ -159,8 +161,24 @@ trait DataTablesServerSideTrait {
         $this->dtsListActions[$key]['data-toggle'] = $value;
     }
 
+    public function getPrimaryKey() {
+        return $this->dtsPrimaryKey;
+    }
+
+    public function getTable() {
+        return $this->dtsTable;
+    }
+
+    public function getPositionFieldName() {
+        return $this->dtsPositionFieldName;
+    }
+
     public function getSortable () {
         return $this->dtsIsSortable;
+    }
+
+    public function getFields () {
+        return $this->dtsFields;
     }
 
     public function getColumns () {
@@ -225,6 +243,16 @@ trait DataTablesServerSideTrait {
         }
 
         return $out;
+    }
+
+    private function pluckString ( $a, $prop ) {
+        $out = array();
+
+        for ( $i = 0, $len = count($a); $i < $len; $i++ ) {
+            $out[] = $a[$i]['prefix'] . '.`' . $a[$i][$prop] . '`';
+        }
+
+        return implode( ',', $out );
     }
 
     private function filter ( $request, $columns ) {
@@ -305,13 +333,13 @@ trait DataTablesServerSideTrait {
                 $defaultContent = '';
                 foreach ( $this->dtsListActions as $key => $value ) {
                     if ( isset( $value['href'] ) && !empty( $value['href'] ) ) {
-                        $defaultContent .= '<a title="' . $value['title'] . '" href="' . $value['href'] . '?id=' . $data[$i]['id'] . '" ' . ( isset($value['data-toggle']) ? 'data-toggle="' . $value['data-toggle'] . '"' : '' ) . '><span class="' . $value['icon'] . '"></span></a>';
+                        $defaultContent .= '<a title="' . $value['title'] . '" href="' . $value['href'] . '?id=' . $data[$i][$this->dtsPrimaryKey] . '" ' . ( isset($value['data-toggle']) ? 'data-toggle="' . $value['data-toggle'] . '"' : '' ) . '><span class="' . $value['icon'] . '"></span></a>';
                     }
                 }
                 $row[$max_row + 1] = $defaultContent;
             }
 
-            $row['DT_RowAttr']['data-id'] = $data[$i]['id'];
+            $row['DT_RowAttr']['data-id'] = $data[$i][$this->dtsPrimaryKey];
             if ( isset( $data[$i][$this->dtsPositionFieldName] ) ) {
                 $row['DT_RowAttr']['data-position'] = $data[$i][$this->dtsPositionFieldName];
             }
@@ -324,18 +352,17 @@ trait DataTablesServerSideTrait {
 
     protected function listDataServerSide () {
         $request = $_GET;
-        $primaryKey = $this->dtsPrimaryKey;
 
-        $table = $this->dtsTable;
-        $columns = $this->dtsFields;
+        $fields = $this->getFields();
 
         // Build the SQL query string from the request
-        $limit = $this->limit( $request, $columns );
-        $order = $this->order( $request, $columns );
-        $where = $this->filter( $request, $columns );
+        $limit = $this->limit( $request, $fields );
+        $order = $this->order( $request, $fields );
+        $where = $this->filter( $request, $fields );
 
-        $data = R::getAll("SELECT SQL_CALC_FOUND_ROWS `".implode( "`, `", $this->pluck( $columns, 'db' ) )."`
-			 FROM `$table`
+
+        $data = R::getAll("SELECT SQL_CALC_FOUND_ROWS " . $this->pluckString( $fields, 'db' ) . "
+			 FROM `{$this->getTable()}` t
 			 $where
 			 $order
 			 $limit");
@@ -347,19 +374,16 @@ trait DataTablesServerSideTrait {
         $recordsFiltered = $resFilterLength[0]['foundRows'];
 
         $resTotalLength = R::getAll(
-            "SELECT COUNT(`{$primaryKey}`) AS count
-			 FROM   `$table`"
+            "SELECT COUNT(t.`{$this->getPrimaryKey()}`) AS count
+			 FROM   `{$this->getTable()}` t"
         );
         $recordsTotal = $resTotalLength[0]['count'];
 
-        /*
-         * Output
-         */
         return array(
             "draw"            => intval( $request['draw'] ),
             "recordsTotal"    => intval( $recordsTotal ),
             "recordsFiltered" => intval( $recordsFiltered ),
-            "data"            => $this->dataOutput( $columns, $data )
+            "data"            => $this->dataOutput( $fields, $data )
         );
     }
 
@@ -370,12 +394,12 @@ trait DataTablesServerSideTrait {
             $id = $_POST['id'];
 
             if ($oldPosition > $newPosition) {
-                R::exec("UPDATE {$this->dtsTable} SET {$this->dtsPositionFieldName} = ({$this->dtsPositionFieldName} + 1) WHERE {$this->dtsPositionFieldName} < {$oldPosition} AND {$this->dtsPositionFieldName} >= {$newPosition}");
+                R::exec("UPDATE {$this->getTable()} SET {$this->getPositionFieldName()} = ({$this->getPositionFieldName()} + 1) WHERE {$this->getPositionFieldName()} < {$oldPosition} AND {$this->getPositionFieldName()} >= {$newPosition}");
             } else if ($oldPosition < $newPosition) {
-                R::exec("UPDATE {$this->dtsTable} SET {$this->dtsPositionFieldName} = ({$this->dtsPositionFieldName} - 1) WHERE {$this->dtsPositionFieldName} > {$oldPosition} AND {$this->dtsPositionFieldName} <= {$newPosition}");
+                R::exec("UPDATE {$this->getTable()} SET {$this->getPositionFieldName()} = ({$this->getPositionFieldName()} - 1) WHERE {$this->getPositionFieldName()} > {$oldPosition} AND {$this->getPositionFieldName()} <= {$newPosition}");
             }
 
-            R::exec("UPDATE {$this->dtsTable} SET {$this->dtsPositionFieldName} = {$newPosition} WHERE id = {$id}");
+            R::exec("UPDATE {$this->getTable()} SET {$this->getPositionFieldName()} = {$newPosition} WHERE id = {$id}");
         }
     }
     //endregion
