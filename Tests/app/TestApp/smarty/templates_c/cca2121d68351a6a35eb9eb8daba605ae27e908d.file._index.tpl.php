@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-24 02:36:01
+<?php /* Smarty version Smarty-3.1.18, created on 2015-03-01 00:43:33
          compiled from "D:\apache\skully-admin\public\views\admin\widgets\crud\_index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3000954eb81213c1ba1-57725560%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cca2121d68351a6a35eb9eb8daba605ae27e908d' => 
     array (
       0 => 'D:\\apache\\skully-admin\\public\\views\\admin\\widgets\\crud\\_index.tpl',
-      1 => 1407903836,
+      1 => 1425142754,
       2 => 'file',
     ),
     'b1765b7a67f328792523a89a3d39f715b26c2d7f' => 
@@ -45,14 +45,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_54eb812166dc69_03666183',
   'variables' => 
   array (
     'route' => 0,
     'user' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_54eb812166dc69_03666183',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54eb812166dc69_03666183')) {function content_54eb812166dc69_03666183($_smarty_tpl) {?><?php if (!is_callable('smarty_function_theme_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.theme_url.php';
 if (!is_callable('smarty_modifier_replace')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\Library\\Smarty\\libs\\plugins\\modifier.replace.php';
@@ -65,12 +65,12 @@ if (!is_callable('smarty_function_html_table')) include 'D:\\apache\\skully-admi
 	<?php echo $_smarty_tpl->getSubTemplate ("admin/wrappers/_header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 	
-<title><?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
+    <title><?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
 </title>
-  <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
-    <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.rowReordering.js"),$_smarty_tpl);?>
+    <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)&&!$_smarty_tpl->tpl_vars['dataTableServerSide']->value) {?>
+        <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.rowReordering.js"),$_smarty_tpl);?>
 "></script>
-  <?php }?>
+    <?php }?>
 
 </head>
 <body class="page-<?php echo smarty_modifier_replace($_smarty_tpl->tpl_vars['route']->value,'/','-');?>
@@ -213,36 +213,76 @@ if (!is_callable('smarty_function_html_table')) include 'D:\\apache\\skully-admi
 	<div class="row-fluid">
 
 		
-<div class="span12">
-<?php /*  Call merged included template "admin/widgets/_alerts.tpl" */
+    <div class="span12">
+        <?php /*  Call merged included template "admin/widgets/_alerts.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('admin/widgets/_alerts.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '3000954eb81213c1ba1-57725560');
-content_54eb81214d1d14_66664544($_smarty_tpl);
+content_54f1fe454f0474_82237578($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/_alerts.tpl" */?>
-    
-	<div class="widget">
-		<div class="head dark">
-			<div class="icon"><i class="icos-stats-up"></i></div>
-			<h2><?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
+        
+            <div class="widget">
+                <div class="head dark">
+                    <div class="icon"><i class="icos-stats-up"></i></div>
+                    <h2><?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
 </h2>
-			<ul class="buttons">
-				<li><a href="<?php echo smarty_function_url(array('path'=>$_smarty_tpl->tpl_vars['addPath']->value),$_smarty_tpl);?>
+                    <ul class="buttons">
+                        <li><a href="<?php echo smarty_function_url(array('path'=>$_smarty_tpl->tpl_vars['addPath']->value),$_smarty_tpl);?>
 " title="Add <?php echo $_smarty_tpl->tpl_vars['instanceName']->value;?>
 " data-toggle="dialog"><span class="icos-plus1"></span></a></li>
-			</ul>
-		</div>
-        <div class="block-fluid">
-                <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
-                    <?php $_smarty_tpl->tpl_vars['sortableTable'] = new Smarty_variable('sortableTable initialized', true, 0);?>
-                <?php }?>
-                <?php ob_start();?><?php echo smarty_function_url(array('path'=>$_smarty_tpl->tpl_vars['indexPath']->value),$_smarty_tpl);?>
+                    </ul>
+                </div>
+                <div class="block-fluid">
+                    <?php if (!$_smarty_tpl->tpl_vars['dataTableServerSide']->value) {?>
+                        <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>
+                            <?php $_smarty_tpl->tpl_vars['sortableTable'] = new Smarty_variable('sortableTable initialized', true, 0);?>
+                        <?php }?>
+                        <?php ob_start();?><?php echo smarty_function_url(array('path'=>$_smarty_tpl->tpl_vars['indexPath']->value),$_smarty_tpl);?>
 <?php $_tmp1=ob_get_clean();?><?php echo smarty_function_html_table(array('loop'=>'','table_attr'=>(((('class="').($_smarty_tpl->tpl_vars['sortableTable']->value)).(' aTable in table-hover" rel="')).($_tmp1)).('"style="width: 100%;"'),'th_attr'=>$_smarty_tpl->tpl_vars['thAttributes']->value,'cols'=>$_smarty_tpl->tpl_vars['columns']->value),$_smarty_tpl);?>
 
-        </div>
-	</div>
-    
-</div>
+                    <?php } else { ?>
+                        <?php echo smarty_function_html_table(array('loop'=>'','table_attr'=>'id="datatable-media" class="display" cellspacing="0" style="width:100%;"','th_attr'=>$_smarty_tpl->tpl_vars['thAttributes']->value,'cols'=>$_smarty_tpl->tpl_vars['columns']->value),$_smarty_tpl);?>
+
+
+                        <style type="text/css">
+                            .dataTables_processing { z-index: 1000; }
+                        </style>
+
+                        <script type="text/javascript">
+                            $(function(){
+                                $('#datatable-media').dataTable({
+                                    "processing": true,
+                                    "serverSide": true,
+                                    "ajax": "index",
+                                    "columnDefs": <?php echo $_smarty_tpl->tpl_vars['columnDefs']->value;?>
+
+                                });
+
+                                <?php if ($_smarty_tpl->tpl_vars['isSortable']->value) {?>
+                                $( "#datatable-media tbody" ).sortable({
+                                    start: function(event, ui) {
+                                        ui.item.oldId = ui.item.attr('data-id')
+                                        ui.item.startPos = ui.item.index();
+                                        ui.item.oldPos = ui.item.attr('data-position');
+                                    },
+                                    stop: function(event, ui) {
+                                        $.ajax({
+                                            type: "POST",
+                                            url: "reorderServerSide",
+                                            data: { oldPosition: ui.item.oldPos, newPosition: $('#datatable-media').DataTable().row(ui.item.index()).nodes().to$().attr('data-position'), id: ui.item.oldId }
+                                        });
+                                        $('#datatable-media').DataTable().draw(false);
+                                    }
+                                });
+                                $( "#datatable-media tbody" ).disableSelection();
+                                <?php }?>
+                            });
+                        </script>
+                    <?php }?>
+                </div>
+            </div>
+        
+    </div>
 
 
 	</div>
@@ -250,32 +290,32 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 </div>
 
-    
-        <script type="text/javascript">
-            <?php if (!empty($_smarty_tpl->tpl_vars['columnDefs']->value)) {?>
-            var _columnDefs = <?php echo $_smarty_tpl->tpl_vars['columnDefs']->value;?>
+        
+            <script type="text/javascript">
+                <?php if (!empty($_smarty_tpl->tpl_vars['columnDefs']->value)) {?>
+                var _columnDefs = <?php echo $_smarty_tpl->tpl_vars['columnDefs']->value;?>
 ;
-            <?php }?>
-        </script>
-    
-<?php /*  Call merged included template "admin/widgets/crud/widgets/_sortable.tpl" */
+                <?php }?>
+            </script>
+        
+        <?php /*  Call merged included template "admin/widgets/crud/widgets/_sortable.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/crud/widgets/_sortable.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '3000954eb81213c1ba1-57725560');
-content_54eb81215f6fe0_38064371($_smarty_tpl);
+content_54f1fe4558bee4_66389951($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/crud/widgets/_sortable.tpl" */?>
-
+    
 <div class="loadingframe"></div>
 
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-24 02:36:01
+<?php /* Smarty version Smarty-3.1.18, created on 2015-03-01 00:43:33
          compiled from "D:\apache\skully-admin\public\views\admin\widgets\_alerts.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_54eb81214d1d14_66664544')) {function content_54eb81214d1d14_66664544($_smarty_tpl) {?><?php if (!empty($_smarty_tpl->tpl_vars['error']->value)) {?>
+<?php if ($_valid && !is_callable('content_54f1fe454f0474_82237578')) {function content_54f1fe454f0474_82237578($_smarty_tpl) {?><?php if (!empty($_smarty_tpl->tpl_vars['error']->value)) {?>
 	<?php /*  Call merged included template "admin/widgets/alerts/_error.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/alerts/_error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '3000954eb81213c1ba1-57725560');
-content_54eb81214da233_12227417($_smarty_tpl);
+content_54f1fe454fb831_69268292($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/alerts/_error.tpl" */?>
 <?php }?>
@@ -283,27 +323,27 @@ $_smarty_tpl = array_pop($_tpl_stack);
 	<?php /*  Call merged included template "admin/widgets/alerts/_message.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("admin/widgets/alerts/_message.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '3000954eb81213c1ba1-57725560');
-content_54eb81214e5a60_79830765($_smarty_tpl);
+content_54f1fe4550d0a6_30428922($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "admin/widgets/alerts/_message.tpl" */?>
 <?php }?><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-24 02:36:01
+<?php /* Smarty version Smarty-3.1.18, created on 2015-03-01 00:43:33
          compiled from "D:\apache\skully-admin\public\views\admin\widgets\alerts\_error.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_54eb81214da233_12227417')) {function content_54eb81214da233_12227417($_smarty_tpl) {?><div class="alert alert-error">
+<?php if ($_valid && !is_callable('content_54f1fe454fb831_69268292')) {function content_54f1fe454fb831_69268292($_smarty_tpl) {?><div class="alert alert-error">
 	<?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 
 </div>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-24 02:36:01
+<?php /* Smarty version Smarty-3.1.18, created on 2015-03-01 00:43:33
          compiled from "D:\apache\skully-admin\public\views\admin\widgets\alerts\_message.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_54eb81214e5a60_79830765')) {function content_54eb81214e5a60_79830765($_smarty_tpl) {?><div class="alert alert-success">
+<?php if ($_valid && !is_callable('content_54f1fe4550d0a6_30428922')) {function content_54f1fe4550d0a6_30428922($_smarty_tpl) {?><div class="alert alert-success">
 	<?php echo $_smarty_tpl->tpl_vars['message']->value;?>
 
 </div>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-24 02:36:01
+<?php /* Smarty version Smarty-3.1.18, created on 2015-03-01 00:43:33
          compiled from "D:\apache\skully-admin\public\views\admin\widgets\crud\widgets\_sortable.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_54eb81215f6fe0_38064371')) {function content_54eb81215f6fe0_38064371($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
+<?php if ($_valid && !is_callable('content_54f1fe4558bee4_66389951')) {function content_54f1fe4558bee4_66389951($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.url.php';
 ?><script type="text/javascript">
     setTimeout(function(el) {
         <?php if (!empty($_smarty_tpl->tpl_vars['dragField']->value)) {?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2015-02-24 02:33:32
+<?php /* Smarty version Smarty-3.1.18, created on 2015-02-28 23:59:47
          compiled from "D:\apache\skully-admin\public\views\admin\wrappers\_header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2096154eb808c71f583-65377249%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '143ce65d8274d3b532b2a50107fa6dc28cb0a468' => 
     array (
       0 => 'D:\\apache\\skully-admin\\public\\views\\admin\\wrappers\\_header.tpl',
-      1 => 1407903836,
+      1 => 1425142754,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_54eb808c9bac66_43415591',
   'variables' => 
   array (
     'clientConfig' => 0,
     'numDisplayedRows' => 0,
+    'dataTableServerSide' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_54eb808c9bac66_43415591',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54eb808c9bac66_43415591')) {function content_54eb808c9bac66_43415591($_smarty_tpl) {?><?php if (!is_callable('smarty_function_theme_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.theme_url.php';
 if (!is_callable('smarty_function_public_url')) include 'D:\\apache\\skully-admin\\vendor\\skullyframework\\skully\\Skully\\App\\smarty\\plugins\\function.public_url.php';
@@ -101,12 +102,19 @@ if (!is_callable('smarty_function_public_url')) include 'D:\\apache\\skully-admi
 <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/fullcalendar/fullcalendar.min.js"),$_smarty_tpl);?>
 "></script>
 
-<script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/jquery.dataTables.min.js"),$_smarty_tpl);?>
+<?php if ($_smarty_tpl->tpl_vars['dataTableServerSide']->value) {?>
+    <link rel="stylesheet" href="<?php echo smarty_function_theme_url(array('path'=>'resources/js/plugins/datatables-1.10.5/media/css/jquery.dataTables.min.css'),$_smarty_tpl);?>
+" />
+    <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables-1.10.5/media/js/jquery.dataTables.min.js"),$_smarty_tpl);?>
 "></script>
-<script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.reloadAjax.js"),$_smarty_tpl);?>
+<?php } else { ?>
+    <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/jquery.dataTables.min.js"),$_smarty_tpl);?>
 "></script>
-<script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.dateSorting.js"),$_smarty_tpl);?>
+    <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.reloadAjax.js"),$_smarty_tpl);?>
 "></script>
+    <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/datatables/dataTables.dateSorting.js"),$_smarty_tpl);?>
+"></script>
+<?php }?>
 
 <script type='text/javascript' src="<?php echo smarty_function_theme_url(array('path'=>"resources/js/plugins/wookmark/jquery.wookmark.js"),$_smarty_tpl);?>
 "></script>
