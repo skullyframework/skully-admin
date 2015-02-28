@@ -21,14 +21,12 @@
     "require": {
         "php": ">=5.4",
         "symfony/console": "2.5.2",
-        "skullyframework/skully": "0.1.*",
-        "aws/aws-sdk-php": "2.6.*"
+        "skullyframework/skully": "0.1.*"
     },
     "license": "MIT",
     "autoload": {
         "psr-0": {
-            "SkullyAdmin": "",
-            "SkullyAwsS3": ""
+            "SkullyAdmin": ""
         }
     },
     "autoload-dev": {

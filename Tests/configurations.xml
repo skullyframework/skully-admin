@@ -2,9 +2,7 @@
 <phpunit>
     <testsuites>
         <testsuite name="App_Tests">
-            <!--<file>TestAdminCreation.php</file>-->
-            <file>AmazonS3/S3Test.php</file>
-            <file>AmazonS3/S3ConsoleTest.php</file>
+            <file>TestAdminCreation.php</file>
         </testsuite>
     </testsuites>
 </phpunit>

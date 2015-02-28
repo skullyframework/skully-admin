@@ -6,7 +6,7 @@ namespace Tests;
 use TestApp\Models\Admin;
 use RedBeanPHP\Facade as R;
 
-require_once('DatabaseTestCase.php');
+require_once('AdminTestCase.php');
 
 class TestAdminCreation extends AdminTestCase {
     public function testCreateAdmin()

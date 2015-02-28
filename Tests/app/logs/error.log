@@ -1017,3 +1017,16 @@ Trait method multipleManyTypesForm has not been applied, because there are colli
 
 )
 
+[Saturday, 28-Feb-2015 23:53:52 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully-admin\Tests\app\TestApp\Config\Config.php | ln:10
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Trait 'SkullyAwsS3\S3ConfigTrait' not found
+#0  shutdownHandler()
+
+

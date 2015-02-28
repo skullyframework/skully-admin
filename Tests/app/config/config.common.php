@@ -55,12 +55,6 @@ function setCommonConfig(Config &$config, $serverName = null) {
         );
     }
 
-    // Copy credentials.csv from AmazonS3 website into directory "config/AmazonS3/"
-    $csv = file_get_contents(realpath(__DIR__.'/AmazonS3/credentials.csv'));
-    $csv_r = explode("\n", $csv);
-    $s3Config = explode(',', trim($csv_r[1]));
-    $s3Config[0] = str_replace('"', '', $s3Config[0]);
-
     $config_r = array_merge(array(
         'namespace' => 'TestApp',
         // 0: no caching, 1: cache all with same lifetime, 2: cache with different lifetime per template.
@@ -128,18 +122,7 @@ function setCommonConfig(Config &$config, $serverName = null) {
             'db_dir' => BASE_PATH . 'db',
             'log_dir' => BASE_PATH . 'logs' . DIRECTORY_SEPARATOR . 'migrations',
             'ruckusing_base' => RUCKUSING_BASE
-        ),
-
-        'amazonS3' => array(
-            'enabled' => true,
-            'bucket' => 'skully-admin',
-            'region' => 's3-ap-southeast-1',
-            'settings' => array(
-                'profile'=> $s3Config[0],
-                'key'    => $s3Config[1],
-                'secret' => $s3Config[2],
-            )
-        ),
+        )
     ), $serverConfigAdd);
 
     $clientAndServerConfig = array_merge(array(
