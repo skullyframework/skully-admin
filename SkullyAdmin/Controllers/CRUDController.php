@@ -567,6 +567,12 @@ class CRUDController extends BaseController
                 $this->successAction($this->app->getTranslator()->translate('deleted'), $this->app->getRouter()->getUrl($this->indexPath), 'destroy', $instance);
             }
             catch (\Exception $e) {
+                $message = $e->getMessage();
+                // When message is unrelated to instance validation, instance
+                // has no error, but error message is not empty.
+                if (!empty($message) && !$instance->hasError()) {
+                    $instance->addError($message);
+                }
                 $this->app->getLogger()->log("Cannot delete data : " . $e->getMessage());
             }
         }
