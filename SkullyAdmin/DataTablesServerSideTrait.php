@@ -95,7 +95,7 @@ trait DataTablesServerSideTrait {
     }
 
     public function setFields ( $array ) {
-        $this->dtsFields = $this->dtsIsSortable ? array(array('db' => $this->dtsPositionFieldName, 'dt' => 0)) : array();
+        $this->dtsFields = $this->dtsIsSortable ? array(array('db' => $this->dtsPositionFieldName, 'dt' => 0, 'prefix' => 't')) : array();
         $this->dtsFields[] = array(
             'db'        => $this->dtsPrimaryKey,
             'dt'        => $this->dtsIsSortable ? 1 : 0,
@@ -366,7 +366,6 @@ trait DataTablesServerSideTrait {
         $limit = $this->limit( $request, $fields );
         $order = $this->order( $request, $fields );
         $where = $this->filter( $request, $fields );
-
 
         $data = R::getAll("SELECT SQL_CALC_FOUND_ROWS " . $this->pluckString( $fields, 'db' ) . "
 			 FROM `{$this->getTableName()}` t
