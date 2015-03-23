@@ -52,12 +52,10 @@ trait ImageUploader {
                 'overwrite' => false
             ), $options);
             /** delete previous images */
-            $path = ImageProcessor::resize($tmp, $options);
-            if(!empty($oldFile) && $oldFile != $path){
-                if (!empty($oldFile) && file_exists($oldFile)) {
-                    unlink($oldFile);
-                }
+            if (!empty($oldFile) && file_exists($oldFile)) {
+                unlink($oldFile);
             }
+            $path = ImageProcessor::resize($tmp, $options);
         }
         catch (\Exception $e) {
             $this->app->getLogger()->log("error with message " . $e->getMessage());
