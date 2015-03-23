@@ -53,8 +53,10 @@ trait ImageUploader {
             ), $options);
             /** delete previous images */
             $path = ImageProcessor::resize($tmp, $options);
-            if (!empty($oldFile) && file_exists($oldFile)) {
-                unlink($oldFile);
+            if(!empty($oldFile) && $oldFile != $this->app->getTheme()->getPublicBasePath() . $path){
+                if (!empty($oldFile) && file_exists($oldFile)) {
+                    unlink($oldFile);
+                }
             }
         }
         catch (\Exception $e) {
