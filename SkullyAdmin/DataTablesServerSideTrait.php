@@ -222,16 +222,23 @@ trait DataTablesServerSideTrait {
                 $columnIdx = array_search( $requestColumn['data'], $dtColumns );
                 $column = $columns[$columnIdx];
 
-                if ( $requestColumn['orderable'] == 'true' &&  empty( $column['rawSql'] ) ) {
+                if ( $requestColumn['orderable'] == 'true' ) {
                     $dir = $request['order'][$i]['dir'] === 'asc' ?
                         'ASC' :
                         'DESC';
 
-                    $orderBy[] = $column['prefix'] . '.`' . $column['db'] . '` ' . $dir;
+                    if ( isset( $column['rawSql'] ) && !empty($column['rawSql']) ) {
+                        $orderBy[] = $column['db'] . ' ' . $dir;
+                    }
+                    else {
+                        $orderBy[] = $column['prefix'] . '.`' . $column['db'] . '` ' . $dir;
+                    }
                 }
             }
 
-            $order = 'ORDER BY ' . implode( ', ', $orderBy );
+            if (!empty($orderBy)) {
+                $order = 'ORDER BY ' . implode( ', ', $orderBy );
+            }
         }
 
         return $order;
