@@ -66,17 +66,17 @@ trait DataTablesServerSideTrait {
             'icon' => 'icon-pencil',
             'data-toggle' => null
         ),
+        'imageManager' => array(
+            'title' => 'Image Manager',
+            'href' => null,
+            'icon' => 'icon-picture',
+            'data-toggle' => null
+        ),
         'delete' => array(
             'title' => 'Delete',
             'href' => null,
             'icon' => 'icon-trash',
             'data-toggle' => 'dialog'
-        ),
-        'imageManeger' => array(
-            'title' => 'Image Manager',
-            'href' => null,
-            'icon' => 'icon-picture',
-            'data-toggle' => null
         ),
     );
     //endregion
@@ -131,7 +131,7 @@ trait DataTablesServerSideTrait {
         }
 
         if ( $this->dtsShowActionButtons ) {
-            $this->dtsColumnsDef .= '{"targets": [-1], "searchable": false, "sortable": false},';
+            $this->dtsColumnsDef .= '{"targets": [-1], "searchable": false, "sortable": false, "width":"50px"},';
         }
 
         $this->dtsColumnsDef .= $value;
