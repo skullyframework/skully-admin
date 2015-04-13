@@ -307,12 +307,16 @@ trait ImageUploader {
         }
         else {
             if ($this->imageDestroyPath != null) {
-                $imagesField = $instance->get($this->getParam('field'));
+                $field = $this->getParam('field');
+                $imagesField = $instance->get($field);
+                $imageSettings = $this->getImageSettings();
                 if (!is_array($imagesField)) {
-                    $imagesField = UtilitiesHelper::decodeJson($imagesField, true);
+                    if(!(!$imageSettings[$field]["_config"]["multiple"] && !empty($imageSettings[$field]["options"]))){
+                        $imagesField = UtilitiesHelper::decodeJson($imagesField, true);
+                    }
                 }
                 $position = $this->getParam('position');
-                if(!empty($position) || $position === 0) $imageField = $imagesField[$position];
+                if(!empty($position) || (int)$position === 0) $imageField = $imagesField[$position];
                 else $imageField = $imagesField;
 
                 if (is_array($imageField)) {
@@ -373,6 +377,13 @@ trait ImageUploader {
                         foreach($imageValue as $key => $image) {
                             unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $image));
                         }
+                    }
+                    $instance->set($imageField, "");
+                }
+                else if(!$imageSettings[$imageSetting]["_config"]["multiple"] && !empty($imageSettings[$imageSetting]["options"])){ //single one type
+                    $imageValue = $instance->get($imageField);
+                    if(!empty($imageValue)){
+                        unlink(str_replace('/', DIRECTORY_SEPARATOR, $this->app->getTheme()->getPublicBasePath() . $imageValue));
                     }
                     $instance->set($imageField, "");
                 }
