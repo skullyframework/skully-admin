@@ -29,6 +29,9 @@
                         cols=$columns
                         }
                     {else}
+                        <link rel="stylesheet" href="{theme_url path='resources/js/plugins/datatables-1.10.5/media/css/jquery.dataTables.min.css'}" />
+                        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables-1.10.5/media/js/jquery.dataTables.min.js"}"></script>
+
                         {html_table
                         loop=''
                         table_attr='id="datatable-media" class="display" cellspacing="0" style="width:100%;"'
