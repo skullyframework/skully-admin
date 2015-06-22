@@ -1,19 +1,18 @@
 {form class="validate" method="POST" action="{url path="admin/settings/update"}"}
 	<div class="block-fluid">
 
-		<div class="row-form">
-			<div class="span12 largerText">
+        <div class="row">
+            <div class="col-sm-12">
 				<input name="setting[id]" type="hidden" value="{$setting.id}">
-				{lang value=$setting.name}
+				<h4 class="text-primary">{lang value=$setting.name}</h4>
 			</div>
 		</div>
 
-		<div class="row-form">
-			<div class="span2">{lang value="value"}</div>
-			<div class="span10">
-				{include file="admin/settings/forms/_"|cat:$setting.input_type|cat:".tpl"}
-			</div>
-		</div>
+        <div class="row">
+            <div class="col-sm-12">
+                {include file="admin/settings/forms/_"|cat:$setting.input_type|cat:".tpl"}
+            </div>
+        </div>
 
 	{if !$isAjax}
 		<div class="toolbar bottom TAR">

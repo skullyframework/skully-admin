@@ -17,11 +17,11 @@
         <!-- END Background Pic-->
         <!-- START Background Caption-->
         {*<div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">*}
-        {*<h2 class="semi-bold text-white">*}
-        {*Pages make it easy to enjoy what matters the most in the life</h2>*}
-        {*<p class="small">*}
-        {*images Displayed are solely for representation purposes only, All work copyright of respective owner, otherwise © 2013-2014 REVOX.*}
-        {*</p>*}
+            {*<h2 class="semi-bold text-white">*}
+                {*Pages make it easy to enjoy what matters the most in the life</h2>*}
+            {*<p class="small">*}
+                {*images Displayed are solely for representation purposes only, All work copyright of respective owner, otherwise © 2013-2014 REVOX.*}
+            {*</p>*}
         {*</div>*}
         <!-- END Background Caption-->
     </div>
@@ -63,16 +63,16 @@
             {/form}
             <!--END Login Form-->
             {*<div class="pull-bottom sm-pull-bottom">*}
-            {*<div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">*}
-            {*<div class="col-sm-3 col-md-2 no-padding">*}
-            {*<img alt="" class="m-t-5" data-src="assets/img/demo/pages_icon.png" data-src-retina="assets/img/demo/pages_icon_2x.png" height="60" src="assets/img/demo/pages_icon.png" width="60">*}
-            {*</div>*}
-            {*<div class="col-sm-9 no-padding m-t-10">*}
-            {*<p><small>*}
-            {*Create a pages account. If you have a facebook account, log into it for this process. Sign in with <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a></small>*}
-            {*</p>*}
-            {*</div>*}
-            {*</div>*}
+                {*<div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">*}
+                    {*<div class="col-sm-3 col-md-2 no-padding">*}
+                        {*<img alt="" class="m-t-5" data-src="assets/img/demo/pages_icon.png" data-src-retina="assets/img/demo/pages_icon_2x.png" height="60" src="assets/img/demo/pages_icon.png" width="60">*}
+                    {*</div>*}
+                    {*<div class="col-sm-9 no-padding m-t-10">*}
+                        {*<p><small>*}
+                                {*Create a pages account. If you have a facebook account, log into it for this process. Sign in with <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a></small>*}
+                        {*</p>*}
+                    {*</div>*}
+                {*</div>*}
             {*</div>*}
         </div>
     </div>
@@ -89,19 +89,19 @@
                     <div class="row-xs-height">
                         <div class="modal-body col-xs-height col-middle text-center">
                             {form class="validate" id="formForgetPassword"}
-                                <h5 class="text-primary ">Forgot your password?</h5>
-                                <br>
-                                <p class="text-info">Please enter your email address to recover your password</p>
-                                <br/>
-                                <div class="tips"></div>
-                                <div class="form-group form-group-default text-left">
-                                    <label>Login</label>
-                                    <div class="controls">
-                                        <input type="text" name="email" placeholder="Email" class="form-control validate[required,maxSize[255]]" value="{$email}">
-                                    </div>
+                            <h5 class="text-primary ">Forgot your password?</h5>
+                            <br>
+                            <p class="text-info">Please enter your email address to recover your password</p>
+                            <br/>
+                            <div class="tips"></div>
+                            <div class="form-group form-group-default text-left">
+                                <label>Login</label>
+                                <div class="controls">
+                                    <input type="text" name="email" placeholder="Email" class="form-control validate[required,maxSize[255]]" value="{$email}">
                                 </div>
-                                <button type="button" class="btn btn-primary btn-block btnRecover" data-dismiss="modal">Recover</button>
-                                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block btnRecover" data-dismiss="modal">Recover</button>
+                            <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>
                             {/form}
                         </div>
                     </div>

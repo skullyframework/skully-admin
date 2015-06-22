@@ -1,93 +1,48 @@
 {extends file="admin/wrappers/_main.tpl"}
 {block name=header}
-    <title>{$instanceName}</title>
-    {if !empty($dragField) && !$dataTableServerSide}
-        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
-    {/if}
+<title>{$instanceName}</title>
+  {if !empty($dragField)}
+    <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
+  {/if}
 {/block}
 {block name=content}
-    <div class="span12">
-        {include file='admin/widgets/_alerts.tpl' }
-        {nocache}
-            <div class="widget">
-                <div class="head dark">
-                    <div class="icon"><i class="icos-stats-up"></i></div>
-                    <h2>{$instanceName}</h2>
-                    <ul class="buttons">
-                        <li><a href="{url path=$addPath}" title="Add {$instanceName}" data-toggle="dialog"><span class="icos-plus1"></span></a></li>
-                    </ul>
+    {include file='admin/widgets/_alerts.tpl' }
+
+    <div class="panel panel-transparent">
+        <div class="panel-heading bg-master">
+            <h2 class="text-primary bold"><i class="fa fa-line-chart m-r-15"></i>{$instanceName|ucwords}</h2>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <input type="text" id="search-table" class="form-control" placeholder="search keywords"/>
                 </div>
-                <div class="block-fluid">
-                    {if !$dataTableServerSide}
-                        {if !empty($dragField)}
-                            {$sortableTable = 'sortableTable initialized'}
-                        {/if}
-                        {html_table
-                        loop=''
-                        table_attr='class="'|cat: $sortableTable|cat:' aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
-                        th_attr=$thAttributes
-                        cols=$columns
-                        }
-                    {else}
-                        <link rel="stylesheet" href="{theme_url path='resources/js/plugins/datatables-1.10.5/media/css/jquery.dataTables.min.css'}" />
-                        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables-1.10.5/media/js/jquery.dataTables.min.js"}"></script>
 
-                        {html_table
-                        loop=''
-                        table_attr='id="datatable-media" class="display" cellspacing="0" style="width:100%;"'
-                        th_attr=$thAttributes
-                        cols=$columns
-                        }
-
-                        <style type="text/css">
-                            .dataTables_processing { z-index: 1000; }
-                        </style>
-
-                        <script type="text/javascript">
-                            $(function(){
-                                $('#datatable-media').dataTable({
-                                    "processing": true,
-                                    "serverSide": true,
-                                    "ajax": "index",
-                                    "columnDefs": {$columnDefs}
-                                });
-
-                                {if $isSortable}
-                                $( "#datatable-media tbody" ).sortable({
-                                    start: function(event, ui) {
-                                        ui.item.oldId = ui.item.attr('data-id')
-                                        ui.item.startPos = ui.item.index();
-                                        ui.item.oldPos = ui.item.attr('data-position');
-                                    },
-                                    stop: function(event, ui) {
-                                        $.ajax({
-                                            type: "POST",
-                                            url: "reorderServerSide",
-                                            data: { oldPosition: ui.item.oldPos, newPosition: $('#datatable-media').DataTable().row(ui.item.index()).nodes().to$().attr('data-position'), id: ui.item.oldId }
-                                        });
-                                        $('#datatable-media').DataTable().draw(false);
-                                    }
-                                });
-                                $( "#datatable-media tbody" ).disableSelection();
-                                {/if}
-                            });
-                        </script>
-                    {/if}
+                <div class="col-sm-4 col-md-6 col-lg-8 text-right">
+                    <a href="{url path=$addPath}" title="Add {$instanceName}" data-toggle="dialog" class="btn btn-primary"><span class="fa fa-plus m-r-10"></span> Add {$instanceName|ucwords}</a>
                 </div>
             </div>
-        {/nocache}
+
+
+            {if !empty($dragField)}
+                {$sortableTable = 'sortableTable initialized'}
+            {/if}
+            {html_table
+            loop=''
+            table_attr='class="'|cat: $sortableTable|cat:' table aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
+            th_attr=$thAttributes
+            cols=$columns
+            }
+        </div>
     </div>
 {/block}
-
-{if !$dataTableServerSide}
-    {block name=footer}
-        {nocache}
-            <script type="text/javascript">
-                {if !empty($columnDefs)}
-                var _columnDefs = {$columnDefs};
-                {/if}
-            </script>
-        {/nocache}
-        {include file="admin/widgets/crud/widgets/_sortable.tpl"}
-    {/block}
-{/if}
+{block name=footer}
+    {nocache}
+        <script type="text/javascript">
+            {if !empty($columnDefs)}
+            var _columnDefs = {$columnDefs};
+            {/if}
+        </script>
+    {/nocache}
+{include file="admin/widgets/crud/widgets/_sortable.tpl"}
+{/block}

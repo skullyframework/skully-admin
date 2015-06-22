@@ -7,7 +7,7 @@
             </div>
             {if !$isAjax}
                 <div class="toolbar bottom TAR">
-                    <button class="btn btn-primary" id="submitForm" type="submit">Submit</button>
+                    <button class="btn btn-danger" id="submitForm" type="submit">Delete</button>
                 </div>
             {/if}
         </div>

@@ -5,137 +5,160 @@
 	{block name=header}
 		<title>Administrator Area</title>
 	{/block}
+    {block name=headerAfter}{/block}
+    {include file="admin/widgets/_mainScript.tpl"}
 </head>
-<body class="page-{$route|replace:'/':'-'}">
+<body class="page-{$route|replace:'/':'-'} fixed-header">
 
-<div class="header">
-	<a href="{url path="home/index"}" class="logo"></a>
-
-	<div class="buttons">
-		<div class="popup" id="subNavControll">
-			<div class="label"><span class="icos-list"></span></div>
-		</div>
-		<div class="dropdown">
-			<div class="label"><span class="icos-user2"></span></div>
-			<div class="body" style="width: 160px;">
-				{*<div class="itemLink">*}
-					{*<a href="#"><span class="icon-cog icon-white"></span> Settings</a>*}
-				{*</div>*}
-				{*<div class="itemLink">*}
-					{*<a href="#"><span class="icon-comment icon-white"></span> Messages</a>*}
-				{*</div>*}
-				<div class="itemLink">
-					<a href="{url path="admin/admins/edit" id=$user.id}" title="{lang value="My Settings"}" data-toggle="dialog"><span class="icon-cog icon-white"></span> {lang value="My Settings"}</a>
-				</div>
-				<div class="itemLink">
-					<a href="{url path="admin/admins/logout"}"><span class="icon-off icon-white"></span> Logoff</a>
-				</div>
-			</div>
-		</div>
-		{*<div class="popup">*}
-			{*<div class="label"><span class="icos-search1"></span></div>*}
-			{*<div class="body">*}
-				{*<div class="arrow"></div>*}
-				{*<div class="row-fluid">*}
-					{*<div class="row-form">*}
-						{*<div class="span12">*}
-							{*<div class="input-append input-prepend">*}
-								{*<span class="add-on"><i class="icon-search"></i></span>*}
-								{*<input type="text" name="search" placeholder="Keyword..."/>*}
-								{*<button class="btn" type="button">Search</button>*}
-							{*</div>*}
-						{*</div>*}
-					{*</div>*}
-				{*</div>*}
-			{*</div>*}
-		{*</div>*}
-		<div class="popup">
-			<div class="label"><span class="icos-cog"></span></div>
-			<div class="body">
-				<div class="arrow"></div>
-				<div class="row-fluid">
-					<div class="row-form">
-						<div class="span12">
-							<span class="top">Themes:</span>
-							<div class="themes">
-								<a href="#" data-theme="" class="tip" title="Default"><img src="{theme_url path="resources/images/admin/themes/default.jpg"}"/></a>
-								<a href="#" data-theme="ssDaB" class="tip" title="DaB"><img src="{theme_url path="resources/images/admin/themes/dab.jpg"}"/></a>
-								<a href="#" data-theme="ssTq" class="tip" title="Tq"><img src="{theme_url path="resources/images/admin/themes/tq.jpg"}"/></a>
-								<a href="#" data-theme="ssGy" class="tip" title="Gy"><img src="{theme_url path="resources/images/admin/themes/gy.jpg"}"/></a>
-								<a href="#" data-theme="ssLight" class="tip" title="Light"><img src="{theme_url path="resources/images/admin/themes/light.jpg"}"/></a>
-								<a href="#" data-theme="ssDark" class="tip" title="Dark"><img src="{theme_url path="resources/images/admin/themes/dark.jpg"}"/></a>
-								<a href="#" data-theme="ssGreen" class="tip" title="Green"><img src="{theme_url path="resources/images/admin/themes/green.jpg"}"/></a>
-								<a href="#" data-theme="ssRed" class="tip" title="Red"><img src="{theme_url path="resources/images/admin/themes/red.jpg"}"/></a>
-							</div>
-						</div>
-					</div>
-					<div class="row-form">
-						<div class="span12">
-							<span class="top">Backgrounds:</span>
-							<div class="backgrounds">
-								<a href="#" data-background="bg_default" class="bg_default"></a>
-								<a href="#" data-background="bg_mgrid" class="bg_mgrid"></a>
-								<a href="#" data-background="bg_crosshatch" class="bg_crosshatch"></a>
-								<a href="#" data-background="bg_hatch" class="bg_hatch"></a>
-								<a href="#" data-background="bg_light_gray" class="bg_light_gray"></a>
-								<a href="#" data-background="bg_dark_gray" class="bg_dark_gray"></a>
-								<a href="#" data-background="bg_texture" class="bg_texture"></a>
-								<a href="#" data-background="bg_light_orange" class="bg_light_orange"></a>
-								<a href="#" data-background="bg_yellow_hatch" class="bg_yellow_hatch"></a>
-								<a href="#" data-background="bg_green_hatch" class="bg_green_hatch"></a>
-							</div>
-						</div>
-					</div>
-					<div class="row-form">
-						<div class="span12">
-							<span class="top">Navigation:</span>
-							<input type="radio" name="navigation" id="fixedNav"/> Fixed
-							<input type="radio" name="navigation" id="collapsedNav"/> Collapsible
-							<input type="radio" name="navigation" id="hiddenNav"/> Hidden
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
+<!-- BEGIN SIDEBAR -->
+<div class="page-sidebar" data-pages="sidebar">
+    <div id="appMenu" class="sidebar-overlay-slide from-top">
+    </div>
+    <!-- BEGIN SIDEBAR HEADER -->
+    <div class="sidebar-header">
+        <img src="{public_url path="images/logo_white.png"}" alt="logo" class="brand" data-src="{public_url path="images/logo_white.png"}" data-src-retina="{public_url path="images/logo_white_2x.png"}" width="92" height="50">
+        <div class="sidebar-header-controls">
+            <button data-pages-toggle="#appMenu" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" type="button"><i class="fa fa-angle-down fs-16"></i>
+            </button>
+            <button data-toggle-pin="sidebar" class="btn btn-link visible-lg-inline" type="button"><i class="fa fs-12"></i>
+            </button>
+        </div>
+    </div>
+    <!-- END SIDEBAR HEADER -->
+    <!-- BEGIN SIDEBAR MENU -->
+    <div class="sidebar-menu">
+        {include file="admin/widgets/_mainMenu.tpl"}
+        <div class="clearfix"></div>
+    </div>
+    <!-- END SIDEBAR MENU -->
 </div>
+<!-- END SIDEBAR -->
 
-<div class="navigation">
+<!-- START PAGE-CONTAINER -->
+<div class="page-container">
+    <!-- START PAGE HEADER WRAPPER -->
+    <!-- START HEADER -->
+    <div class="header ">
+        <!-- START MOBILE CONTROLS -->
+        <!-- LEFT SIDE -->
+        <div class="pull-left full-height visible-sm visible-xs">
+            <!-- START ACTION BAR -->
+            <div class="sm-action-bar">
+                <a href="#" class="btn-link toggle-sidebar" data-toggle="sidebar">
+                    <span class="icon-set menu-hambuger"></span>
+                </a>
+            </div>
+            <!-- END ACTION BAR -->
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="pull-right full-height visible-sm visible-xs">
+            <!-- START ACTION BAR -->
+            <div class="sm-action-bar">
+                <a href="#" class="btn-link" data-toggle="quickview" data-toggle-element="#quickview">
+                    <span class="icon-set menu-hambuger-plus"></span>
+                </a>
+            </div>
+            <!-- END ACTION BAR -->
+        </div>
+        <!-- END MOBILE CONTROLS -->
+        <div class=" pull-left sm-table">
+            <div class="header-inner">
+                <div class="brand inline">
+                    <img src="{public_url path="images/logo.png"}" alt="logo" data-src="{public_url path="images/logo.png"}" data-src-retina="{public_url path="images/logo_2x.png"}" width="92" height="50">
+                </div>
+                <!-- BEGIN NOTIFICATION DROPDOWN -->
+                <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
+                    <li class="p-r-15 inline">
+                        <div class="dropdown">
+                            <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown" data-href="{url path="admin/home/notification"}">
+                                {if $unreadNotificationCount > 0}<span class="bubble">{$unreadNotificationCount}</span>{/if}
+                            </a>
+                            <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
+                                <div class="notification-panel">
+                                    <!-- START Notification Body-->
+                                    <div class="notification-body scrollable" id="notificationList">
 
-{include file="admin/widgets/_mainMenu.tpl"}
+                                    </div>
+                                    <!-- END Notification Body-->
+                                    {*<!-- START Notification Footer-->*}
+                                    {*<div class="notification-footer text-center">*}
+                                        {*<a href="#" class="">Read all notifications</a>*}
+                                        {*<a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">*}
+                                            {*<i class="pg-refresh_new"></i>*}
+                                        {*</a>*}
+                                    {*</div>*}
+                                    {*<!-- END Notification Footer-->*}
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {*<li class="p-r-15 inline">*}
+                        {*<a href="#" class="icon-set clip "></a>*}
+                    {*</li>*}
+                    {*<li class="p-r-15 inline">*}
+                        {*<a href="#" class="icon-set grid-box"></a>*}
+                    {*</li>*}
+                </ul>
+                <!-- END NOTIFICATION DROPDOWN -->
+                {*<a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>*}
+            </div>
+        </div>
+        <div class=" pull-right">
+            <div class="header-inner">
+                <a href="#" class="btn-link icon-set menu-hambuger-plus m-l-20 sm-no-margin hidden-sm hidden-xs" data-toggle="quickview" data-toggle-element="#quickview"></a>
+            </div>
+        </div>
+        <div class=" pull-right">
+            <!-- START User Info-->
+            {include file="admin/widgets/_userInfo.tpl"}
+            <!-- END User Info-->
+        </div>
+    </div>
+    <!-- END HEADER -->
+    <!-- END PAGE HEADER WRAPPER -->
+    <!-- START PAGE CONTENT WRAPPER -->
+    <div class="page-content-wrapper">
+        <!-- START PAGE CONTENT -->
+        <div class="content">
+            {include file="admin/widgets/_breadcrumbs.tpl"}
+            <!-- START CONTAINER FLUID -->
+            <div class="container-fluid container-fixed-lg">
+                <!-- BEGIN PlACE PAGE CONTENT HERE -->
+                {block name="content"}{/block}
+                <!-- END PLACE PAGE CONTENT HERE -->
+            </div>
+            {block name=mid}{/block}
+            <!-- END CONTAINER FLUID -->
+        </div>
+        <!-- END PAGE CONTENT -->
 
-{* Show & hide of submain navigation area *}
-<div class="control"></div>
-
-<div class="submain">
-
-<div id="default">
-
-	{include file="admin/widgets/_userInfo.tpl"}
-	<div class="dr"><span></span></div>
-	{block name=leftBar}{/block}
+        <!-- START FOOTER -->
+        <div class="container-fluid container-fixed-lg footer">
+            <div class="copyright sm-text-center">
+                <p class="small no-margin pull-left sm-pull-reset">
+                    <span class="hint-text">Copyright © {$smarty.now|date_format:"%Y"}</span>
+                    <a href="http://tgitriodesign.com" target="_blank" class="font-montserrat">Trio Digital Agency</a>.
+                    <span class="hint-text">All rights reserved.</span>
+                    {*<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a>*}
+                    {*</span>*}
+                </p>
+                {*<p class="small no-margin pull-right sm-pull-reset">*}
+                {*<a href="#">Hand-crafted</a>*}
+                {*<span class="hint-text">&amp; Made with Love ®</span>*}
+                {*</p>*}
+                <div class="clearfix"></div>
+            </div>
+            {block name=footer}
+            {/block}
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END PAGE CONTENT WRAPPER -->
 </div>
+<!-- END PAGE CONTAINER -->
 
-</div>
-
-</div>
-
-{include file="admin/widgets/_breadcrumbs.tpl"}
-
-<div class="content">
-
-	<div class="row-fluid">
-
-		{block name=content}Content here{/block}
-
-	</div>
-	{block name=mid}{/block}
-
-</div>
-{block name=footer}{/block}
 <div class="loadingframe"></div>
+<script src="{theme_url path="resources/plugins/pace/pace.min.js"}" type="text/javascript"></script>
 {block name="script"}{/block}
 </body>
 </html>

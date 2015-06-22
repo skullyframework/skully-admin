@@ -3,18 +3,19 @@
 <title>Edit {$instanceName}</title>
 {/block}
 {block name=content}
-<div class="span12">
     {nocache}
         {include file='admin/widgets/_alerts.tpl' }
-        <div class="widget">
-            <div class="head">
-                <div class="icon"><i class="icosg-bookmark1"></i></div>
-                <h2>Edit {$instanceName}</h2>
+        <div class="panel panel-transparent">
+            <div class="panel-heading">
+                <h2 class="text-primary bold"><i class="fa fa-bookmark m-r-15"></i>Edit {$instanceName|ucwords}</h2>
+                <div class="clearfix"></div>
             </div>
-            {$form}
+
+            <div class="panel-body">
+                {$form}
+            </div>
         </div>
     {/nocache}
-</div>
 {/block}
 {block name=footer}
     {* Below code is used to attach attribute errors to input elements. *}

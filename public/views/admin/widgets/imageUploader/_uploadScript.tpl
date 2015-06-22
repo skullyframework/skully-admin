@@ -395,9 +395,7 @@
     //            $(this).closest('.fileupload').find('.fileupload-upload').click();
     //        });
     $(document).on('change', '.fileupload [type="file"]', function(e) {
-        if(this.files.length > 0){
-            $(this).closest('.fileupload').find('.fileupload-upload').click();
-        }
+        $(this).closest('.fileupload').find('.fileupload-upload').click();
     });
     </script>
 {/nocache}

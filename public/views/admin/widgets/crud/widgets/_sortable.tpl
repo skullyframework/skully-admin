@@ -22,11 +22,19 @@
             if (!table.hasClass('tableInitialized')) {
                 table.addClass('tableInitialized');
                 $._oTable = table.dataTable({
+                    "sDom": "<'table-responsive't><'row'<p i>>",
+                    "sPaginationType": "bootstrap",
+                    "destroy": true,
+                    "scrollCollapse": true,
+                    "oLanguage": {
+                        "sLengthMenu": "_MENU_ ",
+                        "sInfo": "Showing <b>_START_ to _END_</b> of _TOTAL_ entries"
+                    },
                     "bAutoWidth": true,
                     "bLengthChange": true,
                     "iDisplayLength": 10,
                     "aLengthMenu": [10,25,50,100],
-                    "sPaginationType": "full_numbers",
+
                     "bProcessing": true,
                     "sAjaxSource": table.attr('rel'),
                     "aoColumnDefs": {$columnDefs},
@@ -82,7 +90,8 @@
                     iIndexColumn: 0,
                     sRequestType: "POST"
                 });
-                table.fnSort(sorting);
+                if(sorting.length > 0)
+                    table.fnSort(sorting);
             }
         });
         {/if}
