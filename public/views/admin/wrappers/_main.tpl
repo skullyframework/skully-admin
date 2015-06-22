@@ -16,7 +16,7 @@
     </div>
     <!-- BEGIN SIDEBAR HEADER -->
     <div class="sidebar-header">
-        <img src="{public_url path="images/logo_white.png"}" alt="logo" class="brand" data-src="{public_url path="images/logo_white.png"}" data-src-retina="{public_url path="images/logo_white_2x.png"}" width="92" height="50">
+        <img src="{theme_url path="resources/images/admin/pages_logo_white.png"}" alt="logo" class="brand" data-src="{theme_url path="resources/images/admin/pages_logo_white.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_white_2x.png"}" width="78" height="22">
         <div class="sidebar-header-controls">
             <button data-pages-toggle="#appMenu" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" type="button"><i class="fa fa-angle-down fs-16"></i>
             </button>
@@ -64,7 +64,7 @@
         <div class=" pull-left sm-table">
             <div class="header-inner">
                 <div class="brand inline">
-                    <img src="{public_url path="images/logo.png"}" alt="logo" data-src="{public_url path="images/logo.png"}" data-src-retina="{public_url path="images/logo_2x.png"}" width="92" height="50">
+                    <img src="{theme_url path="resources/images/admin/pages_logo.png"}" alt="logo" class="brand" data-src="{theme_url path="resources/images/admin/pages_logo.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_2x.png"}" width="78" height="22">
                 </div>
                 <!-- BEGIN NOTIFICATION DROPDOWN -->
                 <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
