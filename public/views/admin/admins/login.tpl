@@ -13,7 +13,7 @@
     <!-- START Login Background Pic Wrapper-->
     <div class="bg-pic">
         <!-- START Background Pic-->
-        <img src="{public_url path="images/admin/login.jpg"}" data-src="{public_url path="images/admin/login.jpg"}" data-src-retina="{public_url path="images/admin/login.jpg"}" alt="" class="lazy">
+        <img src="{theme_url path="resources/images/admin/login.jpg"}" data-src="{theme_url path="resources/images/admin/login.jpg"}" data-src-retina="{theme_url path="resources/images/admin/login.jpg"}" alt="" class="lazy">
         <!-- END Background Pic-->
         <!-- START Background Caption-->
         {*<div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">*}
@@ -30,7 +30,7 @@
     <div class="login-container bg-white">
         <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
             <div class="p-b-15">
-                <img src="{public_url path="images/admin/pages_logo.png"}" alt="logo" data-src="{public_url path="images/admin/pages_logo.png"}" data-src-retina="{public_url path="images/admin/pages_logo_2x.png"}" width="185" height="100">
+                <img src="{theme_url path="resources/images/admin/pages_logo.png"}" alt="logo" data-src="{theme_url path="resources/images/admin/pages_logo.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_2x.png"}" width="185" height="100">
             </div>
             {include file='admin/widgets/_alerts.tpl' }
             <p>Sign into your administrator account</p>
