@@ -49,7 +49,10 @@ class BaseController extends \Skully\App\Controllers\BaseController {
             ));
         }
 
+        $name_r = explode("\\",get_class($this));
+        $name = $name_r[ count($name_r) - 1 ];
         $this->app->getTemplateEngine()->assign(array(
+            "activeMainMenu" => lcfirst(str_replace("Controller", "", $name)),
             "numDisplayedRows" => $this->getNumDisplayedRows(),
             "languages" => $this->app->config('languages')
         ));

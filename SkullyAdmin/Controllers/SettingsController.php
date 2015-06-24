@@ -25,7 +25,7 @@ class SettingsController extends CRUDController {
 
     public $columns = array('Name', 'Value', '', 'position');
     public $thAttributes = array('', '', '', 'class="sort_asc"'); // Class sort_asc or sort_dsc can be used to set default sorting.
-    public $columnDefs = "[{'bVisible': false, aTargets:[3]}]"; // Use this to handle columns' behaviours, doc: http://www.datatables.net/usage/columns
+    public $columnDefs = "[{'bVisible': false, aTargets:[3]}, {'bSortable' : false, 'aTargets':[2]}]"; // Use this to handle columns' behaviours, doc: http://www.datatables.net/usage/columns
 
     protected function model() {
         return 'setting';
@@ -59,7 +59,7 @@ class SettingsController extends CRUDController {
             foreach ($instanceBeans as $instanceBean) {
                 /** @var \TestApp\Models\Setting $instance */
                 $instance = $instanceBean->box();
-                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="icon-pencil"></span></a>', 'class' => 'TAC');
+                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="fa fa-pencil"></span></a>', 'class' => 'text-right');
                 if ($instance->get('input_type') == 'password') {
                     $value = '********';
                 }

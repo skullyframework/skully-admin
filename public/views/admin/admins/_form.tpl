@@ -24,62 +24,6 @@
         </div>
     </div>
 
-    {if $_user.type != "staff" && $admin.id != $_user.id}
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group form-group-default">
-                <label for="admin_type">{lang value="Type"}</label>
-                <select name="admin[type]" id="admin_type" class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    {foreach $availableTypes as $type => $typeName}
-                    <option {if $admin.type==$type}selected{/if} value="{$type}">{$typeName}</option>
-                    {/foreach}
-                </select>
-            </div>
-        </div>
-    </div>
-    {else}
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group form-group-default">
-                <label for="admin_type">{lang value="Type"}</label>
-                {foreach $types as $type => $typeName}
-                    {if $admin.type==$type}<span>{$typeName}</span>{/if}
-                {/foreach}
-            </div>
-        </div>
-    </div>
-    {/if}
-
-    {if ($_user.type != "staff" && $admin.id != $_user.id) || $_user.type == "admin"}
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group form-group-default">
-                <label for="admin_branch_id">{lang value="Branch"}</label>
-                <select name="admin[branch_id]" id="admin_branch_id" class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    {foreach $branches as $branch}
-                        {if $_user.type == "admin"}
-                            <option {if $admin.branch_id==$branch.id}selected{/if} value="{$branch.id}">{$branch.name}</option>
-                        {elseif $_user.type == "manager" && $branch.id == $_user.branch_id}
-                            <option selected value="{$branch.id}">{$branch.name}</option>
-                        {/if}
-                    {/foreach}
-                </select>
-            </div>
-        </div>
-    </div>
-    {else}
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group form-group-default">
-                <label for="admin_branch_id">{lang value="Branch"}</label>
-                {foreach $branches as $branch}
-                    {if $admin.branch_id==$branch.id}<span>{$branch.name}</span>{/if}
-                {/foreach}
-            </div>
-        </div>
-    </div>
-    {/if}
-
     <div class="row">
         <div class="col-sm-12">
             <div class="form-group form-group-default">

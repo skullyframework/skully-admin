@@ -7,6 +7,13 @@
         <span class="icon-thumbnail {if $activeMainMenu == "home"}bg-success{/if}"><i class="fa fa-dashboard"></i></span>
     </li>
 
+    <li class="{if $activeMainMenu == "admins"}open{/if}">
+        <a href="{url path='admin/admins/index'}">
+            <span class="title">Admins</span>
+        </a>
+        <span class="icon-thumbnail {if $activeMainMenu == "admins"}bg-success{/if}"><i class="fa fa-user-md"></i></span>
+    </li>
+
     <li class="{if $activeMainMenu == "settings"}open{/if}">
         <a href="{url path='admin/settings/index'}">
             <span class="title">Settings</span>
