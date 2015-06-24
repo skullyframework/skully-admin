@@ -67,19 +67,19 @@
                     <img src="{theme_url path="resources/images/admin/pages_logo.png"}" alt="logo" data-src="{theme_url path="resources/images/admin/pages_logo.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_2x.png"}" width="78" height="22">
                 </div>
                 <!-- BEGIN NOTIFICATION DROPDOWN -->
-                <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
-                    <li class="p-r-15 inline">
-                        <div class="dropdown">
-                            <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown" data-href="{url path="admin/home/notification"}">
-                                {if $unreadNotificationCount > 0}<span class="bubble">{$unreadNotificationCount}</span>{/if}
-                            </a>
-                            <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
-                                <div class="notification-panel">
-                                    <!-- START Notification Body-->
-                                    <div class="notification-body scrollable" id="notificationList">
+                {*<ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">*}
+                    {*<li class="p-r-15 inline">*}
+                        {*<div class="dropdown">*}
+                            {*<a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown" data-href="{url path="admin/home/notification"}">*}
+                                {*{if $unreadNotificationCount > 0}<span class="bubble">{$unreadNotificationCount}</span>{/if}*}
+                            {*</a>*}
+                            {*<div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">*}
+                                {*<div class="notification-panel">*}
+                                    {*<!-- START Notification Body-->*}
+                                    {*<div class="notification-body scrollable" id="notificationList">*}
 
-                                    </div>
-                                    <!-- END Notification Body-->
+                                    {*</div>*}
+                                    {*<!-- END Notification Body-->*}
                                     {*<!-- START Notification Footer-->*}
                                     {*<div class="notification-footer text-center">*}
                                         {*<a href="#" class="">Read all notifications</a>*}
@@ -88,17 +88,17 @@
                                         {*</a>*}
                                     {*</div>*}
                                     {*<!-- END Notification Footer-->*}
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                                {*</div>*}
+                            {*</div>*}
+                        {*</div>*}
+                    {*</li>*}
                     {*<li class="p-r-15 inline">*}
                         {*<a href="#" class="icon-set clip "></a>*}
                     {*</li>*}
                     {*<li class="p-r-15 inline">*}
                         {*<a href="#" class="icon-set grid-box"></a>*}
                     {*</li>*}
-                </ul>
+                {*</ul>*}
                 <!-- END NOTIFICATION DROPDOWN -->
                 {*<a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>*}
             </div>

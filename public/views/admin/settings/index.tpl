@@ -17,10 +17,6 @@
                 <div class="col-sm-8 col-md-6 col-lg-4">
                     <input type="text" id="search-table" class="form-control" placeholder="search keywords"/>
                 </div>
-
-                <div class="col-sm-4 col-md-6 col-lg-8 text-right">
-                    <a href="{url path=$addPath}" title="Add {$instanceName}" data-toggle="dialog" class="btn btn-primary"><span class="fa fa-plus m-r-10"></span> Add {$instanceName|ucwords}</a>
-                </div>
             </div>
 
             {if !empty($dragField)}
