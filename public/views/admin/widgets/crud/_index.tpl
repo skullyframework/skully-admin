@@ -26,9 +26,9 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-6 col-lg-8">
-                    <div class="form-group form-group-default">
+                    <div class="form-group form-group-default" style="max-width: 100px;">
                         <label>{lang value="Show"}</label>
-                        <select id="dataTable_length" aria-controls="productTable" class="cs-select cs-skin-slide full-width-force" data-init-plugin="cs-select">
+                        <select id="dataTable_length" class="cs-select cs-skin-slide full-width-force" data-init-plugin="cs-select">
                             <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>
