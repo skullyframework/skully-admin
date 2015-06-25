@@ -1,3 +1,4 @@
+{* TODO: update ke admin baru *}
 {nocache}
     {foreach from=$_imageSettings item=_imageSetting key=_imageSettingName}
         {if $_imageSetting._config.multiple}

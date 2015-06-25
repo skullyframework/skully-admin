@@ -1,3 +1,4 @@
+{* TODO: update ke admin baru  *}
 {nocache}
     {foreach from=$_imageSettings item=_imageSetting key=_imageSettingName}
         <div class="block-fluid image_row-{$_imageSettingName}">

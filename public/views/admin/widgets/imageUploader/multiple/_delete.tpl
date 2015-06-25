@@ -1,3 +1,4 @@
+{* TODO: update ke admin baru *}
 {extends file="admin/wrappers/_formDialog.tpl"}
 {block name=dialogHeader}
     <h3>Delete image</h3>

@@ -1,3 +1,4 @@
+{* TODO: update ke admin baru  *}
 {nocache}
 <div class="row-form imageManagerRow">
     <input type="hidden" name="position" value="{$_imagePos}" />

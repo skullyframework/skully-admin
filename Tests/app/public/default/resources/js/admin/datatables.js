@@ -65,7 +65,7 @@
                         table.sort(sorting);
 
                     if($('#search-table').length > 0){
-                        $("#search-table").change(function(){
+                        $("#search-table").keyup(function(){
                             var val = $(this).val();
                             $._oTable
                                 .search( val )

@@ -1,3 +1,4 @@
+{* TODO: update ke admin baru *}
 {nocache}
 <div class="row-form" id="newRow-{$_imageSettingName}">
     <div class="span6">
