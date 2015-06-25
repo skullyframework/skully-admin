@@ -20,10 +20,11 @@
                         <input type="text" id="search-table" class="form-control" placeholder="keywords"/>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-6 col-lg-8 text-right">
-                    <div class="form-group form-group-default" style="max-width: 100px;">
+                <div class="col-md-3 col-lg-6 hide-for-medium-down"></div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="form-group form-group-default">
                         <label>{lang value="Show"}</label>
-                        <select id="dataTable_length" class="cs-select cs-skin-slide full-width-force" data-init-plugin="cs-select">
+                        <select id="dataTable_length" class="cs-select cs-skin-slide" data-init-plugin="cs-select">
                             <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>
