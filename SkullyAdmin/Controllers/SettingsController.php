@@ -59,7 +59,7 @@ class SettingsController extends CRUDController {
             foreach ($instanceBeans as $instanceBean) {
                 /** @var \TestApp\Models\Setting $instance */
                 $instance = $instanceBean->box();
-                $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="fa fa-pencil"></span></a>', 'class' => 'text-right');
+                $actions = '<div class="text-right" style="min-width: 40px;"><a title="View" href="'.$this->app->getRouter()->getUrl('admin/settings/edit', array('id' => $instance->get('id'))).'" data-toggle="dialog"><span class="fa fa-pencil"></span></a></div>';
                 if ($instance->get('input_type') == 'password') {
                     $value = '********';
                 }
