@@ -46,73 +46,37 @@
 
                     // todo: Make searching better. Maybe make the whole data interaction ajax so we can search data from server.
                     table.addClass('initialized');
-                    $._oTable = table.dataTable({
-                        "sDom": "<'table-responsive't><'row'<p i>>",
+                    $._oTable = table.DataTable({
+                        "sDom": "rt<'row'<'col-sm-12'p i>>",
                         "sPaginationType": "bootstrap",
-                        "destroy": true,
-                        "scrollCollapse": true,
                         "oLanguage": {
-                            "sLengthMenu": "_MENU_ ",
-                            "sInfo": "Showing <b>_START_ to _END_</b> of _TOTAL_ entries"
+                            "sLengthMenu": "_MENU_"
                         },
-                        "bAutoWidth": true,
-                        "bLengthChange": true,
-                        "iDisplayLength": 10,
-                        "aLengthMenu": [10,25,50,100],
-
-                        "bProcessing": true,
-                        "sAjaxSource": table.attr('rel'),
-                        "aoColumnDefs": columnDefs,
-                        "fnDrawCallback": function() {
-                            $(document).trigger('changed');
-                        },
-                        "fnServerData": function ( sSource, aoData, fnCallback ) {
-                            /* Add some extra data to the sender */
-                            //						aoData.push( { "name": "more_data", "value": "my_value" } );
-                            $.getJSON( sSource, aoData, function (json) {
-                                /* Do whatever additional processing you want on the callback, then tell DataTables */
-                                fnCallback(json);
-                                $(document).trigger('changed');
-                            } );
-                        },
-                        "fnInitComplete": function() {
-                            $(document).trigger("datatableLoaded");
-                        },
-                        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
-                            // Add styling on each td:
-                            // Get hidden columns, then iterate each column, if column is hidden, move to next index
-                            var columns = this.dataTableSettings[0].aoColumns;
-
-                            var i = 0;
-                            for(var i2=0;i2<columns.length;i2++) {
-                                var column = columns[i2];
-                                if (column.bVisible) {
-                                    var td = $('td',nRow).slice(i,(i+1));
-                                    if (typeof aData[i2]=='object' && aData[i2]!=null){
-                                        if (typeof aData[i2].style!='undefined'){
-                                            td.attr('style',aData[i2].style);
-                                        }
-                                        if (typeof aData[i2].class!='undefined'){
-                                            td.removeClass(aData[i2].class);
-                                            td.addClass(aData[i2].class);
-                                        }
-                                        td.html('');
-                                        if (typeof aData[i2].data!='undefined'){
-                                            td.html(aData[i2].data);
-                                        }
-                                    }
-                                    i++;
-                                }
-                            }
-
+                        'searching': true,
+                        "processing": true,
+                        "serverSide": table.hasClass("serverSide"),
+                        "ajax": "index",
+                        "columnDefs": columnDefs,
+                        "drawCallback": function( settings ) {
+                            $(document).trigger("changed");
                         }
                     });
                     if(sorting.length > 0)
                         table.fnSort(sorting);
 
                     if($('#search-table').length > 0){
-                        $('#search-table').keyup(function() {
-                            table.fnFilter($(this).val());
+                        $("#search-table").change(function(){
+                            var val = $(this).val();
+                            $._oTable
+                                .search( val )
+                                .draw();
+                        });
+                    }
+                    if($("#dataTable_length").length > 0){
+                        $("#dataTable_length").change(function(){
+                            $._oTable.page
+                                .len( $(this).val() )
+                                .draw();
                         });
                     }
                 });
