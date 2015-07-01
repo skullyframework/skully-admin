@@ -33,16 +33,16 @@
                     });
 
                     var length = _numDisplayedRows;
-    //				var classes_r = table.attr('class');
-    //				if (classes_r != null) {
-    //					var classes = classes_r.split(' ');
-    //					for (var i = 0; i < classes.length; i++) {
-    //						var matches = /^rows\_(.+)/.exec(classes[i]);
-    //						if (matches != null) {
-    //							length = parseInt(matches[1].replace('rows_', ''));
-    //						}
-    //					}
-    //				}
+                    //				var classes_r = table.attr('class');
+                    //				if (classes_r != null) {
+                    //					var classes = classes_r.split(' ');
+                    //					for (var i = 0; i < classes.length; i++) {
+                    //						var matches = /^rows\_(.+)/.exec(classes[i]);
+                    //						if (matches != null) {
+                    //							length = parseInt(matches[1].replace('rows_', ''));
+                    //						}
+                    //					}
+                    //				}
 
                     // todo: Make searching better. Maybe make the whole data interaction ajax so we can search data from server.
                     table.addClass('initialized');
@@ -55,7 +55,7 @@
                         'searching': true,
                         "processing": true,
                         "serverSide": table.hasClass("serverSide"),
-                        "ajax": "index",
+                        "ajax": table.attr('rel'),
                         "columnDefs": columnDefs,
                         "drawCallback": function( settings ) {
                             $(document).trigger("changed");

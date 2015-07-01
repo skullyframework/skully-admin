@@ -1,9 +1,9 @@
 {extends file="admin/wrappers/_main.tpl"}
 {block name=header}
-<title>{$instanceName}</title>
-  {if !empty($dragField)}
-    <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
-  {/if}
+    <title>{$instanceName}</title>
+    {if !empty($dragField)}
+        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
+    {/if}
 {/block}
 {block name=content}
     {include file='admin/widgets/_alerts.tpl' }
@@ -43,9 +43,14 @@
             {if !empty($dragField)}
                 {$sortableTable = 'sortableTable initialized'}
             {/if}
+            {if !empty($dataTableServerSide) && $dataTableServerSide}
+                {$dtServerSide = 'serverSide'}
+            {else}
+                {$dtServerSide = ''}
+            {/if}
             {html_table
             loop=''
-            table_attr='class="'|cat: $sortableTable|cat:' table aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
+            table_attr='class="'|cat: $sortableTable|cat:' '|cat: $dtServerSide|cat:' table aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
             th_attr=$thAttributes
             cols=$columns
             }
@@ -60,5 +65,5 @@
             {/if}
         </script>
     {/nocache}
-{include file="admin/widgets/crud/widgets/_sortable.tpl"}
+    {include file="admin/widgets/crud/widgets/_sortable.tpl"}
 {/block}
