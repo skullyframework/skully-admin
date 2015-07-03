@@ -1,0 +1,183 @@
+@mixin prefixed($property, $value){
+  -webkit-#{$property} : $value;
+  -khtml-#{$property} : $value;
+  -moz-#{$property} : $value;
+  -ms-#{$property} : $value;
+  -o-#{$property} : $value;
+  #{$property} : $value;
+}
+
+//additional global class
+.full-width-force{
+  width: 100% !important;
+}
+
+
+#modalForgotPassword{
+  .modal-dialog{
+    max-width: 496px;
+  }
+}
+
+.table {
+  tbody {
+    tr {
+      td{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.aTable{
+  td{
+    .fa{
+      font-size: 20px;
+    }
+  }
+}
+
+.form-group-default{
+  overflow: visible;
+
+  .cs-skin-slide{
+    .cs-backdrop{
+      border: none;
+    }
+  }
+}
+
+
+.dataTables_processing{
+  z-index: 1000;
+}
+
+@media screen and (min-width: 980px){
+  .dataTables_wrapper {
+    .dataTables_paginate{
+      float: right;
+    }
+  }
+}
+
+.formError .formErrorContent {
+  width: 100%;
+  background: #f55753;
+  position: relative;
+  color: #fff;
+  min-width: 120px;
+  font-size: 11px;
+  border: 1px solid #f55753;
+  padding: 4px 10px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  text-shadow: none;
+}
+
+.formError .formErrorArrow div {
+  height: 1px;
+  background: #f55753;
+  margin: 0 auto;
+  line-height: 0;
+  font-size: 0;
+  display: block;
+}
+
+#notification-center{
+  .bubble{
+    font-size: 8px;
+    text-align: center;
+    line-height: 15px;
+  }
+}
+
+.notification-panel {
+  .notification-body {
+    .notification-item {
+      .heading {
+        line-height: normal;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media print{
+  .hide-for-print{
+    display: none;
+  }
+}
+
+
+.historyDialog {
+  width: 98%;
+  max-width: 1280px;
+}
+
+
+.invoice{
+  .paymentMethod{
+    display: inline-block;
+    width: 50%;
+  }
+  .paymentValue{
+    max-width: 45%;
+    display: inline-block;
+  }
+}
+@media print{
+  .invoice{
+    .paymentMethod{
+      width: 60%;
+    }
+    .paymentValue{
+      max-width: 35%;
+    }
+  }
+}
+
+//form nav affix
+form{
+  nav{
+    &.affix{
+      left: 70px;
+      right:0;
+      top: 60px;
+      z-index: 99;
+      @include prefixed(transition, all 0.5s);
+    }
+  }
+}
+
+body.menu-pin {
+  form{
+    nav{
+      &.affix{
+        left: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  form{
+    nav{
+      &.affix{
+        left: 0px;
+      }
+    }
+  }
+
+  body.menu-pin {
+    form{
+      nav{
+        &.affix{
+          left: 0px;
+        }
+      }
+    }
+  }
+}

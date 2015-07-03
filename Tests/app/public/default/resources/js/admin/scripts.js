@@ -304,6 +304,17 @@ String.prototype.numberFormat = Number.prototype.numberFormat; //enable number f
                 }
             });
 
+            //affix
+            if($("form nav.affix-top").length > 0) {
+                $("form nav.affix-top").each(function(){
+                    $(this).affix({
+                        offset: {
+                            top: $(this).offset().top - 60
+                        }
+                    });
+                });
+            }
+
 //            // accordion
 //            if($(".accordion").length > 0) {
 //                $(".accordion").not('.accordionInitialized').addClass('accordionInitialized').each(function(index, el) {
