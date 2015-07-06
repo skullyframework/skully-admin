@@ -15,8 +15,8 @@
             <div class="row imageManagerRow">
         {/if}
         <div class="col-sm-3 imageFormContainer">
-            <label>{$typeName}</label>
-            <div>{$type.description}</div>
+            <label class="text-primary bold text-uppercase m-b-5">{$typeName}</label>
+            <div class="text-info m-b-10">{$type.description}</div>
             {include file="admin/widgets/imageUploader/_imageForm.tpl" _image=($instanceImages.{$_imageSettingName}.{$typeName}) type=$type typeName=$typeName _imageSetting=$_imageSetting _imageSettingName=$_imageSettingName}
         </div>
         {if $i%4==3 || count($_imageSetting.types)==$i+1}

@@ -3,7 +3,7 @@
     {foreach from=$_imageSettings item=_imageSetting key=_imageSettingName}
         <div class="panel panel-default image_row-{$_imageSettingName}">
             <div class="panel-heading image_row-title">
-                <h3 class="text-info">{$instanceInfo}{$_imageSetting._config.adminName}</h3>
+                <h4 class="text-complete bold">{$instanceInfo}{$_imageSetting._config.adminName}</h3>
             </div>
             <div class="panel-body">
                 <div class="row m-b-15">
