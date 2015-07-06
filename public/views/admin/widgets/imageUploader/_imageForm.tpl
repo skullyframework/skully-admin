@@ -1,4 +1,4 @@
-{* TODO: update ke admin baru  *}
+{* update ke admin baru *}
 {nocache}
     {form class="imageForm" method="POST" enctype="multipart/form-data" action="{url path=$imageUploadPath}"}
         {if !empty($instanceName)}

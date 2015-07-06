@@ -1,8 +1,8 @@
-{* TODO: update ke admin baru  *}
+{* update ke admin baru  *}
 {nocache}
     {foreach from=$_imageSettings item=_imageSetting key=_imageSettingName}
-        <div class="block-fluid image_row-{$_imageSettingName}">
-            <div class="row-form image_row-title">
+        <div class="image_row-{$_imageSettingName}">
+            <div class="row image_row-title">
                 <div class="span3 largerText">
                     {$instanceInfo}{$_imageSetting._config.adminName}
                 </div>
