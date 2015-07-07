@@ -142,3 +142,37 @@ body.menu-pin form nav.affix {
     left: 0px;
   }
 }
+/* line 188, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload .emptyInfo {
+  text-align: center;
+}
+/* line 191, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload .btn {
+  display: block;
+  overflow: hidden;
+}
+/* line 195, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload .btn span {
+  display: block;
+}
+/* line 199, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload .btn input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+/* line 215, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload.fileupload-new .fileupload-exists {
+  display: none !important;
+}
+/* line 222, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload.fileupload-exists .fileupload-new {
+  display: none !important;
+}

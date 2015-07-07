@@ -26,7 +26,7 @@
                     <span class="fileupload-exists">Change</span>
                     <input type="file" name="image" />
                 </span>
-                {*<span class="btn btn-primary fileupload-upload" style="display: none;">Upload</span>*}
+                <span class="btn btn-primary fileupload-upload" style="display: none;">Upload</span>
             </div>
         </div>
     {/form}
