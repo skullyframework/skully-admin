@@ -185,6 +185,11 @@ body.menu-pin {
 
 //file upload
 .fileupload{
+  .thumbnail{
+    img{
+      width: 100%;
+    }
+  }
   .emptyInfo{
     text-align: center;
   }

@@ -395,7 +395,27 @@
     //        fileInput.change(function(e) {
     //            $(this).closest('.fileupload').find('.fileupload-upload').click();
     //        });
+    function readURL(input, selector) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                selector.attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
     $(document).on('change', '.fileupload [type="file"]', function(e) {
+        var text = $(this).val();
+        if(!text) {
+            $(this).closest(".fileupload").find(".thumbnail").html('<div class="emptyInfo">{lang value="No Image"}</div>');
+        }
+        else{
+            var img = $('<img/>');
+            readURL(this, img);
+            $(this).closest(".fileupload").find(".thumbnail").html('').append(img);
+        }
         $(this).closest('.fileupload').find('.fileupload-upload').click();
     });
     </script>

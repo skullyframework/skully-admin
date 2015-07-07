@@ -142,20 +142,24 @@ body.menu-pin form nav.affix {
     left: 0px;
   }
 }
-/* line 188, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 189, ../../bootstrap/scss/admin/stylesheet.scss */
+.fileupload .thumbnail img {
+  width: 100%;
+}
+/* line 193, ../../bootstrap/scss/admin/stylesheet.scss */
 .fileupload .emptyInfo {
   text-align: center;
 }
-/* line 191, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 196, ../../bootstrap/scss/admin/stylesheet.scss */
 .fileupload .btn {
   display: block;
   overflow: hidden;
 }
-/* line 195, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 200, ../../bootstrap/scss/admin/stylesheet.scss */
 .fileupload .btn span {
   display: block;
 }
-/* line 199, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 204, ../../bootstrap/scss/admin/stylesheet.scss */
 .fileupload .btn input {
   position: absolute;
   top: 0;
@@ -168,20 +172,20 @@ body.menu-pin form nav.affix {
   direction: ltr;
   cursor: pointer;
 }
-/* line 215, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 220, ../../bootstrap/scss/admin/stylesheet.scss */
 .fileupload.fileupload-new .fileupload-exists {
   display: none !important;
 }
-/* line 222, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 227, ../../bootstrap/scss/admin/stylesheet.scss */
 .fileupload.fileupload-exists .fileupload-new {
   display: none !important;
 }
 
-/* line 228, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 233, ../../bootstrap/scss/admin/stylesheet.scss */
 form.imageForm {
   position: relative;
 }
-/* line 231, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 236, ../../bootstrap/scss/admin/stylesheet.scss */
 form.imageForm .inlineLoadingFrame {
   position: absolute;
   top: 0;
