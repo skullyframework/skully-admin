@@ -270,7 +270,7 @@
         var width = form.outerWidth();
         var height = form.find(".thumbnail").outerHeight();
         var progress = $('<div class="inlineLoadingFrame" style="width: '+width+'px; height: '+height+'px;">' +
-                '<div style="width: '+width+'px;margin: auto;margin-top: '+(height/2 + 20)+'px;">'+
+                '<div style="width: '+width+'px;margin: auto;margin-top: '+(height/2 - 20)+'px;">'+
                 '<div class="uploadingText">Uploading...</div>'+
                 '<div class="progress progress-striped">'+
                 '<div class="bar tip" style="width: 0%;" title=""></div>'+
