@@ -273,7 +273,7 @@
                 '<div class="outer"><div class="inner">'+
                 '<div class="uploadingText">Uploading...</div>'+
                 '<div class="progress">'+
-                '<div class="bar tip progress-bar progress-bar-complete" style="width: 0%;" title=""></div>'+
+                '<div class="bar tip progress-bar progress-bar-complete" data-percentage="0" style="width: 0%;" title=""></div>'+
                 '</div>'+
                 '</div>'+
                 '</div>'+

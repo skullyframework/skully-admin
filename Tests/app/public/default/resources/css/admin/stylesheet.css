@@ -191,17 +191,18 @@ form.imageForm .inlineLoadingFrame {
   top: 0;
   left: 0;
   bottom: 55px;
+  right: 0;
   background: rgba(255, 255, 255, 0.6);
 }
-/* line 243, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 244, ../../bootstrap/scss/admin/stylesheet.scss */
 form.imageForm .inlineLoadingFrame .outer {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 249, ../../bootstrap/scss/admin/stylesheet.scss */
+/* line 250, ../../bootstrap/scss/admin/stylesheet.scss */
 form.imageForm .inlineLoadingFrame .inner {
   display: table-cell;
   vertical-align: middle;
-  padding: auto 10px;
+  padding: 0 10px;
 }
