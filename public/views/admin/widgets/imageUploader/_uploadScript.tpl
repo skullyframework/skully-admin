@@ -43,13 +43,13 @@
 
     function uploadSeparately(el)
     {
-        var settingName = $(el).closest('.row-form').attr('id').replace('newRow-', '');
+        var settingName = $(el).closest('.row').attr('id').replace('newRow-', '');
         {if $isSettingModel}
-        insertNewRow(settingName, $(el).closest('.row-form').data('setting_id'));
+        insertNewRow(settingName, $(el).closest('.row').data('setting_id'));
         {else}
         insertNewRow(settingName, {${$instanceName}.id});
         {/if}
-        $(el).closest('.row-form').remove();
+        $(el).closest('.row').remove();
     }
     $(document).on('click', '.uploadSeparately', function(e) {
         uploadSeparately(this);
