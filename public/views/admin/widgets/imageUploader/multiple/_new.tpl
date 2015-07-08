@@ -24,7 +24,7 @@
         {/form}
     </div>
     <div class="col-sm-6">
-        <a href="#" class="btn btn-large largeText uploadSeparately btn-primary">Upload separate image for each type</a>
+        <a href="#" class="btn btn-large largeText uploadSeparately btn-primary full-width">Upload separate image for each type</a>
     </div>
 </div>
 {/nocache}
