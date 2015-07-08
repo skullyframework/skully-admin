@@ -206,3 +206,8 @@ form.imageForm .inlineLoadingFrame .inner {
   vertical-align: middle;
   padding: 0 10px;
 }
+
+/* line 259, ../../bootstrap/scss/admin/stylesheet.scss */
+.bootbox.modal .modal-body {
+  padding-top: 25px;
+}
