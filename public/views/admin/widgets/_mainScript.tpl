@@ -37,6 +37,7 @@
 <script type='text/javascript' src="{theme_url path="resources/plugins/colorpicker/swatches/jquery.ui.colorpicker-pantone.js"}"></script>
 <script type='text/javascript' src="{theme_url path="resources/plugins/colorpicker/parts/jquery.ui.colorpicker-rgbslider.js"}"></script>
 <script type='text/javascript' src="{theme_url path="resources/plugins/colorpicker/parts/jquery.ui.colorpicker-memory.js"}"></script>
+<script type='text/javascript' src="{theme_url path="resources/plugins/bootbox/bootbox.min.js"}"></script>
 <!-- END VENDOR JS -->
 <!-- BEGIN CORE TEMPLATE JS -->
 <script src="{theme_url path="resources/js/admin/pages/pages.js"}" type="text/javascript"></script>
