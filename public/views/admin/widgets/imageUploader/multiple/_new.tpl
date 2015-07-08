@@ -1,4 +1,3 @@
-{* update ke admin baru *}
 {nocache}
 <div class="row" id="newRow-{$_imageSettingName}">
     <div class="col-sm-6">

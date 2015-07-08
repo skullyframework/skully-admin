@@ -20,7 +20,8 @@
     $('.add_image').click(function(e) {
         if (!$(this).attr('disabled')) {
             var $new = $($('#template-'+$(this).data('setting_name')+'-new').html());
-            $new.insertAfter($('.image_row-'+$(this).data('setting_name')+' .image_row-title'));
+//            $new.insertAfter($('.image_row-'+$(this).data('setting_name')+' .image_row-title'));
+            $new.insertAfter($(this).closest(".row"));
             if ($(this).hasClass('many')) {
                 $new.css('display', 'none').slideDown();
                 {if $isSettingModel}
