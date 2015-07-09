@@ -75,6 +75,17 @@ function hideLoading() {
     $('body').removeClass("loading");
 }
 
+function notify(message, type){
+    if(!type) type = "info";
+    $('body').pgNotification({
+        style: 'flip',
+        message: message,
+        position: "top-right",
+        timeout: 5000,
+        type: type
+    }).show();
+}
+
 //return string of formatted number
 Number.prototype.numberFormat = function(dec, decimalSeparator, thousandSeparator ) {
     var number = this;

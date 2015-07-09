@@ -98,7 +98,7 @@
                                 var settingName = data.setting;
                                 if(data.position){
                                     var position = parseInt(data.position, 10);
-                                    var $rowForms = $('.image_row-'+settingName + ' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
+                                    var $rowForms = $('.image_row-'+settingName + ' .panel-body > .imageManagerRow:not(#newRow-'+settingName+')');
                                     $rowForms.eq(position).slideUp('medium', function() {
                                         $(this).remove();
                                         for (var i=position+1;i<$rowForms.length;i++) {
@@ -113,7 +113,7 @@
                                     });
                                 }
                                 else{
-                                    var $rowForms = $('.image_row-'+settingName + ' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
+                                    var $rowForms = $('.image_row-'+settingName + ' .panel-body > .imageManagerRow:not(#newRow-'+settingName+')');
                                     $rowForms.find(".fileupload .thumbnail").html('<div class="emptyInfo">{lang value="No Image"}</div>');
                                 }
                             }
@@ -176,7 +176,7 @@
                     var data = JSON.parse(response);
                     var from = data.from;
                     var to = data.to;
-                    var $rowForms = $('.image_row-'+data.settingName+' .row-form:not(.image_row-title):not(#newRow-'+data.settingName+')');
+                    var $rowForms = $('.image_row-'+data.settingName+' .panel-body > .imageManagerRow:not(#newRow-'+data.settingName+')');
                     var $from = $rowForms.eq(from);
                     var $to = $rowForms.eq(to);
                     if (from > to) {
@@ -194,7 +194,7 @@
 
     // Insert new row to multiple rows.
     function insertNewRow(settingName, instanceId, existingRow, position) {
-        var $rowForms = $('.image_row-'+settingName+' .row-form:not(.image_row-title):not(#newRow-'+settingName+')');
+        var $rowForms = $('.image_row-'+settingName+' .panel-body > .imageManagerRow:not(#newRow-'+settingName+')');
         if (typeof(position) == 'undefined') {
             if (existingRow == true) {
                 position = $rowForms.length;
@@ -228,7 +228,7 @@
                         $rowForms.eq($rowForms.length-1).after($response);
                     }
                     else {
-                        $('.image_row-'+settingName).append($response);
+                        $('.image_row-'+settingName + ' .panel-body').append($response);
                     }
                     $response.slideDown();
                     $(document).trigger('changed');
@@ -255,7 +255,7 @@
                         $rowForms.eq(position).before($response);
                     }
                     else {
-                        $('.image_row-'+settingName).append($response);
+                        $('.image_row-'+settingName + ' .panel-body').append($response);
                     }
                     $response.slideDown();
                     $(document).trigger('changed');
