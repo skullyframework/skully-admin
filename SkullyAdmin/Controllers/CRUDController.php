@@ -198,7 +198,7 @@ class CRUDController extends BaseController
 					<a title="Delete" href="'.$this->app->getRouter()->getUrl($this->deletePath, array('id' => $instanceArray['id'])).'" data-toggle="dialog"><span class="fa fa-trash"></span></a>
 					</div>';
         if (!is_null($this->dragField)) {
-            $actions['data'] .='<input type="hidden" class="id" value="'.$instanceArray['id'].'"/>
+            $actions .='<input type="hidden" class="id" value="'.$instanceArray['id'].'"/>
 					<input type="hidden" class="'.$this->dragField.'" value="'.$instanceArray[$this->dragField].'"/>';
         }
         return $actions;

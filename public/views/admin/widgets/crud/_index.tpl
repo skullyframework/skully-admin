@@ -38,7 +38,7 @@
 
 
             {if !empty($dragField)}
-                {$sortableTable = 'sortableTable initialized'}
+                {$sortableTable = 'sortableTable'}
             {/if}
             {if !empty($dataTableServerSide) && $dataTableServerSide}
                 {$dtServerSide = 'serverSide'}
@@ -59,13 +59,12 @@
         <script type="text/javascript">
             {if !empty($columnDefs)}
             var _columnDefs = {$columnDefs};
+            var _reorderUrl = "{url path="$reorderPath"}";
+            var _sortableColumnIndex = {if $sortableIdColumnIndex == ""}0{else}{$sortableIdColumnIndex}{/if};
             {/if}
         </script>
     {/nocache}
-    {include file="admin/widgets/crud/widgets/_sortable.tpl"}
 {/block}
 {block name=script}
-    {if !empty($dragField)}
-        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
-    {/if}
+
 {/block}

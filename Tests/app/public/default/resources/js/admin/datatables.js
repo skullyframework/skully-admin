@@ -13,6 +13,7 @@
                 $(".aTable").not('.initialized').each(function(index, argTable) {
 //                    console.log("init table");
                     var table = $(argTable);
+                    var isSortable = table.hasClass("sortableTable");
 
                     var columnDefs = [];
                     if (typeof(_columnDefs) != 'undefined' && _columnDefs != null) {
@@ -56,11 +57,53 @@
                         "processing": true,
                         "serverSide": table.hasClass("serverSide"),
                         "ajax": table.attr('rel'),
-                        "columnDefs": columnDefs,
+                        "columnDefs": _columnDefs,
                         "drawCallback": function( settings ) {
                             $(document).trigger("changed");
+                        },
+                        "rowCallback" : function( nRow, aData, index ) {
+                            if(isSortable){
+                                // Add styling on each td:
+                                // Get hidden columns, then iterate each column, if column is hidden, move to next index
+                                var columns = this.dataTableSettings[0].aoColumns;
+
+                                var i = 0;
+                                for(var i2=0;i2<columns.length;i2++) {
+                                    var column = columns[i2];
+                                    if (column.bVisible) {
+                                        var td = $('td',nRow).slice(i,(i+1));
+                                        if (typeof aData[i2]=='object' && aData[i2]!=null){
+                                            if (typeof aData[i2].style!='undefined'){
+                                                td.attr('style',aData[i2].style);
+                                            }
+                                            if (typeof aData[i2].class!='undefined'){
+                                                td.removeClass(aData[i2].class);
+                                                td.addClass(aData[i2].class);
+                                            }
+                                            td.html('');
+                                            if (typeof aData[i2].data!='undefined'){
+                                                td.html(aData[i2].data);
+                                            }
+                                        }
+                                        i++;
+                                    }
+                                }
+
+                                /* set tr id. */
+                                var id = aData[_sortableColumnIndex];
+                                $(nRow).attr("id",id);
+                            }
+                            return nRow;
                         }
                     });
+
+                    if(isSortable){
+                        table.rowReordering({
+                            sURL: _reorderUrl,
+                            iIndexColumn: 0,
+                            sRequestType: "POST"
+                        });
+                    }
                     if(sorting.length > 0)
                         table.sort(sorting);
 
