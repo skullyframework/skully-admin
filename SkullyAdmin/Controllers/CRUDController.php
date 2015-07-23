@@ -193,8 +193,10 @@ class CRUDController extends BaseController
      */
     protected function listActions($instanceArray)
     {
-        $actions = array('data' => '<a title="View" href="'.$this->app->getRouter()->getUrl($this->editPath, array('id' => $instanceArray['id'])).'"><span class="fa fa-pencil"></span></a>
-					<a title="Delete" href="'.$this->app->getRouter()->getUrl($this->deletePath, array('id' => $instanceArray['id'])).'" data-toggle="dialog"><span class="fa fa-trash"></span></a>', 'class' => 'TAC');
+        $actions = '<div class="text-right">
+                    <a title="View" href="'.$this->app->getRouter()->getUrl($this->editPath, array('id' => $instanceArray['id'])).'"><span class="fa fa-pencil"></span></a>
+					<a title="Delete" href="'.$this->app->getRouter()->getUrl($this->deletePath, array('id' => $instanceArray['id'])).'" data-toggle="dialog"><span class="fa fa-trash"></span></a>
+					</div>';
         if (!is_null($this->dragField)) {
             $actions['data'] .='<input type="hidden" class="id" value="'.$instanceArray['id'].'"/>
 					<input type="hidden" class="'.$this->dragField.'" value="'.$instanceArray[$this->dragField].'"/>';
