@@ -1,9 +1,6 @@
 {extends file="admin/wrappers/_main.tpl"}
 {block name=header}
     <title>{$instanceName}</title>
-    {if !empty($dragField)}
-        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
-    {/if}
 {/block}
 {block name=content}
     {include file='admin/widgets/_alerts.tpl' }
@@ -66,4 +63,9 @@
         </script>
     {/nocache}
     {include file="admin/widgets/crud/widgets/_sortable.tpl"}
+{/block}
+{block name=script}
+    {if !empty($dragField)}
+        <script type='text/javascript' src="{theme_url path="resources/js/plugins/datatables/dataTables.rowReordering.js"}"></script>
+    {/if}
 {/block}
