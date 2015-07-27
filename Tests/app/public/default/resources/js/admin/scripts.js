@@ -318,6 +318,10 @@ String.prototype.numberFormat = Number.prototype.numberFormat; //enable number f
             //affix
             if($("form nav.affix-top").length > 0) {
                 $("form nav.affix-top").each(function(){
+                    if($(this).closest(".affix-wrapper").length > 0){
+                        $(this).closest(".affix-wrapper").css("height", $(this).outerHeight());
+                    }
+
                     $(this).affix({
                         offset: {
                             top: $(this).offset().top - 60

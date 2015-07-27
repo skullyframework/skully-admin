@@ -4,32 +4,34 @@
 {$controllerName = "hotels"}
 {form class="validate" method="POST" action="{url path="admin/"|cat:$controllerName:"/":$action}"}
 {if !$isAjax}
-    <nav class="affix-top">
-        <div class="panel panel-default">
-            <div class="panel-body ">
-                <div class="row">
-                    <div class="col-sm-6">
-                        {if $action != "create"}
-                            <a href="{url path="admin/"|cat:$controllerName:"/images"}" class="btn btn-primary"><i class="fa fa-image"></i> {lang value="Image Manager"}</a>
-                        {/if}
-                    </div>
-                    <div class="col-sm-6 text-right">
-
-                        <input type="hidden" name="{$instanceName}[is_active]" id="isActive" value="{${$instanceName}.is_active}"/>
-                        {if $action != "create"}
-                            {if ${$instanceName}.is_active == 1}
-                                <a class="btn btn-danger" id="btnSuspend"><i class="pg-power m-r-10"></i>Suspend</a>
-                            {else}
-                                <a class="btn btn-complete" id="btnActive"><i class="pg-power m-r-10"></i>Activate</a>
+    <div class="affix-wrapper">
+        <nav class="affix-top">
+            <div class="panel panel-default">
+                <div class="panel-body ">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            {if $action != "create"}
+                                <a href="{url path="admin/"|cat:$controllerName:"/images"}" class="btn btn-primary"><i class="fa fa-image"></i> {lang value="Image Manager"}</a>
                             {/if}
-                        {/if}
-                        <button class="btn btn-primary" id="submitForm" type="submit"><i class="pg-save m-r-10"></i>Submit</button>
+                        </div>
+                        <div class="col-sm-6 text-right">
 
+                            <input type="hidden" name="{$instanceName}[is_active]" id="isActive" value="{${$instanceName}.is_active}"/>
+                            {if $action != "create"}
+                                {if ${$instanceName}.is_active == 1}
+                                    <a class="btn btn-danger" id="btnSuspend"><i class="pg-power m-r-10"></i>Suspend</a>
+                                {else}
+                                    <a class="btn btn-complete" id="btnActive"><i class="pg-power m-r-10"></i>Activate</a>
+                                {/if}
+                            {/if}
+                            <button class="btn btn-primary" id="submitForm" type="submit"><i class="pg-save m-r-10"></i>Submit</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 {/if}
 
 
