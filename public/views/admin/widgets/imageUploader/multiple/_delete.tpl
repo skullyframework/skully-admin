@@ -1,11 +1,11 @@
-{* TODO: update ke admin baru *}
+{* update ke admin baru *}
 {extends file="admin/wrappers/_formDialog.tpl"}
 {block name=dialogHeader}
-    <h3>Delete image</h3>
+    <h3 class="text-primary bold"><i class="pg-trash m-r-15"></i>Delete Image</h3>
 {/block}
 {block name=dialogContent}
     {nocache}
-        {form method="POST" action="{url path=$imageDestroyPath}"}
+        {form method="POST" action="{url path=$destroyPath}"}
             {include file="admin/widgets/_alerts.tpl"}
             <input type="hidden" name="{$instanceName}[id]" value="{${$instanceName}.id}"/>
             <input type="hidden" name="position" value="{$position}" />
@@ -15,16 +15,22 @@
             {else}
                 <input type="hidden" name="field" value="{$_imageSettingName}" />
             {/if}
+
+
+            <input type="hidden" name="{$instanceName}[id]" value="{${$instanceName}.id}"/>
             <div class="block-fluid">
-                <div class="row-form">
-                    <div class="span12 largerText">
-                        Delete this image?
-                        <div><img src="{public_url path={$_image}}" /></div>
+                <div class="row">
+                    <div class="col-sm-12 largerText">
+                        <h4 class="bold">Delete this image?</h4>
                     </div>
                 </div>
                 {if !$isAjax}
-                    <div class="toolbar bottom TAR">
-                        <button class="btn btn-primary" id="submitForm" type="submit">Submit</button>
+                    <div class="row m-t-30">
+                        <div class="col-sm-12">
+                            <div class="toolbar bottom TAR">
+                                <button class="btn btn-danger" id="submitForm" type="submit">Delete</button>
+                            </div>
+                        </div>
                     </div>
                 {/if}
             </div>
@@ -33,7 +39,7 @@
 {/block}
 {block name=dialogButtons}
     {nocache}
-        <a class="btn btn-danger" onclick="return deleteClicked();">Delete</a>
-        <a class="btn" data-dismiss="modal">Close</a>
+        <a class="btn btn-danger" onclick="return deleteClicked();"><i class="pg-trash m-r-10"></i>Delete</a>
+        <a class="btn" data-dismiss="modal"><i class="pg-close m-r-10"></i>Close</a>
     {/nocache}
 {/block}
