@@ -16,7 +16,7 @@
     </div>
     <!-- BEGIN SIDEBAR HEADER -->
     <div class="sidebar-header">
-        <img src="{theme_url path="resources/images/admin/pages_logo_white.png"}" alt="logo" class="brand" data-src="{theme_url path="resources/images/admin/pages_logo_white.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_white_2x.png"}" width="78" height="22">
+        {include file="admin/widgets/logo/_sidebar.tpl"}
         <div class="sidebar-header-controls">
             <button data-pages-toggle="#appMenu" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" type="button"><i class="fa fa-angle-down fs-16"></i>
             </button>
@@ -64,7 +64,7 @@
         <div class=" pull-left sm-table">
             <div class="header-inner">
                 <div class="brand inline">
-                    <img src="{theme_url path="resources/images/admin/pages_logo.png"}" alt="logo" data-src="{theme_url path="resources/images/admin/pages_logo.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_2x.png"}" width="78" height="22">
+                    {include file="admin/widgets/logo/_topbar.tpl"}
                 </div>
                 <!-- BEGIN NOTIFICATION DROPDOWN -->
                 {*<ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">*}

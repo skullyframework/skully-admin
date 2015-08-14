@@ -300,7 +300,7 @@ String.prototype.numberFormat = Number.prototype.numberFormat; //enable number f
             setTimeout(function() {
                 $('.wysihtml5').not('.wysihtml5Initialized').addClass("wysihtml5Initialized").wysihtml5({
                     html: true,
-                    stylesheets: [_config.themeUrl + "resources/css/admin/editor.css"],
+                    stylesheets: [_config.baseUrl + _config.publicDir + _config.theme + "/resources/css/admin/editor.css"],
                     customTemplates: myCustomTemplates
                 });
             }, 500);

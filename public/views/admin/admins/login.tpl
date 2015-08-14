@@ -30,7 +30,7 @@
     <div class="login-container bg-white">
         <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
             <div class="p-b-15">
-                <img src="{theme_url path="resources/images/admin/pages_logo.png"}" alt="logo" data-src="{theme_url path="resources/images/admin/pages_logo.png"}" data-src-retina="{theme_url path="resources/images/admin/pages_logo_2x.png"}" width="78" height="22">
+                {include file="admin/widgets/logo/_login.tpl"}
             </div>
             {include file='admin/widgets/_alerts.tpl' }
             <p>Sign into your administrator account</p>
