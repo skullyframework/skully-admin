@@ -37,7 +37,7 @@
             </div>
 
 
-            {if !empty($dragField)}
+            {if !empty($dragField) || (!empty($isSortable) && $isSortable)}
                 {$sortableTable = 'sortableTable'}
             {/if}
             {if !empty($dataTableServerSide) && $dataTableServerSide}
@@ -59,6 +59,9 @@
         <script type="text/javascript">
             {if !empty($columnDefs)}
             var _columnDefs = {$columnDefs};
+            {/if}
+
+            {if !empty($dragField) || (!empty($isSortable) && $isSortable)}
             var _reorderUrl = "{url path="$reorderPath"}";
             var _sortableColumnIndex = {if $sortableIdColumnIndex == ""}0{else}{$sortableIdColumnIndex}{/if};
             {/if}
