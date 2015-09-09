@@ -5,7 +5,7 @@
 {/block}
 {block name=dialogContent}
     {nocache}
-        {form method="POST" action="{url path=$destroyPath}"}
+        {form method="POST" action="{url path=$imageDestroyPath}"}
             {include file="admin/widgets/_alerts.tpl"}
             <input type="hidden" name="{$instanceName}[id]" value="{${$instanceName}.id}"/>
             <input type="hidden" name="position" value="{$position}" />
