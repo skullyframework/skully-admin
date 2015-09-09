@@ -15,9 +15,7 @@
             {else}
                 <input type="hidden" name="field" value="{$_imageSettingName}" />
             {/if}
-
-
-            <input type="hidden" name="{$instanceName}[id]" value="{${$instanceName}.id}"/>
+            
             <div class="block-fluid">
                 <div class="row">
                     <div class="col-sm-12 largerText">
