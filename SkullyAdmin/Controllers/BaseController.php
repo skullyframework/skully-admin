@@ -20,6 +20,7 @@ class BaseController extends \Skully\App\Controllers\BaseController {
     }
 
     protected function beforeAction($action = '') {
+        parent::beforeAction();
         $this->mustBeLoggedIn();
     }
 
