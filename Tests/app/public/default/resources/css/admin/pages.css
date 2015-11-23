@@ -12509,16 +12509,16 @@ Main components
 /*** Retina Display Images **/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2) {
   .icon-set {
-    background: url('../../../images/admin/pages/icons/top_tray_2x.png');
+    background: url('../../images/admin/pages/icons/top_tray_2x.png');
     position: relative;
     background-size: 95px 19px;
   }
   .editor-icon {
-    background-image: url("../../../images/admin/pages/editor_tray_2x.png");
+    background-image: url("../../images/admin/pages/editor_tray_2x.png");
     background-size: 480px 40px;
   }
   .alert .close {
-    background: url("../../../images/admin/pages/icons/noti-cross-2x.png") no-repeat scroll 0 0 transparent;
+    background: url("../../images/admin/pages/icons/noti-cross-2x.png") no-repeat scroll 0 0 transparent;
     background-position: -9px -10px;
     width: 10px;
     height: 9px;
