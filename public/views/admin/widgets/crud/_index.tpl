@@ -45,12 +45,15 @@
             {else}
                 {$dtServerSide = ''}
             {/if}
+
+            <div class="table-responsive">
             {html_table
             loop=''
             table_attr='class="'|cat: $sortableTable|cat:' '|cat: $dtServerSide|cat:' table aTable in table-hover" rel="'|cat:{url path=$indexPath}|cat:'"style="width: 100%;"'
             th_attr=$thAttributes
             cols=$columns
             }
+            </div>
         </div>
     </div>
 {/block}
