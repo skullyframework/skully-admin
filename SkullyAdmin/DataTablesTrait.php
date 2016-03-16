@@ -11,11 +11,74 @@ use RedBeanPHP\Facade as R;
 trait DataTablesTrait {
     //region Attributes
 
+    //available filter
+    // LIKE
+    // BETWEEN
+    // EQUALS
+
     //region Override
     /*protected $dtsPrimaryKey        = 'id';
     protected $dtsTableName         = 'test';
     protected $dtsPositionFieldName = 'position';
     protected $dtsIsSortable        = false;*/
+
+    /*
+    public function index(){
+        $this->setColumnsDef( '' );
+        $this->setThAttributes( array() );
+        $this->setFields(array(
+            array(  'column'    => 'Name',
+                'field'     => 'guest_name',
+                'rawSql'    => 'g.name'),
+            array(  'column'    => 'Cert Card',
+                'field'     => 'cert',
+                'rawSql'    => "concat(g.cert_type, ' - ', g.cert_number)" ),
+            array(  'column'    => 'Room',
+                'field'     => 'room_name',
+                'rawSql'    => 'r.name' ),
+            array(  'column'    => 'Room Type',
+                'field'     => 'room_type',
+                'rawSql'    => 'c.name' ),
+            array(  'column'    => 'Check In',
+                'field'     => 'check_in',
+                'prefix'    => 't',
+                'filter'    => 'between'),
+            array(  'column'    => 'Due Out',
+                'field'     => 'due_out',
+                'prefix'    => 't',
+                'filter'    => 'between' ),
+            array(  'column'    => 'Check Out',
+                'field'     => 'check_out',
+                'prefix'    => 't',
+                'filter'    => 'between' ),
+            array(  'column'    => 'Actions',
+                'field'     => 't_id',
+                'rawSql'    => 't.id',
+                'formatter' => function( $value, $array ) {
+                    return  '<a title="View" href="'.$this->app->getRouter()->getUrl($this->editPath, array('id' => $value)).'" data-toggle="dialog"><span class="fa fa-pencil"></span></a>
+                                  <a title="Delete" href="'.$this->app->getRouter()->getUrl($this->deletePath, array('id' => $value)).'" data-toggle="dialog"><span class="fa fa-trash"></span></a>';
+                }),
+        ));
+
+        if ($this->app->isAjax()) {
+            echo json_encode($this->listDataServerSide());
+        }
+        else {
+            $this->render($this->indexTpl, array(
+                'dataTableServerSide'   => true,
+                'reorderPath'           => $this->reorderPath,
+                'indexPath'             => $this->indexPath,
+                'addPath'               => $this->addPath,
+                'instanceName'          => $this->instanceName,
+                'thAttributes'          => $this->getThAttributes(),
+                'columns'               => $this->getColumns(),
+                'columnDefs'            => $this->getColumnsDefs(),
+                'isSortable'            => $this->dtsIsSortable,
+            ));
+        }
+    }
+    */
+
     //endregion
 
     private $dtsFields          = array();
@@ -47,6 +110,7 @@ trait DataTablesTrait {
             $this->dtsFields[count( $this->dtsFields ) - 1]['prefix']       = isset( $value['prefix'] ) ? $value['prefix'] : 't';
             $this->dtsFields[count( $this->dtsFields ) - 1]['rawSql']       = isset( $value['rawSql'] ) ? $value['rawSql'] : null;
             $this->dtsFields[count( $this->dtsFields ) - 1]['formatter']    = isset( $value['formatter'] ) ? $value['formatter'] : null;
+            $this->dtsFields[count( $this->dtsFields ) - 1]['filter']       = isset( $value['filter'] ) ? $value['filter'] : "like";
         }
     }
 
@@ -172,7 +236,21 @@ trait DataTablesTrait {
                 $column         = $columns[$columnIdx];
 
                 if( $requestColumn['searchable'] == 'true' &&  empty( $column['rawSql'] ) ) {
-                    $globalSearch[] = $column['prefix'] . ".`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
+                    switch(strtolower($column['filter'])){
+                        case "equals" :
+                            $globalSearch[] = $column['prefix'] . ".`" . $column['db'] . "` = " . '\'' . $str . '\'';
+                            break;
+                        case "between" :
+                            $arr = explode(";", $str);
+                            if (count($arr) == 2) {
+                                $globalSearch[] = $column['prefix'] . ".`" . $column['db'] . "` BETWEEN " . '\'' . $arr[0] . '\' AND \'' . $arr[1] . '\'';
+                            }
+                            break;
+                        case "like" :
+                        default :
+                            $globalSearch[] = $column['prefix'] . ".`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
+                            break;
+                    }
                 }
             }
         }
@@ -186,7 +264,21 @@ trait DataTablesTrait {
             $str            = $requestColumn['search']['value'];
 
             if( $requestColumn['searchable'] == 'true' && $str != '' &&  empty( $column['rawSql'] ) ) {
-                $columnSearch[] = $column['prefix'] . ".`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
+                switch(strtolower($column['filter'])){
+                    case "equals" :
+                        $columnSearch[] = $column['prefix'] . ".`" . $column['db'] . "` = " . '\'' . $str . '\'';
+                        break;
+                    case "between" :
+                        $arr = explode(";", $str);
+                        if (count($arr) == 2) {
+                            $columnSearch[] = $column['prefix'] . ".`" . $column['db'] . "` BETWEEN " . '\'' . $arr[0] . '\' AND \'' . $arr[1] . '\'';
+                        }
+                        break;
+                    case "like" :
+                    default :
+                        $columnSearch[] = $column['prefix'] . ".`" . $column['db'] . "` LIKE " . '\'%' . $str . '%\'';
+                        break;
+                }
             }
         }
 
@@ -224,7 +316,21 @@ trait DataTablesTrait {
                 $column         = $columns[$columnIdx];
 
                 if( $requestColumn['searchable'] == 'true' &&  !empty( $column['rawSql'] ) ) {
-                    $globalSearch[] = $column['db'] . " LIKE " . '\'%' . $str . '%\'';
+                    switch(strtolower($column['filter'])){
+                        case "equals" :
+                            $globalSearch[] = $column['db'] . " = " . '\'' . $str . '\'';
+                            break;
+                        case "between" :
+                            $arr = explode(";", $str);
+                            if (count($arr) == 2) {
+                                $globalSearch[] = $column['db'] . " BETWEEN " . '\'' . $arr[0] . '\' AND \'' . $arr[1] . '\'';
+                            }
+                            break;
+                        case "like" :
+                        default :
+                            $globalSearch[] = $column['db'] . " LIKE " . '\'%' . $str . '%\'';
+                            break;
+                    }
                 }
             }
         }
@@ -238,7 +344,21 @@ trait DataTablesTrait {
             $str            = $requestColumn['search']['value'];
 
             if( $requestColumn['searchable'] == 'true' && $str != '' &&  !empty( $column['rawSql'] ) ) {
-                $columnSearch[] = $column['db'] . " LIKE " . '\'%' . $str . '%\'';
+                switch(strtolower($column['filter'])){
+                    case "equals" :
+                        $columnSearch[] = $column['db'] . " = " . '\'' . $str . '\'';
+                        break;
+                    case "between" :
+                        $arr = explode(";", $str);
+                        if (count($arr) == 2) {
+                            $columnSearch[] = $column['db'] . " BETWEEN " . '\'' . $arr[0] . '\' AND \'' . $arr[1] . '\'';
+                        }
+                        break;
+                    case "like" :
+                    default :
+                        $columnSearch[] = $column['db'] . " LIKE " . '\'%' . $str . '%\'';
+                        break;
+                }
             }
         }
 
@@ -377,4 +497,4 @@ trait DataTablesTrait {
         }
     }
     //endregion
-} 
+}
