@@ -113,6 +113,7 @@ trait ImageUploader {
                             $options = array(
                                 'resultDir' => $fullPath,
                                 'noImagick' => $this->app->config('noImagick'),
+                                'imagickProgressive' => $this->app->config('imagickProgressive'),
                                 'outputFilename' => str_replace(" ", "-", $name)
                             );
                             $instanceImages = $instance->get($imageFieldName);
