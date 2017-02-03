@@ -14,7 +14,6 @@ use RedBeanPHP\Facade as R;
 use Skully\App\Helpers\UtilitiesHelper;
 
 class AdminRepository extends BaseRepository {
-
     public function toHash($password, $salt, $globalSalt) {
         return md5($password . $salt . $globalSalt);
     }
@@ -58,4 +57,5 @@ class AdminRepository extends BaseRepository {
         R::exec($sql);
         $this->app->getSession()->remove('adminId');
     }
+
 } 

@@ -45,7 +45,12 @@
             {else}
                 {$dtServerSide = ''}
             {/if}
-
+            {if empty($thAttributes)}
+                {$thAttributes = array()}
+                {for $i=1 to count($columns)}
+                    {$thAttributes[] = ''}
+                {/for}
+            {/if}
             <div class="table-responsive">
             {html_table
             loop=''
