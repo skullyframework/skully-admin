@@ -92,6 +92,7 @@ trait DataTablesTrait {
         //set columns
         $this->dtsColumns   = $this->dtsIsSortable ? array($this->dtsPositionFieldName) : array();
         $this->dtsColumns[] = 'Id';
+        $this->dtsThAttributes[] = '';
 
         //set fields
         $this->dtsFields    = $this->dtsIsSortable ? array(array('db' => $this->dtsPositionFieldName, 'dt' => 0, 'prefix' => 't')) : array();
@@ -103,6 +104,7 @@ trait DataTablesTrait {
         foreach($array as $key => $value) {
             //set columns
             $this->dtsColumns[] = isset( $value['column'] ) ? $value['column'] : $value['field'];
+            $this->dtsThAttributes[] = isset( $value['thAttr'] ) ? $value['thAttr'] : '';
 
             //set fields
             $this->dtsFields[]['db']                                        = $value['field'];
