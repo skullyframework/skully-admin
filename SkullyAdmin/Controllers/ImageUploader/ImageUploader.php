@@ -82,7 +82,7 @@ trait ImageUploader {
         $validFormats = array("jpg", "png", "gif", "bmp","jpeg");
         $imageSettings = $this->getImageSettings();
         $imageSetting = $imageSettings[$settingName];
-        $this->app->getLogger()->log("files uploaded: " . print_r($_FILES, true));
+//        $this->app->getLogger()->log("files uploaded: " . print_r($_FILES, true));
         if (empty($error) && !empty($instance) && !empty($imageSetting)) {
             $nFiles = count($_FILES);
             for($i=0; $i<$nFiles; $i++) {
@@ -113,7 +113,6 @@ trait ImageUploader {
                             $options = array(
                                 'resultDir' => $fullPath,
                                 'noImagick' => $this->app->config('noImagick'),
-                                'imagickProgressive' => $this->app->config('imagickProgressive'),
                                 'outputFilename' => str_replace(" ", "-", $name)
                             );
                             $instanceImages = $instance->get($imageFieldName);
@@ -125,33 +124,85 @@ trait ImageUploader {
                                 // Upload once can only be used by multiple images.
                                 if ($imageSetting['types']) {
                                     // Many types
-                                    $newInstanceImage = array();
-                                    foreach($imageSetting['types'] as $key => $typeOptions) {
-                                        $options = array_merge($options, $imageSetting['types'][$key]);
-                                        $options['outputFilename'] = str_replace(" ", "-", $imageName) .'-'.$key.'.'.$ext;
-                                        try {
-                                            $path = $this->processTempImage($tmp, $options);
-                                            $newInstanceImage[$key] = $path;
-                                            $uploadedImages[] = array(
-                                                'data' => $this->getParam('data'),
-                                                'path' => $newInstanceImage[$key],
-                                                'message' => $this->app->getTranslator()->translate("imageUploaded")
-                                            );
+
+                                    if ($imageSetting['_config']['multiple']){
+                                        // Multiple many types
+                                        $newInstanceImage = array();
+                                        foreach($imageSetting['types'] as $key => $typeOptions) {
+                                            $options = array_merge($options, $imageSetting['types'][$key]);
+                                            $options['outputFilename'] = str_replace(" ", "-", $imageName) .'-'.$key.'.'.$ext;
+                                            try {
+                                                $path = $this->processTempImage($tmp, $options);
+                                                $newInstanceImage[$key] = $path;
+
+                                                $data = json_decode($this->getParam('data'), true);
+                                                $data['multiple'] = true;
+                                                $data = json_encode($data);
+
+                                                $uploadedImages[] = array(
+                                                    'data' => $data,
+                                                    'path' => $newInstanceImage[$key],
+                                                    'message' => $this->app->getTranslator()->translate("imageUploaded")
+                                                );
+                                            }
+                                            catch (\Exception $e) {
+                                                $data = json_decode($this->getParam('data'), true);
+                                                $data['multiple'] = true;
+                                                $data = json_encode($data);
+
+                                                $uploadedImages[] = array(
+                                                    'data' => $data,
+                                                    'path' => $filePath.$imageName.'.'.$ext,
+                                                    'message' => $e->getMessage(),
+                                                    'error' => true
+                                                );
+                                            }
                                         }
-                                        catch (\Exception $e) {
-                                            $uploadedImages[] = array(
-                                                'data' => $this->getParam('data'),
-                                                'path' => $filePath.$imageName.'.'.$ext,
-                                                'message' => $e->getMessage(),
-                                                'error' => true
-                                            );
+
+                                        $instanceImages[] = $newInstanceImage;
+                                        $instance->set($imageFieldName, json_encode($instanceImages));
+                                    }
+                                    else{
+                                        // single many types
+                                        foreach($imageSetting['types'] as $key => $typeOptions) {
+                                            $options = array_merge($options, $imageSetting['types'][$key]);
+                                            $options['outputFilename'] = str_replace(" ", "-", $imageName) .'-'.$key.'.'.$ext;
+
+                                            $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages[$key];
+                                            try {
+                                                $path = $this->processTempImage($tmp, $options, $oldFile);
+                                                $instanceImages[$key] = $path;
+                                                $instance->set($imageFieldName, json_encode($instanceImages));
+
+                                                $data = json_decode($this->getParam('data'), true);
+                                                $data['multiple'] = false;
+                                                $data = json_encode($data);
+
+                                                $uploadedImages[] = array(
+                                                    'data' => $data,
+                                                    'path' => $instanceImages[$key],
+                                                    'message' => $this->app->getTranslator()->translate("imageUploaded")
+                                                );
+                                            }
+                                            catch (\Exception $e) {
+                                                $data = json_decode($this->getParam('data'), true);
+                                                $data['multiple'] = false;
+                                                $data = json_encode($data);
+
+                                                $uploadedImages[] = array(
+                                                    'data' => $data,
+                                                    'path' => $filePath.$imageName.'.'.$ext,
+                                                    'message' => $e->getMessage(),
+                                                    'error' => true
+                                                );
+                                            }
                                         }
                                     }
-                                    $instanceImages[] = $newInstanceImage;
-                                    $instance->set($imageFieldName, json_encode($instanceImages));
+
                                 }
                                 else {
-                                    // Single type
+                                    // One type (not supported)
+                                    // Upload once only supports many types
                                 }
                             }
                             else {
@@ -159,7 +210,8 @@ trait ImageUploader {
                                 if ($imageSetting['types']) {
                                     // Many types
                                     if ($imageSetting['_config']['multiple']) {
-                                        // multiple images
+                                        // Multiple many types
+                                        // Multiple images
                                         $position = $this->getParam("position");
                                         $options = array_merge($options, $imageSetting['types'][$type]);
 
@@ -184,8 +236,8 @@ trait ImageUploader {
                                         }
                                     }
                                     else {
-
-                                        // single image
+                                        // Single image
+                                        // Single many types
                                         if (empty($imageSetting['types'][$type])) {
                                             throw new \Exception("Type $type not found");
                                         }
@@ -213,7 +265,8 @@ trait ImageUploader {
                                     // One type
                                     $options = array_merge($options, $imageSetting['options']);
                                     if($imageSetting['_config']['multiple']){
-                                        //MULTIPLE
+                                        // Multiple images
+                                        // Multiple one type
                                         $position = $this->getParam("position");
                                         $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages[$position];
                                         try {
@@ -231,7 +284,8 @@ trait ImageUploader {
                                         }
                                     }
                                     else{
-                                        //SINGLE
+                                        // Single image
+                                        // Single one type
                                         $oldFile = $this->app->getTheme()->getPublicBasePath().$instanceImages;
                                         try {
                                             $path = $this->processTempImage($tmp, $options, $oldFile);
